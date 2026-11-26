@@ -342,6 +342,11 @@ def step_prune(db):
 # ---------- export ----------
 def step_export(db):
     proto = json.load(open(os.path.join(HERE, "proto_map.json")))
+    axm = json.load(open(os.path.join(HERE, "axis_map.json")))
+    AXN = ["action", "weird", "density", "pace", "scale"]
+    def axes(slugs):
+        S = set(slugs)
+        return [max(1, min(5, round(3.25 + 0.6 * (len(S & set(axm[a]["plus"])) - len(S & set(axm[a]["minus"])))))) for a in AXN]
     rev = {}
     for tag, gl in proto.items():
         if tag.startswith("_"): continue
@@ -362,10 +367,12 @@ def step_export(db):
             tags = sorted({t for g in gl for t in rev.get(g["slug"], ())})
             rec = {"id": slug, "title": title, "author": author, "year": year, "series": series,
                    "series_index": float(sno) if sno is not None else None, "cover_id": cover, "ol_key": olk,
-                   "description": desc or None, "genes": gl, "tags": tags, "tier": tier, "readers": readers}
+                   "description": desc or None, "genes": gl, "tags": tags, "ax": axes(g["slug"] for g in gl) if gl else None,
+                   "tier": tier, "readers": readers}
             (full if gl else lite).append(rec)
         meta = {"generated_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()), "genre": "sf",
-                "note": "genes are editorial (claude-v1) or swarm tags with confidence; tags = app prototype tags derived from genes."}
+                "note": "genes are editorial (claude-v1) or swarm tags with confidence, not reader votes; tags = app prototype tags derived from genes; ax = five feel axes (action, weird, density, pace, scale) derived from genes via axis_map.json."}
+        global EXPORTED; EXPORTED = full
         json.dump({**meta, "count": len(full), "books": full}, open(OUT+"/data/books_sf.json", "w"), ensure_ascii=False, separators=(",", ":"))
         json.dump({**meta, "count": len(lite), "books": [{k: r[k] for k in ("id","title","author","year","cover_id","ol_key","readers")} for r in lite]},
                   open(OUT+"/data/catalog_sf.json", "w"), ensure_ascii=False, separators=(",", ":"))
@@ -377,6 +384,15 @@ def step_export(db):
         log(f"export: {len(full)} books with shown genes, {len(lite)} catalog-only")
         log(f"TOTALS books={t[0]} core={t[1]} catalog={t[2]} with_desc={t[3]} shown_links={t[4]} all_links={t[5]} genes_in_use={t[6]}/{t[7]}")
 
+
+# ---------- dump (copy the export out through the job log, a slice at a time) ----------
+EXPORTED = []
+def step_dump(db):
+    if not EXPORTED: step_export(db)
+    a = int(os.environ.get("DUMP_FROM", "0")); n = int(os.environ.get("DUMP_N", "240"))
+    for r in EXPORTED[a:a + n]:
+        print("DUMP " + json.dumps(r, ensure_ascii=True, separators=(",", ":")), flush=True)
+    log(f"dump: rows {a}..{min(a + n, len(EXPORTED))} of {len(EXPORTED)}")
 
 # ---------- peek (quality review in logs) ----------
 def step_peek(db):
