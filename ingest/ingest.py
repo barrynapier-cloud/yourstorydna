@@ -63,6 +63,8 @@ ALTER TABLE books ADD COLUMN IF NOT EXISTS updated_at timestamptz;
 CREATE UNIQUE INDEX IF NOT EXISTS books_ol_key ON books(ol_key) WHERE ol_key IS NOT NULL;
 CREATE INDEX IF NOT EXISTS books_tier ON books(tier);
 ALTER TABLE books ADD COLUMN IF NOT EXISTS excluded_reason text;
+ALTER TABLE books ADD COLUMN IF NOT EXISTS free_url text;
+ALTER TABLE books ADD COLUMN IF NOT EXISTS flags text[];
 """
 
 # ---------- genes ----------
@@ -309,6 +311,62 @@ def step_kimi(db):
             log("  kimi error", r.get("title"), repr(e)[:200])
     log(f"kimi: {len(rows)} stubs, {have} already in the DB, {new} new catalog books, {miss} not found on Open Library, {tagged} kimi gene links (hidden)")
 
+# ---------- kimi v2 (receipt-backed gene review) ----------
+# KIMI_V2="kimi_sf_20261126_01,..." loads ingest/kimi_v2/<batch>.json. confirm/add -> source kimi-v2, shown,
+# confidence 0.9, evidence = url+verbatim quote. reject -> kimi-v2 row state rejected, and the claude-v1 row is
+# hidden, except fact genes Kimi was too strict on (kept as they are).
+KEEP_ON_REJECT = {"classic", "standalone", "series_start", "award_winner"}
+def step_kimiv2(db):
+    batches = [b for b in os.environ.get("KIMI_V2", "").split(",") if b]
+    with db.cursor() as c:
+        gids = gene_id_map(c)
+        def book(slug, olk):
+            c.execute("SELECT id FROM books WHERE slug=%s", (slug,)); r = c.fetchone()
+            if not r and olk:
+                c.execute("SELECT id FROM books WHERE ol_key=%s", (olk,)); r = c.fetchone()
+            return r[0] if r else None
+        for bname in batches:
+            d = json.load(open(os.path.join(HERE, "kimi_v2", bname + ".json")))
+            n = {"confirm": 0, "add": 0, "reject": 0, "hidden_v1": 0, "kept_fact": 0, "nobook": 0, "scales": 0, "docs": 0, "links": 0, "flags": 0}
+            for r in d["genes"]:
+                bid = book(r["b"], r.get("k")); gid = gids.get(r["g"])
+                if not bid or not gid: n["nobook"] += 1; continue
+                ev = json.dumps(r.get("e") or [], ensure_ascii=False)
+                v = r["v"]
+                state = "rejected" if v == "reject" else "shown"
+                conf = 0.9 if v != "reject" else 0.0
+                c.execute("""INSERT INTO book_genes(book_id,gene_id,source,presence,confidence,state,evidence) VALUES (%s,%s,'kimi-v2',%s,%s,%s,%s)
+                             ON CONFLICT (book_id,gene_id,source) DO UPDATE SET presence=EXCLUDED.presence, confidence=EXCLUDED.confidence,
+                             state=EXCLUDED.state, evidence=EXCLUDED.evidence""", (bid, gid, r.get("p") or 1, conf, state, ev))
+                n[v] = n.get(v, 0) + 1
+                if v == "reject":
+                    if r["g"] in KEEP_ON_REJECT: n["kept_fact"] += 1
+                    else:
+                        c.execute("UPDATE book_genes SET state='hidden' WHERE book_id=%s AND gene_id=%s AND source='claude-v1' AND state='shown'", (bid, gid))
+                        n["hidden_v1"] += c.rowcount
+            for r in d["scales"]:
+                bid = book(r["b"], r.get("k"))
+                if not bid: continue
+                c.execute("""INSERT INTO book_scales(book_id,scale,value,source) VALUES (%s,%s,%s,'kimi-v2')
+                             ON CONFLICT (book_id,scale,source) DO UPDATE SET value=EXCLUDED.value""", (bid, r["s"], r["x"])); n["scales"] += 1
+            for r in d["docs"]:
+                for b in r["b"] or [None]:
+                    bid = book(b, None) if b else None
+                    c.execute("SELECT 1 FROM source_docs WHERE url IS NOT DISTINCT FROM %s AND book_id IS NOT DISTINCT FROM %s", (r.get("u"), bid))
+                    if c.fetchone(): continue
+                    c.execute("INSERT INTO source_docs(book_id,source_type,url,content) VALUES (%s,%s,%s,%s)", (bid, "kimi-v2:" + (r.get("t") or "doc"), r.get("u"), r.get("c")))
+                    n["docs"] += 1
+            for r in d["links"]:
+                bid = book(r["b"], r.get("k"))
+                if bid: c.execute("UPDATE books SET free_url=%s WHERE id=%s", (r["u"], bid)); n["links"] += 1
+            for r in d["flags"]:
+                bid = book(r["b"], r.get("k"))
+                if bid:
+                    c.execute("UPDATE books SET flags=(SELECT array_agg(DISTINCT x) FROM unnest(coalesce(flags,'{}') || ARRAY[%s]) x) WHERE id=%s", (r["f"], bid)); n["flags"] += 1
+            for r in d.get("proposals", []):
+                c.execute("INSERT INTO ingest_rows(batch,kind,payload) VALUES (%s,'gene_proposal',%s)", (bname, json.dumps(r)))
+            log(f"kimiv2 {bname}: {n}")
+
 # ---------- descriptions ----------
 def clean_desc(d):
     if isinstance(d, dict): d = d.get("value")
@@ -393,22 +451,22 @@ def step_export(db):
         for g in gl: rev.setdefault(g, set()).add(tag)
     os.makedirs(OUT+"/data", exist_ok=True)
     with db.cursor() as c:
-        c.execute("""SELECT b.id,b.slug,b.title,b.author,b.year,b.series,b.series_no,b.cover_id,b.ol_key,b.description,b.tier,b.readers,
+        c.execute("""SELECT b.id,b.slug,b.title,b.author,b.year,b.series,b.series_no,b.cover_id,b.ol_key,b.description,b.tier,b.readers,b.free_url,b.flags,
                        COALESCE(json_agg(json_build_object('slug',g.slug,'confidence',round(bg.confidence::numeric,2),'source',bg.source)
                          ORDER BY bg.confidence DESC, g.id) FILTER (WHERE g.id IS NOT NULL AND bg.state='shown'), '[]')
                      FROM books b LEFT JOIN book_genes bg ON bg.book_id=b.id LEFT JOIN genes g ON g.id=bg.gene_id
                      WHERE b.genre='sf' AND b.excluded_reason IS NULL GROUP BY b.id ORDER BY (b.tier='core') DESC, b.readers DESC NULLS LAST, b.id""")
         full, lite = [], []
-        for (bid, slug, title, author, year, series, sno, cover, olk, desc, tier, readers, genes) in c.fetchall():
-            seen = {}; 
+        for (bid, slug, title, author, year, series, sno, cover, olk, desc, tier, readers, free_url, flags, genes) in c.fetchall():
+            seen = {}; ver = {g["slug"] for g in genes if g.get("source") == "kimi-v2"}
             for g in genes:
                 if g["slug"] not in seen or g["confidence"] > seen[g["slug"]]["confidence"]: seen[g["slug"]] = g
-            gl = [{"slug": g["slug"], "confidence": float(g["confidence"])} for g in seen.values()]
+            gl = [{"slug": g["slug"], "confidence": float(g["confidence"]), **({"verified": True} if g["slug"] in ver else {})} for g in seen.values()]
             tags = sorted({t for g in gl for t in rev.get(g["slug"], ())})
             rec = {"id": slug, "title": title, "author": author, "year": year, "series": series,
                    "series_index": float(sno) if sno is not None else None, "cover_id": cover, "ol_key": olk,
                    "description": desc or None, "genes": gl, "tags": tags, "ax": axes(g["slug"] for g in gl) if gl else None,
-                   "tier": tier, "readers": readers}
+                   "tier": tier, "readers": readers, "free_url": free_url, "flags": flags or []}
             (full if gl else lite).append(rec)
         meta = {"generated_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()), "genre": "sf",
                 "note": "genes are editorial (claude-v1) or swarm tags with confidence, not reader votes; tags = app prototype tags derived from genes; ax = five feel axes (action, weird, density, pace, scale) derived from genes via axis_map.json."}
