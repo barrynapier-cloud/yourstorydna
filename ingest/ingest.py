@@ -271,6 +271,64 @@ def step_catalog(db):
             log(f"catalog {q}: {got} kept (running total {kept}, new {new})")
     log(f"catalog: {kept} kept, {new} new books, {skipped} skipped, {links} subject gene links (hidden)")
 
+# ---------- olgrow (Open Library, print-published books only) ----------
+# Barry, Nov 26: grow the catalog with real published books, not Kindle-only or self-published.
+# Keeps a work only if it has a publisher other than self-publishing platforms, an ISBN-backed edition count of 2+
+# or real reader activity, plus the usual sci-fi subject checks. New rows are tier catalog, source openlibrary-print.
+GROW_SUBJECTS = ["science fiction", "space opera", "cyberpunk", "dystopias", "time travel", "artificial intelligence",
+                 "robots", "life on other planets", "extraterrestrial beings", "interplanetary voyages", "military science fiction",
+                 "hard science fiction", "post-apocalyptic", "steampunk", "science fiction romance", "climate fiction",
+                 "first contact", "space colonies", "genetic engineering", "virtual reality"]
+SELF_PUB = ("independently published", "createspace", "kindle direct", "amazon digital", "lulu", "smashwords",
+            "draft2digital", "authorhouse", "xlibris", "iuniverse", "trafford", "outskirts press", "self-published", "self published")
+def step_olgrow(db):
+    smap = json.load(open(os.path.join(HERE, "subject_map.json")))
+    pages = int(os.environ.get("GROW_PAGES", "3"))
+    seen = set(); n = {"kept": 0, "new": 0, "selfpub": 0, "thin": 0, "offgenre": 0, "nopub": 0}
+    f = FIELDS + ",publisher,isbn"
+    with db.cursor() as c:
+        gids = gene_id_map(c)
+        for subj in GROW_SUBJECTS:
+            for era in ("", " first_publish_year:[2010 TO 2026]"):
+                got = 0
+                for page in range(1, pages + 1):
+                    d = get("https://openlibrary.org/search.json?" + urllib.parse.urlencode(
+                        {"q": f'subject:"{subj}" language:eng' + era, "sort": "readinglog", "fields": f, "limit": 100, "page": page}))
+                    docs = (d or {}).get("docs", [])
+                    if not docs: break
+                    for doc in docs:
+                      try:
+                        k = doc.get("key")
+                        if not k or k in seen: continue
+                        seen.add(k)
+                        sl = [x.lower() for x in doc.get("subject", [])]
+                        if any(b in x for x in sl for b in BAD) or not any(h in x for x in sl for h in SF_HINT):
+                            n["offgenre"] += 1; continue
+                        pubs = [p.lower() for p in doc.get("publisher", [])]
+                        real = [p for p in pubs if not any(sp in p for sp in SELF_PUB)]
+                        if not pubs: n["nopub"] += 1; continue
+                        if not real: n["selfpub"] += 1; continue
+                        if not doc.get("isbn") or ((doc.get("edition_count") or 0) < 2 and (doc.get("readinglog_count") or 0) < 10):
+                            n["thin"] += 1; continue
+                        if not doc.get("author_name"): continue
+                        author = doc["author_name"][0]; title = (doc.get("title") or "").strip()
+                        slug = slugify(title)
+                        c.execute("SELECT id,author,ol_key FROM books WHERE slug=%s", (slug,))
+                        ex = c.fetchone()
+                        if ex and ex[2] != k and norm(ex[1]) != norm(author):
+                            slug = slugify(title + " " + author.split()[-1])
+                            c.execute("SELECT 1 FROM books WHERE slug=%s", (slug,))
+                            if c.fetchone(): slug = slugify(title + " " + author.split()[-1] + " " + k.split("/")[-1])
+                        doc.pop("isbn", None)
+                        bid, created = upsert_book(c, slug=slug, title=title, author=author, year=doc.get("first_publish_year"),
+                                                   series=None, series_no=None, tier="catalog", doc=doc, source="openlibrary-print")
+                        n["kept"] += 1; n["new"] += created; got += 1
+                        if created: set_genes(c, bid, subject_genes(doc.get("subject"), smap), "ol-subjects", 0.4, "hidden", gids)
+                      except Exception as e:
+                        log("  olgrow error", doc.get("title"), repr(e)[:200])
+                log(f"olgrow {subj}{' (2010+)' if era else ''}: {got} kept, running {n}")
+    log(f"olgrow: {n}")
+
 # ---------- kimi (swarm stubs as Open Library candidates) ----------
 # kimi_sf.json: Kimi swarm sci-fi works {ol_key,title,author,year,cover_id,tags}. Each ol_key not yet in books
 # is looked up on Open Library and added as a catalog row (prune then judges it like any other).
