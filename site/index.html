@@ -1504,7 +1504,9 @@ ${[0, 1, 2, 3, 4].map(i => `<path class="glyph" style="--d:${i * .45}s" d="M${18
     const b = e.target.closest('[data-g]'); if (!b) return; const g = G.find(x => x.slug === b.dataset.g); all.querySelectorAll('.gx-g.on').forEach(x => x.classList.remove('on')); b.classList.add('on');
     const d = $('gxdet'); d.classList.remove('pop'); void d.offsetWidth; d.classList.add('pop'); d.style.setProperty('--g', g.tag ? gcol(g.tag, 72) : '#B9C0DC');
     d.innerHTML = `<b>${esc(g.name)}</b><span>${esc(g.desc)}.</span>${g.n ? `<button class="gx-all sm" data-gene="${g.tag}">See ${g.n} ${g.n === 1 ? 'book' : 'books'}</button>` : '<em>Named, not sequenced into books yet</em>'}`; });
-  fam(0);
+  // Hidden until every gene has books sequenced (Barry, Nov 26). Set to true to bring the full browser back.
+  const BROWSE_ALL = false;
+  if (BROWSE_ALL) fam(0); else all.hidden = true;
 })();
 document.head.insertAdjacentHTML('beforeend', `<style>
 #gx{margin-top:40px;text-align:left}
