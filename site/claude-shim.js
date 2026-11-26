@@ -1,6 +1,7 @@
 // On yourstorydna.com there is no Claude artifact runtime, so this gives the page the same
 // window.claude.use() calls it uses inside the preview, backed by the site's own /api.
 (function () {
+  window.STORYDNA_API = '/api';
   if (window.claude) return;
   async function call(url, opts) { const r = await fetch(url, opts); if (!r.ok) throw { code: r.status }; return r.json(); }
   const sample = {
