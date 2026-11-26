@@ -301,7 +301,8 @@ SF_STRONG = ("science fiction", "space opera", "cyberpunk", "steampunk", "dystop
 OTHER = ("fantasy", "magic", "wizard", "witch", "dragon", "elves", "fairies", "fairy tale", "vampire", "werewol", "ghost",
     "horror", "paranormal", "supernatural", "demon", "mythology", "thriller", "mystery", "historical fiction")
 NONFIC = ("nonfiction", "non-fiction", "authorship", "authors, american", "biography", "programming", "computer software",
-    "textbook", "essays", "literary criticism", "study and teaching", "philosophy", "economics")
+    "textbook", "essays", "literary criticism", "study and teaching", "philosophy", "economics", "computer", "neural network",
+    "data processing", "engineering", "technology", "popular works", "handbooks", "congresses", "research", "examinations")
 NON_LATIN = re.compile(r"[\u3040-\u30ff\u3400-\u9fff\uac00-\ud7af\u0400-\u04ff\u0600-\u06ff]")
 
 def prune_reason(title, subjects):
@@ -324,7 +325,14 @@ def step_prune(db):
             if r:
                 counts[r] = counts.get(r, 0) + 1; flagged.append((readers or 0, title, author, r))
             c.execute("UPDATE books SET excluded_reason=%s WHERE id=%s AND excluded_reason IS DISTINCT FROM %s", (r, bid, r))
-        log(f"prune: {len(rows)} catalog rows, {len(flagged)} flagged", counts)
+        c.execute("""SELECT b.id, b.title FROM books b WHERE b.tier='catalog' AND EXISTS (SELECT 1 FROM books k WHERE k.tier='core'
+                     AND k.excluded_reason IS NULL AND lower(regexp_replace(k.title,'[^a-zA-Z0-9]','','g'))=lower(regexp_replace(b.title,'[^a-zA-Z0-9]','','g'))
+                     AND lower(split_part(k.author,' ',1))=lower(split_part(b.author,' ',1)))""")
+        dups = c.fetchall()
+        for bid, _ in dups:
+            c.execute("UPDATE books SET excluded_reason='dup-of-core' WHERE id=%s", (bid,))
+        if dups: counts["dup-of-core"] = len(dups); log("prune: catalog copies of core books:", "; ".join(t for _, t in dups[:30]))
+        log(f"prune: {len(rows)} catalog rows, {len(flagged) + len(dups)} flagged", counts)
         flagged.sort(reverse=True)
         log("PRUNE most-read flagged:"); [log("  ", r, t, a, n) for n, t, a, r in flagged[:40]]
         c.execute("SELECT title, author, readers FROM books WHERE tier='catalog' AND excluded_reason IS NULL ORDER BY readers DESC NULLS LAST LIMIT 40")
