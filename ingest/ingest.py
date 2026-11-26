@@ -5,6 +5,7 @@ Steps (each can be switched with STEPS env, default all):
   core    - curated core list (core.txt): Open Library match, upsert, genes as source claude-v1
   catalog - long tail from Open Library search by sci-fi subjects, genes from subject_map at low confidence
   desc    - fetch work descriptions for books missing one (core first, then most read)
+  prune   - flag catalog rows that are not really sci-fi (fantasy, horror, non-fiction, non-English) and duplicate core rows
   export  - write /out/data/books_sf.json (shown genes) and /out/data/catalog_sf.json (lite)
 No secrets in this file: the DB password comes from the environment.
 """
@@ -61,6 +62,7 @@ ALTER TABLE books ADD COLUMN IF NOT EXISTS editions int;
 ALTER TABLE books ADD COLUMN IF NOT EXISTS updated_at timestamptz;
 CREATE UNIQUE INDEX IF NOT EXISTS books_ol_key ON books(ol_key) WHERE ol_key IS NOT NULL;
 CREATE INDEX IF NOT EXISTS books_tier ON books(tier);
+ALTER TABLE books ADD COLUMN IF NOT EXISTS excluded_reason text;
 """
 
 # ---------- genes ----------
@@ -164,7 +166,7 @@ def step_core(db):
     rows = read_core()
     with db.cursor() as c:
         gids = gene_id_map(c)
-        matched = links = new = 0; misses = []
+        matched = links = new = 0; misses = []; touched = []
         for i, r in enumerate(rows):
           try:
             doc = ol_match(r["title"], r["author"])
@@ -184,16 +186,24 @@ def step_core(db):
                 else:
                     slug = hit[0]
             elif hit:
-                doc = {k: v for k, v in doc.items() if k != "key"}
+                c.execute("SELECT 1 FROM books WHERE slug=%s", (slug,))
+                if c.fetchone():
+                    doc = {k: v for k, v in doc.items() if k != "key"}
+                else:
+                    slug = hit[0]
             bid, created = upsert_book(c, slug=slug, title=r["title"], author=r["author"], year=r["year"], series=r["series"],
                                        series_no=r["series_no"], tier="core", doc=doc, source="claude-v1")
-            new += created
+            new += created; touched.append(bid)
             links += set_genes(c, bid, r["tags"], "claude-v1", 0.7, "shown", gids)
             if i % 50 == 0: log(f"core {i}/{len(rows)}")
           except Exception as e:
             log("  core error", r["title"], repr(e)[:200])
         log(f"core: {len(rows)} books, {new} new, {matched} matched on Open Library, {links} gene links")
         if misses: log("core no OL match:", "; ".join(misses[:40]))
+        c.execute("UPDATE books SET excluded_reason=NULL WHERE id = ANY(%s)", (touched,))
+        c.execute("UPDATE books SET excluded_reason='core-duplicate' WHERE tier='core' AND NOT (id = ANY(%s)) RETURNING title", (touched,))
+        d = [r[0] for r in c.fetchall()]
+        if d: log(f"core: flagged {len(d)} stale duplicate core rows:", "; ".join(d[:30]))
 
 # ---------- catalog ----------
 QUERIES = ['subject:"science fiction"', 'subject:"space opera"', 'subject:"cyberpunk"', 'subject:"dystopias"',
@@ -283,6 +293,43 @@ def step_desc(db):
             if i % 200 == 0: log(f"desc {i}/{len(rows)} ({got} found)")
         log(f"desc: {got} of {len(rows)} books now have a description")
 
+# ---------- prune (catalog quality) ----------
+SF_STRONG = ("science fiction", "space opera", "cyberpunk", "steampunk", "dystopia", "time travel", "extraterrestrial",
+    "interplanetary", "interstellar", "space warfare", "space colon", "space ships", "spaceships", "androids", "cyborgs",
+    "robots", "artificial intelligence", "post-apocalyptic", "apocalyptic", "litrpg", "virtual reality", "galactic",
+    "life on other planets", "human-alien", "alien romance", "first contact", "genetic engineering", "clones", "nanotech")
+OTHER = ("fantasy", "magic", "wizard", "witch", "dragon", "elves", "fairies", "fairy tale", "vampire", "werewol", "ghost",
+    "horror", "paranormal", "supernatural", "demon", "mythology", "thriller", "mystery", "historical fiction")
+NONFIC = ("nonfiction", "non-fiction", "authorship", "authors, american", "biography", "programming", "computer software",
+    "textbook", "essays", "literary criticism", "study and teaching", "philosophy", "economics")
+NON_LATIN = re.compile(r"[\u3040-\u30ff\u3400-\u9fff\uac00-\ud7af\u0400-\u04ff\u0600-\u06ff]")
+
+def prune_reason(title, subjects):
+    if NON_LATIN.search(title or ""): return "non-english"
+    subj = [s.lower() for s in subjects or []]
+    sf = sum(1 for s in subj if any(h in s for h in SF_STRONG))
+    other = sum(1 for s in subj if any(h in s for h in OTHER))
+    nonfic = sum(1 for s in subj if any(h in s for h in NONFIC))
+    if sf == 0: return "no-sf-subject"
+    if nonfic >= 2 and nonfic >= sf: return "non-fiction"
+    if other >= 3 * sf or (other >= 2 and sf == 1): return "mostly-other-genre"
+    return None
+
+def step_prune(db):
+    with db.cursor() as c:
+        c.execute("SELECT id, title, author, readers, subjects FROM books WHERE tier='catalog'")
+        rows = c.fetchall(); counts = {}; flagged = []
+        for bid, title, author, readers, subj in rows:
+            r = prune_reason(title, subj)
+            if r:
+                counts[r] = counts.get(r, 0) + 1; flagged.append((readers or 0, title, author, r))
+            c.execute("UPDATE books SET excluded_reason=%s WHERE id=%s AND excluded_reason IS DISTINCT FROM %s", (r, bid, r))
+        log(f"prune: {len(rows)} catalog rows, {len(flagged)} flagged", counts)
+        flagged.sort(reverse=True)
+        log("PRUNE most-read flagged:"); [log("  ", r, t, a, n) for n, t, a, r in flagged[:40]]
+        c.execute("SELECT title, author, readers FROM books WHERE tier='catalog' AND excluded_reason IS NULL ORDER BY readers DESC NULLS LAST LIMIT 40")
+        log("PRUNE most-read kept:"); [log("  ", *x) for x in c.fetchall()]
+
 # ---------- export ----------
 def step_export(db):
     proto = json.load(open(os.path.join(HERE, "proto_map.json")))
@@ -296,7 +343,7 @@ def step_export(db):
                        COALESCE(json_agg(json_build_object('slug',g.slug,'confidence',round(bg.confidence::numeric,2),'source',bg.source)
                          ORDER BY bg.confidence DESC, g.id) FILTER (WHERE g.id IS NOT NULL AND bg.state='shown'), '[]')
                      FROM books b LEFT JOIN book_genes bg ON bg.book_id=b.id LEFT JOIN genes g ON g.id=bg.gene_id
-                     WHERE b.genre='sf' GROUP BY b.id ORDER BY (b.tier='core') DESC, b.readers DESC NULLS LAST, b.id""")
+                     WHERE b.genre='sf' AND b.excluded_reason IS NULL GROUP BY b.id ORDER BY (b.tier='core') DESC, b.readers DESC NULLS LAST, b.id""")
         full, lite = [], []
         for (bid, slug, title, author, year, series, sno, cover, olk, desc, tier, readers, genes) in c.fetchall():
             seen = {}; 
@@ -313,8 +360,8 @@ def step_export(db):
         json.dump({**meta, "count": len(full), "books": full}, open(OUT+"/data/books_sf.json", "w"), ensure_ascii=False, separators=(",", ":"))
         json.dump({**meta, "count": len(lite), "books": [{k: r[k] for k in ("id","title","author","year","cover_id","ol_key","readers")} for r in lite]},
                   open(OUT+"/data/catalog_sf.json", "w"), ensure_ascii=False, separators=(",", ":"))
-        c.execute("""SELECT (SELECT count(*) FROM books WHERE genre='sf'), (SELECT count(*) FROM books WHERE tier='core'),
-                     (SELECT count(*) FROM books WHERE tier='catalog'), (SELECT count(*) FROM books WHERE coalesce(description,'')<>''),
+        c.execute("""SELECT (SELECT count(*) FROM books WHERE genre='sf' AND excluded_reason IS NULL), (SELECT count(*) FROM books WHERE tier='core' AND excluded_reason IS NULL),
+                     (SELECT count(*) FROM books WHERE tier='catalog' AND excluded_reason IS NULL), (SELECT count(*) FROM books WHERE coalesce(description,'')<>''),
                      (SELECT count(*) FROM book_genes WHERE state='shown'), (SELECT count(*) FROM book_genes),
                      (SELECT count(DISTINCT gene_id) FROM book_genes WHERE state='shown'), (SELECT count(*) FROM genes WHERE genre='sf')""")
         t = c.fetchone()
@@ -325,9 +372,9 @@ def step_export(db):
 # ---------- peek (quality review in logs) ----------
 def step_peek(db):
     with db.cursor() as c:
-        c.execute("SELECT title, author, year, readers FROM books WHERE tier='catalog' ORDER BY readers DESC NULLS LAST LIMIT 40")
+        c.execute("SELECT title, author, year, readers FROM books WHERE tier='catalog' AND excluded_reason IS NULL ORDER BY readers DESC NULLS LAST LIMIT 40")
         log("PEEK top catalog by readers:"); [log("  ", *r) for r in c.fetchall()]
-        c.execute("SELECT title, author, year, readers FROM books WHERE tier='catalog' ORDER BY random() LIMIT 40")
+        c.execute("SELECT title, author, year, readers FROM books WHERE tier='catalog' AND excluded_reason IS NULL ORDER BY random() LIMIT 40")
         log("PEEK random catalog:"); [log("  ", *r) for r in c.fetchall()]
         c.execute("SELECT title, author, left(coalesce(description,''),90) FROM books WHERE tier='core' ORDER BY random() LIMIT 8")
         log("PEEK core sample:"); [log("  ", *r) for r in c.fetchall()]
