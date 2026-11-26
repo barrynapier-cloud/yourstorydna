@@ -1265,7 +1265,7 @@ const STILLS = {};
     if (t.dataset.top != null) { land.scrollTo({ top: 0, behavior: calm ? 'auto' : 'smooth' }); return setTimeout(() => q.focus({ preventScroll: true }), calm ? 0 : 500); }
     $('l2more').scrollIntoView({ behavior: calm ? 'auto' : 'smooth' });
   });
-  if ('IntersectionObserver' in window) { const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { root: land, threshold: .15 }); land.querySelectorAll('.l2-sx').forEach(s => io.observe(s));
+  if ('IntersectionObserver' in window) { const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { root: land, threshold: 0, rootMargin: '0px 0px -12% 0px' }); land.querySelectorAll('.l2-sx').forEach(s => io.observe(s));
     const lit = new IntersectionObserver(es => es.forEach(e => e.target.classList.toggle('lit', e.isIntersecting)), { root: land, rootMargin: '-30% 0px -30% 0px' }); land.querySelectorAll('.beats li').forEach(s => lit.observe(s)); }
   else land.querySelectorAll('.l2-sx').forEach(s => s.classList.add('in'));
 
@@ -1275,7 +1275,7 @@ const STILLS = {};
   const hitsEx = (px, py, pad) => exs.some(ex => px > ex.l - pad && px < ex.r + pad && py > ex.t - pad && py < ex.b + pad);
   const crosses = (a, b) => { for (let i = 1; i < 10; i++) { const u = i / 10; if (hitsEx(a.x + (b.x - a.x) * u, a.y + (b.y - a.y) * u, -14)) return true; } return false; };
   function build() {
-    cancelAnimationFrame(raf); layer.innerHTML = ''; nodes = []; hov = null;
+    cancelAnimationFrame(raf); layer.innerHTML = ''; nodes = []; hov = null; segN = null;
     const fr = fold.getBoundingClientRect(), dpr = Math.min(2, devicePixelRatio || 1);
     W = fold.clientWidth; H = fold.clientHeight; if (!W || !H) return;
     cvs.width = W * dpr; cvs.height = H * dpr; x.setTransform(dpr, 0, 0, dpr, 0, 0);
@@ -1303,10 +1303,28 @@ const STILLS = {};
     t0 = performance.now(); nextMut = 0;
     if (calm) { nodes.forEach(n => { n.start = -1e5; n.el.classList.add('on'); }); draw(t0); } else raf = requestAnimationFrame(tick);
   }
+  // one DNA segment of the book you point at: its fragment art, its name, and what it feels like
+  let segN = null;
+  const segTag = bk => { const ts = bk.tags.filter(t => TAGS[t] && window.FRAG && FRAG.has(t)), all = ts.length ? ts : bk.tags.filter(t => TAGS[t]); return all.length ? all[hash(bk.id) % all.length] : ''; };
+  function seg(n) {
+    let c = layer.querySelector('.l2-seg'); if (segN && segN.el) segN.el.classList.remove('seg'); segN = null;
+    if (!n || !n.el || !n.el.classList.contains('on')) { if (c) c.classList.remove('on'); return; }
+    const t = segTag(n.b); if (!t) return; if (!c) { c = document.createElement('div'); c.className = 'l2-seg'; c.setAttribute('aria-hidden', 'true'); layer.append(c); }
+    const art = window.FRAG && FRAG.has(t) ? FRAG.art(t) : '', col = gcol(t, 72);
+    c.style.setProperty('--g', col); c.innerHTML = `${art ? `<img alt="" src="${esc(art)}" onerror="this.remove()">` : ''}<p><small>Story DNA in ${esc(n.b.t)}</small><b>${esc(tl(t))}</b><span>${esc(TAGS[t][1])}</span></p>`;
+    const cw = Math.min(210, W - 16), ch = c.offsetHeight || 190, gap = 12, right = n.x + n.w / 2 + gap + cw <= W - 8, left = n.x - n.w / 2 - gap - cw >= 8;
+    const lx = right ? n.x + n.w / 2 + gap : left ? n.x - n.w / 2 - gap - cw : clamp(n.x - cw / 2, 8, W - cw - 8), ly = right || left ? clamp(n.y - ch / 2, 8, H - ch - 8) : (n.y - n.h / 2 - gap - ch >= 8 ? n.y - n.h / 2 - gap - ch : n.y + n.h / 2 + gap);
+    c.style.width = cw + 'px'; c.style.left = lx + 'px'; c.style.top = ly + 'px'; c.classList.add('on'); n.el.classList.add('seg'); segN = n;
+  }
+  document.addEventListener('pointerdown', e => { if (segN && !e.target.closest('.l2-bk')) seg(null); });
   function mount(n) {
     const el = cover(n.b, 'button'); el.classList.add('l2-bk'); el.dataset.open = n.b.id; el.style.cssText = `left:${n.x - n.w / 2}px;top:${n.y - n.h / 2}px;width:${n.w}px;--fd:${5 + hash(n.b.id) % 4}s;--fz:${-(hash(n.b.id) % 5)}s`;
     el.setAttribute('aria-label', `${n.b.t} by ${n.b.a}`); el.tabIndex = -1; el.dataset.cap = n.b.t;
-    el.addEventListener('pointerenter', () => { hov = n; }); el.addEventListener('pointerleave', () => { if (hov === n) hov = null; });
+    el.addEventListener('pointerenter', e => { hov = n; if (e.pointerType !== 'touch') seg(n); }); el.addEventListener('pointerleave', e => { if (hov === n) hov = null; if (e.pointerType !== 'touch') seg(null); });
+    el.addEventListener('focus', () => { if (el.matches(':focus-visible')) seg(n); }); el.addEventListener('blur', () => seg(null));
+    // on a touch screen the first tap shows the book's DNA segment, the second opens the book
+    el.addEventListener('pointerdown', e => { n.touch = e.pointerType === 'touch'; });
+    el.addEventListener('click', e => { if (n.touch && segN !== n) { e.preventDefault(); e.stopPropagation(); seg(n); } });
     if (n.el) n.el.remove(); n.el = el; layer.append(el);
   }
   const ctl = n => { const p = n.parent, mx = (p.x + n.x) / 2, my = (p.y + n.y) / 2, dx = n.x - p.x, dy = n.y - p.y; return { x: mx - dy * n.bend, y: my + dx * n.bend }; };
@@ -1334,7 +1352,7 @@ const STILLS = {};
   function mutate(t) {
     const kids = new Set(nodes.map(n => n.parent)), leaves = nodes.filter(n => n.parent && !kids.has(n) && n.shown && n !== hov); if (!leaves.length) return;
     const n = leaves[Math.floor(Math.random() * leaves.length)], used = nodes.map(m => m.b.id), opt = nearest(n.parent.b, 14, used).slice(0, 5); if (!opt.length) return;
-    n.fade = t; n.el.classList.remove('on');
+    n.fade = t; n.el.classList.remove('on'); if (segN === n) seg(null);
     setTimeout(() => { if (!nodes.includes(n)) return; n.b = opt[Math.floor(Math.random() * opt.length)]; n.gene = shared(n.parent.b, n.b)[0] ? tl(shared(n.parent.b, n.b)[0]) : 'Same feel'; n.col = shared(n.parent.b, n.b)[0] ? gcol(shared(n.parent.b, n.b)[0], 72) : '#BFD6FF'; n.fade = 0; n.shown = false; n.start = performance.now() - t0 + 120; mount(n); }, 620);
   }
   function tick(now) {
@@ -1350,6 +1368,12 @@ const STILLS = {};
   if (step === 'land' && !calm) playIntro(true);
 })();
 document.head.insertAdjacentHTML('beforeend', `<style>
+.l2-seg{position:absolute;z-index:5;pointer-events:none;opacity:0;transform:translateY(6px) scale(.97);transition:opacity .18s ease,transform .22s cubic-bezier(.2,1,.3,1);background:#070912f5;border:1.5px solid var(--g,#5CE1FF);border-radius:14px;overflow:hidden;box-shadow:0 18px 48px #000d,0 0 28px color-mix(in srgb,var(--g,#5CE1FF) 30%,#0000);text-align:left}
+.l2-seg.on{opacity:1;transform:none}.l2-seg img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;object-position:50% 28%}
+.l2-seg p{margin:0;padding:10px 12px 12px;display:grid;gap:3px}.l2-seg small{font:800 9.5px Manrope,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#ffffff99;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.l2-seg b{font:800 17px/1.12 Unbounded,sans-serif;color:var(--g,#5CE1FF)}.l2-seg span{font:500 12.5px/1.35 Manrope,sans-serif;color:#E6EAF7}
+.l2-bk.seg::after{display:none}
+@media (prefers-reduced-motion:reduce){.l2-seg{transition:none}}
 body[data-step=land] #gl,body[data-step=land] #wd,body[data-step=land] #hud{visibility:hidden}
 #land.v3{--ink:#F4F6FF;--soft:#B9C0DC;--cy:#5CE1FF;--pk:#FF86B8;--bg:#060814;color:var(--ink);text-align:center;font:17px/1.55 Manrope,system-ui,sans-serif;
 background:radial-gradient(1.5px 1.5px at 12% 22%,#fff9,#0000),radial-gradient(1px 1px at 31% 61%,#fff7,#0000),radial-gradient(1.5px 1.5px at 67% 14%,#fff8,#0000),radial-gradient(1px 1px at 83% 47%,#fff7,#0000),radial-gradient(1px 1px at 48% 83%,#fff6,#0000),radial-gradient(1.5px 1.5px at 92% 76%,#fff7,#0000),radial-gradient(1px 1px at 5% 68%,#fff6,#0000),
@@ -1365,7 +1389,7 @@ radial-gradient(75% 55% at 50% 0%,#2A2070 0%,#0000 70%),radial-gradient(55% 48% 
 @keyframes l2float{from{transform:translateY(-3px)}to{transform:translateY(3px)}}
 #land.v3 .bar{position:relative;z-index:2}#land.v3 .bar.top{align-items:center}#land.v3 .bar.bot{align-items:center}
 #land.v3 .bar button{font:inherit;letter-spacing:inherit;text-transform:inherit;color:var(--cy);background:none;border:1px solid #5CE1FF80;border-radius:999px;padding:6px 14px;cursor:pointer}#land.v3 .bar button:hover{background:#5CE1FF22;color:#fff}
-.l2-hero{position:relative;z-index:3;align-self:start;justify-self:center;width:100%;padding:clamp(14px,3vh,40px) 0 clamp(150px,20vh,240px)}
+.l2-hero{position:relative;z-index:3;align-self:start;justify-self:center;width:100%;padding:clamp(14px,3vh,40px) 0 clamp(150px,20vh,240px);pointer-events:none}.l2-hero>*{pointer-events:auto}
 #l3head{width:min(1400px,calc(100% - 28px));margin:0 auto}
 #land.v3 .pre{animation:none}
 #land.v3 .logo{margin:8px 0 0;font-size:min(12.4vw,19.5vh,176px);white-space:nowrap;text-shadow:0 0 70px #5CE1FF70,0 0 150px #8A6BFF55;animation:none}
@@ -1699,6 +1723,8 @@ ${pals.length ? `<section class="lb-s"><p class="lo-k">Often found with</p><div 
     host.innerHTML = `<div class="fx-rail" role="group" aria-label="DNA fragments"></div><div class="fx-sel" aria-live="polite"></div><div class="fx-out"></div>`;
     const rail = host.querySelector('.fx-rail');
     FR.slice().sort((a, c) => N[c] - N[a]).forEach(t => { const w = document.createElement('div'); w.className = 'fx-it'; const c = card(t); c.dataset.pick = t; delete c.dataset.frag; w.append(c); w.insertAdjacentHTML('beforeend', `<button class="fx-more" data-frag="${t}">What is it?</button>`); rail.append(w); });
+    // the closing card: how big the library of story DNA is, and the way in
+    { const n = typeof GENES !== 'undefined' && GENES.length ? GENES.length : 476; rail.insertAdjacentHTML('beforeend', `<div class="fx-it fx-endw"><button class="fc fx-end" data-go="pick" aria-label="${n} story genes and growing. Enter the library"><span class="fx-end-in"><small>And counting</small><b>${n}</b><em>story genes named so far, and the list keeps growing</em><i>Enter the library &rarr;</i></span></button></div>`); }
     host.addEventListener('click', e => { const t = e.target.closest('[data-pick],[data-drop],[data-clear],[data-frag],[data-lbook]'); if (!t) return;
       if (t.dataset.pick) { e.stopPropagation(); return pick(sel.includes(t.dataset.pick) ? sel.filter(x => x !== t.dataset.pick) : [...sel, t.dataset.pick].slice(-5)); }
       if (t.dataset.drop) return pick(sel.filter(x => x !== t.dataset.drop)); if (t.dataset.clear) return pick([]);
@@ -1765,6 +1791,9 @@ html.lo-on{overflow:hidden}
 .fx-it{scroll-snap-align:start;display:grid;gap:8px}.fx-rail .fc{filter:saturate(.75) brightness(.8)}.fx-rail .fc:hover{filter:none}
 .fx-rail .fc.on{filter:none;box-shadow:0 0 0 3px var(--g),0 0 38px color-mix(in srgb,var(--g) 60%,#0000);transform:translateY(-6px)}
 .fx-rail .fc.on .fc-top b{background:var(--g);color:#04050D}.fx-rail .fc.on .fc-top b::before{content:"\\2713  "}
+.fx-end{--g:#5CE1FF;background:radial-gradient(120% 80% at 50% 0%,#5CE1FF38,#0000 60%),linear-gradient(160deg,#1B1F5A,#04050D 75%)}.fx-rail .fc.fx-end{filter:none}.fx-end-in{position:absolute;inset:0;display:grid;align-content:center;justify-items:center;gap:6px;padding:12px 10px;text-align:center}
+.fx-end small{font:800 9.5px Manrope,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#5CE1FF}.fx-end b{font:800 clamp(34px,30cqw,50px)/1 Unbounded,sans-serif;color:#fff;text-shadow:0 0 26px #5CE1FF99}.fx-end em{font:600 clamp(10.5px,7.6cqw,12px)/1.35 Manrope,sans-serif;font-style:normal;color:#D5DCF2}
+.fx-end i{margin-top:8px;font:800 clamp(10px,7.4cqw,11.5px) Manrope,sans-serif;font-style:normal;color:#04050D;background:#5CE1FF;border-radius:999px;padding:8px clamp(7px,6cqw,11px);white-space:nowrap}.fx-end:hover i{background:#fff}
 .fx-more{font:700 12.5px Manrope,sans-serif;color:#AEB9DA;background:none;border:0;padding:6px 0;min-height:32px;cursor:pointer;text-decoration:underline;text-underline-offset:3px}.fx-more:hover{color:#fff}
 .fx-sel{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px;margin:14px 0 6px;min-height:46px}.fx-sel p{margin:0;color:#AEB9DA;font:500 16px Manrope,sans-serif}.fx-sel span{color:#AEB9DA;font-weight:800}
 .fx-chip{display:inline-flex;align-items:center;gap:8px;font:800 14px Manrope,sans-serif;color:#04050D;background:var(--g);border:0;border-radius:999px;height:40px;padding:0 12px 0 14px;cursor:pointer}.fx-chip i{width:8px;height:8px;border-radius:50%;background:#04050D}.fx-chip b{font-size:18px;line-height:1}
