@@ -523,8 +523,11 @@ def step_prune(db):
     with db.cursor() as c:
         c.execute("SELECT id, title, author, readers, subjects FROM books WHERE tier='catalog'")
         rows = c.fetchall(); counts = {}; flagged = []
+        # editorial picks (claude-v2 fill/vibes, kimi-v2 evidenced) were chosen by hand as sci-fi; never prune them on OL subjects
+        c.execute("SELECT DISTINCT book_id FROM book_genes WHERE state='shown' AND source IN ('claude-v2','kimi-v2')")
+        keep = {x[0] for x in c.fetchall()}
         for bid, title, author, readers, subj in rows:
-            r = prune_reason(title, subj)
+            r = None if bid in keep else prune_reason(title, subj)
             if r:
                 counts[r] = counts.get(r, 0) + 1; flagged.append((readers or 0, title, author, r))
             c.execute("UPDATE books SET excluded_reason=%s WHERE id=%s AND excluded_reason IS DISTINCT FROM %s", (r, bid, r))
