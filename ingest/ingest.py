@@ -394,6 +394,19 @@ def step_dump(db):
         print("DUMP " + json.dumps(r, ensure_ascii=True, separators=(",", ":")), flush=True)
     log(f"dump: rows {a}..{min(a + n, len(EXPORTED))} of {len(EXPORTED)}")
 
+# ---------- rename (keep curated app ids stable) ----------
+# RENAME="new-slug:wanted-slug,..." moves a stale row off wanted-slug, then gives it to new-slug.
+def step_rename(db):
+    pairs = [x.split(":") for x in os.environ.get("RENAME", "").split(",") if ":" in x]
+    with db.cursor() as c:
+        for src, dst in pairs:
+            c.execute("SELECT id FROM books WHERE slug=%s", (src,))
+            if not c.fetchone(): log("  rename skip, no", src); continue
+            c.execute("UPDATE books SET slug=%s WHERE slug=%s", (dst + "-stale", dst))
+            c.execute("UPDATE books SET slug=%s WHERE slug=%s", (dst, src))
+            log("  renamed", src, "->", dst)
+    db.commit()
+
 # ---------- peek (quality review in logs) ----------
 def step_peek(db):
     with db.cursor() as c:
