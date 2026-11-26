@@ -3806,5 +3806,189 @@
   "family": "Format and facts",
   "group": "The practical stuff",
   "genre": "sf"
+ },
+ {
+  "slug": "vibe_cozy",
+  "name": "Cozy",
+  "desc": "Small stakes, kind people, a warm place to come back to",
+  "family": "Vibes",
+  "group": "Warm and light",
+  "genre": "sf"
+ },
+ {
+  "slug": "vibe_hopeful",
+  "name": "Hopeful",
+  "desc": "The future might actually turn out fine",
+  "family": "Vibes",
+  "group": "Warm and light",
+  "genre": "sf"
+ },
+ {
+  "slug": "vibe_whimsical",
+  "name": "Whimsical",
+  "desc": "Playful, odd and a little silly in a good way",
+  "family": "Vibes",
+  "group": "Warm and light",
+  "genre": "sf"
+ },
+ {
+  "slug": "vibe_gleaming",
+  "name": "Gleaming future",
+  "desc": "Clean lines, bright tech, optimism you can see",
+  "family": "Vibes",
+  "group": "Warm and light",
+  "genre": "sf"
+ },
+ {
+  "slug": "vibe_tender",
+  "name": "Tender",
+  "desc": "Soft-hearted, intimate and gentle with its people",
+  "family": "Vibes",
+  "group": "Warm and light",
+  "genre": "sf"
+ },
+ {
+  "slug": "vibe_bleak",
+  "name": "Bleak",
+  "desc": "Cold, grey and short on mercy",
+  "family": "Vibes",
+  "group": "Dark and heavy",
+  "genre": "sf"
+ },
+ {
+  "slug": "vibe_gritty",
+  "name": "Gritty",
+  "desc": "Dirt under the nails, blood on the floor",
+  "family": "Vibes",
+  "group": "Dark and heavy",
+  "genre": "sf"
+ },
+ {
+  "slug": "vibe_melancholy",
+  "name": "Melancholy",
+  "desc": "A quiet ache that hangs over everything",
+  "family": "Vibes",
+  "group": "Dark and heavy",
+  "genre": "sf"
+ },
+ {
+  "slug": "vibe_eerie",
+  "name": "Eerie",
+  "desc": "Too quiet, slightly off, watched from somewhere",
+  "family": "Vibes",
+  "group": "Dark and heavy",
+  "genre": "sf"
+ },
+ {
+  "slug": "vibe_claustrophobic",
+  "name": "Claustrophobic",
+  "desc": "Tight spaces, thin air, no way out",
+  "family": "Vibes",
+  "group": "Dark and heavy",
+  "genre": "sf"
+ },
+ {
+  "slug": "vibe_paranoid",
+  "name": "Paranoid",
+  "desc": "Trust nobody, including the narrator",
+  "family": "Vibes",
+  "group": "Dark and heavy",
+  "genre": "sf"
+ },
+ {
+  "slug": "vibe_epic",
+  "name": "Epic and sweeping",
+  "desc": "Generations, empires and a cast you need a map for",
+  "family": "Vibes",
+  "group": "Big and loud",
+  "genre": "sf"
+ },
+ {
+  "slug": "vibe_adrenaline",
+  "name": "Adrenaline",
+  "desc": "Fast, loud and always one step from disaster",
+  "family": "Vibes",
+  "group": "Big and loud",
+  "genre": "sf"
+ },
+ {
+  "slug": "vibe_swashbuckling",
+  "name": "Swashbuckling",
+  "desc": "Rogues, rescues and grinning bravado",
+  "family": "Vibes",
+  "group": "Big and loud",
+  "genre": "sf"
+ },
+ {
+  "slug": "vibe_dreamlike",
+  "name": "Dreamlike",
+  "desc": "Hazy, surreal logic that drifts like a dream",
+  "family": "Vibes",
+  "group": "Strange and dreamy",
+  "genre": "sf"
+ },
+ {
+  "slug": "vibe_cerebral",
+  "name": "Cerebral and cool",
+  "desc": "Ideas first, emotions held at arm's length",
+  "family": "Vibes",
+  "group": "Strange and dreamy",
+  "genre": "sf"
+ },
+ {
+  "slug": "vibe_desolate",
+  "name": "Vast and lonely",
+  "desc": "Empty horizons and the silence between stars",
+  "family": "Vibes",
+  "group": "Strange and dreamy",
+  "genre": "sf"
+ },
+ {
+  "slug": "vibe_mysterious",
+  "name": "Mysterious",
+  "desc": "A puzzle humming under every scene",
+  "family": "Vibes",
+  "group": "Strange and dreamy",
+  "genre": "sf"
+ },
+ {
+  "slug": "vibe_neon_noir",
+  "name": "Neon noir",
+  "desc": "Rain, neon, smoke and bad decisions",
+  "family": "Vibes",
+  "group": "Look and texture",
+  "genre": "sf"
+ },
+ {
+  "slug": "vibe_retro_pulp",
+  "name": "Retro pulp",
+  "desc": "Rayguns, rocket fins and old-school thrills",
+  "family": "Vibes",
+  "group": "Look and texture",
+  "genre": "sf"
+ },
+ {
+  "slug": "vibe_lived_in",
+  "name": "Lived-in",
+  "desc": "Scuffed ships, patched suits, a used future",
+  "family": "Vibes",
+  "group": "Look and texture",
+  "genre": "sf"
+ },
+ {
+  "slug": "vibe_cold_clinical",
+  "name": "Cold and clinical",
+  "desc": "Sterile labs, white light, procedures and protocols",
+  "family": "Vibes",
+  "group": "Look and texture",
+  "genre": "sf"
+ },
+ {
+  "slug": "vibe_sultry",
+  "name": "Sultry",
+  "desc": "Heat, tension and lingering looks",
+  "family": "Vibes",
+  "group": "Look and texture",
+  "genre": "sf"
  }
 ]
