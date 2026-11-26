@@ -134,6 +134,13 @@ async function books(req, res, ip, id) {
   send(res, 405, { error: 'method' });
 }
 
+async function foundBooks(res) {
+  if (!db) return send(res, 503, { error: 'unavailable' });
+  const r = await db.query(`SELECT data FROM site_books WHERE data->>'custom'='1' ORDER BY created_at DESC LIMIT 2000`);
+  const pick = d => ({ id: d.id, t: d.t, a: d.a, y: d.y, series: d.series, no: d.no, genre: d.genre, tags: d.tags || [], ax: d.ax || [], genes: d.genes || [], desc: d.desc || '', unv: d.unv ? 1 : 0 });
+  send(res, 200, { books: r.rows.map(x => pick(x.data)).filter(b => b.id && b.t) });
+}
+
 async function research(req, res, ip) {
   if (!db || !await ensure()) return send(res, 503, { error: 'unavailable' });
   const b = await body(req, 24000);
@@ -314,6 +321,7 @@ http.createServer(async (req, res) => {
     if (path === '/api/sample' && req.method === 'POST') return await sample(req, res, ip);
     if (path === '/api/research' && req.method === 'POST') return await research(req, res, ip);
     if (path.startsWith('/api/admin/')) return await admin(req, res, ip, path);
+    if (path === '/api/books/found' && req.method === 'GET') return await foundBooks(res);
     const m = path.match(/^\/api\/books(?:\/([^/]+))?$/);
     if (m) return await books(req, res, ip, m[1] && decodeURIComponent(m[1]));
     send(res, 404, { error: 'not found' });

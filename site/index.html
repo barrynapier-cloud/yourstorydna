@@ -805,6 +805,9 @@ function clean(r) { if (!r || typeof r !== 'object') return null; const t = Stri
 (async () => { try { DB = window.claude && await window.claude.use('db'); if (!DB) return; const snap = await DB.collection('books').limit(1000).get(); let n = 0;
   snap.docs.forEach(d => { const b = clean(d.data()); if (b && !byId[b.id] && !B.some(x => x.t.toLowerCase() === b.t.toLowerCase())) { B.push(b); byId[b.id] = b; n++; } });
   if (n && step === 'pick') grid(); } catch (e) {} })();
+(async () => { if (!window.STORYDNA_API) return; try { const r = await fetch(window.STORYDNA_API + '/books/found'); if (!r.ok) return; const j = await r.json(); let n = 0;
+  (Array.isArray(j.books) ? j.books : []).slice(0, 2000).forEach(k => { const b = clean(k); if (!b || byId[b.id] || B.some(x => x.t.toLowerCase() === b.t.toLowerCase())) return; if (Array.isArray(k.genes)) b.genes = k.genes.filter(g => typeof g === 'string').slice(0, 14); if (k.desc) b.desc = String(k.desc).slice(0, 600); if (k.unv) b.unv = 1; if (+k.no) b.no = +k.no; B.push(b); byId[b.id] = b; n++; });
+  if (n && step === 'pick') grid(); if (n && drawer === 'all') render(); } catch (e) {} })();
 // --- type in any book: the engine finds it and reads its DNA ---
 // On the live site the server researches an unknown book on the web and tags it against the full gene list.
 // Returns null when that route is not available, so the in-app lookup below takes over.
@@ -824,7 +827,7 @@ async function research(q) {
       sources: (Array.isArray(k.sources) ? k.sources : []).filter(s => s && /^https:\/\//.test(s.url)).slice(0, 8).map(s => ({ title: String(s.title || '').slice(0, 120), url: String(s.url).slice(0, 400) })) } };
 }
 async function findBook(q) {
-  q = q.trim(); if (q.length < 2 || finding) return; const hit0 = B.find(b => b.t.toLowerCase() === q.toLowerCase()); if (hit0) { if (!S.books.includes(hit0.id)) pick(hit0.id); filter = ''; return render(); }
+  q = q.trim(); if (q.length < 2 || finding) return; const browse = drawer === 'all', hit0 = B.find(b => b.t.toLowerCase() === q.toLowerCase()); if (hit0) { if (browse) return; if (!S.books.includes(hit0.id)) pick(hit0.id); filter = ''; return render(); }
   finding = q; found = null; findUI();
   try {
     const rs = await research(q); if (rs && rs.err) throw { shown: rs.err };
@@ -842,18 +845,18 @@ Reply with JSON only, in this exact shape:
     if (!r || !r.found || !r.title) found = { err: `The engine could not place "${q}". Try the full title, or add the author.` };
     else if (r.genre !== 'sf' && r.genre !== 'fantasy') found = { err: `${String(r.title)} is outside sci-fi and fantasy, which is all the engine reads for now.` };
     else { const title = String(r.title).slice(0, 90), ex = B.find(b => b.t.toLowerCase() === title.toLowerCase()), tags = (Array.isArray(r.tags) ? r.tags : []).filter(t => TAGS[t]).slice(0, 6);
-      if (ex) { if (!S.books.includes(ex.id)) pick(ex.id); found = { b: ex }; }
+      if (ex) { if (!browse && !S.books.includes(ex.id)) pick(ex.id); found = { b: ex }; }
       else if (tags.length < 2) found = { err: `The engine found ${title} but could not read enough of its DNA. Try another book.` };
       else { const b = { id: 'u-' + title.toLowerCase().replace(/[^a-z0-9]+/g, '-').slice(0, 40) + '-' + (hash(title) % 997), t: title, a: String(r.author || 'Unknown').slice(0, 60), series: r.series ? String(r.series).slice(0, 60) : '', tags, ax: [0, 1, 2, 3, 4].map(i => clamp(Math.round(+(r.ax || [])[i] || 3), 1, 5)), genre: r.genre, y: +r.year || 0, custom: 1 }; if (rs && rs.x) { const x = rs.x; if (x.id && !byId[x.id]) b.id = x.id; if (x.genes.length) b.genes = x.genes; if (x.desc) b.desc = x.desc; if (x.sources.length) b.sources = x.sources; if (x.no) b.no = x.no; if (x.unv) b.unv = 1; }
-        B.push(b); byId[b.id] = b; S.custom.push(b); S.save(); if (S.books.length < MAXP || live) pick(b.id); found = { b, fresh: 1 }; if (DB && !rs) DB.collection('books').doc(b.id).set(Object.assign({ at: Date.now() }, b)).catch(() => {}); }
+        B.push(b); byId[b.id] = b; S.custom.push(b); S.save(); if (!browse && (S.books.length < MAXP || live)) pick(b.id); found = { b, fresh: 1 }; if (DB && !rs) DB.collection('books').doc(b.id).set(Object.assign({ at: Date.now() }, b)).catch(() => {}); }
       fx.K[0] = 1; }
   } catch (e) { found = { err: e && e.shown ? e.shown : e && e.code === 'none' ? 'Typing in a new book needs the live preview link, where the engine can look it up.' : e && e.code === 'not_granted' ? 'The engine needs your OK to look books up. Reload and allow it to use this.' : e && e.code === 'rate_limited' ? 'The engine is busy. Give it a moment and try again.' : 'The engine could not read that one just now. Try again.' }; }
-  finding = null; if (found.b) filter = ''; if (step === 'pick') { const f = $('find'); if (f && found.b) f.value = ''; grid(); findUI(); }
+  finding = null; if (browse) { if (drawer === 'all') { if (found.b) { allQ = filter = found.b.t; const f = $('afind'); if (f) f.value = allQ; } allUI(); findUI(); } return; } if (found.b) filter = ''; if (step === 'pick') { const f = $('find'); if (f && found.b) f.value = ''; grid(); findUI(); }
 }
 function findUI() { const el = $('findout'); if (!el) return; const q = filter.trim(), exact = q && B.some(b => b.t.toLowerCase() === q.toLowerCase());
   el.innerHTML = finding ? `<div class="scan"><i></i><p><b>Searching for "${esc(finding)}"</b><span>Finding the book, reading its Story DNA, matching its genes.</span></p></div>`
     : found && found.err ? `<div class="scan err"><p><b>${esc(found.err)}</b></p></div>`
-    : found && found.b && !q ? `<div class="scan ok"><span data-slot="${found.b.id}"></span><p><b>${found.fresh ? 'Found, sequenced and added to the catalog' : 'Already in the catalog'}: ${esc(found.b.t)}</b><span>${esc(found.b.a)} · ${esc(tagsOf(found.b).map(t => tl(t)).join(', '))}${found.b.sources && found.b.sources.length ? ` · researched from ${found.b.sources.length} ${found.b.sources.length === 1 ? 'source' : 'sources'}` : ''}</span></p></div>`
+    : found && found.b && (!q || drawer === 'all') ? `<div class="scan ok"><span data-slot="${found.b.id}"></span><p><b>${found.fresh ? 'Found, sequenced and added to the library' : 'Already in the library'}: ${esc(found.b.t)}</b><span>${esc(found.b.a)} · ${esc(tagsOf(found.b).map(t => tl(t)).join(', '))}${found.b.sources && found.b.sources.length ? ` · researched from ${found.b.sources.length} ${found.b.sources.length === 1 ? 'source' : 'sources'}` : ''}</span></p></div>`
     : q.length >= 2 && !exact ? `<button class="glass findgo" data-act="find">Find "${esc(q.length > 40 ? q.slice(0, 40) + '…' : q)}" and read its DNA</button>` : '';
   slots(el); }
 
@@ -909,7 +912,7 @@ const MARK = `<div class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="cur
 function head() {
   const g = topGenes().filter(e => e[1] >= 1).length, pips = [['pick', V.pip[0]], ['genes', V.pip[1]], ['build', V.pip[2]]], idx = pips.findIndex(p => p[0] === step);
   hud.innerHTML = MARK + (step === 'play'
-    ? `<div class="stats"><span><b>${V.lv(S.books.length)}</b>${S.books.length} read</span><span><b>${fams.length}</b>${fams.length === 1 ? 'strand' : 'strands'}</span><span><b>${g}</b>${g === 1 ? 'gene' : 'genes'}</span><span><b>${S.q.length}</b>to read</span></div><button class="glass" data-act="add">Add books</button><button class="glass${drawer === 'friends' ? ' on' : ''}" data-act="friends">Friends${S.user && S.friends.length ? `<i class="cnt">${S.friends.length}</i>` : ''}</button><button class="glass${drawer === 'lib' ? ' on' : ''}" data-act="lib">My books</button><button class="glass${drawer === 'me' ? ' on' : ''}" data-act="me" aria-label="My character"><span class="lg">Character</span><i class="cnt">LV ${heroModel().lv}</i></button>`
+    ? `<div class="stats"><span><b>${V.lv(S.books.length)}</b>${S.books.length} read</span><span><b>${fams.length}</b>${fams.length === 1 ? 'strand' : 'strands'}</span><span><b>${g}</b>${g === 1 ? 'gene' : 'genes'}</span><span><b>${S.q.length}</b>in queue</span></div><button class="glass${drawer === 'all' ? ' on' : ''}" data-act="all">All books</button><button class="glass${drawer === 'friends' ? ' on' : ''}" data-act="friends">Friends${S.user && S.friends.length ? `<i class="cnt">${S.friends.length}</i>` : ''}</button><button class="glass${drawer === 'lib' ? ' on' : ''}" data-act="lib">My books</button><button class="glass${drawer === 'me' ? ' on' : ''}" data-act="me" aria-label="My character"><span class="lg">Character</span><i class="cnt">LV ${heroModel().lv}</i></button>`
     : step === 'mix' ? `<button class="glass" data-act="quit">${live ? 'Back to my genome' : 'Exit'}</button>` : `<ol class="pips">${pips.map((p, i) => `<li class="${i === idx ? 'now' : i < idx ? 'done' : ''}"><i>${i + 1}</i><span>${p[1]}</span></li>`).join('')}</ol><button class="glass" data-act="quit">${live ? 'Back to my genome' : 'Exit'}</button>`);
 }
 const shelf = (ids, cap) => `<div class="shelf">${ids.map(id => `<div><span data-slot="${id}" data-open="${id}"></span><small>${cap(byId[id])}</small></div>`).join('')}</div>`;
@@ -928,18 +931,27 @@ function render() {
 <div class="mix"><div class="genes mixg">${Object.keys(TAGS).filter(t => t !== 'standalone' && t !== 'series_start').map(t => `<button class="gene" data-mix="${t}" aria-pressed="${S.mix.includes(t)}" style="--g:${gcol(t)}"><b>${tl(t)}</b><span>${esc(TAGS[t][1])}</span></button>`).join('')}</div><div id="mixout" aria-live="polite"></div></div>
 <div class="foot"><button class="go" data-act="quit">${live ? 'Back to my genome' : 'Back'}</button>${live ? `<button class="glass${S.mixOn ? ' on' : ''}" data-act="mixon" aria-pressed="${!!S.mixOn}">${S.mixOn ? 'This mix is shaping your genome' : 'Use this mix in my genome too'}</button>` : `<button class="glass" data-go="pick">Start from books I loved</button>`}<button class="glass" data-act="mixclear">Clear</button></div>`; }
   else if (step === 'build') { cls = 'boot'; h = '<div id="boot"></div>'; }
-  else if (step === 'play' && drawer === 'lib') { cls = 'big'; const g = topGenes().filter(e => e[1] >= 1), m = g.length ? g[0][1] : 0;
-    h = `<p class="kick">My books</p><h1>${S.books.length} read, ${act().length} in your genome, ${S.q.length} to read.</h1>
-${S.user ? '' : `<div class="save"><p><b>Keep this library.</b>Sign in to save it, sync it and trade books with friends.</p><button class="glass" data-act="google">Continue with Google</button></div>`}
-<h3>Your Story DNA</h3><p class="say">${say()}</p><p class="cls">Reader class <b>${klass()}</b></p><ol class="str">${g.slice(0, 7).map(e => `<li style="--g:${gcol(e[0])};--w:${Math.round(e[1] / m * 100)}%"><span>${tl(e[0])}</span><i></i><em>${word(e[1], m)}</em></li>`).join('')}</ol>
+  else if (step === 'play' && drawer === 'lib') { cls = 'big'; const g = topGenes().filter(e => e[1] >= 1), m = g.length ? g[0][1] : 0, dna = act(), tab = libTab;
+    const row = (b, body, btn) => `<div class="frec"><span data-slot="${b.id}" data-open="${b.id}"></span><div><b>${esc(b.t)}</b><em>${esc(b.a)}${b.y ? ' · ' + b.y : ''}</em>${body}<div class="fbtn">${btn}</div></div></div>`;
+    h = `<p class="kick">My books</p><h1>${tab === 'queue' ? 'Your queue: what you want to read next.' : tab === 'read' ? 'Read: every book you have finished.' : 'Your DNA: the books that shape what the engine finds.'}</h1>
+<div class="tabs" role="tablist">${[['queue', 'Queue', S.q.length], ['read', 'Read', S.books.length], ['dna', 'In my DNA', dna.length]].map(t => `<button class="chip${tab === t[0] ? ' on' : ''}" role="tab" aria-selected="${tab === t[0]}" data-lib="${t[0]}">${t[1]}<em>${t[2]}</em></button>`).join('')}</div>
+${tab === 'queue' ? `<p class="lede sm">Books you have not read yet. They do not change your DNA. When you finish one, mark it read or add it to your DNA.</p>${S.q.length ? `<div class="frecs">${S.q.map(id => byId[id]).filter(Boolean).map(b => { const gm = mine(b).slice(0, 3), f = S.user ? lovedBy(b.id) : []; return row(b, `${gm.length ? `<p class="dots">${gm.map(t => `<span style="--g:${gcol(t)}">${tl(t)}</span>`).join('')}</p>` : ''}<p>${f.length ? 'Loved by ' + esc(f[0].name.split(' ')[0]) + '. ' : ''}${esc(why(b))}</p>`, `<button class="go sm" data-dna="${b.id}">Add to my DNA</button><button class="glass" data-read="${b.id}">I've read it</button><button class="glass" data-q="${b.id}">Remove</button>`); }).join('')}</div>` : '<div class="empty">Your queue is empty. Pick your next five, or browse all the books and add what looks good.</div>'}`
+    : tab === 'read' ? `<p class="lede sm">Every book here builds your character. Only the ones in your DNA steer your matches.</p><div class="frecs">${S.books.map(id => byId[id]).filter(Boolean).map(b => { const on = !S.off.includes(b.id), lv = tagsOf(b).filter(t => S.love[b.id + '|' + t]); return row(b, `<p class="stat ${on ? 'in' : ''}">${on ? 'In your DNA' : 'Read, not in your DNA'}</p>${lv.length ? `<p class="dots">${lv.slice(0, 4).map(t => `<span style="--g:${gcol(t)}">${tl(t)}</span>`).join('')}</p>` : '<p>You have not said what you loved here yet.</p>'}`, `<button class="${on ? 'glass' : 'go sm'}" data-tree="${b.id}" aria-pressed="${on}">${on ? 'Take out of my DNA' : 'Add to my DNA'}</button><button class="glass" data-retag="${b.id}">Change what I loved</button>`); }).join('')}</div>`
+    : `<p class="say">${say()}</p><p class="cls">Reader class <b>${klass()}</b></p><ol class="str">${g.slice(0, 7).map(e => `<li style="--g:${gcol(e[0])};--w:${Math.round(e[1] / m * 100)}%"><span>${tl(e[0])}</span><i></i><em>${word(e[1], m)}</em></li>`).join('')}</ol>
 <h3>Your strands</h3><div class="famrow">${fams.map(f => `<span style="--g:${V.fam[f.i % V.fam.length]}"><b>${esc(f.name)}</b>${f.n} ${f.n === 1 ? 'book' : 'books'}, from ${esc(byId[f.seed].t)}</span>`).join('')}</div>
-<h3>Books I've read <small>choose which ones start a strand</small></h3><div class="shelf mine">${S.books.map(id => { const b = byId[id], on = !S.off.includes(id), n = tagsOf(b).filter(t => S.love[id + '|' + t]).length; return `<div class="${on ? 'in' : 'out'}"><span data-slot="${id}" data-open="${id}"></span><small><b>${esc(b.t)}</b>${on ? 'In your genome' : 'Not in your genome'} · ${n} ${n === 1 ? 'gene' : 'genes'} loved</small><button class="tog" data-tree="${id}" aria-pressed="${on}">${on ? 'Remove from genome' : 'Add to genome'}</button></div>`; }).join('')}</div>
-<h3>Reading list</h3>${S.q.length ? shelf(S.q, b => { const f = S.user ? lovedBy(b.id) : []; return `<b>${esc(b.t)}</b>${f.length ? 'Loved by ' + esc(f[0].name.split(' ')[0]) : ''}`; }) : '<div class="empty">Nothing here yet. Tap any book in your genome and add it.</div>'}
-<div class="foot"><button class="go" data-act="lib">Back to my genome</button><button class="glass" data-act="next">Pick my next 5</button><button class="glass" data-act="sharedna">Share my Story DNA</button><button class="glass" data-act="add">Add books</button><button class="glass" data-act="reset">Start over</button></div>`; }
+<h3>Books in your DNA <small>each one starts a strand</small></h3><div class="shelf mine">${dna.map(id => { const b = byId[id], n = tagsOf(b).filter(t => S.love[id + '|' + t]).length; return `<div class="in"><span data-slot="${id}" data-open="${id}"></span><small><b>${esc(b.t)}</b>${n} ${n === 1 ? 'gene' : 'genes'} loved</small><button class="tog" data-tree="${id}" aria-pressed="true">Take out of my DNA</button></div>`; }).join('')}</div>${S.books.length > dna.length ? `<p class="note">${S.books.length - dna.length} more ${S.books.length - dna.length === 1 ? 'book is' : 'books are'} read but not in your DNA. Add them from the Read tab.</p>` : ''}`}
+${S.user ? '' : `<div class="save"><p><b>Keep this library.</b>Sign in to save it, sync it and trade books with friends.</p><button class="glass" data-act="google">Continue with Google</button></div>`}
+<p class="note over">Want a clean slate? <button class="no" data-act="reset">Start over</button></p>
+<div class="foot n5f"><button class="go" data-act="lib">Back to my genome</button><button class="glass" data-act="next">Pick my next 5</button><button class="glass" data-act="all">All books</button><button class="glass" data-act="sharedna">Share<span class="lg"> my Story DNA</span></button></div>`; }
+  else if (step === 'play' && drawer === 'all') { cls = 'big';
+    h = `<p class="kick">The library</p><h1>${B.length} books sequenced so far.</h1><p class="lede">Search by title, author, series or gene. If a book is not here, ask for it. The engine finds it, reads its Story DNA and adds it to the library for everyone.</p>
+<div class="findrow"><input class="find" id="afind" placeholder="Search or request any book" aria-label="Search every book" autocomplete="off" value="${esc(allQ)}"><div class="sorts">${[['match', 'Best for you'], ['az', 'A to Z'], ['new', 'Newest']].map(o => `<button class="chip${allSort === o[0] ? ' on' : ''}" data-sort="${o[0]}">${o[1]}</button>`).join('')}</div></div><div id="findout" aria-live="polite"></div>
+<p class="note" id="acount"></p><div class="alist" id="alist"></div>
+<div class="foot n5f two"><button class="go" data-act="all">Back to my genome</button><button class="glass" data-act="lib">My books</button><button class="glass" data-act="next">Pick my next 5</button></div>`; }
   else if (step === 'play' && drawer === 'next') { cls = 'big'; const five = next5().map(id => byId[id]), allq = five.every(b => S.q.includes(b.id));
     h = `<p class="kick">Your next five</p><h1>Five books picked from your Story DNA.</h1><p class="lede">${say()} These five carry the most of it. Swap any out and the engine picks another.</p>
-<ol class="n5">${five.map((b, i) => { const g = mine(b).slice(0, 4), q = (b.says || []).find(x => x.k !== 'lost' && x.q && x.url); return `<li style="--g:${g[0] ? gcol(g[0]) : 'var(--acc)'}"><i class="n5n">${i + 1}</i><span data-slot="${b.id}" data-open="${b.id}"></span><div><p class="n5k">${i === 0 ? 'Closest to your DNA' : b.series ? esc(b.series) + (b.no ? ', book ' + b.no : '') : 'Standalone'}</p><b>${esc(b.t)}</b><em>${esc(b.a)}${b.y ? ' · ' + b.y : ''}</em>${g.length ? `<p class="dots">${g.map(t => `<span style="--g:${gcol(t)}">${tl(t)}</span>`).join('')}</p>` : ''}<p>${esc(why(b))}</p>${q ? `<blockquote>${esc(q.q)}<a href="${esc(q.url)}" target="_blank" rel="noopener nofollow">${esc(q.by)} on ${esc(q.src)}</a></blockquote>` : ''}<div class="fbtn"><button class="go sm" data-q="${b.id}">${S.q.includes(b.id) ? 'On your reading list' : 'Add to reading list'}</button><button class="glass" data-read="${b.id}">I've read it</button><button class="glass" data-n5swap="${b.id}">Swap it out</button></div></div></li>`; }).join('')}</ol>
-<div class="foot n5f"><button class="go" data-act="n5all"${allq ? ' disabled' : ''}>${allq ? 'All five are on your list' : 'Add all five to my list'}</button><button class="glass" data-act="n5more">Five different ones</button><button class="glass" data-act="n5share">Share my five</button><button class="glass" data-act="next">Back<span class="lg"> to my genome</span></button></div>`; }
+<ol class="n5">${five.map((b, i) => { const g = mine(b).slice(0, 4), q = (b.says || []).find(x => x.k !== 'lost' && x.q && x.url); return `<li style="--g:${g[0] ? gcol(g[0]) : 'var(--acc)'}"><i class="n5n">${i + 1}</i><span data-slot="${b.id}" data-open="${b.id}"></span><div><p class="n5k">${i === 0 ? 'Closest to your DNA' : b.series ? esc(b.series) + (b.no ? ', book ' + b.no : '') : 'Standalone'}</p><b>${esc(b.t)}</b><em>${esc(b.a)}${b.y ? ' · ' + b.y : ''}</em>${g.length ? `<p class="dots">${g.map(t => `<span style="--g:${gcol(t)}">${tl(t)}</span>`).join('')}</p>` : ''}<p>${esc(why(b))}</p>${q ? `<blockquote>${esc(q.q)}<a href="${esc(q.url)}" target="_blank" rel="noopener nofollow">${esc(q.by)} on ${esc(q.src)}</a></blockquote>` : ''}<div class="fbtn"><button class="go sm" data-q="${b.id}">${S.q.includes(b.id) ? 'In your queue' : 'Add to queue'}</button><button class="glass dna" data-dna="${b.id}">Add to my DNA</button><button class="glass" data-read="${b.id}">I\'ve read it</button><button class="glass" data-n5swap="${b.id}">Swap it out</button></div></div></li>`; }).join('')}</ol>
+<div class="foot n5f"><button class="go" data-act="n5all"${allq ? ' disabled' : ''}>${allq ? 'All five are in your queue' : 'Add all five to my queue'}</button><button class="glass" data-act="n5more">Five different ones</button><button class="glass" data-act="n5share">Share my five</button><button class="glass" data-act="next">Back<span class="lg"> to my genome</span></button></div>`; }
   else if (step === 'play' && drawer === 'me') { cls = 'big'; h = heroHTML(); }
   else if (step === 'play' && drawer === 'friends') { cls = 'big';
     if (!S.user) h = `<p class="kick">Friends</p><h1>Read with your friends.</h1><p class="lede">Sign in and the engine compares your Story DNA with theirs. It pulls the books they loved that fit you into one list, and lets you send a book to anyone.</p>
@@ -947,7 +959,7 @@ ${S.user ? '' : `<div class="save"><p><b>Keep this library.</b>Sign in to save i
 <div class="foot"><button class="glass" data-act="friends">Back to my genome</button></div>`;
     else { const mf = myFriends(), fr = friendRecs(6), q = fq.trim().toLowerCase(), pool = FR.filter(f => !S.friends.includes(f.id) && (!q || f.name.toLowerCase().includes(q))).sort((a, b) => affinity(b) - affinity(a));
       h = `<p class="kick">Friends · signed in</p><h1>${mf.length ? `From your ${mf.length} ${mf.length === 1 ? 'friend' : 'friends'}, picked for your DNA.` : 'Add a friend to start trading books.'}</h1>
-${fr.length ? `<div class="frecs">${fr.map(r => `<div class="frec"><span data-slot="${r.b.id}" data-open="${r.b.id}"></span><div><b>${esc(r.b.t)}</b><em>${esc(r.b.a)}</em><p>${r.who.map(f => ava(f)).join('')}${esc(frWhy(r))}</p><div class="fbtn"><button class="go sm" data-q="${r.b.id}">${S.q.includes(r.b.id) ? 'On your reading list' : 'Add to reading list'}</button><button class="glass" data-read="${r.b.id}">I've read it</button></div></div></div>`).join('')}</div>` : ''}
+${fr.length ? `<div class="frecs">${fr.map(r => `<div class="frec"><span data-slot="${r.b.id}" data-open="${r.b.id}"></span><div><b>${esc(r.b.t)}</b><em>${esc(r.b.a)}</em><p>${r.who.map(f => ava(f)).join('')}${esc(frWhy(r))}</p><div class="fbtn"><button class="go sm" data-q="${r.b.id}">${S.q.includes(r.b.id) ? 'In your queue' : 'Add to queue'}</button><button class="glass dna" data-dna="${r.b.id}">Add to my DNA</button><button class="glass" data-read="${r.b.id}">I\'ve read it</button></div></div></div>`).join('')}</div>` : ''}
 <h3>Your friends</h3>${mf.length ? `<div class="flist">${mf.map(f => { const sg = sharedGenes(f); return `<div class="fcard">${ava(f, 1)}<div><b>${esc(f.name)}</b><em>${closeWord(affinity(f))}</em><p>${sg.length ? 'You both love ' + esc(list(sg.map(t => tl(t).toLowerCase()))) + '.' : 'Into ' + esc(list(f.taste.slice(0, 3).map(t => tl(t).toLowerCase()))) + '.'}</p><div class="ffav">${f.favs.slice(0, 5).map(id => `<span data-slot="${id}" data-open="${id}"></span>`).join('')}</div></div><button class="no" data-unfriend="${f.id}">Remove</button></div>`; }).join('')}</div>` : '<div class="empty">No friends added yet. Add someone below.</div>'}
 <h3>Find friends</h3><div class="findrow"><input class="find" id="ffind" placeholder="Search by name" aria-label="Search friends by name" value="${esc(fq)}"><button class="glass" data-act="invite">Copy invite link</button></div>
 <div class="flist sm">${pool.length ? pool.map(f => `<div class="fcard">${ava(f, 1)}<div><b>${esc(f.name)}</b><em>${closeWord(affinity(f))}</em><p>Into ${esc(list(f.taste.slice(0, 3).map(t => tl(t).toLowerCase())))}.</p></div><button class="glass" data-friend="${f.id}">Add friend</button></div>`).join('') : '<div class="empty">No one by that name yet. Send them your invite link.</div>'}</div>
@@ -956,6 +968,7 @@ ${fr.length ? `<div class="frecs">${fr.map(r => `<div class="frec"><span data-sl
   slots(ui);
   if (step === 'pick') { grid(); findUI(); const f = $('find'); f.addEventListener('input', e => { filter = e.target.value; found = null; grid(); findUI(); }); f.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); findBook(filter); } }); }
   if (step === 'mix') mixUI();
+  if (drawer === 'all') { allUI(); filter = allQ; findUI(); const f = $('afind'); f.addEventListener('input', e => { allQ = filter = e.target.value; found = null; allN = 40; allUI(); findUI(); }); f.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); findBook(allQ); } }); }
   if (drawer === 'me') heroPaint();
   const ff = $('ffind'); if (ff) ff.addEventListener('input', e => { fq = e.target.value; const p = ff.selectionStart; render(); const n = $('ffind'); n.focus(); n.setSelectionRange(p, p); });
   side();
@@ -963,7 +976,7 @@ ${fr.length ? `<div class="frecs">${fr.map(r => `<div class="frec"><span data-sl
 function mixUI() { const el = $('mixout'); if (!el) return; const m = S.mix;
   if (!m.length) { el.innerHTML = '<div class="empty">Pick a gene to start. Try two or three that you would love to find in one book.</div>'; return; }
   const r = B.filter(b => !S.nope.includes(b.id)).map(b => [b.tags.filter(t => m.includes(t)), b]).filter(e => e[0].length).sort((p, q) => q[0].length - p[0].length || (q[1].oln || 0) - (p[1].oln || 0)), full = r.filter(e => e[0].length === m.length).length;
-  el.innerHTML = `<p class="mixh"><b>${r.length} ${r.length === 1 ? 'book carries' : 'books carry'} this DNA</b>${m.length > 1 ? `${full} with all ${m.length} genes` : ''}</p><div class="frecs">${r.slice(0, 14).map(([g, b]) => `<div class="frec"><span data-slot="${b.id}" data-open="${b.id}"></span><div><b>${esc(b.t)}</b><em>${esc(b.a)}</em><p class="dots">${g.map(t => `<span style="--g:${gcol(t)}">${tl(t)}</span>`).join('')}</p><p>${g.length === m.length ? (m.length > 1 ? `Carries all ${m.length} genes.` : 'Carries it.') : `Carries ${g.length} of ${m.length}.`}</p><div class="fbtn">${S.books.includes(b.id) ? '<span class="note">You have read this one.</span>' : `<button class="go sm" data-q="${b.id}">${S.q.includes(b.id) ? 'On your reading list' : 'Add to reading list'}</button><button class="glass" data-read="${b.id}">I've read it</button>`}</div></div></div>`).join('')}</div>`;
+  el.innerHTML = `<p class="mixh"><b>${r.length} ${r.length === 1 ? 'book carries' : 'books carry'} this DNA</b>${m.length > 1 ? `${full} with all ${m.length} genes` : ''}</p><div class="frecs">${r.slice(0, 14).map(([g, b]) => `<div class="frec"><span data-slot="${b.id}" data-open="${b.id}"></span><div><b>${esc(b.t)}</b><em>${esc(b.a)}</em><p class="dots">${g.map(t => `<span style="--g:${gcol(t)}">${tl(t)}</span>`).join('')}</p><p>${g.length === m.length ? (m.length > 1 ? `Carries all ${m.length} genes.` : 'Carries it.') : `Carries ${g.length} of ${m.length}.`}</p><div class="fbtn">${S.books.includes(b.id) ? '<span class="note">You have read this one.</span>' : `<button class="go sm" data-q="${b.id}">${S.q.includes(b.id) ? 'In your queue' : 'Add to queue'}</button><button class="glass dna" data-dna="${b.id}">Add to my DNA</button><button class="glass" data-read="${b.id}">I\'ve read it</button>`}</div></div></div>`).join('')}</div>`;
   slots(el); }
 function says(b, fr) { const q = (b.says || []).slice(0, 2), fl = fr.slice(0, 2).map(f => { const g = b.tags.filter(t => f.taste.includes(t)).slice(0, 2).map(t => tl(t).toLowerCase()); return `<li>${ava(f)}<span><b>${esc(f.name.split(' ')[0])}</b> loved ${g.length ? 'the ' + esc(list(g)) : 'this one'}.</span></li>`; });
   if (!q.length && !fl.length) return ''; return `<div class="says"><h4>What readers say</h4><ul>${q.map(x => `<li class="q"><span>${esc(x.q)}${x.by || x.src ? `<em>${x.url ? `<a href="${esc(x.url)}" target="_blank" rel="noopener nofollow" style="color:inherit">` : ''}${esc([x.by, x.src].filter(Boolean).join(', '))}${x.url ? '</a>' : ''}</em>` : ''}</span></li>`).join('')}${fl.join('')}</ul></div>`; }
@@ -985,9 +998,19 @@ function side() {
 ${says(b, fr)}
 <div class="dots">${(own ? tagsOf(b).filter(t => S.love[b.id + '|' + t]) : mine(b)).slice(0, 5).map(t => `<span style="--g:${gcol(t)}">${tl(t)}</span>`).join('')}</div>
 ${sending ? `<div class="sendto"><b>Send to</b>${myFriends().map(x => `<button class="glass" data-sendto="${x.id}">${ava(x)}${esc(x.name.split(' ')[0])}</button>`).join('')}<button class="no" data-act="sendoff">Cancel</button></div>`
-    : `<div class="acts">${own ? `<button class="go" data-retag="${b.id}">Change what I loved</button>` : `<button class="go" data-q="${b.id}">${S.q.includes(b.id) ? 'On your reading list' : 'Add to reading list'}</button><button class="glass" data-read="${b.id}">I've read it</button><button class="no" data-nope="${b.id}">Not for me</button>`}<button class="glass" data-open="${b.id}">Open the book</button><button class="glass" data-act="send">Send to a friend</button></div>`}`;
+    : `<div class="acts">${own ? `<button class="go" data-retag="${b.id}">Change what I loved</button>` : `<button class="go" data-q="${b.id}">${S.q.includes(b.id) ? 'In your queue' : 'Add to queue'}</button><button class="glass dna" data-dna="${b.id}">Add to my DNA</button><button class="glass" data-read="${b.id}">I\'ve read it</button><button class="no" data-nope="${b.id}">Not for me</button>`}<button class="glass" data-open="${b.id}">Open the book</button><button class="glass" data-act="send">Send to a friend</button></div>`}`;
   slots(card);
 }
+const bacts = b => S.books.includes(b.id) ? `<span class="stat ${S.off.includes(b.id) ? '' : 'in'}">${S.off.includes(b.id) ? 'Read' : 'Read, in your DNA'}</span>${S.off.includes(b.id) ? `<button class="glass dna" data-dna="${b.id}">Add to my DNA</button>` : ''}` : `<button class="go sm" data-q="${b.id}">${S.q.includes(b.id) ? 'In your queue' : 'Add to queue'}</button><button class="glass dna" data-dna="${b.id}">Add to my DNA</button><button class="glass" data-read="${b.id}">I've read it</button>`;
+function allUI() { const el = $('alist'); if (!el) return; const q = allQ.trim().toLowerCase().split(/\s+/).filter(Boolean), w = weights(), a = avg();
+  let r = B.filter(b => { if (!q.length) return true; const hay = (b.t + ' ' + b.a + ' ' + (b.series || '') + ' ' + tagsOf(b).map(t => tl(t)).join(' ')).toLowerCase(); return q.every(x => hay.includes(x)); });
+  if (q.length) { const ql = allQ.trim().toLowerCase(); r.sort((x, y) => (y.t.toLowerCase().startsWith(ql) - x.t.toLowerCase().startsWith(ql)) || (y.t.toLowerCase().includes(ql) - x.t.toLowerCase().includes(ql)) || (y.oln || 0) - (x.oln || 0)); }
+  else if (allSort === 'az') r.sort((x, y) => x.t.replace(/^(the|a|an) /i, '').localeCompare(y.t.replace(/^(the|a|an) /i, '')));
+  else if (allSort === 'new') r.sort((x, y) => (y.y || 0) - (x.y || 0));
+  else r = r.map(b => [score(b, w, a), b]).sort((x, y) => y[0] - x[0] || (y[1].oln || 0) - (x[1].oln || 0)).map(e => e[1]);
+  $('acount').textContent = q.length ? `${r.length} ${r.length === 1 ? 'book matches' : 'books match'}${r.length ? '' : '. Press Enter and the engine will go find it.'}` : `Showing ${Math.min(allN, r.length)} of ${r.length}`;
+  el.innerHTML = r.slice(0, allN).map(b => `<div class="arow"><span data-slot="${b.id}" data-open="${b.id}"></span><div class="ainf"><b>${esc(b.t)}</b><em>${esc(b.a)}${b.y ? ' · ' + b.y : ''}${b.series ? ' · ' + esc(b.series) : ''}</em><p class="dots">${tagsOf(b).slice(0, 3).map(t => `<span style="--g:${gcol(t)}">${tl(t)}</span>`).join('')}</p></div><div class="fbtn">${bacts(b)}</div></div>`).join('') + (r.length > allN ? `<button class="glass amore" data-act="allmore">Show ${Math.min(60, r.length - allN)} more</button>` : '');
+  slots(el); }
 function grid() {
   const q = filter.trim().toLowerCase(), g = $('grid'); g.innerHTML = '';
   B.filter(b => { const hay = (b.t + ' ' + b.a).toLowerCase(); return !q || q.split(/\s+/).every(w => hay.includes(w)); }).sort((a, b) => (b.custom || 0) - (a.custom || 0) || (b.oln || 0) - (a.oln || 0)).forEach(b => { const c = cover(b, 'button'); c.dataset.pick = b.id; c.setAttribute('aria-pressed', S.books.includes(b.id)); c.setAttribute('aria-label', `${b.t} by ${b.a}`); g.append(c); });
@@ -1014,7 +1037,7 @@ function boot(now) {
 }
 
 // --- input ---
-let grown = [], n5 = [], n5skip = [];
+let grown = [], n5 = [], n5skip = [], libTab = 'queue', allQ = '', allSort = 'match', allN = 40;
 function pick(id) { if (!byId[id]) return; if (S.books.includes(id)) S.books = S.books.filter(k => k !== id); else if (S.books.length < MAXP || live) { S.books.push(id); if (live) { S.off.push(id); grown.push(id); } } else return toast(`${MAXP} is plenty to start. You can add more once the tree is growing.`); grown = grown.filter(k => S.books.includes(k)); S.q = S.q.filter(k => k !== id); S.off = S.off.filter(k => S.books.includes(k)); S.save(); tray(); remodel(); fx.K[0] = .6; }
 function select(id) { sel = id || null; sending = false; side(); if (sel) card.querySelector('.x').focus({ preventScroll: true }); }
 function signIn() { S.user = { name: 'You' }; if (!S.friends.length) S.friends = FR.slice().sort((a, b) => affinity(b) - affinity(a)).slice(0, 3).map(f => f.id); S.save(); remodel(); toast('Signed in. Three readers close to your DNA are already here.'); }
@@ -1038,7 +1061,8 @@ document.addEventListener('click', e => {
   if (d.act === 'gnext') { S.seen[S.books[todo[gi]]] = 1; S.save(); if (gi < todo.length - 1) return go('genes', { gi: gi + 1 }); if (after === 'build') return go('build'); if (grown.length && window.growOpen) { const ids = grown; grown = []; go('play'); return growOpen(ids); } const before = new Set(nodes.map(n => n.id)); go('play'); const fresh = nodes.filter(n => !before.has(n.id)).length; return toast(`${V.lv(S.books.length)}. ${fresh ? `Your genome gained ${fresh} new ${fresh === 1 ? 'match' : 'matches'}.` : 'Your strands just got sharper.'}`); }
   if (d.act === 'gback') return gi ? go('genes', { gi: gi - 1 }) : go(after === 'build' ? 'pick' : 'play');
   if (d.sel != null) return select(d.sel);
-  if (d.q) { S.q = S.q.includes(d.q) ? S.q.filter(k => k !== d.q) : [...S.q, d.q]; S.save(); remodel(); if (step === 'mix') mixUI(); else if (drawer) render(); else { head(); side(); } if (S.q.includes(d.q)) toast('Added to your reading list.'); return; }
+  if (d.q) { S.q = S.q.includes(d.q) ? S.q.filter(k => k !== d.q) : [...S.q, d.q]; S.save(); remodel(); if (step === 'mix') mixUI(); else if (drawer) render(); else { head(); side(); } if (S.q.includes(d.q)) toast('Added to your queue.'); return; }
+  if (d.dna) { if (S.books.includes(d.dna)) { S.off = S.off.filter(k => k !== d.dna); S.save(); remodel(); render(); return toast(`${byId[d.dna].t} is in your DNA.`); } S.books.push(d.dna); grown = [d.dna]; S.q = S.q.filter(k => k !== d.dna); S.save(); return go('genes', { todo: [S.books.length - 1], after: 'play' }); }
   if (d.read) { S.books.push(d.read); S.off.push(d.read); grown = [d.read]; S.q = S.q.filter(k => k !== d.read); S.save(); return go('genes', { todo: [S.books.length - 1], after: 'play' }); }
   if (d.retag) return go('genes', { todo: [S.books.indexOf(d.retag)], after: 'play' });
   if (d.nope) { S.nope.push(d.nope); S.save(); sel = null; remodel(); if (drawer) render(); else side(); return toast('Gone. The engine grew another in its place.'); }
@@ -1046,11 +1070,13 @@ document.addEventListener('click', e => {
   if (d.act === 'sharehero') { const m = heroModel(); return copy(`My reader character on The Library: ${m.title}, level ${m.lv} ${m.rank}. ${m.mods.length ? 'Unlocked ' + list(m.mods.slice(0, 4).map(o => o.name.toLowerCase())) + '.' : ''}`, 'Your character is copied. Paste it anywhere.'); }
   if (d.n5swap) { n5skip.push(d.n5swap); return render(); }
   if (d.act === 'n5more') { n5skip.push(...n5); n5 = []; render(); ui.scrollTop = 0; return; }
-  if (d.act === 'n5all') { const add = next5().filter(id => !S.q.includes(id)); S.q.push(...add); S.save(); remodel(); render(); return toast(add.length ? `${add.length} ${add.length === 1 ? 'book' : 'books'} added to your reading list.` : 'All five are already on your reading list.'); }
+  if (d.act === 'n5all') { const add = next5().filter(id => !S.q.includes(id)); S.q.push(...add); S.save(); remodel(); render(); return toast(add.length ? `${add.length} ${add.length === 1 ? 'book' : 'books'} added to your queue.` : 'All five are already in your queue.'); }
   if (d.act === 'n5share') return copy(`My next five reads, picked from my Story DNA: ${list(next5().map(id => byId[id].t))}. Discover your Story DNA at yourstorydna.com`, 'Your five are copied. Paste them anywhere.');
-  if (d.act === 'lib' || d.act === 'friends' || d.act === 'me' || d.act === 'next') { document.querySelectorAll('.lvl').forEach(n => n.remove()); drawer = drawer === d.act ? false : d.act; sel = null; fq = ''; render(); ui.scrollTop = 0; return; }
-  if (d.act === 'add') return go('pick');
-  if (d.tree) { const on = !S.off.includes(d.tree); if (on && act().length < 2) return toast('Keep at least one book in your genome.'); S.off = on ? [...S.off, d.tree] : S.off.filter(k => k !== d.tree); S.save(); const y = ui.scrollTop; remodel(); render(); ui.scrollTop = y; return toast(on ? `${byId[d.tree].t} is off the tree. It stays in your books.` : `${byId[d.tree].t} is back in the tree.`); }
+  if (d.act === 'lib' || d.act === 'friends' || d.act === 'me' || d.act === 'next' || d.act === 'all' || d.act === 'add') { const k = d.act === 'add' ? 'all' : d.act; if (d.tab) libTab = d.tab; document.querySelectorAll('.lvl').forEach(n => n.remove()); drawer = drawer === k && !d.tab ? false : k; filter = ''; found = null; allQ = ''; allN = 40; sel = null; fq = ''; render(); ui.scrollTop = 0; return; }
+  if (d.lib) { libTab = d.lib; render(); ui.scrollTop = 0; return; }
+  if (d.sort) { allSort = d.sort; allN = 40; return render(); }
+  if (d.act === 'allmore') { allN += 60; return allUI(); }
+  if (d.tree) { const on = !S.off.includes(d.tree); if (on && act().length < 2) return toast('Keep at least one book in your DNA.'); S.off = on ? [...S.off, d.tree] : S.off.filter(k => k !== d.tree); S.save(); const y = ui.scrollTop; remodel(); render(); ui.scrollTop = y; return toast(on ? `${byId[d.tree].t} is out of your DNA. It stays in Read.` : `${byId[d.tree].t} is in your DNA.`); }
   if (d.fam != null) { focus = d.fam || null; sel = null; view.x = view.y = 0; view.z = 1; side(); return; }
   if (d.zoom != null) { if (d.zoom === '0') { view.x = view.y = 0; view.z = 1; } else zoomAt(d.zoom === '1' ? 1.25 : .8, wd.clientWidth / 2, wd.clientHeight / 2); return; }
   if (d.act === 'google') { signIn(); return render(); }
@@ -2006,14 +2032,15 @@ function cdCard(c, o = {}) {
   const no = String((hash((me.name || '') + me.role + me.look) % 9000) + 1000);
   const mods = c.eq.map(k => c.mods.find(o => o.key === k)).filter(Boolean);
   const genes = (c.owned.length ? c.owned : c.role.g).slice(0, 6);
-  return `<div class="tc rr-${c.ri}${o.cls ? ' ' + o.cls : ''}${me.photo ? ' photo' : ''}" style="--ac:hsl(${hue} 92% 62%);--ac2:hsl(${(hue + 60) % 360} 92% 66%);--rh:${c.rar[2]}" data-tilt${o.flip !== false ? ' data-flip' : ''} role="img" aria-label="${esc(`${me.name || 'Reader'}, ${c.title}, level ${c.lv} ${c.rar[1]} card`)}">
+  return `<div class="tc rr-${c.ri}${o.cls ? ' ' + o.cls : ''}${me.photo ? ' photo' : ''}${scene ? ' scened' : ''}" style="--ac:hsl(${hue} 92% 62%);${scene ? `--sg:${gcol(scene)};` : ''}--ac2:hsl(${(hue + 60) % 360} 92% 66%);--rh:${c.rar[2]}" data-tilt${o.flip !== false ? ' data-flip' : ''} role="img" aria-label="${esc(`${me.name || 'Reader'}, ${c.title}, level ${c.lv} ${c.rar[1]} card`)}">
 <div class="tc-in"><div class="tc-face">
 <div class="tc-scene" style="--g:${scene ? gcol(scene) : 'var(--ac)'}">${scene ? `<img alt="" src="art/genes/${scene}.jpg" onerror="this.remove()">` : ''}</div>
 <img class="tc-art" alt="" src="${cdArt(me, c.stage)}" style="filter:${grade}" onerror="this.style.opacity=0">
+${scene ? `<div class="tc-sky"><img alt="" src="art/genes/${scene}.jpg" onerror="this.remove()"></div>` : ''}${mods.map((o, i) => `<div class="tc-fx fx${i} t${o.key.split(':')[1] || 0}" style="--g:${gcol(o.g)}"></div>`).join('')}
 <div class="tc-tint"></div><div class="tc-foil"></div><div class="tc-glare"></div>${c.ri >= 3 ? '<div class="tc-spark"></div>' : ''}
 <div class="tc-top"><span class="tc-lv"><small>LV</small>${c.lv}</span><span class="tc-rar">${c.rar[1]}</span></div>
 ${mods.length ? `<div class="tc-mods">${mods.map(o => `<span style="--g:${gcol(o.g)}" title="${esc(o.name)}"><i></i>${esc(o.name)}</span>`).join('')}</div>` : ''}
-<div class="tc-plate"><b class="tc-name">${esc(me.name || 'Reader')}</b><span class="tc-title">${esc(c.title)}</span><span class="tc-meta">${esc(me.origin || (c.me.genes && c.me.genes[0] && TAGS[c.me.genes[0]] ? tl(c.me.genes[0]) + ' reader' : 'Story DNA reader'))}</span>
+<div class="tc-plate"><b class="tc-name">${esc(me.name || 'Reader')}</b><span class="tc-title">${esc(c.title)}</span><span class="tc-meta">${scene ? `<em style="--g:${gcol(scene)}">In ${esc(tl(scene))}</em>` : ''}${esc(me.origin || (c.me.genes && c.me.genes[0] && TAGS[c.me.genes[0]] ? tl(c.me.genes[0]) + ' reader' : 'Story DNA reader'))}</span>
 <div class="tc-stats">${c.stats.map((v, i) => `<span><em>${CD.STAT[i]}</em><b>${v}</b><i style="--w:${v}%"></i></span>`).join('')}</div>
 <div class="tc-dna">${genes.map(t => `<i style="--g:${gcol(t)}" title="${esc(tl(t))}"></i>`).join('')}<span>#${no}</span></div></div>
 <div class="tc-frame"></div></div>
@@ -2180,7 +2207,7 @@ addEventListener('keydown', e => { if (!IK) return; if (e.key === 'Escape') { e.
 function heroHTML() {
   const c = cdModel(), me = S.me; if (!me) return `<p class="kick">My character</p><h1>You don't have a card yet.</h1><p class="lede">Make your reader card. It shows your Story DNA, levels up as you read, and gets new art as it climbs from Common to Mythic.</p><div class="foot"><button class="go" data-cd="make">Make my card</button><button class="glass" data-act="me">Back to my genome</button></div>`;
   const nx = CD.RAR[c.ri + 1], toNext = nx ? 120 * (nx[0] - 1) ** 2 - c.xp : 0, owned = c.owned, all = (window.FRAG ? CD.TOP.concat(Object.keys(TAGS).filter(t => FRAG.has(t) && !CD.TOP.includes(t))) : CD.TOP).filter(t => TAGS[t]);
-  return `<p class="kick">My character · ${esc(c.rar[1])} card</p><div class="cd2"><div class="cd-card">${cdCard(c, { cls: 'big' })}<p class="cd-tip">Tilt it. Tap to flip.</p></div><div class="cd-info">
+  return `<p class="kick">My character · ${esc(c.rar[1])} card</p><div class="cd2"><div class="cd-card${me.scene && TAGS[me.scene] ? ' scn' : ''}"${me.scene && TAGS[me.scene] ? ` style="--sc:url(art/genes/${me.scene}.jpg);--sg:${gcol(me.scene)}"` : ''}>${cdCard(c, { cls: 'big' })}<p class="cd-tip">Tilt it. Tap to flip.</p></div><div class="cd-info">
 <h1>${esc(me.name || 'Reader')}, ${esc(c.title)}</h1><p class="lede">${me.origin ? 'From ' + esc(me.origin.toLowerCase()) + '. ' : ''}Built from the Story DNA of your ${S.books.length} ${S.books.length === 1 ? 'book' : 'books'} and ${owned.length} ${owned.length === 1 ? 'gene' : 'genes'}.</p>
 <div class="xp"><div><b>Level ${c.lv}</b><span>${esc(c.rar[1])}</span><em>${c.xp - c.cur} / ${c.nxt - c.cur} XP to level ${c.lv + 1}</em></div><i style="--w:${Math.round((c.xp - c.cur) / (c.nxt - c.cur) * 100)}%"></i></div>
 <h3>Card upgrades ${nx ? `<small>${esc(nx[1])} at level ${nx[0]}, about ${Math.max(1, Math.ceil(toNext / 175))} more ${Math.ceil(toNext / 175) === 1 ? 'book' : 'books'}</small>` : '<small>Maxed out</small>'}</h3>
@@ -2188,7 +2215,7 @@ function heroHTML() {
 <h3>Mods <small>${c.eq.length} of ${c.slots} ${c.slots === 1 ? 'slot' : 'slots'} equipped · ${c.mods.length} unlocked</small></h3>
 ${c.mods.length ? `<div class="cd-mods">${c.mods.map(o => { const on = c.eq.includes(o.key); return `<button data-eq="${o.key}" aria-pressed="${on}" style="--g:${gcol(o.g)}"><i></i><b>${esc(o.name)}</b><span>${esc(tl(o.g))}</span></button>`; }).join('')}</div>` : '<div class="empty">Love a gene in a book you read and its first mod unlocks. Each gene has three.</div>'}
 ${c.next.length ? `<p class="note2">Next: ${c.next.slice(0, 3).map(o => `<b>${esc(o.name)}</b> (love ${esc(tl(o.g).toLowerCase())} in ${o.need} more ${o.need === 1 ? 'book' : 'books'})`).join(', ')}.</p>` : ''}
-<h3>Scene <small>drop your character into any gene you own</small></h3><div class="cd-scn">${owned.map(t => `<button data-scn="${t}" aria-pressed="${me.scene === t}" style="--g:${gcol(t)}"><img alt="" src="art/genes/${t}.jpg" onerror="this.remove()"><span>${esc(tl(t))}</span></button>`).join('') || '<div class="empty">No genes yet.</div>'}</div>
+<h3>Scene <small>${me.scene && TAGS[me.scene] ? `in ${esc(tl(me.scene).toLowerCase())} now · tap it again to clear` : 'drop your character into any gene you own'}</small></h3><div class="cd-scn">${owned.map(t => `<button data-scn="${t}" aria-pressed="${me.scene === t}" style="--g:${gcol(t)}"><img alt="" src="art/genes/${t}.jpg" onerror="this.remove()"><span>${esc(tl(t))}</span></button>`).join('') || '<div class="empty">No genes yet.</div>'}</div>
 <h3>Gene collection <small>${owned.filter(t => all.includes(t)).length} of ${all.length}</small></h3><div class="cd-bind" id="cdbind"></div>
 <h3>Customize</h3><div class="cd-cust"><button class="glass" data-cd="build">Change role, look and color</button><button class="glass" data-cd="photo">Use my photo</button><button class="glass" data-cd="describe">Describe a new one</button><button class="glass" data-cd="genes">Change my starting genes</button></div>
 <h3>How to level up</h3><p class="note2">A book you have read is 100 XP. Each gene you loved in it is 25. A verdict is 15. Sending a book to a friend is 20.</p></div></div>
@@ -2204,9 +2231,19 @@ document.addEventListener('click', e => {
   const b = e.target.closest('[data-cd],[data-eq],[data-scn]'); if (!b || !$('panel').contains(b)) return; const me = S.me;
   if (b.dataset.cd) return ikOpen(b.dataset.cd === 'make' ? 'who' : b.dataset.cd, null);
   if (!me) return;
-  if (b.dataset.scn) { me.scene = b.dataset.scn; S.save(); render(); return; }
-  if (b.dataset.eq) { const c = cdModel(), k = b.dataset.eq; let eq = c.eq.slice(); if (eq.includes(k)) eq = eq.filter(x => x !== k); else { if (eq.length >= c.slots) { toast(`Your ${c.rar[1]} card has ${c.slots} ${c.slots === 1 ? 'slot' : 'slots'}. More open at Rare and Legendary.`); eq.shift(); } eq.push(k); } me.eq = eq; S.save(); render(); }
+  if (b.dataset.scn) { const t = b.dataset.scn, off = me.scene === t; me.scene = off ? '' : t; S.save(); return cdRedraw(off ? 'Scene cleared.' : `${me.name || 'Your character'} is in ${tl(t).toLowerCase()} now.`); }
+  if (b.dataset.eq) { const c = cdModel(), k = b.dataset.eq, o = c.mods.find(x => x.key === k), name = o ? o.name : 'Mod'; let eq = c.eq.slice(), msg;
+    if (eq.includes(k)) { eq = eq.filter(x => x !== k); msg = `${name} removed.`; }
+    else { msg = `${name} equipped.`; if (eq.length >= c.slots) { const out = c.mods.find(x => x.key === eq[0]); msg = `${name} equipped, ${out ? out.name : 'old mod'} swapped out. Your ${c.rar[1]} card has ${c.slots} ${c.slots === 1 ? 'slot' : 'slots'}${c.slots < 3 ? '. More open at Rare and Legendary' : ''}.`; eq.shift(); } eq.push(k); }
+    me.eq = eq; S.save(); cdRedraw(msg); }
 });
+// Re-render the character page in place: keep the scroll, flash the card, say what changed.
+function cdRedraw(msg) {
+  const p = $('panel'), s = p && p.querySelector('.scr'), a = p ? p.scrollTop : 0, b2 = s ? s.scrollTop : 0, w = scrollY; render();
+  const p2 = $('panel'), s2 = p2 && p2.querySelector('.scr'); if (p2) p2.scrollTop = a; if (s2) s2.scrollTop = b2; if (scrollY !== w) scrollTo(0, w);
+  const t = p2 && p2.querySelector('.cd-card .tc'); if (t) { t.classList.add('pop'); setTimeout(() => t.classList.remove('pop'), 900); }
+  if (msg) toast(msg);
+}
 // What changed since we last looked: a level, a rarity, or new mods.
 function heroCheck() {
   if (!S.books.length) return; const c = cdModel(), old = S.hero, snap = { lv: c.lv, ri: c.ri, mods: c.mods.map(o => o.key), title: c.title }; S.hero = snap; S.save();
@@ -2257,6 +2294,23 @@ document.head.insertAdjacentHTML('beforeend', `<style>
 .tc-plate{position:absolute;left:4.5cqw;right:4.5cqw;bottom:4.5cqw;transform:translateZ(36px);text-shadow:0 2px 10px #000}
 .tc-name{display:block;font:900 8.4cqw/1 Unbounded,sans-serif;letter-spacing:-.01em;color:#fff;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .tc-title{display:block;margin-top:1.4cqw;font:800 4.4cqw/1.1 Manrope,sans-serif;color:var(--ac)}
+.tc-meta em{display:inline-block;margin-right:1.6cqw;padding:.6cqw 1.6cqw;border-radius:999px;font-style:normal;color:#fff;background:color-mix(in srgb,var(--g) 40%,#03040C);border:.3cqw solid var(--g)}
+.tc.scened .tc-scene img{opacity:1;filter:saturate(1.25) brightness(.95)}
+.tc.scened .tc-art{-webkit-mask-image:radial-gradient(ellipse 52% 62% at 50% 42%,#000 46%,transparent 80%);mask-image:radial-gradient(ellipse 52% 62% at 50% 42%,#000 46%,transparent 80%)}
+.tc-sky{position:absolute;inset:0;pointer-events:none;mix-blend-mode:screen;opacity:.5;-webkit-mask-image:linear-gradient(180deg,#000 0,#000 18%,transparent 58%);mask-image:linear-gradient(180deg,#000 0,#000 18%,transparent 58%)}
+.tc-sky img{width:100%;height:100%;object-fit:cover}
+.tc.scened .tc-tint{background:linear-gradient(180deg,#0000 45%,#03040Cee 80%),radial-gradient(45% 55% at 0% 40%,color-mix(in srgb,var(--sg) 45%,transparent),transparent 70%),radial-gradient(45% 55% at 100% 40%,color-mix(in srgb,var(--sg) 45%,transparent),transparent 70%)}
+.tc-fx{position:absolute;inset:0;pointer-events:none;mix-blend-mode:screen;opacity:.75}.tc-fx.t1{opacity:.9}.tc-fx.t2{opacity:1}
+.tc-fx.fx0{background:radial-gradient(34% 24% at 50% 36%,color-mix(in srgb,var(--g) 60%,transparent),transparent 72%);animation:fxPulse 3.2s ease-in-out infinite}
+.tc-fx.fx1{box-shadow:inset 0 0 10cqw -1cqw var(--g);background:linear-gradient(105deg,transparent 42%,color-mix(in srgb,var(--g) 38%,transparent) 50%,transparent 58%) 0 0/300% 100%;animation:fxSweep 4.5s linear infinite}
+.tc-fx.fx2{background:radial-gradient(circle at 18% 72%,var(--g) 0 .7cqw,transparent 1.3cqw),radial-gradient(circle at 80% 58%,var(--g) 0 .6cqw,transparent 1.2cqw),radial-gradient(circle at 30% 40%,var(--g) 0 .5cqw,transparent 1cqw),radial-gradient(circle at 70% 30%,var(--g) 0 .7cqw,transparent 1.3cqw),radial-gradient(circle at 55% 82%,var(--g) 0 .5cqw,transparent 1cqw),radial-gradient(60% 30% at 50% 100%,color-mix(in srgb,var(--g) 40%,transparent),transparent);animation:fxRise 5s linear infinite}
+@keyframes fxPulse{0%,100%{opacity:.55;transform:scale(1)}50%{opacity:1;transform:scale(1.08)}}
+@keyframes fxSweep{from{background-position:100% 0}to{background-position:-100% 0}}
+@keyframes fxRise{from{background-position:0 0}to{background-position:0 -40cqw}}
+.tc.pop{animation:tcPop .8s cubic-bezier(.2,.8,.2,1)}
+@keyframes tcPop{0%{transform:scale(1);filter:brightness(1)}30%{transform:scale(1.045);filter:brightness(1.5)}100%{transform:scale(1);filter:brightness(1)}}
+.cd-card.scn::before{content:'';position:absolute;inset:-40px -60px -20px;background:var(--sc) center/cover;filter:brightness(.6) saturate(1.2);border-radius:32px;-webkit-mask-image:radial-gradient(closest-side,#000 55%,transparent);mask-image:radial-gradient(closest-side,#000 55%,transparent);z-index:-1;pointer-events:none}
+@media (prefers-reduced-motion:reduce){.tc-fx,.tc.pop{animation:none}}
 .tc-meta{display:block;margin-top:1cqw;font:700 2.9cqw/1.2 Manrope,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#c9d3ea}
 .tc-stats{display:grid;grid-template-columns:repeat(5,1fr);gap:1.6cqw;margin-top:3.4cqw;padding:2.4cqw;border-radius:2.4cqw;background:#03040Cb8;border:.3cqw solid #ffffff22;backdrop-filter:blur(6px)}
 .tc-stats span{display:grid;gap:.6cqw;text-align:center}.tc-stats em{font:800 2.2cqw/1 Manrope,sans-serif;font-style:normal;letter-spacing:.1em;text-transform:uppercase;color:#aeb9da}
@@ -2357,7 +2411,7 @@ function growOpen(ids) {
   ids = ids.filter(id => byId[id] && S.books.includes(id)); if (!ids.length) return; growClose();
   // the character as it was before these books, and as it is now
   const sb = S.books, sv = S.v; S.books = sb.filter(i => !ids.includes(i)); S.v = Object.fromEntries(Object.entries(sv).filter(e => !ids.includes(e[0]))); const o = cdModel(); S.books = sb; S.v = sv;
-  const c = cdModel(), bs = ids.map(id => byId[id]), hasCard = !!S.me;
+  const c = cdModel(), bs = ids.map(id => byId[id]), hasCard = !!S.me, inMix = ids.every(id => !S.off.includes(id));
   S.hero = { lv: c.lv, ri: c.ri, mods: c.mods.map(m => m.key), title: c.title }; S.save();
   const lovedOf = id => tagsOf(byId[id]).filter(t => S.love[id + '|' + t]);
   const before = new Set((S.me && S.me.genes) || []); Object.keys(S.love).forEach(k => { const [id, t] = k.split('|'); if (S.love[k] && !ids.includes(id)) before.add(t); });
@@ -2385,13 +2439,14 @@ function growOpen(ids) {
 <div class="gw-genes">${genes.slice(0, 8).map((g, i) => `<span class="${g.loved ? 'on' : ''}" style="--g:${gcol(g.t)};--i:${i}"><i></i>${esc(tl(g.t))}${g.fresh ? '<em>New</em>' : ''}</span>`).join('')}</div>
 ${calls.length ? `<ul class="gw-calls">${calls.slice(0, 4).map((k, i) => `<li style="--g:${k[3] || 'var(--acc)'};--i:${i}"><small>${esc(k[0])}</small><b>${esc(k[1])}</b><span>${esc(k[2])}</span></li>`).join('')}</ul>` : ''}
 ${qs.length ? `<div class="gw-q"><h3>${own ? 'What other readers said about it' : 'Readers on books from your shelf'}</h3><ul>${qs.map(({ b, x }) => `<li><p>${esc(x.q)}</p><a href="${esc(x.url)}" target="_blank" rel="noopener nofollow">${esc(x.by)} on ${esc(x.src)}${own && one ? '' : ', about ' + esc(b.t)}</a></li>`).join('')}</ul></div>` : ''}
-<p class="gw-note">${one ? 'It is' : 'They are'} on your shelf and in your character. Your DNA mix has not changed. Add ${one ? 'it' : 'them'} when you want ${one ? 'it' : 'them'} to shape what the engine finds.</p>
-<div class="gw-act"><button class="go" data-gw="mix">Add ${one ? 'it' : 'them'} to my DNA mix</button><button class="glass" data-gw="keep">Keep my mix as it is</button><button class="glass" data-gw="next">Pick my next 5</button>${hasCard ? '' : '<button class="glass" data-gw="card">Make my card</button>'}</div></div></div>`;
+<p class="gw-note">${inMix ? `${one ? 'It is' : 'They are'} in Read, in your character and in your DNA. Your genome has regrown around ${one ? 'it' : 'them'}.` : `${one ? 'It is' : 'They are'} in Read and in your character. Your DNA has not changed. Add ${one ? 'it' : 'them'} when you want ${one ? 'it' : 'them'} to shape what the engine finds.`}</p>
+<div class="gw-act">${inMix ? `<button class="go" data-gw="keep">See my genome</button><button class="glass" data-gw="next">Pick my next 5</button><button class="glass" data-gw="out">Take ${one ? 'it' : 'them'} out of my DNA</button>` : `<button class="go" data-gw="mix">Add ${one ? 'it' : 'them'} to my DNA</button><button class="glass" data-gw="keep">Keep my DNA as it is</button><button class="glass" data-gw="next">Pick my next 5</button>`}${hasCard ? '' : '<button class="glass" data-gw="card">Make my card</button>'}</div></div></div>`;
   document.body.append(el); document.body.classList.add('gw-on'); slots(el); if (hasCard) cdWire(el);
   GW = { ids, el, t0: performance.now(), raf: 0, morphed: false };
   const morph = () => { if (GW.morphed) return; GW.morphed = true; const w = $('gwcard'); if (!w) return; w.innerHTML = cardOf(c); if (hasCard) cdWire(w); w.classList.add('pop'); el.classList.add('done'); };
   el.addEventListener('click', e => { const b = e.target.closest('[data-gw]'); if (!b) return; e.stopPropagation(); const k = b.dataset.gw;
-    if (k === 'mix') { const n0 = new Set(nodes.map(n => n.id)); S.off = S.off.filter(id => !ids.includes(id)); S.save(); growClose(); remodel(); render(); const f = nodes.filter(n => !n0.has(n.id)).length; return toast(f ? `In your mix. Your genome gained ${f} new ${f === 1 ? 'match' : 'matches'}.` : 'In your mix. Your strands just got sharper.'); }
+    if (k === 'mix') { const n0 = new Set(nodes.map(n => n.id)); S.off = S.off.filter(id => !ids.includes(id)); S.save(); growClose(); remodel(); render(); const f = nodes.filter(n => !n0.has(n.id)).length; return toast(f ? `In your DNA. Your genome gained ${f} new ${f === 1 ? 'match' : 'matches'}.` : 'In your DNA. Your strands just got sharper.'); }
+    if (k === 'out') { S.off = S.off.concat(ids.filter(id => !S.off.includes(id))); if (!act().length) S.off = S.off.filter(id => id !== ids[0]); S.save(); growClose(); remodel(); render(); return toast('Out of your DNA. Still in Read.'); }
     growClose(); if (k === 'next') { drawer = 'next'; n5 = []; render(); ui.scrollTop = 0; } else if (k === 'card') ikOpen('who', null); else head(); });
   if (calm) { morph(); growStill(el, genes); } else { GW.timer = setTimeout(morph, 2500); growFx(el, genes); }
   setTimeout(() => { const b = el.querySelector('.gw-act .go'); if (b && GW) b.focus({ preventScroll: true }); }, calm ? 50 : 3300);
@@ -2480,10 +2535,29 @@ body.gw-on{overflow:hidden}
 .n5 blockquote a{display:block;margin-top:3px;font-style:normal;font-size:13px;color:var(--mute);text-decoration:underline;text-underline-offset:3px}
 .n5 .fbtn{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
 .n5go{margin-top:8px;display:inline-flex;align-items:center}
+/* ---- shelves and the all-books list ---- */
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 6px}.tabs .chip{height:44px;padding:0 18px;font-size:15px}.tabs .chip em,.sorts .chip em{font-style:normal;font-weight:800;color:var(--acc);margin-left:2px}
+.lede.sm{font-size:16px;margin:10px 0 0;max-width:62ch}
+.stat{display:inline-flex;align-items:center;font:800 11px/1.2 Manrope,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);margin:6px 0 0}.stat.in{color:var(--acc)}
+.fbtn .stat{margin:0 6px 0 0;min-height:44px}
+.glass.dna{border-color:color-mix(in srgb,var(--hot) 70%,#0000);box-shadow:0 0 18px -8px var(--hot)}
+.sorts{display:flex;flex-wrap:wrap;gap:8px}
+.alist{display:grid;gap:10px;margin-top:10px}
+.arow{display:grid;grid-template-columns:64px minmax(0,1fr) auto;gap:16px;align-items:center;padding:10px 14px 10px 10px;border-radius:var(--rad-s);border:1px solid var(--line);background:#ffffff08}
+.arow .cv{width:64px}.ainf b{display:block;font:800 17px/1.2 var(--hf);overflow:hidden;text-overflow:ellipsis}.ainf em{display:block;font-style:normal;font-size:14px;color:var(--mute);margin-top:2px}
+.ainf .dots{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 0}.arow .fbtn{justify-content:flex-end;align-items:center}
+.amore{justify-self:center;margin-top:6px}
+.note.over{margin-top:22px}.note.over .no{font:inherit;font-weight:700;color:var(--ink);background:none;border:0;text-decoration:underline;text-underline-offset:3px;cursor:pointer;padding:6px}
+@media(max-width:700px){.n5f.two{grid-template-columns:repeat(2,minmax(0,1fr))}}
+#findout:empty{display:none}#findout{margin-top:12px}
+@media(max-width:760px){.arow{grid-template-columns:56px minmax(0,1fr);gap:10px 12px;padding:10px}.arow .cv{width:56px}.arow .fbtn{grid-column:1/-1;justify-content:flex-start}.arow .fbtn .go,.arow .fbtn .glass{flex:1 1 auto;height:42px;padding:0 10px;font-size:13px}.tabs .chip{flex:1 1 auto;padding:0 10px;justify-content:center}}
 @media(max-width:700px){#strip p{display:flex;align-items:center;justify-content:space-between;gap:10px}#strip .n5go{margin:0;height:38px;padding:0 14px;font-size:12px;flex:none;width:auto}}
 @media(max-width:700px){.n5 li{grid-template-columns:78px minmax(0,1fr);gap:12px;padding:12px}.n5n{position:absolute;left:8px;top:6px;z-index:2;font-size:22px;background:#03040Cd9;border-radius:50%;width:34px;height:34px;display:grid;place-items:center;border:2px solid var(--g)}.n5 .fbtn .go,.n5 .fbtn .glass{flex:1 1 auto}.n5f{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.n5f .go{grid-column:1/-1;height:48px;font-size:14px;padding:0 10px}.n5f .glass{height:42px;font-size:13px;padding:0 6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.n5f .lg{display:none}.n5k{letter-spacing:.12em}}
 .n5f .go:disabled{opacity:.55;box-shadow:none;cursor:default}
 </style>`);
+// For the site's chat helper: open a book page by id from outside the app. Returns false when the id is unknown.
+window.L3 = window.L3 || {};
+window.L3.openBook = id => { const b = byId[id]; if (!b) return false; openBook(b, S, { after: () => { S.q = S.q.filter(k => byId[k]); remodel(); head(); }, close: () => (step === 'play' || step === 'mix') && render() }); return true; };
 
 // The shareable DNA fragment: a poster drawn from the reader's own genes. Same genes, same picture; different readers never match.
 function fragArt(cv, G, cls, line, who) {
