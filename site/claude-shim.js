@@ -2,6 +2,8 @@
 // window.claude.use() calls it uses inside the preview, backed by the site's own /api.
 (function () {
   window.STORYDNA_API = '/api';
+  // The Librarian chat panel lives in its own file so app rebuilds never drop it.
+  if (!document.querySelector('script[src="/librarian.js"]')) { const ls = document.createElement('script'); ls.src = '/librarian.js'; ls.defer = true; document.head.appendChild(ls); }
   if (window.claude) return;
   async function call(url, opts) { const r = await fetch(url, opts); if (!r.ok) throw { code: r.status }; return r.json(); }
   const sample = {

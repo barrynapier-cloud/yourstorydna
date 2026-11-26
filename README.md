@@ -24,3 +24,10 @@ Server setup (Hostinger VPS 2165167, Docker): project `library-web` runs Caddy w
 - `/api/admin/*`: Google sign-in (env `GOOGLE_CLIENT_ID`, `ADMIN_EMAILS`), encrypted API keys in site_secrets (env `KEYS_SECRET`), settings in site_settings, usage in site_usage.
 - `/api/sample` uses settings.lookupModel for the book lookup prompt and settings.deepModel for everything else.
 - Keys are read from the database first, then env (`ANTHROPIC_API_KEY`, `PERPLEXITY_API_KEY`). No secret ever lives in this repo.
+
+## The Librarian (chat, Nov 26)
+
+- `POST /api/chat {messages:[{role,content}], book?}` returns `{reply, books}`. Claude (settings `chatModel`, default `claude-sonnet-5-5`) answers using five tools over `api/library.json`: search_books, get_book, similar_books, books_with_genes, compare_books. Researched books from `site_books` join the index every 10 minutes. Book mentions come back as `[[book:id]]` tokens plus card data (cover id, top genes).
+- Limits: 40 messages per hour per IP, `chatCap` messages per day (default 1000, usage kind `chat`, not counted against the research cap).
+- `site/librarian.js` is the chat panel. `claude-shim.js` loads it, so app rebuilds keep it. It shows only when `/api/health` reports a Claude key (or with `?librarian=1`). Hooks for the app: `Librarian.open()`, `Librarian.ask(text, bookId)`; if the app exposes `L3.openBook(id)`, tapping a cover in chat opens that book.
+- Refresh the library index after a new book export: `python3 api/tools/build_library.py <books_sf.json> <genes_sf.json> api/library.json`, then push (touch server.js so the API restarts).

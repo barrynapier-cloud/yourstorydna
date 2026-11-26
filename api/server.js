@@ -5,6 +5,7 @@ import http from 'node:http';
 import crypto from 'node:crypto';
 import fs from 'node:fs';
 import pg from 'pg';
+import { chat, librarianInfo } from './chat.js';
 
 const PORT = 8080;
 const env = process.env;
@@ -25,7 +26,7 @@ const MODELS = {
   claude: ['claude-haiku-5-5', 'claude-sonnet-5-5', 'claude-opus-5-5'],
   research: ['sonar', 'sonar-pro', 'sonar-reasoning-pro'],
 };
-const DEFAULTS = { dailyCap: 200, scifiOnly: true, researchModel: 'sonar', tagModel: 'claude-sonnet-5-5', lookupModel: 'claude-haiku-5-5', deepModel: 'claude-haiku-5-5' };
+const DEFAULTS = { dailyCap: 200, scifiOnly: true, researchModel: 'sonar', tagModel: 'claude-sonnet-5-5', lookupModel: 'claude-haiku-5-5', deepModel: 'claude-haiku-5-5', chatModel: 'claude-sonnet-5-5', chatCap: 1000 };
 const KEY_ENV = { anthropic: 'ANTHROPIC_API_KEY', perplexity: 'PERPLEXITY_API_KEY' };
 
 // ---------- helpers ----------
@@ -76,7 +77,7 @@ async function settings() {
   if (db && await ensure()) { const r = await db.query('SELECT name, value FROM site_settings'); for (const row of r.rows) if (row.name in DEFAULTS) v[row.name] = row.value; }
   settingsCache = { v, at: Date.now() }; return v;
 }
-async function usageToday() { if (!db || !await ensure()) return 0; const r = await db.query('SELECT coalesce(sum(n),0)::int n FROM site_usage WHERE day=$1', [today()]); return r.rows[0].n; }
+async function usageToday() { if (!db || !await ensure()) return 0; const r = await db.query("SELECT coalesce(sum(n),0)::int n FROM site_usage WHERE day=$1 AND kind <> 'chat'", [today()]); return r.rows[0].n; }
 async function countUsage(kind) { if (db && await ensure()) await db.query('INSERT INTO site_usage(day, kind, n) VALUES ($1,$2,1) ON CONFLICT (day, kind) DO UPDATE SET n = site_usage.n + 1', [today(), kind]); }
 
 // ---------- model calls ----------
@@ -285,8 +286,9 @@ async function admin(req, res, ip, path) {
     const p = await body(req, 4000), cur = await settings(), next = {};
     if ('dailyCap' in p) { const n = Math.round(+p.dailyCap); if (!(n >= 0 && n <= 5000)) return send(res, 400, { error: 'dailyCap' }); next.dailyCap = n; }
     if ('scifiOnly' in p) next.scifiOnly = !!p.scifiOnly;
+    if ('chatCap' in p) { const n = Math.round(+p.chatCap); if (!(n >= 0 && n <= 20000)) return send(res, 400, { error: 'chatCap' }); next.chatCap = n; }
     if ('researchModel' in p) { if (!MODELS.research.includes(p.researchModel)) return send(res, 400, { error: 'researchModel' }); next.researchModel = p.researchModel; }
-    for (const k of ['tagModel', 'lookupModel', 'deepModel']) if (k in p) { if (!MODELS.claude.includes(p[k])) return send(res, 400, { error: k }); next[k] = p[k]; }
+    for (const k of ['tagModel', 'lookupModel', 'deepModel', 'chatModel']) if (k in p) { if (!MODELS.claude.includes(p[k])) return send(res, 400, { error: k }); next[k] = p[k]; }
     for (const [k, v] of Object.entries(next)) await db.query('INSERT INTO site_settings(name, value) VALUES ($1,$2) ON CONFLICT (name) DO UPDATE SET value=EXCLUDED.value', [k, JSON.stringify(v)]);
     settingsCache = null; return send(res, 200, { ok: true, settings: { ...cur, ...next } });
   }
@@ -310,9 +312,10 @@ http.createServer(async (req, res) => {
   const ip = String(req.headers['x-forwarded-for'] || req.socket.remoteAddress || '').split(',')[0].trim();
   const path = new URL(req.url, 'http://x').pathname;
   try {
-    if (path === '/api/health') return send(res, 200, { ok: true, model: !!(await secret('anthropic')).value, research: !!(await secret('perplexity')).value, db: !!db });
+    if (path === '/api/health') return send(res, 200, { ok: true, model: !!(await secret('anthropic')).value, research: !!(await secret('perplexity')).value, db: !!db, librarian: librarianInfo() });
     if (path === '/api/sample' && req.method === 'POST') return await sample(req, res, ip);
     if (path === '/api/research' && req.method === 'POST') return await research(req, res, ip);
+    if (path === '/api/chat' && req.method === 'POST') return await chat(req, res, { ip, send, body, secret, settings, limited, db, countUsage });
     if (path.startsWith('/api/admin/')) return await admin(req, res, ip, path);
     const m = path.match(/^\/api\/books(?:\/([^/]+))?$/);
     if (m) return await books(req, res, ip, m[1] && decodeURIComponent(m[1]));
