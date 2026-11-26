@@ -321,6 +321,21 @@ def step_export(db):
         log(f"export: {len(full)} books with shown genes, {len(lite)} catalog-only")
         log(f"TOTALS books={t[0]} core={t[1]} catalog={t[2]} with_desc={t[3]} shown_links={t[4]} all_links={t[5]} genes_in_use={t[6]}/{t[7]}")
 
+
+# ---------- peek (quality review in logs) ----------
+def step_peek(db):
+    with db.cursor() as c:
+        c.execute("SELECT title, author, year, readers FROM books WHERE tier='catalog' ORDER BY readers DESC NULLS LAST LIMIT 40")
+        log("PEEK top catalog by readers:"); [log("  ", *r) for r in c.fetchall()]
+        c.execute("SELECT title, author, year, readers FROM books WHERE tier='catalog' ORDER BY random() LIMIT 40")
+        log("PEEK random catalog:"); [log("  ", *r) for r in c.fetchall()]
+        c.execute("SELECT title, author, left(coalesce(description,''),90) FROM books WHERE tier='core' ORDER BY random() LIMIT 8")
+        log("PEEK core sample:"); [log("  ", *r) for r in c.fetchall()]
+        c.execute("SELECT g.slug, count(*) FROM book_genes bg JOIN genes g ON g.id=bg.gene_id WHERE bg.source='ol-subjects' GROUP BY 1 ORDER BY 2 DESC LIMIT 25")
+        log("PEEK subject genes:", ", ".join(f"{a}={b}" for a, b in c.fetchall()))
+        c.execute("SELECT title, author FROM books b WHERE EXISTS (SELECT 1 FROM book_genes bg JOIN genes g ON g.id=bg.gene_id WHERE bg.book_id=b.id AND g.slug IN ('harem','reverse_harem','erotic_sci_fi','alien_romance')) LIMIT 30")
+        log("PEEK adult sub-genre books:"); [log("  ", *r) for r in c.fetchall()]
+
 def main():
     db = conn()
     with db.cursor() as c:
