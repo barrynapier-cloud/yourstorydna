@@ -13,7 +13,7 @@ services:
     networks: [db]
     volumes:
       - site:/out
-    command: ["sh","-c","pip install -q 'psycopg[binary]' && mkdir -p /app && cd /app && for f in ingest.py core.txt genes_sf.json proto_map.json subject_map.json; do python -c \"import urllib.request,sys;urllib.request.urlretrieve('https://raw.githubusercontent.com/barrynapier-cloud/yourstorydna/'+sys.argv[1]+'/ingest/'+sys.argv[2],sys.argv[2])\" \"$$BRANCH\" $$f || exit 1; done && python -u ingest.py"]
+    command: ["sh","-c","pip install -q 'psycopg[binary]' && mkdir -p /app && cd /app && for f in ingest.py core.txt genes_sf.json proto_map.json subject_map.json axis_map.json kimi_sf.json; do python -c \"import urllib.request,sys;urllib.request.urlretrieve('https://raw.githubusercontent.com/barrynapier-cloud/yourstorydna/'+sys.argv[1]+'/ingest/'+sys.argv[2],sys.argv[2])\" \"$$BRANCH\" $$f || exit 1; done && python -u ingest.py"]
 networks:
   db:
     name: library-db_default

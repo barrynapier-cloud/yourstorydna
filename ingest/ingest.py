@@ -269,6 +269,46 @@ def step_catalog(db):
             log(f"catalog {q}: {got} kept (running total {kept}, new {new})")
     log(f"catalog: {kept} kept, {new} new books, {skipped} skipped, {links} subject gene links (hidden)")
 
+# ---------- kimi (swarm stubs as Open Library candidates) ----------
+# kimi_sf.json: Kimi swarm sci-fi works {ol_key,title,author,year,cover_id,tags}. Each ol_key not yet in books
+# is looked up on Open Library and added as a catalog row (prune then judges it like any other).
+# Kimi tags have basis notes but no source URLs, so they load hidden at confidence 0.3, source 'kimi'.
+def step_kimi(db):
+    rows = json.load(open(os.path.join(HERE, "kimi_sf.json")))
+    smap = json.load(open(os.path.join(HERE, "subject_map.json")))
+    have = new = miss = tagged = 0
+    with db.cursor() as c:
+        gids = gene_id_map(c)
+        for i, r in enumerate(rows):
+          try:
+            c.execute("SELECT id FROM books WHERE ol_key=%s", (r["ol_key"],))
+            hit = c.fetchone()
+            if hit:
+                bid = hit[0]; have += 1
+            else:
+                d = get("https://openlibrary.org/search.json?" + urllib.parse.urlencode({"q": "key:" + r["ol_key"], "fields": FIELDS, "limit": 1}))
+                docs = (d or {}).get("docs", [])
+                if not docs or not docs[0].get("author_name"): miss += 1; continue
+                doc = docs[0]
+                title = (doc.get("title") or r["title"]).strip(); author = doc["author_name"][0]
+                slug = slugify(title)
+                c.execute("SELECT id,author,ol_key FROM books WHERE slug=%s", (slug,))
+                ex = c.fetchone()
+                if ex and ex[2] != doc.get("key") and norm(ex[1]) != norm(author):
+                    slug = slugify(title + " " + author.split()[-1])
+                    c.execute("SELECT 1 FROM books WHERE slug=%s", (slug,))
+                    if c.fetchone(): slug = slugify(title + " " + author.split()[-1] + " " + r["ol_key"].split("/")[-1])
+                bid, created = upsert_book(c, slug=slug, title=title, author=author, year=doc.get("first_publish_year"),
+                                           series=None, series_no=None, tier="catalog", doc=doc, source="kimi")
+                new += created
+                set_genes(c, bid, subject_genes(doc.get("subject"), smap), "ol-subjects", 0.4, "hidden", gids)
+            if r.get("tags"):
+                tagged += set_genes(c, bid, r["tags"], "kimi", 0.3, "hidden", gids)
+            if i % 200 == 0: log(f"kimi {i}/{len(rows)} (already had {have}, new {new})")
+          except Exception as e:
+            log("  kimi error", r.get("title"), repr(e)[:200])
+    log(f"kimi: {len(rows)} stubs, {have} already in the DB, {new} new catalog books, {miss} not found on Open Library, {tagged} kimi gene links (hidden)")
+
 # ---------- descriptions ----------
 def clean_desc(d):
     if isinstance(d, dict): d = d.get("value")
