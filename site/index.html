@@ -799,12 +799,30 @@ function clean(r) { if (!r || typeof r !== 'object') return null; const t = Stri
   snap.docs.forEach(d => { const b = clean(d.data()); if (b && !byId[b.id] && !B.some(x => x.t.toLowerCase() === b.t.toLowerCase())) { B.push(b); byId[b.id] = b; n++; } });
   if (n && step === 'pick') grid(); } catch (e) {} })();
 // --- type in any book: the engine finds it and reads its DNA ---
+// On the live site the server researches an unknown book on the web and tags it against the full gene list.
+// Returns null when that route is not available, so the in-app lookup below takes over.
+async function research(q) {
+  if (!window.STORYDNA_API) return null;
+  let res, j = null;
+  try {
+    res = await fetch(window.STORYDNA_API + '/research', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ q, tags: Object.entries(TAGS).map(e => `${e[0]} (${e[1][0]}: ${e[1][1]})`).join('; '), axes: AXES.map(a => `${a[1]} (1 = ${a[2]}, 5 = ${a[3]})`).join('; ') }) });
+    j = await res.json();
+  } catch (e) { return null; }
+  if (res.status === 429) return { err: j && j.error === 'cap' ? 'The engine has read all the new books it can for today. Try again tomorrow.' : 'That is a lot of new books at once. Give it a while and try again.' };
+  if (!res.ok || !j) return null;
+  if (!j.found) return j.reason === 'genre' ? { err: `${String(j.title || 'That book').slice(0, 90)} is outside science fiction, which is all the engine reads for now.` } : { r: { found: false } };
+  const k = j.book || {};
+  return { r: { found: true, title: k.t, author: k.a, year: k.y, series: k.series, genre: k.genre || 'sf', tags: k.tags, ax: k.ax },
+    x: { id: typeof k.id === 'string' && /^u-[\w-]{1,80}$/.test(k.id) ? k.id : '', genes: (Array.isArray(k.genes) ? k.genes : []).filter(g => typeof g === 'string').slice(0, 14), desc: String(k.desc || '').slice(0, 600), no: +k.no || 0, unv: k.unv ? 1 : 0,
+      sources: (Array.isArray(k.sources) ? k.sources : []).filter(s => s && /^https:\/\//.test(s.url)).slice(0, 8).map(s => ({ title: String(s.title || '').slice(0, 120), url: String(s.url).slice(0, 400) })) } };
+}
 async function findBook(q) {
   q = q.trim(); if (q.length < 2 || finding) return; const hit0 = B.find(b => b.t.toLowerCase() === q.toLowerCase()); if (hit0) { if (!S.books.includes(hit0.id)) pick(hit0.id); filter = ''; return render(); }
   finding = q; found = null; findUI();
   try {
-    const sample = window.claude && await window.claude.use('sample'); if (!sample) throw { code: 'none' };
-    const r = await sample.json(`You are the Story DNA engine of a science fiction book app. A reader typed this book title (it may include the author, be partial or misspelled): ${JSON.stringify(q)}
+    const rs = await research(q); if (rs && rs.err) throw { shown: rs.err };
+    const sample = rs ? null : window.claude && await window.claude.use('sample'); if (!rs && !sample) throw { code: 'none' };
+    const r = rs ? rs.r : await sample.json(`You are the Story DNA engine of a science fiction book app. A reader typed this book title (it may include the author, be partial or misspelled): ${JSON.stringify(q)}
 
 Identify the single most likely published novel or novella. Then describe its Story DNA.
 Reply with JSON only, in this exact shape:
@@ -819,16 +837,16 @@ Reply with JSON only, in this exact shape:
     else { const title = String(r.title).slice(0, 90), ex = B.find(b => b.t.toLowerCase() === title.toLowerCase()), tags = (Array.isArray(r.tags) ? r.tags : []).filter(t => TAGS[t]).slice(0, 6);
       if (ex) { if (!S.books.includes(ex.id)) pick(ex.id); found = { b: ex }; }
       else if (tags.length < 2) found = { err: `The engine found ${title} but could not read enough of its DNA. Try another book.` };
-      else { const b = { id: 'u-' + title.toLowerCase().replace(/[^a-z0-9]+/g, '-').slice(0, 40) + '-' + (hash(title) % 997), t: title, a: String(r.author || 'Unknown').slice(0, 60), series: r.series ? String(r.series).slice(0, 60) : '', tags, ax: [0, 1, 2, 3, 4].map(i => clamp(Math.round(+(r.ax || [])[i] || 3), 1, 5)), genre: r.genre, y: +r.year || 0, custom: 1 };
-        B.push(b); byId[b.id] = b; S.custom.push(b); S.save(); if (S.books.length < MAXP || live) pick(b.id); found = { b, fresh: 1 }; if (DB) DB.collection('books').doc(b.id).set(Object.assign({ at: Date.now() }, b)).catch(() => {}); }
+      else { const b = { id: 'u-' + title.toLowerCase().replace(/[^a-z0-9]+/g, '-').slice(0, 40) + '-' + (hash(title) % 997), t: title, a: String(r.author || 'Unknown').slice(0, 60), series: r.series ? String(r.series).slice(0, 60) : '', tags, ax: [0, 1, 2, 3, 4].map(i => clamp(Math.round(+(r.ax || [])[i] || 3), 1, 5)), genre: r.genre, y: +r.year || 0, custom: 1 }; if (rs && rs.x) { const x = rs.x; if (x.id && !byId[x.id]) b.id = x.id; if (x.genes.length) b.genes = x.genes; if (x.desc) b.desc = x.desc; if (x.sources.length) b.sources = x.sources; if (x.no) b.no = x.no; if (x.unv) b.unv = 1; }
+        B.push(b); byId[b.id] = b; S.custom.push(b); S.save(); if (S.books.length < MAXP || live) pick(b.id); found = { b, fresh: 1 }; if (DB && !rs) DB.collection('books').doc(b.id).set(Object.assign({ at: Date.now() }, b)).catch(() => {}); }
       fx.K[0] = 1; }
-  } catch (e) { found = { err: e && e.code === 'none' ? 'Typing in a new book needs the live preview link, where the engine can look it up.' : e && e.code === 'not_granted' ? 'The engine needs your OK to look books up. Reload and allow it to use this.' : e && e.code === 'rate_limited' ? 'The engine is busy. Give it a moment and try again.' : 'The engine could not read that one just now. Try again.' }; }
+  } catch (e) { found = { err: e && e.shown ? e.shown : e && e.code === 'none' ? 'Typing in a new book needs the live preview link, where the engine can look it up.' : e && e.code === 'not_granted' ? 'The engine needs your OK to look books up. Reload and allow it to use this.' : e && e.code === 'rate_limited' ? 'The engine is busy. Give it a moment and try again.' : 'The engine could not read that one just now. Try again.' }; }
   finding = null; if (found.b) filter = ''; if (step === 'pick') { const f = $('find'); if (f && found.b) f.value = ''; grid(); findUI(); }
 }
 function findUI() { const el = $('findout'); if (!el) return; const q = filter.trim(), exact = q && B.some(b => b.t.toLowerCase() === q.toLowerCase());
   el.innerHTML = finding ? `<div class="scan"><i></i><p><b>Searching for "${esc(finding)}"</b><span>Finding the book, reading its Story DNA, matching its genes.</span></p></div>`
     : found && found.err ? `<div class="scan err"><p><b>${esc(found.err)}</b></p></div>`
-    : found && found.b && !q ? `<div class="scan ok"><span data-slot="${found.b.id}"></span><p><b>${found.fresh ? 'Found, sequenced and added to the catalog' : 'Already in the catalog'}: ${esc(found.b.t)}</b><span>${esc(found.b.a)} · ${esc(tagsOf(found.b).map(t => tl(t)).join(', '))}</span></p></div>`
+    : found && found.b && !q ? `<div class="scan ok"><span data-slot="${found.b.id}"></span><p><b>${found.fresh ? 'Found, sequenced and added to the catalog' : 'Already in the catalog'}: ${esc(found.b.t)}</b><span>${esc(found.b.a)} · ${esc(tagsOf(found.b).map(t => tl(t)).join(', '))}${found.b.sources && found.b.sources.length ? ` · researched from ${found.b.sources.length} ${found.b.sources.length === 1 ? 'source' : 'sources'}` : ''}</span></p></div>`
     : q.length >= 2 && !exact ? `<button class="glass findgo" data-act="find">Find "${esc(q.length > 40 ? q.slice(0, 40) + '…' : q)}" and read its DNA</button>` : '';
   slots(el); }
 
