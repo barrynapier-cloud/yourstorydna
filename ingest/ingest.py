@@ -175,8 +175,15 @@ def step_core(db):
             ex = c.fetchone()
             if ex and norm(ex[0]) != norm(r["author"]):
                 slug = slugify(r["title"] + " " + r["author"].split(" and ")[0].split()[-1])
-            c.execute("SELECT 1 FROM books WHERE ol_key=%s AND slug<>%s", ((doc or {}).get("key"), slug))
-            if doc and c.fetchone():
+            c.execute("SELECT slug, tier FROM books WHERE ol_key=%s AND slug<>%s", ((doc or {}).get("key"), slug))
+            hit = c.fetchone() if doc else None
+            if hit and hit[1] == "catalog":
+                c.execute("SELECT 1 FROM books WHERE slug=%s", (slug,))
+                if c.fetchone():
+                    doc = {k: v for k, v in doc.items() if k != "key"}
+                else:
+                    slug = hit[0]
+            elif hit:
                 doc = {k: v for k, v in doc.items() if k != "key"}
             bid, created = upsert_book(c, slug=slug, title=r["title"], author=r["author"], year=r["year"], series=r["series"],
                                        series_no=r["series_no"], tier="core", doc=doc, source="claude-v1")
