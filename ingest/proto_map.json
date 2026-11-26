@@ -1,29 +1,178 @@
 {
  "_note": "Prototype tag (app TAGS / gene art) -> gene slugs. A book gets the prototype tag when it carries any listed gene.",
- "alien_pov": ["alien_pov","non_human_narrator","truly_alien_aliens","outsider_looking_at_humans"],
- "ancient_alien": ["ancient_aliens","xenoarchaeology","precursor_gates_and_tools","sleeping_threat","cosmic_inheritance"],
- "body_mod": ["body_mods","cyborgs","combat_implants","genetic_engineering","post_human_forms","body_horror"],
- "combat_heavy": ["badass_combat","gunfights_and_duels","martial_arts_and_blades","heart_pounding"],
- "consciousness_transfer": ["mind_transfer","body_swapping","digital_afterlife","forked_selves","identity_and_copies"],
- "cosmic_horror": ["cosmic_horror","horror_in_the_dark","genuinely_scary","creeping_dread"],
- "crew_ensemble": ["found_family_crew","ragtag_crew","ensemble_cast","band_of_soldiers"],
- "cyberpunk": ["cyberpunk","hacker","neural_interfaces","megacity_sprawl"],
- "deep_time": ["deep_time","far_future_humanity","the_long_view","dying_earth"],
- "dystopia_caste": ["dystopian_state","caste_worlds","surveillance_society","corporate_dystopia"],
- "first_contact": ["first_contact","signal_from_space","communication"],
- "heist_or_caper": ["heists","con_artists","smuggling_and_piracy"],
- "humor": ["funny","laughed_out_loud","snarky_first_person","witty_dialogue"],
- "literary": ["literary","lyrical_prose","dense_and_demanding"],
- "lost_tech": ["lost_tech","fallen_empire_relics","precursor_gates_and_tools"],
- "megastructure": ["megastructures","ringworlds","dyson_swarms","world_ships","artificial_worlds","stellar_engineering"],
- "military_sf": ["military","fleet_battles","boot_camp_to_battlefield","space_navy_life","mercenary_companies"],
- "mind_hack": ["mind_hacks","memory_editing","psychic_powers","sleepers_and_conditioning","language_shapes_thought"],
- "mythic": ["mythic","religion_in_space","ai_gods"],
- "noir_detective": ["noir_detective","noir_voice","murder_in_space"],
- "power_armor": ["power_armor","exosuits","mecha"],
- "revenge": ["revenge"],
- "space_opera": ["space_opera","interstellar_war","empire_rising","empire_falling"],
- "time_loop_or_travel": ["time_travel","time_loops","paradoxes"],
- "urban_weird": ["urban_weird","reality_bending","something_is_wrong_with_the_town"],
- "weird_bio": ["weird_biology","biopunk","xenobiology_puzzle","alien_ecosystems","parasites_and_puppeteers"]
+ "alien_pov": [
+  "alien_pov",
+  "non_human_narrator",
+  "truly_alien_aliens",
+  "outsider_looking_at_humans",
+  "ai_point_of_view",
+  "alien_cultures_in_depth",
+  "robot_rights",
+  "robot_companions",
+  "ship_minds"
+ ],
+ "ancient_alien": [
+  "ancient_aliens",
+  "xenoarchaeology",
+  "precursor_gates_and_tools",
+  "sleeping_threat",
+  "cosmic_inheritance"
+ ],
+ "body_mod": [
+  "body_mods",
+  "cyborgs",
+  "combat_implants",
+  "genetic_engineering",
+  "post_human_forms",
+  "body_horror"
+ ],
+ "combat_heavy": [
+  "badass_combat",
+  "gunfights_and_duels",
+  "martial_arts_and_blades",
+  "heart_pounding"
+ ],
+ "consciousness_transfer": [
+  "mind_transfer",
+  "body_swapping",
+  "digital_afterlife",
+  "forked_selves",
+  "identity_and_copies"
+ ],
+ "cosmic_horror": [
+  "cosmic_horror",
+  "horror_in_the_dark",
+  "genuinely_scary",
+  "creeping_dread"
+ ],
+ "crew_ensemble": [
+  "found_family_crew",
+  "ragtag_crew",
+  "ensemble_cast",
+  "band_of_soldiers"
+ ],
+ "cyberpunk": [
+  "cyberpunk",
+  "hacker",
+  "neural_interfaces",
+  "megacity_sprawl",
+  "virtual_reality",
+  "five_minutes_from_now"
+ ],
+ "deep_time": [
+  "deep_time",
+  "far_future_humanity",
+  "the_long_view",
+  "dying_earth"
+ ],
+ "dystopia_caste": [
+  "dystopian_state",
+  "caste_worlds",
+  "surveillance_society",
+  "corporate_dystopia",
+  "utopia_with_a_crack",
+  "religion_as_power",
+  "climate_collapse",
+  "post_apocalypse"
+ ],
+ "first_contact": [
+  "first_contact",
+  "signal_from_space",
+  "communication",
+  "alien_invasion"
+ ],
+ "heist_or_caper": [
+  "heists",
+  "con_artists",
+  "smuggling_and_piracy"
+ ],
+ "humor": [
+  "funny",
+  "laughed_out_loud",
+  "snarky_first_person",
+  "witty_dialogue"
+ ],
+ "literary": [
+  "literary",
+  "lyrical_prose",
+  "dense_and_demanding",
+  "mosaic_novel",
+  "epistolary_and_found_documents"
+ ],
+ "lost_tech": [
+  "lost_tech",
+  "fallen_empire_relics",
+  "precursor_gates_and_tools"
+ ],
+ "megastructure": [
+  "megastructures",
+  "ringworlds",
+  "dyson_swarms",
+  "world_ships",
+  "artificial_worlds",
+  "stellar_engineering"
+ ],
+ "military_sf": [
+  "military",
+  "fleet_battles",
+  "boot_camp_to_battlefield",
+  "space_navy_life",
+  "mercenary_companies",
+  "war_is_hell"
+ ],
+ "mind_hack": [
+  "mind_hacks",
+  "memory_editing",
+  "psychic_powers",
+  "sleepers_and_conditioning",
+  "language_shapes_thought",
+  "amnesia_unraveling"
+ ],
+ "mythic": [
+  "mythic",
+  "religion_in_space",
+  "ai_gods"
+ ],
+ "noir_detective": [
+  "noir_detective",
+  "noir_voice",
+  "murder_in_space"
+ ],
+ "power_armor": [
+  "power_armor",
+  "exosuits",
+  "mecha"
+ ],
+ "revenge": [
+  "revenge"
+ ],
+ "space_opera": [
+  "space_opera",
+  "interstellar_war",
+  "empire_rising",
+  "empire_falling"
+ ],
+ "time_loop_or_travel": [
+  "time_travel",
+  "time_loops",
+  "paradoxes"
+ ],
+ "urban_weird": [
+  "urban_weird",
+  "reality_bending",
+  "something_is_wrong_with_the_town",
+  "parallel_worlds",
+  "dreamlike_and_surreal",
+  "puzzle_box"
+ ],
+ "weird_bio": [
+  "weird_biology",
+  "biopunk",
+  "xenobiology_puzzle",
+  "alien_ecosystems",
+  "parasites_and_puppeteers",
+  "outbreak",
+  "survival_against_the_planet",
+  "expedition_into_the_unknown"
+ ]
 }
