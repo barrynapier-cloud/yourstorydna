@@ -37,7 +37,8 @@
   "body_swapping",
   "digital_afterlife",
   "forked_selves",
-  "identity_and_copies"
+  "identity_and_copies",
+  "digital_beings"
  ],
  "cosmic_horror": [
   "cosmic_horror",
@@ -73,13 +74,19 @@
   "utopia_with_a_crack",
   "religion_as_power",
   "climate_collapse",
-  "post_apocalypse"
+  "post_apocalypse",
+  "capitalism_unchained",
+  "gig_economy_hell",
+  "faceless_system"
  ],
  "first_contact": [
   "first_contact",
   "signal_from_space",
   "communication",
-  "alien_invasion"
+  "alien_invasion",
+  "the_fermi_question",
+  "human_and_alien_friendship",
+  "translator_and_go_between"
  ],
  "heist_or_caper": [
   "heists",
@@ -110,7 +117,12 @@
   "dyson_swarms",
   "world_ships",
   "artificial_worlds",
-  "stellar_engineering"
+  "stellar_engineering",
+  "space_elevators",
+  "arcologies",
+  "floating_and_flying_cities",
+  "gas_giant_cities",
+  "planet_sized_computers"
  ],
  "military_sf": [
   "military",
@@ -118,7 +130,11 @@
   "boot_camp_to_battlefield",
   "space_navy_life",
   "mercenary_companies",
-  "war_is_hell"
+  "war_is_hell",
+  "drone_and_remote_war",
+  "band_of_soldiers",
+  "special_forces",
+  "siege"
  ],
  "mind_hack": [
   "mind_hacks",
@@ -126,7 +142,8 @@
   "psychic_powers",
   "sleepers_and_conditioning",
   "language_shapes_thought",
-  "amnesia_unraveling"
+  "amnesia_unraveling",
+  "simulation_theory"
  ],
  "mythic": [
   "mythic",
@@ -150,7 +167,12 @@
   "space_opera",
   "interstellar_war",
   "empire_rising",
-  "empire_falling"
+  "empire_falling",
+  "galactic_core",
+  "nomad_fleets",
+  "warships_and_dreadnoughts",
+  "lost_colonies",
+  "colony_worlds"
  ],
  "time_loop_or_travel": [
   "time_travel",
@@ -173,7 +195,13 @@
   "parasites_and_puppeteers",
   "outbreak",
   "survival_against_the_planet",
-  "expedition_into_the_unknown"
+  "expedition_into_the_unknown",
+  "symbiotes",
+  "shapeshifters",
+  "swarm_intelligence",
+  "fungal_and_plant_minds",
+  "uplifted_animals",
+  "de_extinction"
  ],
  "romance": [
   "love_across_the_gap",
