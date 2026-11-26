@@ -20,6 +20,7 @@ Server setup (Hostinger VPS 2165167, Docker): project `library-web` runs Caddy w
 
 ## API v2 (Nov 26)
 
+- `GET /api/books/found`: public list of books research has resolved (custom:1), for every reader.
 - `POST /api/research {q, tags, axes}`: Perplexity Sonar research, then Claude gene tagging; saves the book to site_books (custom:1, unv:1). Daily cap and per-IP limit.
 - `/api/admin/*`: Google sign-in (env `GOOGLE_CLIENT_ID`, `ADMIN_EMAILS`), encrypted API keys in site_secrets (env `KEYS_SECRET`), settings in site_settings, usage in site_usage.
 - `/api/sample` uses settings.lookupModel for the book lookup prompt and settings.deepModel for everything else.
