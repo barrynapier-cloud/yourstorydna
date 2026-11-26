@@ -310,7 +310,8 @@ def prune_reason(title, subjects):
     subj = [s.lower() for s in subjects or []]
     sf = sum(1 for s in subj if any(h in s for h in SF_STRONG))
     other = sum(1 for s in subj if any(h in s for h in OTHER))
-    nonfic = sum(1 for s in subj if any(h in s for h in NONFIC))
+    nonfic = sum(1 for s in subj if "fiction" not in s and any(h in s for h in NONFIC))
+    if any("fiction" in s and "nonfiction" not in s and "non-fiction" not in s for s in subj): nonfic = min(nonfic, 1)
     if sf == 0: return "no-sf-subject"
     if nonfic >= 2 and nonfic >= sf: return "non-fiction"
     if other >= 3 * sf or (other >= 2 and sf == 1): return "mostly-other-genre"
