@@ -1,0 +1,7063 @@
+{
+"batch": "claude_seq_01",
+"rows": [
+{
+"ref": "downbelow-station",
+"title": "Downbelow Station",
+"author": "C. J. Cherryh",
+"gene": "space_stations",
+"confidence": 0.8,
+"why": "Pell Station caught between Company, Union and refugees"
+},
+{
+"ref": "ancillary-sword",
+"title": "Ancillary Sword",
+"author": "Ann Leckie",
+"gene": "space_stations",
+"confidence": 0.8,
+"why": "Athoek Station politics, from the Gardens to the Undergarden"
+},
+{
+"ref": null,
+"title": "Hospital Station",
+"author": "James White",
+"gene": "space_stations",
+"confidence": 0.8,
+"why": "Sector General, a huge multi-species hospital station"
+},
+{
+"ref": "leviathan-wakes",
+"title": "Leviathan Wakes",
+"author": "James S. A. Corey",
+"gene": "asteroid_belt_frontier",
+"confidence": 0.8,
+"why": "Belter life on Ceres and Eros, ice haulers and thin air"
+},
+{
+"ref": "schismatrix",
+"title": "Schismatrix",
+"author": "Bruce Sterling",
+"gene": "asteroid_belt_frontier",
+"confidence": 0.8,
+"why": "Shapers and Mechanists feud across Belt habitats"
+},
+{
+"ref": "delta-v",
+"title": "Delta-v",
+"author": "Daniel Suarez",
+"gene": "asteroid_belt_frontier",
+"confidence": 0.8,
+"why": "Crewed expedition to mine a near-Earth asteroid"
+},
+{
+"ref": null,
+"title": "The Rolling Stones",
+"author": "Robert A. Heinlein",
+"gene": "asteroid_belt_frontier",
+"confidence": 0.8,
+"why": "Family prospects for ore among the asteroids"
+},
+{
+"ref": "semiosis",
+"title": "Semiosis",
+"author": "Sue Burke",
+"gene": "lost_colonies",
+"confidence": 0.8,
+"why": "Colonists on Pax cut off from Earth for generations"
+},
+{
+"ref": "dragonflight",
+"title": "Dragonflight",
+"author": "Anne McCaffrey",
+"gene": "lost_colonies",
+"confidence": 0.8,
+"why": "Pern's settlers lost their tech and their origin story"
+},
+{
+"ref": null,
+"title": "Darkover Landfall",
+"author": "Marion Zimmer Bradley",
+"gene": "lost_colonies",
+"confidence": 0.8,
+"why": "Stranded colony ship founds the isolated Darkover culture"
+},
+{
+"ref": "the-algebraist-banks",
+"title": "The Algebraist",
+"author": "Iain M. Banks",
+"gene": "gas_giant_cities",
+"confidence": 0.75,
+"why": "The Dwellers' ancient civilization living inside gas giants"
+},
+{
+"ref": "the-reality-dysfunction",
+"title": "The Reality Dysfunction",
+"author": "Peter F. Hamilton",
+"gene": "gas_giant_cities",
+"confidence": 0.6,
+"why": "Edenist habitats and cloudscoop He3 mining around gas giants"
+},
+{
+"ref": "solaris",
+"title": "Solaris",
+"author": "Stanisław Lem",
+"gene": "ocean_worlds",
+"confidence": 0.8,
+"why": "A planet-covering ocean that may be a mind"
+},
+{
+"ref": "children-of-ruin",
+"title": "Children of Ruin",
+"author": "Adrian Tchaikovsky",
+"gene": "ocean_worlds",
+"confidence": 0.8,
+"why": "Uplifted octopuses on the ocean world Damascus"
+},
+{
+"ref": "startide-rising",
+"title": "Startide Rising",
+"author": "David Brin",
+"gene": "ocean_worlds",
+"confidence": 0.8,
+"why": "Dolphin-crewed Streaker hides in the water world Kithrup"
+},
+{
+"ref": "the-left-hand-of-darkness",
+"title": "The Left Hand of Darkness",
+"author": "Ursula K. Le Guin",
+"gene": "ice_worlds",
+"confidence": 0.8,
+"why": "Gethen, the planet called Winter"
+},
+{
+"ref": "ice-planet-barbarians",
+"title": "Ice Planet Barbarians",
+"author": "Ruby Dixon",
+"gene": "ice_worlds",
+"confidence": 0.8,
+"why": "Women stranded on the frozen world Not-Hoth"
+},
+{
+"ref": "children-of-dune",
+"title": "Children of Dune",
+"author": "Frank Herbert",
+"gene": "desert_planets",
+"confidence": 0.8,
+"why": "Arrakis, water rule and the changing desert"
+},
+{
+"ref": "a-princess-of-mars",
+"title": "A Princess of Mars",
+"author": "Edgar Rice Burroughs",
+"gene": "desert_planets",
+"confidence": 0.7,
+"why": "Barsoom, a dying arid Mars where water is power"
+},
+{
+"ref": "/works/OL467158W",
+"title": "Deathworld 1",
+"author": "Harry Harrison and Christian Rummel",
+"gene": "jungle_and_death_worlds",
+"confidence": 0.8,
+"why": "Pyrrus, where every lifeform evolves to kill settlers"
+},
+{
+"ref": "alien-clay",
+"title": "Alien Clay",
+"author": "Adrian Tchaikovsky",
+"gene": "jungle_and_death_worlds",
+"confidence": 0.8,
+"why": "Kiln's hostile alien biosphere around a prison camp"
+},
+{
+"ref": null,
+"title": "Hothouse",
+"author": "Brian W. Aldiss",
+"gene": "jungle_and_death_worlds",
+"confidence": 0.8,
+"why": "Far-future jungle Earth where plants rule and hunt"
+},
+{
+"ref": null,
+"title": "The City in the Middle of the Night",
+"author": "Charlie Jane Anders",
+"gene": "tidally_locked_worlds",
+"confidence": 0.8,
+"why": "January, a tidally locked world where people live on the twilight band"
+},
+{
+"ref": "proxima",
+"title": "Proxima",
+"author": "Stephen Baxter",
+"gene": "tidally_locked_worlds",
+"confidence": 0.8,
+"why": "Colonists on tidally locked Proxima b"
+},
+{
+"ref": null,
+"title": "Dark Eden",
+"author": "Chris Beckett",
+"gene": "rogue_planets",
+"confidence": 0.8,
+"why": "Sunless rogue world lit only by geothermal trees"
+},
+{
+"ref": "the-wandering-earth",
+"title": "The Wandering Earth",
+"author": "Liu Cixin",
+"gene": "rogue_planets",
+"confidence": 0.8,
+"why": "Earth is engineered into a drifting planet leaving the Sun"
+},
+{
+"ref": null,
+"title": "When Worlds Collide",
+"author": "Philip Wylie and Edwin Balmer",
+"gene": "rogue_planets",
+"confidence": 0.8,
+"why": "Rogue planets Bronson Alpha and Beta enter the solar system"
+},
+{
+"ref": null,
+"title": "The Wanderer",
+"author": "Fritz Leiber",
+"gene": "rogue_planets",
+"confidence": 0.8,
+"why": "A wandering planet appears beside the Moon"
+},
+{
+"ref": "tau-zero",
+"title": "Tau Zero",
+"author": "Poul Anderson",
+"gene": "interstellar_void",
+"confidence": 0.8,
+"why": "A crippled ramship can't stop and races through the empty dark"
+},
+{
+"ref": "aurora",
+"title": "Aurora",
+"author": "Kim Stanley Robinson",
+"gene": "interstellar_void",
+"confidence": 0.8,
+"why": "Centuries in a generation ship between stars"
+},
+{
+"ref": "pushing-ice",
+"title": "Pushing Ice",
+"author": "Alastair Reynolds",
+"gene": "interstellar_void",
+"confidence": 0.8,
+"why": "A comet-mining crew dragged far into deep space"
+},
+{
+"ref": "project-hail-mary",
+"title": "Project Hail Mary",
+"author": "Andy Weir",
+"gene": "interstellar_void",
+"confidence": 0.7,
+"why": "Lone voyage through the dark to Tau Ceti"
+},
+{
+"ref": "blindsight",
+"title": "Blindsight",
+"author": "Peter Watts",
+"gene": "interstellar_void",
+"confidence": 0.7,
+"why": "Contact mission to the cold edge of the Oort cloud"
+},
+{
+"ref": "across-the-universe",
+"title": "Across the Universe",
+"author": "Beth Revis",
+"gene": "interstellar_void",
+"confidence": 0.7,
+"why": "Generation ship Godspeed in the long dark"
+},
+{
+"ref": "/works/OL72826W",
+"title": "Exultant",
+"author": "Stephen Baxter",
+"gene": "galactic_core",
+"confidence": 0.8,
+"why": "War against the Xeelee at the Galactic Core"
+},
+{
+"ref": null,
+"title": "Incandescence",
+"author": "Greg Egan",
+"gene": "galactic_core",
+"confidence": 0.8,
+"why": "A world near the galactic core and the mysterious Aloof"
+},
+{
+"ref": null,
+"title": "Great Sky River",
+"author": "Gregory Benford",
+"gene": "galactic_core",
+"confidence": 0.8,
+"why": "Humans hunted by mechs near the Galactic Center"
+},
+{
+"ref": null,
+"title": "Furious Gulf",
+"author": "Gregory Benford",
+"gene": "galactic_core",
+"confidence": 0.8,
+"why": "Journey into the black hole at the galactic core"
+},
+{
+"ref": "a-fire-upon-the-deep",
+"title": "A Fire Upon the Deep",
+"author": "Vernor Vinge",
+"gene": "galactic_core",
+"confidence": 0.6,
+"why": "Zones of Thought, the Unthinking Depths at the core"
+},
+{
+"ref": "the-collapsing-empire-the-interdependency",
+"title": "The Collapsing Empire",
+"author": "John Scalzi",
+"gene": "wormhole_networks",
+"confidence": 0.8,
+"why": "Empire held together by the Flow, which is collapsing"
+},
+{
+"ref": "pandoras-star",
+"title": "Pandora's Star",
+"author": "Peter F. Hamilton",
+"gene": "wormhole_networks",
+"confidence": 0.8,
+"why": "Commonwealth worlds linked by wormhole rail"
+},
+{
+"ref": "shards-of-earth",
+"title": "Shards of Earth",
+"author": "Adrian Tchaikovsky",
+"gene": "hyperspace_has_a_geography",
+"confidence": 0.8,
+"why": "Unspace, a dangerous realm with its own routes"
+},
+{
+"ref": "a-fire-upon-the-deep",
+"title": "A Fire Upon the Deep",
+"author": "Vernor Vinge",
+"gene": "hyperspace_has_a_geography",
+"confidence": 0.8,
+"why": "Zones of Thought where physics changes by region"
+},
+{
+"ref": "/works/OL17403W",
+"title": "The Fountains of Paradise",
+"author": "Arthur C. Clarke",
+"gene": "space_elevators",
+"confidence": 0.8,
+"why": "Building the first space elevator from Taprobane"
+},
+{
+"ref": "red-mars",
+"title": "Red Mars",
+"author": "Kim Stanley Robinson",
+"gene": "space_elevators",
+"confidence": 0.8,
+"why": "The Mars space elevator and its catastrophic fall"
+},
+{
+"ref": "/works/OL81655W",
+"title": "Green Mars",
+"author": "Kim Stanley Robinson",
+"gene": "space_elevators",
+"confidence": 0.7,
+"why": "Rebuilding and fighting over the Mars cable"
+},
+{
+"ref": null,
+"title": "The Web Between the Worlds",
+"author": "Charles Sheffield",
+"gene": "space_elevators",
+"confidence": 0.8,
+"why": "Engineer builds a beanstalk to orbit"
+},
+{
+"ref": null,
+"title": "Friday",
+"author": "Robert A. Heinlein",
+"gene": "space_elevators",
+"confidence": 0.6,
+"why": "Nairobi beanstalk central to the setting"
+},
+{
+"ref": "ringworld",
+"title": "Ringworld",
+"author": "Larry Niven",
+"gene": "ringworlds",
+"confidence": 0.8,
+"why": "The Ringworld itself"
+},
+{
+"ref": null,
+"title": "The Ringworld Engineers",
+"author": "Larry Niven",
+"gene": "ringworlds",
+"confidence": 0.8,
+"why": "Return to the Ringworld as it drifts toward its sun"
+},
+{
+"ref": "consider-phlebas-banks",
+"title": "Consider Phlebas",
+"author": "Iain M. Banks",
+"gene": "ringworlds",
+"confidence": 0.8,
+"why": "The Vavatch Orbital, a ring habitat facing destruction"
+},
+{
+"ref": "look-to-windward",
+"title": "Look to Windward",
+"author": "Iain M. Banks",
+"gene": "ringworlds",
+"confidence": 0.8,
+"why": "Life on the Masaq' Orbital"
+},
+{
+"ref": null,
+"title": "Halo: The Flood",
+"author": "William C. Dietz",
+"gene": "ringworlds",
+"confidence": 0.8,
+"why": "Battle on the Halo ringworld"
+},
+{
+"ref": "accelerando",
+"title": "Accelerando",
+"author": "Charles Stross",
+"gene": "dyson_swarms",
+"confidence": 0.8,
+"why": "Solar system dismantled into a Matrioshka brain around the Sun"
+},
+{
+"ref": null,
+"title": "Orbitsville",
+"author": "Bob Shaw",
+"gene": "dyson_swarms",
+"confidence": 0.8,
+"why": "A vast Dyson sphere found enclosing a star"
+},
+{
+"ref": "/works/OL3290739W",
+"title": "Star Maker",
+"author": "Olaf Stapledon",
+"gene": "dyson_swarms",
+"confidence": 0.7,
+"why": "Civilizations enclosing their stars, origin of the Dyson idea"
+},
+{
+"ref": "pandoras-star",
+"title": "Pandora's Star",
+"author": "Peter F. Hamilton",
+"gene": "dyson_swarms",
+"confidence": 0.8,
+"why": "The Dyson Pair, two stars enclosed by barriers"
+},
+{
+"ref": "judas-unchained",
+"title": "Judas Unchained",
+"author": "Peter F. Hamilton",
+"gene": "dyson_swarms",
+"confidence": 0.6,
+"why": "Fallout from opening the Dyson Alpha enclosure"
+},
+{
+"ref": "the-prefect",
+"title": "The Prefect",
+"author": "Alastair Reynolds",
+"gene": "orbital_habitats",
+"confidence": 0.8,
+"why": "The Glitter Band's ten thousand habitats"
+},
+{
+"ref": "2312",
+"title": "2312",
+"author": "Kim Stanley Robinson",
+"gene": "orbital_habitats",
+"confidence": 0.8,
+"why": "Hollowed asteroid terraria and orbital cities"
+},
+{
+"ref": "rendezvous-with-rama",
+"title": "Rendezvous with Rama",
+"author": "Arthur C. Clarke",
+"gene": "world_ships",
+"confidence": 0.8,
+"why": "Rama, a vast cylinder world drifting through the system"
+},
+{
+"ref": "eon",
+"title": "Eon",
+"author": "Greg Bear",
+"gene": "world_ships",
+"confidence": 0.8,
+"why": "The hollowed asteroid Thistledown"
+},
+{
+"ref": "marrow",
+"title": "Marrow",
+"author": "Robert Reed",
+"gene": "world_ships",
+"confidence": 0.8,
+"why": "The Great Ship, a vessel with a planet inside"
+},
+{
+"ref": "pushing-ice",
+"title": "Pushing Ice",
+"author": "Alastair Reynolds",
+"gene": "world_ships",
+"confidence": 0.8,
+"why": "A moon, Janus, turns out to be a ship under drive"
+},
+{
+"ref": "the-hitchhikers-guide-to-the-galaxy",
+"title": "The Hitchhiker's Guide to the Galaxy",
+"author": "Douglas Adams",
+"gene": "planet_sized_computers",
+"confidence": 0.8,
+"why": "Earth was built as a computer to find the Question"
+},
+{
+"ref": "accelerando",
+"title": "Accelerando",
+"author": "Charles Stross",
+"gene": "planet_sized_computers",
+"confidence": 0.8,
+"why": "Jupiter brains and the Matrioshka brain"
+},
+{
+"ref": "revelation-space",
+"title": "Revelation Space",
+"author": "Alastair Reynolds",
+"gene": "planet_sized_computers",
+"confidence": 0.7,
+"why": "The Hades Matrix, a neutron star turned computer"
+},
+{
+"ref": "matter",
+"title": "Matter",
+"author": "Iain M. Banks",
+"gene": "artificial_worlds",
+"confidence": 0.8,
+"why": "Sursamen, a manufactured Shellworld"
+},
+{
+"ref": "the-hitchhikers-guide-to-the-galaxy",
+"title": "The Hitchhiker's Guide to the Galaxy",
+"author": "Douglas Adams",
+"gene": "artificial_worlds",
+"confidence": 0.8,
+"why": "Magrathea's planet-building industry"
+},
+{
+"ref": null,
+"title": "Oath of Fealty",
+"author": "Larry Niven and Jerry Pournelle",
+"gene": "arcologies",
+"confidence": 0.8,
+"why": "Todos Santos, a self-contained arcology city"
+},
+{
+"ref": null,
+"title": "The World Inside",
+"author": "Robert Silverberg",
+"gene": "arcologies",
+"confidence": 0.8,
+"why": "Urban monads, thousand-floor towers people never leave"
+},
+{
+"ref": "the-water-knife",
+"title": "The Water Knife",
+"author": "Paolo Bacigalupi",
+"gene": "arcologies",
+"confidence": 0.8,
+"why": "Luxury arcologies in drought-struck Phoenix"
+},
+{
+"ref": "the-caves-of-steel",
+"title": "The Caves of Steel",
+"author": "Isaac Asimov",
+"gene": "arcologies",
+"confidence": 0.7,
+"why": "Enclosed mega-Cities nobody leaves"
+},
+{
+"ref": null,
+"title": "High-Rise",
+"author": "J. G. Ballard",
+"gene": "arcologies",
+"confidence": 0.65,
+"why": "A self-sufficient tower block that becomes a world"
+},
+{
+"ref": "wool",
+"title": "Wool",
+"author": "Hugh Howey",
+"gene": "arcologies",
+"confidence": 0.65,
+"why": "The Silo, a whole society in one buried tower"
+},
+{
+"ref": null,
+"title": "Bowl of Heaven",
+"author": "Gregory Benford and Larry Niven",
+"gene": "stellar_engineering",
+"confidence": 0.8,
+"why": "A star-driven bowl that moves its sun"
+},
+{
+"ref": "/works/OL8339214W",
+"title": "Sunstorm",
+"author": "Arthur C. Clarke and Stephen Baxter",
+"gene": "stellar_engineering",
+"confidence": 0.8,
+"why": "Building a solar shield against a deadly sunstorm"
+},
+{
+"ref": "redemption-ark",
+"title": "Redemption Ark",
+"author": "Alastair Reynolds",
+"gene": "stellar_engineering",
+"confidence": 0.7,
+"why": "Inhibitors build machinery to make a star flare"
+},
+{
+"ref": "/works/OL3290739W",
+"title": "Star Maker",
+"author": "Olaf Stapledon",
+"gene": "stellar_engineering",
+"confidence": 0.6,
+"why": "Galactic civilizations reshaping and harnessing stars"
+},
+{
+"ref": "the-stars-are-legion",
+"title": "The Stars Are Legion",
+"author": "Kameron Hurley",
+"gene": "the_structure_is_alive",
+"confidence": 0.8,
+"why": "The Legion's worldships are living, failing organisms"
+},
+{
+"ref": "the-reality-dysfunction",
+"title": "The Reality Dysfunction",
+"author": "Peter F. Hamilton",
+"gene": "the_structure_is_alive",
+"confidence": 0.8,
+"why": "Edenist bitek habitats are sentient living structures"
+},
+{
+"ref": "hull-zero-three",
+"title": "Hull Zero Three",
+"author": "Greg Bear",
+"gene": "the_structure_is_alive",
+"confidence": 0.7,
+"why": "A ship that grows, kills and reshapes its crew"
+},
+{
+"ref": "annihilation",
+"title": "Annihilation",
+"author": "Jeff VanderMeer",
+"gene": "the_structure_is_alive",
+"confidence": 0.65,
+"why": "The Tower, a living structure that writes on its walls"
+},
+{
+"ref": "embassytown",
+"title": "Embassytown",
+"author": "China Miéville",
+"gene": "the_structure_is_alive",
+"confidence": 0.6,
+"why": "Ariekei living biorigged buildings"
+},
+{
+"ref": "the-time-machine",
+"title": "The Time Machine",
+"author": "H. G. Wells",
+"gene": "undercity",
+"confidence": 0.8,
+"why": "The Morlocks' world below the surface"
+},
+{
+"ref": null,
+"title": "Metropolis",
+"author": "Thea von Harbou",
+"gene": "undercity",
+"confidence": 0.8,
+"why": "Workers' city beneath the gleaming towers"
+},
+{
+"ref": "red-rising",
+"title": "Red Rising",
+"author": "Pierce Brown",
+"gene": "undercity",
+"confidence": 0.7,
+"why": "Reds toil in mines beneath Mars, lied to about the surface"
+},
+{
+"ref": "wool",
+"title": "Wool",
+"author": "Hugh Howey",
+"gene": "undercity",
+"confidence": 0.65,
+"why": "The Down Deep of the silo, its forgotten bottom levels"
+},
+{
+"ref": "altered-carbon",
+"title": "Altered Carbon",
+"author": "Richard K. Morgan",
+"gene": "undercity",
+"confidence": 0.6,
+"why": "Bay City's lawless lower districts"
+},
+{
+"ref": "oryx-and-crake",
+"title": "Oryx and Crake",
+"author": "Margaret Atwood",
+"gene": "corporate_enclaves",
+"confidence": 0.8,
+"why": "Walled corporate Compounds versus the pleeblands"
+},
+{
+"ref": "/works/OL675774W",
+"title": "The Year of the Flood",
+"author": "Margaret Atwood",
+"gene": "corporate_enclaves",
+"confidence": 0.8,
+"why": "Corporate Compounds behind the gardeners' story"
+},
+{
+"ref": "snow-crash",
+"title": "Snow Crash",
+"author": "Neal Stephenson",
+"gene": "corporate_enclaves",
+"confidence": 0.8,
+"why": "Burbclaves and franchise-nation enclaves"
+},
+{
+"ref": "the-water-knife",
+"title": "The Water Knife",
+"author": "Paolo Bacigalupi",
+"gene": "corporate_enclaves",
+"confidence": 0.7,
+"why": "Corporate arcologies sealed off from refugees"
+},
+{
+"ref": "logans-run",
+"title": "Logan's Run",
+"author": "William F. Nolan and George Clayton Johnson",
+"gene": "domed_cities",
+"confidence": 0.8,
+"why": "Domed city where life ends at 21"
+},
+{
+"ref": "/works/OL5731831W",
+"title": "The Sky Inside (The Sky Inside #1)",
+"author": "Clare B. Dunkle",
+"gene": "domed_cities",
+"confidence": 0.8,
+"why": "A sealed domed suburb with a fake sky"
+},
+{
+"ref": "perdido-street-station",
+"title": "Perdido Street Station",
+"author": "China Miéville",
+"gene": "city_as_a_character",
+"confidence": 0.8,
+"why": "New Crobuzon, sprawling and alive"
+},
+{
+"ref": "the-city-the-city",
+"title": "The City & the City",
+"author": "China Miéville",
+"gene": "city_as_a_character",
+"confidence": 0.8,
+"why": "Two cities sharing one space, the setting drives the plot"
+},
+{
+"ref": "dhalgren",
+"title": "Dhalgren",
+"author": "Samuel R. Delany",
+"gene": "city_as_a_character",
+"confidence": 0.8,
+"why": "Bellona, a city that bends time and identity"
+},
+{
+"ref": null,
+"title": "The City We Became",
+"author": "N. K. Jemisin",
+"gene": "city_as_a_character",
+"confidence": 0.8,
+"why": "New York literally comes alive through avatars"
+},
+{
+"ref": "the-scar",
+"title": "The Scar",
+"author": "China Miéville",
+"gene": "floating_and_flying_cities",
+"confidence": 0.8,
+"why": "Armada, a city of lashed-together ships at sea"
+},
+{
+"ref": "blackfish-city",
+"title": "Blackfish City",
+"author": "Sam J. Miller",
+"gene": "floating_and_flying_cities",
+"confidence": 0.8,
+"why": "Qaanaaq, a floating Arctic city"
+},
+{
+"ref": null,
+"title": "Cities in Flight",
+"author": "James Blish",
+"gene": "floating_and_flying_cities",
+"confidence": 0.8,
+"why": "Whole cities spindizzied off Earth into space"
+},
+{
+"ref": "/works/OL61825W",
+"title": "The Coming Race",
+"author": "Edward Bulwer Lytton, Baron Lytton",
+"gene": "underground_civilizations",
+"confidence": 0.8,
+"why": "The Vril-ya's subterranean civilization"
+},
+{
+"ref": "/works/OL1417907W",
+"title": "At the Earth's Core",
+"author": "Edgar Rice Burroughs",
+"gene": "underground_civilizations",
+"confidence": 0.8,
+"why": "Pellucidar, the world inside the Earth"
+},
+{
+"ref": "/works/OL4132752W",
+"title": "The City of Ember (The First Book of Ember)",
+"author": "Jeanne DuPrau",
+"gene": "underground_civilizations",
+"confidence": 0.8,
+"why": "Ember, an underground city that forgot the sky"
+},
+{
+"ref": "ancillary-sword",
+"title": "Ancillary Sword",
+"author": "Ann Leckie",
+"gene": "orbital_slums",
+"confidence": 0.8,
+"why": "The Undergarden, Athoek Station's neglected slum"
+},
+{
+"ref": "leviathan-wakes",
+"title": "Leviathan Wakes",
+"author": "James S. A. Corey",
+"gene": "orbital_slums",
+"confidence": 0.8,
+"why": "Belter tenements of Ceres and Eros"
+},
+{
+"ref": "downbelow-station",
+"title": "Downbelow Station",
+"author": "C. J. Cherryh",
+"gene": "orbital_slums",
+"confidence": 0.8,
+"why": "Q Zone, the refugee slum on Pell Station"
+},
+{
+"ref": "calibans-war",
+"title": "Caliban's War",
+"author": "James S. A. Corey",
+"gene": "orbital_slums",
+"confidence": 0.6,
+"why": "Ganymede refugees after the station collapses"
+},
+{
+"ref": "the-martian-chronicles",
+"title": "The Martian Chronicles",
+"author": "Ray Bradbury",
+"gene": "frontier_towns",
+"confidence": 0.8,
+"why": "Small settler towns rising on Mars"
+},
+{
+"ref": "/works/OL579073W",
+"title": "Four-Day Planet",
+"author": "H. Beam Piper",
+"gene": "frontier_towns",
+"confidence": 0.8,
+"why": "Port Sandor on Fenris, a rough frontier port"
+},
+{
+"ref": "/works/OL579085W",
+"title": "Little Fuzzy",
+"author": "H. Beam Piper",
+"gene": "frontier_towns",
+"confidence": 0.8,
+"why": "Mahlerville frontier on Zarathustra"
+},
+{
+"ref": "walkaway",
+"title": "Walkaway",
+"author": "Cory Doctorow",
+"gene": "anarchist_commune",
+"confidence": 0.8,
+"why": "Walkaway communities building without rulers"
+},
+{
+"ref": "woman-on-the-edge-of-time",
+"title": "Woman on the Edge of Time",
+"author": "Marge Piercy",
+"gene": "anarchist_commune",
+"confidence": 0.75,
+"why": "Mattapoisett, a stateless communal future"
+},
+{
+"ref": null,
+"title": "The Fifth Sacred Thing",
+"author": "Starhawk",
+"gene": "anarchist_commune",
+"confidence": 0.8,
+"why": "Anarchic eco-commune in future San Francisco"
+},
+{
+"ref": "herland",
+"title": "Herland",
+"author": "Charlotte Perkins Gilman",
+"gene": "matriarchies_and_new_families",
+"confidence": 0.8,
+"why": "An all-woman society"
+},
+{
+"ref": "the-gate-to-womens-country",
+"title": "The Gate to Women's Country",
+"author": "Sheri S. Tepper",
+"gene": "matriarchies_and_new_families",
+"confidence": 0.8,
+"why": "Women's towns and garrisoned men"
+},
+{
+"ref": "/works/OL52260W",
+"title": "The First Men in the Moon",
+"author": "H. G. Wells",
+"gene": "hive_societies",
+"confidence": 0.8,
+"why": "The Selenites' insect-like caste society"
+},
+{
+"ref": "enders-game",
+"title": "Ender's Game",
+"author": "Orson Scott Card",
+"gene": "hive_societies",
+"confidence": 0.7,
+"why": "The Formics, a hive with a queen"
+},
+{
+"ref": "starship-troopers",
+"title": "Starship Troopers",
+"author": "Robert A. Heinlein",
+"gene": "hive_societies",
+"confidence": 0.7,
+"why": "The Arachnid Bugs and their castes"
+},
+{
+"ref": "the-mote-in-gods-eye",
+"title": "The Mote in God's Eye",
+"author": "Larry Niven",
+"gene": "hive_societies",
+"confidence": 0.7,
+"why": "Moties' rigid caste biology"
+},
+{
+"ref": "brave-new-world",
+"title": "Brave New World",
+"author": "Aldous Huxley",
+"gene": "hive_societies",
+"confidence": 0.6,
+"why": "Caste-bred society where individuals serve the whole"
+},
+{
+"ref": "xenocide",
+"title": "Xenocide",
+"author": "Orson Scott Card",
+"gene": "hive_societies",
+"confidence": 0.6,
+"why": "Hive Queen and the pequenino hive-trees"
+},
+{
+"ref": "/works/OL17933495W",
+"title": "Record of a Spaceborn Few",
+"author": "Becky Chambers",
+"gene": "nomad_fleets",
+"confidence": 0.8,
+"why": "The Exodus Fleet, humans living aboard homesteaders"
+},
+{
+"ref": null,
+"title": "Cities in Flight",
+"author": "James Blish",
+"gene": "nomad_fleets",
+"confidence": 0.8,
+"why": "Okie cities wandering the galaxy for work"
+},
+{
+"ref": "a-deepness-in-the-sky-zones-of-thought",
+"title": "A Deepness in the Sky",
+"author": "Vernor Vinge",
+"gene": "nomad_fleets",
+"confidence": 0.7,
+"why": "Qeng Ho traders as a culture in motion"
+},
+{
+"ref": "the-fall-of-hyperion",
+"title": "The Fall of Hyperion",
+"author": "Dan Simmons",
+"gene": "nomad_fleets",
+"confidence": 0.65,
+"why": "Ouster swarms living in space"
+},
+{
+"ref": "a-canticle-for-leibowitz",
+"title": "A Canticle for Leibowitz",
+"author": "Walter M. Miller Jr.",
+"gene": "monastery_worlds",
+"confidence": 0.8,
+"why": "Monks preserving knowledge after the fall"
+},
+{
+"ref": "anathem",
+"title": "Anathem",
+"author": "Neal Stephenson",
+"gene": "monastery_worlds",
+"confidence": 0.8,
+"why": "Mathic concents keeping knowledge across centuries"
+},
+{
+"ref": "foundation",
+"title": "Foundation",
+"author": "Isaac Asimov",
+"gene": "monastery_worlds",
+"confidence": 0.7,
+"why": "Encyclopedists preserving knowledge through the dark age"
+},
+{
+"ref": "neverness",
+"title": "Neverness",
+"author": "David Zindell",
+"gene": "monastery_worlds",
+"confidence": 0.65,
+"why": "An order of mystic mathematicians and pilots"
+},
+{
+"ref": "snow-crash",
+"title": "Snow Crash",
+"author": "Neal Stephenson",
+"gene": "virtual_cities",
+"confidence": 0.8,
+"why": "The Street in the Metaverse"
+},
+{
+"ref": "ready-player-one",
+"title": "Ready Player One",
+"author": "Ernest Cline",
+"gene": "virtual_cities",
+"confidence": 0.8,
+"why": "The OASIS and its planets"
+},
+{
+"ref": "permutation-city",
+"title": "Permutation City",
+"author": "Greg Egan",
+"gene": "virtual_cities",
+"confidence": 0.8,
+"why": "Elysium, a city that exists only in computation"
+},
+{
+"ref": null,
+"title": "City of Golden Shadow",
+"author": "Tad Williams",
+"gene": "virtual_cities",
+"confidence": 0.8,
+"why": "Otherland's virtual golden city"
+},
+{
+"ref": "riddley-walker",
+"title": "Riddley Walker",
+"author": "Russell Hoban",
+"gene": "nuclear_wasteland",
+"confidence": 0.8,
+"why": "Post-nuclear Kent, language and memory broken"
+},
+{
+"ref": "alas-babylon",
+"title": "Alas, Babylon",
+"author": "Pat Frank",
+"gene": "nuclear_wasteland",
+"confidence": 0.8,
+"why": "Florida town after nuclear war"
+},
+{
+"ref": "/works/OL1911334W",
+"title": "The Chrysalids",
+"author": "John Wyndham",
+"gene": "nuclear_wasteland",
+"confidence": 0.8,
+"why": "Mutation-haunted lands after the Tribulation"
+},
+{
+"ref": "/works/OL5690515W",
+"title": "Deathlands",
+"author": "James Axler",
+"gene": "nuclear_wasteland",
+"confidence": 0.8,
+"why": "Rad-blasted America and mutants"
+},
+{
+"ref": "earth-abides",
+"title": "Earth Abides",
+"author": "George R. Stewart",
+"gene": "rewilded_earth",
+"confidence": 0.8,
+"why": "Nature reclaims a nearly empty world"
+},
+{
+"ref": "a-psalm-for-the-wild-built",
+"title": "A Psalm for the Wild-Built",
+"author": "Becky Chambers",
+"gene": "rewilded_earth",
+"confidence": 0.8,
+"why": "Panga's wilderness left alone after the robots went"
+},
+{
+"ref": "/works/OL1176822W",
+"title": "After London",
+"author": "Richard Jefferies",
+"gene": "rewilded_earth",
+"confidence": 0.8,
+"why": "England returned to forest and marsh"
+},
+{
+"ref": "the-long-earth",
+"title": "The Long Earth",
+"author": "Terry Pratchett and Stephen Baxter",
+"gene": "rewilded_earth",
+"confidence": 0.8,
+"why": "Endless untouched wild Earths"
+},
+{
+"ref": null,
+"title": "Lucifer's Hammer",
+"author": "Larry Niven and Jerry Pournelle",
+"gene": "rebuilding_civilization",
+"confidence": 0.8,
+"why": "Survivors rebuild after a comet strike"
+},
+{
+"ref": null,
+"title": "The Postman",
+"author": "David Brin",
+"gene": "rebuilding_civilization",
+"confidence": 0.8,
+"why": "A con man restores the idea of a nation"
+},
+{
+"ref": "parable-of-the-sower",
+"title": "Parable of the Sower",
+"author": "Octavia E. Butler",
+"gene": "rebuilding_civilization",
+"confidence": 0.6,
+"why": "Earthseed starts building a community from ruin"
+},
+{
+"ref": "foundation",
+"title": "Foundation",
+"author": "Isaac Asimov",
+"gene": "dark_age_after_empire",
+"confidence": 0.8,
+"why": "The Galactic Empire falls into a dark age"
+},
+{
+"ref": "/works/OL579067W",
+"title": "Space Viking",
+"author": "H. Beam Piper",
+"gene": "dark_age_after_empire",
+"confidence": 0.8,
+"why": "Successor states after the Federation's collapse"
+},
+{
+"ref": "a-canticle-for-leibowitz",
+"title": "A Canticle for Leibowitz",
+"author": "Walter M. Miller Jr.",
+"gene": "dark_age_after_empire",
+"confidence": 0.8,
+"why": "Relics of the past worshipped in a new dark age"
+},
+{
+"ref": "engine-summer",
+"title": "Engine Summer",
+"author": "John Crowley",
+"gene": "dark_age_after_empire",
+"confidence": 0.6,
+"why": "Far future where old tech is half-myth"
+},
+{
+"ref": "sea-of-rust",
+"title": "Sea of Rust",
+"author": "C. Robert Cargill",
+"gene": "machine_wasteland",
+"confidence": 0.8,
+"why": "Robots inherit a dead Earth after wiping out humans"
+},
+{
+"ref": "service-model",
+"title": "Service Model",
+"author": "Adrian Tchaikovsky",
+"gene": "machine_wasteland",
+"confidence": 0.8,
+"why": "A robot wanders a world where humans are gone"
+},
+{
+"ref": null,
+"title": "I Have No Mouth, and I Must Scream",
+"author": "Harlan Ellison",
+"gene": "machine_wasteland",
+"confidence": 0.8,
+"why": "AM has won and keeps the last humans"
+},
+{
+"ref": "roadside-picnic-arkady",
+"title": "Roadside Picnic",
+"author": "Arkady and Boris Strugatsky",
+"gene": "quarantine_zones",
+"confidence": 0.8,
+"why": "The Zone, fenced and lethal"
+},
+{
+"ref": "annihilation",
+"title": "Annihilation",
+"author": "Jeff VanderMeer",
+"gene": "quarantine_zones",
+"confidence": 0.8,
+"why": "Area X behind the border"
+},
+{
+"ref": "quarantine",
+"title": "Quarantine",
+"author": "Greg Egan",
+"gene": "quarantine_zones",
+"confidence": 0.8,
+"why": "Earth sealed inside the Bubble"
+},
+{
+"ref": null,
+"title": "Zone One",
+"author": "Colson Whitehead",
+"gene": "quarantine_zones",
+"confidence": 0.8,
+"why": "Walled-off Manhattan being cleared"
+},
+{
+"ref": "/works/OL20096080W",
+"title": "The Warehouse",
+"author": "Rob hart",
+"gene": "gig_economy_hell",
+"confidence": 0.8,
+"why": "Cloud megacorp workers rated and tracked"
+},
+{
+"ref": "/works/OL19792034W",
+"title": "QualityLand",
+"author": "Marc-Uwe Kling",
+"gene": "gig_economy_hell",
+"confidence": 0.8,
+"why": "Ranked citizens in an algorithm-run economy"
+},
+{
+"ref": "snow-crash",
+"title": "Snow Crash",
+"author": "Neal Stephenson",
+"gene": "gig_economy_hell",
+"confidence": 0.7,
+"why": "Freelance deliverator Hiro hustling gigs"
+},
+{
+"ref": "walkaway",
+"title": "Walkaway",
+"author": "Cory Doctorow",
+"gene": "gig_economy_hell",
+"confidence": 0.6,
+"why": "Precarious default life that drives people to walk away"
+},
+{
+"ref": "new-york-2140",
+"title": "New York 2140",
+"author": "Kim Stanley Robinson",
+"gene": "climate_fiction",
+"confidence": 0.8,
+"why": "Drowned New York"
+},
+{
+"ref": "termination-shock",
+"title": "Termination Shock",
+"author": "Neal Stephenson",
+"gene": "climate_fiction",
+"confidence": 0.8,
+"why": "Geoengineering amid heat and floods"
+},
+{
+"ref": "the-water-knife",
+"title": "The Water Knife",
+"author": "Paolo Bacigalupi",
+"gene": "climate_fiction",
+"confidence": 0.8,
+"why": "Water wars in the drought Southwest"
+},
+{
+"ref": "a-psalm-for-the-wild-built",
+"title": "A Psalm for the Wild-Built",
+"author": "Becky Chambers",
+"gene": "solarpunk",
+"confidence": 0.8,
+"why": "Gentle post-industrial green future"
+},
+{
+"ref": "ecotopia",
+"title": "Ecotopia",
+"author": "Ernest Callenbach",
+"gene": "solarpunk",
+"confidence": 0.8,
+"why": "Ecological society after secession"
+},
+{
+"ref": null,
+"title": "Pacific Edge",
+"author": "Kim Stanley Robinson",
+"gene": "solarpunk",
+"confidence": 0.8,
+"why": "Small-town California utopia"
+},
+{
+"ref": "the-ministry-for-the-future",
+"title": "The Ministry for the Future",
+"author": "Kim Stanley Robinson",
+"gene": "solarpunk",
+"confidence": 0.6,
+"why": "Climate repair building a better world"
+},
+{
+"ref": "the-windup-girl",
+"title": "The Windup Girl",
+"author": "Paolo Bacigalupi",
+"gene": "biotech_boom",
+"confidence": 0.8,
+"why": "Calorie companies and gene-hacked crops"
+},
+{
+"ref": "autonomous",
+"title": "Autonomous",
+"author": "Annalee Newitz",
+"gene": "biotech_boom",
+"confidence": 0.8,
+"why": "Pirate drug synthesis and patent wars"
+},
+{
+"ref": "/works/OL46904W",
+"title": "Next",
+"author": "Michael Crichton",
+"gene": "biotech_boom",
+"confidence": 0.8,
+"why": "Genetic-engineering free-for-all"
+},
+{
+"ref": "rainbows-end",
+"title": "Rainbows End",
+"author": "Vernor Vinge",
+"gene": "augmented_reality_layers",
+"confidence": 0.8,
+"why": "Wearable overlays on every surface"
+},
+{
+"ref": "daemon",
+"title": "Daemon",
+"author": "Daniel Suarez",
+"gene": "augmented_reality_layers",
+"confidence": 0.8,
+"why": "The D-Space AR layer"
+},
+{
+"ref": "infinite-detail",
+"title": "Infinite Detail",
+"author": "Tim Maughan",
+"gene": "augmented_reality_layers",
+"confidence": 0.7,
+"why": "A smart city drenched in data layers"
+},
+{
+"ref": null,
+"title": "Halting State",
+"author": "Charles Stross",
+"gene": "augmented_reality_layers",
+"confidence": 0.8,
+"why": "AR glasses and game overlays in Edinburgh"
+},
+{
+"ref": "saturn-run-sandford",
+"title": "Saturn Run",
+"author": "John Sandford and Ctein",
+"gene": "space_race_round_two",
+"confidence": 0.8,
+"why": "US-China race to an alien craft at Saturn"
+},
+{
+"ref": "delta-v",
+"title": "Delta-v",
+"author": "Daniel Suarez",
+"gene": "space_race_round_two",
+"confidence": 0.8,
+"why": "Private race to mine asteroids"
+},
+{
+"ref": "infomocracy",
+"title": "Infomocracy",
+"author": "Malka Older",
+"gene": "balkanized_nations",
+"confidence": 0.8,
+"why": "World of centenals in micro-democracy"
+},
+{
+"ref": "the-water-knife",
+"title": "The Water Knife",
+"author": "Paolo Bacigalupi",
+"gene": "balkanized_nations",
+"confidence": 0.8,
+"why": "US states closing borders against each other"
+},
+{
+"ref": "the-man-in-the-high-castle",
+"title": "The Man in the High Castle",
+"author": "Philip K. Dick",
+"gene": "alternate_history",
+"confidence": 0.8,
+"why": "Axis won WWII"
+},
+{
+"ref": "the-calculating-stars",
+"title": "The Calculating Stars",
+"author": "Mary Robinette Kowal",
+"gene": "alternate_history",
+"confidence": 0.8,
+"why": "Meteor strike in 1952 accelerates spaceflight"
+},
+{
+"ref": "/works/OL2685476W",
+"title": "The Skylark of Space",
+"author": "Edward E. Smith",
+"gene": "retro_futures",
+"confidence": 0.8,
+"why": "Rayguns and pulp interstellar travel"
+},
+{
+"ref": "the-calculating-stars",
+"title": "The Calculating Stars",
+"author": "Mary Robinette Kowal",
+"gene": "retro_futures",
+"confidence": 0.8,
+"why": "1950s punchcard space program"
+},
+{
+"ref": "neuromancer",
+"title": "Neuromancer",
+"author": "William Gibson",
+"gene": "combat_implants",
+"confidence": 0.8,
+"why": "Molly's implanted razors and wired reflexes"
+},
+{
+"ref": "hardwired",
+"title": "Hardwired",
+"author": "Walter Jon Williams",
+"gene": "combat_implants",
+"confidence": 0.8,
+"why": "Cowboy's and Sarah's combat wiring"
+},
+{
+"ref": "altered-carbon",
+"title": "Altered Carbon",
+"author": "Richard K. Morgan",
+"gene": "combat_implants",
+"confidence": 0.8,
+"why": "Neurachem combat enhancement in Envoy sleeves"
+},
+{
+"ref": "altered-carbon",
+"title": "Altered Carbon",
+"author": "Richard K. Morgan",
+"gene": "longevity_gap",
+"confidence": 0.8,
+"why": "Meths live for centuries while the poor get one life"
+},
+{
+"ref": "/works/OL59733W",
+"title": "The Door into Summer",
+"author": "Robert A. Heinlein",
+"gene": "cryosleep",
+"confidence": 0.8,
+"why": "Cold Sleep to skip 30 years and wake to strangers"
+},
+{
+"ref": "across-the-universe",
+"title": "Across the Universe",
+"author": "Beth Revis",
+"gene": "cryosleep",
+"confidence": 0.8,
+"why": "Frozen colonists aboard Godspeed, woken early"
+},
+{
+"ref": "schismatrix",
+"title": "Schismatrix",
+"author": "Bruce Sterling",
+"gene": "adapted_to_space",
+"confidence": 0.8,
+"why": "Shapers redesign humans for life off Earth"
+},
+{
+"ref": null,
+"title": "Falling Free",
+"author": "Lois McMaster Bujold",
+"gene": "adapted_to_space",
+"confidence": 0.8,
+"why": "Quaddies, four-armed people engineered for zero g"
+},
+{
+"ref": "seveneves",
+"title": "Seveneves",
+"author": "Neal Stephenson",
+"gene": "adapted_to_space",
+"confidence": 0.8,
+"why": "Human races engineered for life in orbit"
+},
+{
+"ref": "2312",
+"title": "2312",
+"author": "Kim Stanley Robinson",
+"gene": "adapted_to_space",
+"confidence": 0.7,
+"why": "Spacers with bodies modified for space life"
+},
+{
+"ref": "leviathan-wakes",
+"title": "Leviathan Wakes",
+"author": "James S. A. Corey",
+"gene": "adapted_to_space",
+"confidence": 0.7,
+"why": "Belters physically shaped by low gravity"
+},
+{
+"ref": null,
+"title": "Man Plus",
+"author": "Frederik Pohl",
+"gene": "adapted_to_space",
+"confidence": 0.7,
+"why": "A man rebuilt as a cyborg to survive Mars unprotected"
+},
+{
+"ref": null,
+"title": "Hospital Station",
+"author": "James White",
+"gene": "medical_frontier",
+"confidence": 0.8,
+"why": "Doctors treating every alien physiology"
+},
+{
+"ref": null,
+"title": "Star Surgeon",
+"author": "Alan E. Nourse",
+"gene": "medical_frontier",
+"confidence": 0.8,
+"why": "Alien doctor at Hospital Earth"
+},
+{
+"ref": null,
+"title": "Star Healer",
+"author": "James White",
+"gene": "medical_frontier",
+"confidence": 0.8,
+"why": "Conway's xenomedicine at Sector General"
+},
+{
+"ref": "a-memory-called-empire",
+"title": "A Memory Called Empire",
+"author": "Arkady Martine",
+"gene": "symbiotes",
+"confidence": 0.8,
+"why": "Mahit carries her predecessor's imago in her head"
+},
+{
+"ref": null,
+"title": "Needle",
+"author": "Hal Clement",
+"gene": "symbiotes",
+"confidence": 0.8,
+"why": "Alien symbiote detective living inside a boy"
+},
+{
+"ref": null,
+"title": "The Host",
+"author": "Stephenie Meyer",
+"gene": "symbiotes",
+"confidence": 0.75,
+"why": "An alien soul shares a body with its unwilling host"
+},
+{
+"ref": null,
+"title": "Wild Seed",
+"author": "Octavia E. Butler",
+"gene": "shapeshifters",
+"confidence": 0.8,
+"why": "Anyanwu reshapes her body into animals and people"
+},
+{
+"ref": null,
+"title": "Who Goes There?",
+"author": "John W. Campbell",
+"gene": "shapeshifters",
+"confidence": 0.8,
+"why": "The Thing imitates any creature it absorbs"
+},
+{
+"ref": "lagoon",
+"title": "Lagoon",
+"author": "Nnedi Okorafor",
+"gene": "shapeshifters",
+"confidence": 0.8,
+"why": "Ayodele the alien takes any form"
+},
+{
+"ref": "/works/OL893502W",
+"title": "Heretics of Dune",
+"author": "Frank Herbert",
+"gene": "shapeshifters",
+"confidence": 0.65,
+"why": "Tleilaxu Face Dancers impersonate anyone"
+},
+{
+"ref": "starship-troopers",
+"title": "Starship Troopers",
+"author": "Robert A. Heinlein",
+"gene": "exosuits",
+"confidence": 0.8,
+"why": "Mobile Infantry powered armor"
+},
+{
+"ref": "armor",
+"title": "Armor",
+"author": "John Steakley",
+"gene": "exosuits",
+"confidence": 0.8,
+"why": "Felix lives and fights inside his suit"
+},
+{
+"ref": "all-you-need-is-kill",
+"title": "All You Need Is Kill",
+"author": "Hiroshi Sakurazaka",
+"gene": "exosuits",
+"confidence": 0.8,
+"why": "Powered jackets against the Mimics"
+},
+{
+"ref": "halo-the-fall-of-reach",
+"title": "Halo: The Fall of Reach",
+"author": "Eric Nylund",
+"gene": "exosuits",
+"confidence": 0.8,
+"why": "Spartans and MJOLNIR armor"
+},
+{
+"ref": "recursion",
+"title": "Recursion",
+"author": "Blake Crouch",
+"gene": "memory_editing",
+"confidence": 0.8,
+"why": "The memory chair rewrites what people remember"
+},
+{
+"ref": "/works/OL16557740W",
+"title": "The Program",
+"author": "Suzanne Young",
+"gene": "memory_editing",
+"confidence": 0.8,
+"why": "Teens' memories erased to cure depression"
+},
+{
+"ref": "ancillary-justice",
+"title": "Ancillary Justice",
+"author": "Ann Leckie",
+"gene": "hive_minds",
+"confidence": 0.8,
+"why": "Anaander Mianaai, thousands of bodies, one self"
+},
+{
+"ref": "the-midwich-cuckoos",
+"title": "The Midwich Cuckoos",
+"author": "John Wyndham",
+"gene": "hive_minds",
+"confidence": 0.8,
+"why": "The Children share one mind"
+},
+{
+"ref": "a-fire-upon-the-deep",
+"title": "A Fire Upon the Deep",
+"author": "Vernor Vinge",
+"gene": "hive_minds",
+"confidence": 0.7,
+"why": "Tines are pack minds made of several bodies"
+},
+{
+"ref": "the-demolished-man",
+"title": "The Demolished Man",
+"author": "Alfred Bester",
+"gene": "telepathy",
+"confidence": 0.8,
+"why": "Espers police a society where thoughts are open"
+},
+{
+"ref": "/works/OL8404014W",
+"title": "Slan",
+"author": "A. E. van Vogt and Oliver Wyman and Kevin J. Anderson",
+"gene": "telepathy",
+"confidence": 0.8,
+"why": "Telepathic slans hunted by humans"
+},
+{
+"ref": "more-than-human",
+"title": "More Than Human",
+"author": "Theodore Sturgeon",
+"gene": "telepathy",
+"confidence": 0.8,
+"why": "A gestalt of telepathic misfits"
+},
+{
+"ref": "/works/OL59858W",
+"title": "The Lathe of Heaven",
+"author": "Ursula K. Le Guin",
+"gene": "dream_tech",
+"confidence": 0.8,
+"why": "Dream research machine amplifies reality-changing dreams"
+},
+{
+"ref": "permutation-city",
+"title": "Permutation City",
+"author": "Greg Egan",
+"gene": "simulation_theory",
+"confidence": 0.8,
+"why": "Copies living in simulated worlds"
+},
+{
+"ref": null,
+"title": "Simulacron-3",
+"author": "Daniel F. Galouye",
+"gene": "simulation_theory",
+"confidence": 0.8,
+"why": "A simulated city whose maker learns he is simulated"
+},
+{
+"ref": "ubik",
+"title": "Ubik",
+"author": "Philip K. Dick",
+"gene": "simulation_theory",
+"confidence": 0.65,
+"why": "Reality decays and may be a half-life illusion"
+},
+{
+"ref": "surface-detail-banks",
+"title": "Surface Detail",
+"author": "Iain M. Banks",
+"gene": "digital_afterlife",
+"confidence": 0.8,
+"why": "Virtual hells for the digital dead"
+},
+{
+"ref": "ubik",
+"title": "Ubik",
+"author": "Philip K. Dick",
+"gene": "digital_afterlife",
+"confidence": 0.8,
+"why": "The half-lifers speak from cold-pac"
+},
+{
+"ref": null,
+"title": "Fall; or, Dodge in Hell",
+"author": "Neal Stephenson",
+"gene": "digital_afterlife",
+"confidence": 0.8,
+"why": "Uploaded dead build a digital afterlife"
+},
+{
+"ref": "bobiverse-we-are-legion-we-are-bob",
+"title": "Bobiverse: We Are Legion (We Are Bob)",
+"author": "Dennis E. Taylor",
+"gene": "forked_selves",
+"confidence": 0.8,
+"why": "Bob copies himself and the copies diverge"
+},
+{
+"ref": null,
+"title": "Kiln People",
+"author": "David Brin",
+"gene": "forked_selves",
+"confidence": 0.8,
+"why": "Clay duplicates of yourself run errands"
+},
+{
+"ref": "beggars-in-spain",
+"title": "Beggars in Spain",
+"author": "Nancy Kress",
+"gene": "engineered_genius",
+"confidence": 0.8,
+"why": "Genetically engineered Sleepless outthink everyone"
+},
+{
+"ref": "flowers-for-algernon",
+"title": "Flowers for Algernon",
+"author": "Daniel Keyes",
+"gene": "engineered_genius",
+"confidence": 0.8,
+"why": "Surgery raises Charlie's intelligence past human"
+},
+{
+"ref": "/works/OL261794W",
+"title": "A Clockwork Orange",
+"author": "Anthony Burgess",
+"gene": "sleepers_and_conditioning",
+"confidence": 0.8,
+"why": "Ludovico conditioning makes Alex sick at violence"
+},
+{
+"ref": "brave-new-world",
+"title": "Brave New World",
+"author": "Aldous Huxley",
+"gene": "sleepers_and_conditioning",
+"confidence": 0.8,
+"why": "Hypnopaedia conditions every citizen"
+},
+{
+"ref": "some-desperate-glory",
+"title": "Some Desperate Glory",
+"author": "Emily Tesh",
+"gene": "sleepers_and_conditioning",
+"confidence": 0.7,
+"why": "Kyr raised and conditioned by Gaea Station"
+},
+{
+"ref": "project-hail-mary",
+"title": "Project Hail Mary",
+"author": "Andy Weir",
+"gene": "lost_identity",
+"confidence": 0.8,
+"why": "Grace wakes alone with no memory and too much science"
+},
+{
+"ref": "the-maze-runner",
+"title": "The Maze Runner",
+"author": "James Dashner",
+"gene": "lost_identity",
+"confidence": 0.8,
+"why": "Thomas wakes in the Glade with no past"
+},
+{
+"ref": "dark-matter",
+"title": "Dark Matter",
+"author": "Blake Crouch",
+"gene": "lost_identity",
+"confidence": 0.65,
+"why": "Jason wakes in a life that isn't his"
+},
+{
+"ref": "/works/OL16557740W",
+"title": "The Program",
+"author": "Suzanne Young",
+"gene": "lost_identity",
+"confidence": 0.6,
+"why": "Wiped memories leave Sloane not knowing who she was"
+},
+{
+"ref": "the-moon-is-a-harsh-mistress",
+"title": "The Moon Is a Harsh Mistress",
+"author": "Robert A. Heinlein",
+"gene": "benevolent_ai",
+"confidence": 0.8,
+"why": "Mike, the kindly lunar computer"
+},
+{
+"ref": "a-psalm-for-the-wild-built",
+"title": "A Psalm for the Wild-Built",
+"author": "Becky Chambers",
+"gene": "benevolent_ai",
+"confidence": 0.8,
+"why": "Mosscap the gentle robot"
+},
+{
+"ref": "/works/OL28319W",
+"title": "The Stepford Wives",
+"author": "Ira Levin",
+"gene": "androids_passing_as_human",
+"confidence": 0.8,
+"why": "Wives replaced by perfect robots"
+},
+{
+"ref": "he-she-and-it",
+"title": "He, She and It",
+"author": "Marge Piercy",
+"gene": "androids_passing_as_human",
+"confidence": 0.8,
+"why": "Yod, a cyborg built to pass as a man"
+},
+{
+"ref": "cinder",
+"title": "Cinder",
+"author": "Marissa Meyer",
+"gene": "androids_passing_as_human",
+"confidence": 0.6,
+"why": "A cyborg hiding what she is"
+},
+{
+"ref": "murderbot-all-systems-red",
+"title": "Murderbot: All Systems Red",
+"author": "Martha Wells",
+"gene": "the_ai_is_not_evil",
+"confidence": 0.8,
+"why": "A feared SecUnit that just wants to protect people and watch shows"
+},
+{
+"ref": "a-closed-and-common-orbit",
+"title": "A Closed and Common Orbit",
+"author": "Becky Chambers",
+"gene": "the_ai_is_not_evil",
+"confidence": 0.8,
+"why": "Sidra, an AI learning to live in a body"
+},
+{
+"ref": "i-robot",
+"title": "I, Robot",
+"author": "Isaac Asimov",
+"gene": "the_ai_is_not_evil",
+"confidence": 0.8,
+"why": "Robots suspected again and again, never malicious"
+},
+{
+"ref": "klara-and-the-sun",
+"title": "Klara and the Sun",
+"author": "Kazuo Ishiguro",
+"gene": "the_ai_is_not_evil",
+"confidence": 0.8,
+"why": "Klara's devotion to Josie"
+},
+{
+"ref": "a-psalm-for-the-wild-built",
+"title": "A Psalm for the Wild-Built",
+"author": "Becky Chambers",
+"gene": "the_ai_is_not_evil",
+"confidence": 0.8,
+"why": "Robots who left peacefully and come back curious"
+},
+{
+"ref": "the-moon-is-a-harsh-mistress",
+"title": "The Moon Is a Harsh Mistress",
+"author": "Robert A. Heinlein",
+"gene": "the_ai_is_not_evil",
+"confidence": 0.7,
+"why": "Mike the computer sides with the people"
+},
+{
+"ref": "saturns-children",
+"title": "Saturn's Children",
+"author": "Charles Stross",
+"gene": "machine_civilizations",
+"confidence": 0.8,
+"why": "Robots running the solar system after humans"
+},
+{
+"ref": "sea-of-rust",
+"title": "Sea of Rust",
+"author": "C. Robert Cargill",
+"gene": "machine_civilizations",
+"confidence": 0.8,
+"why": "Robot factions and mainframe minds"
+},
+{
+"ref": "the-fall-of-hyperion",
+"title": "The Fall of Hyperion",
+"author": "Dan Simmons",
+"gene": "machine_civilizations",
+"confidence": 0.6,
+"why": "The TechnoCore's own aims and history"
+},
+{
+"ref": null,
+"title": "Berserker",
+"author": "Fred Saberhagen",
+"gene": "killer_machines",
+"confidence": 0.8,
+"why": "Ancient machines programmed to kill all life"
+},
+{
+"ref": "robopocalypse",
+"title": "Robopocalypse",
+"author": "Daniel H. Wilson",
+"gene": "killer_machines",
+"confidence": 0.8,
+"why": "Archos's machines hunt humanity"
+},
+{
+"ref": "kill-decision",
+"title": "Kill Decision",
+"author": "Daniel Suarez",
+"gene": "killer_machines",
+"confidence": 0.8,
+"why": "Autonomous drone swarms that kill"
+},
+{
+"ref": "diaspora",
+"title": "Diaspora",
+"author": "Greg Egan",
+"gene": "digital_beings",
+"confidence": 0.8,
+"why": "Citizens born in software polises"
+},
+{
+"ref": "the-lifecycle-of-software-objects",
+"title": "The Lifecycle of Software Objects",
+"author": "Ted Chiang",
+"gene": "digital_beings",
+"confidence": 0.8,
+"why": "Digients raised like children"
+},
+{
+"ref": "/works/OL46398W",
+"title": "The Naked Sun",
+"author": "Isaac Asimov",
+"gene": "three_laws_and_loopholes",
+"confidence": 0.8,
+"why": "A murder that seems to defy the First Law"
+},
+{
+"ref": null,
+"title": "The Robots of Dawn",
+"author": "Isaac Asimov",
+"gene": "three_laws_and_loopholes",
+"confidence": 0.8,
+"why": "A robot 'killed' via the Three Laws"
+},
+{
+"ref": "the-caves-of-steel",
+"title": "The Caves of Steel",
+"author": "Isaac Asimov",
+"gene": "three_laws_and_loopholes",
+"confidence": 0.8,
+"why": "Laws of robotics in a murder case"
+},
+{
+"ref": "i-robot",
+"title": "I, Robot",
+"author": "Isaac Asimov",
+"gene": "three_laws_and_loopholes",
+"confidence": 0.8,
+"why": "Robots tangled in their own Three Laws"
+},
+{
+"ref": "prey",
+"title": "Prey",
+"author": "Michael Crichton",
+"gene": "swarm_intelligence",
+"confidence": 0.8,
+"why": "Nanobot swarms that learn and hunt"
+},
+{
+"ref": null,
+"title": "The Invincible",
+"author": "Stanisław Lem",
+"gene": "swarm_intelligence",
+"confidence": 0.8,
+"why": "Tiny machines that form clouds of intelligence"
+},
+{
+"ref": null,
+"title": "The Swarm",
+"author": "Frank Schätzing",
+"gene": "swarm_intelligence",
+"confidence": 0.8,
+"why": "The Yrr, a single-celled collective intelligence"
+},
+{
+"ref": "grimspace",
+"title": "Grimspace",
+"author": "Ann Aguirre",
+"gene": "ftl_with_a_catch",
+"confidence": 0.8,
+"why": "Jumpers burn out navigating grimspace"
+},
+{
+"ref": "shards-of-earth",
+"title": "Shards of Earth",
+"author": "Adrian Tchaikovsky",
+"gene": "ftl_with_a_catch",
+"confidence": 0.8,
+"why": "Intermediaries pay mentally for unspace travel"
+},
+{
+"ref": "eyes-of-the-void",
+"title": "Eyes of the Void",
+"author": "Adrian Tchaikovsky",
+"gene": "ftl_with_a_catch",
+"confidence": 0.65,
+"why": "Unspace travel and its toll"
+},
+{
+"ref": "the-forever-war",
+"title": "The Forever War",
+"author": "Joe Haldeman",
+"gene": "slower_than_light",
+"confidence": 0.8,
+"why": "Time dilation strands soldiers centuries out"
+},
+{
+"ref": "tau-zero",
+"title": "Tau Zero",
+"author": "Poul Anderson",
+"gene": "slower_than_light",
+"confidence": 0.8,
+"why": "Relativity runs away with the ship"
+},
+{
+"ref": "aurora",
+"title": "Aurora",
+"author": "Kim Stanley Robinson",
+"gene": "slower_than_light",
+"confidence": 0.8,
+"why": "Centuries-long journey at sublight speed"
+},
+{
+"ref": "the-sparrow",
+"title": "The Sparrow",
+"author": "Mary Doria Russell",
+"gene": "slower_than_light",
+"confidence": 0.8,
+"why": "Relativistic trip to Rakhat costs decades at home"
+},
+{
+"ref": "abaddons-gate",
+"title": "Abaddon's Gate",
+"author": "James S. A. Corey",
+"gene": "jump_gates",
+"confidence": 0.8,
+"why": "The Ring Gates and fights over who holds them"
+},
+{
+"ref": "pandoras-star",
+"title": "Pandora's Star",
+"author": "Peter F. Hamilton",
+"gene": "jump_gates",
+"confidence": 0.8,
+"why": "Wormhole gateways connecting the Commonwealth"
+},
+{
+"ref": "the-fall-of-hyperion",
+"title": "The Fall of Hyperion",
+"author": "Dan Simmons",
+"gene": "jump_gates",
+"confidence": 0.8,
+"why": "The farcaster network linking worlds"
+},
+{
+"ref": "infinity-gate",
+"title": "Infinity Gate",
+"author": "M. R. Carey",
+"gene": "jump_gates",
+"confidence": 0.7,
+"why": "Gates between worlds of the Pandominion"
+},
+{
+"ref": "the-stars-are-legion",
+"title": "The Stars Are Legion",
+"author": "Kameron Hurley",
+"gene": "living_ships",
+"confidence": 0.8,
+"why": "Organic worldships"
+},
+{
+"ref": "the-reality-dysfunction",
+"title": "The Reality Dysfunction",
+"author": "Peter F. Hamilton",
+"gene": "living_ships",
+"confidence": 0.8,
+"why": "Grown voidhawk starships"
+},
+{
+"ref": "the-long-way-to-a-small-angry-planet",
+"title": "The Long Way to a Small, Angry Planet",
+"author": "Becky Chambers",
+"gene": "ship_as_home",
+"confidence": 0.8,
+"why": "The Wayfarer crew's whole life"
+},
+{
+"ref": "/works/OL17933495W",
+"title": "Record of a Spaceborn Few",
+"author": "Becky Chambers",
+"gene": "ship_as_home",
+"confidence": 0.8,
+"why": "Exodan homesteader ships as home"
+},
+{
+"ref": null,
+"title": "Orphans of the Sky",
+"author": "Robert A. Heinlein",
+"gene": "ship_as_home",
+"confidence": 0.8,
+"why": "A generation ship is the only world its people know"
+},
+{
+"ref": "/works/OL19721977W",
+"title": "An unkindness of ghosts",
+"author": "Rivers Solomon and Francis Guévremont",
+"gene": "ship_as_home",
+"confidence": 0.8,
+"why": "Matilda generation ship as home and prison"
+},
+{
+"ref": "across-the-universe",
+"title": "Across the Universe",
+"author": "Beth Revis",
+"gene": "ship_as_home",
+"confidence": 0.8,
+"why": "Life aboard Godspeed"
+},
+{
+"ref": "the-pride-of-chanur",
+"title": "The Pride of Chanur",
+"author": "C. J. Cherryh",
+"gene": "ship_as_home",
+"confidence": 0.7,
+"why": "Chanur family trading ship"
+},
+{
+"ref": "on-basilisk-station",
+"title": "On Basilisk Station",
+"author": "David Weber",
+"gene": "warships_and_dreadnoughts",
+"confidence": 0.8,
+"why": "Honor Harrington's warship Fearless"
+},
+{
+"ref": "the-lost-fleet-dauntless",
+"title": "The Lost Fleet: Dauntless",
+"author": "Jack Campbell",
+"gene": "warships_and_dreadnoughts",
+"confidence": 0.8,
+"why": "Fleet battles from the flagship"
+},
+{
+"ref": "/works/OL8259665W",
+"title": "The Short Victorious War",
+"author": "David Weber",
+"gene": "warships_and_dreadnoughts",
+"confidence": 0.8,
+"why": "Harrington battlecruiser warfare"
+},
+{
+"ref": "leviathan-wakes",
+"title": "Leviathan Wakes",
+"author": "James S. A. Corey",
+"gene": "stealth_in_space",
+"confidence": 0.7,
+"why": "Stealth ships destroy the Canterbury and the Donnager"
+},
+{
+"ref": "redemption-ark",
+"title": "Redemption Ark",
+"author": "Alastair Reynolds",
+"gene": "stealth_in_space",
+"confidence": 0.7,
+"why": "Clavain's stealth corvette chase"
+},
+{
+"ref": "the-dark-forest",
+"title": "The Dark Forest",
+"author": "Liu Cixin",
+"gene": "stealth_in_space",
+"confidence": 0.65,
+"why": "Civilizations survive only by hiding"
+},
+{
+"ref": "/works/OL21831W",
+"title": "The Voyage of the Space Beagle",
+"author": "A. E. van Vogt and Bruce Jensen",
+"gene": "scout_and_survey",
+"confidence": 0.8,
+"why": "Space Beagle's scientific survey mission"
+},
+{
+"ref": "gateway",
+"title": "Gateway",
+"author": "Frederik Pohl",
+"gene": "scout_and_survey",
+"confidence": 0.8,
+"why": "Prospectors fly Heechee ships blind to new worlds"
+},
+{
+"ref": "the-engines-of-god",
+"title": "The Engines of God",
+"author": "Jack McDevitt",
+"gene": "scout_and_survey",
+"confidence": 0.8,
+"why": "Archaeological survey of alien monuments"
+},
+{
+"ref": "annihilation",
+"title": "Annihilation",
+"author": "Jeff VanderMeer",
+"gene": "scout_and_survey",
+"confidence": 0.7,
+"why": "Survey expedition into Area X"
+},
+{
+"ref": "jumper",
+"title": "Jumper",
+"author": "Steven Gould",
+"gene": "teleportation",
+"confidence": 0.8,
+"why": "Davy teleports anywhere he has been"
+},
+{
+"ref": "the-stars-my-destination",
+"title": "The Stars My Destination",
+"author": "Alfred Bester",
+"gene": "teleportation",
+"confidence": 0.8,
+"why": "Jaunting reshapes society"
+},
+{
+"ref": null,
+"title": "Rogue Moon",
+"author": "Algis Budrys",
+"gene": "teleportation",
+"confidence": 0.8,
+"why": "Matter transmitter creates duplicates sent to die"
+},
+{
+"ref": "/works/OL17402W",
+"title": "A Fall of Moondust",
+"author": "Arthur C. Clarke and Oliver Wyman",
+"gene": "space_is_dangerous",
+"confidence": 0.8,
+"why": "Tourist boat buried in lunar dust"
+},
+{
+"ref": "delta-v",
+"title": "Delta-v",
+"author": "Daniel Suarez",
+"gene": "space_is_dangerous",
+"confidence": 0.8,
+"why": "Deadly realities of deep space mining"
+},
+{
+"ref": "the-martian",
+"title": "The Martian",
+"author": "Andy Weir",
+"gene": "space_is_dangerous",
+"confidence": 0.8,
+"why": "Every failure in vacuum could kill"
+},
+{
+"ref": "seveneves",
+"title": "Seveneves",
+"author": "Neal Stephenson",
+"gene": "space_is_dangerous",
+"confidence": 0.8,
+"why": "Orbital debris and radiation threats"
+},
+{
+"ref": "seveneves",
+"title": "Seveneves",
+"author": "Neal Stephenson",
+"gene": "orbital_mechanics_matter",
+"confidence": 0.8,
+"why": "Orbits, burns and delta v drive the plot"
+},
+{
+"ref": "the-martian",
+"title": "The Martian",
+"author": "Andy Weir",
+"gene": "orbital_mechanics_matter",
+"confidence": 0.8,
+"why": "The Rich Purnell maneuver"
+},
+{
+"ref": "renegade-star",
+"title": "Renegade Star",
+"author": "J. N. Chaney",
+"gene": "smugglers_routes",
+"confidence": 0.8,
+"why": "Smuggler Hughes and his hidden routes"
+},
+{
+"ref": null,
+"title": "Han Solo at Stars' End",
+"author": "Brian Daley",
+"gene": "smugglers_routes",
+"confidence": 0.8,
+"why": "Han and Chewie running the Corporate Sector"
+},
+{
+"ref": "the-quantum-magician",
+"title": "The Quantum Magician",
+"author": "Derek Künsken",
+"gene": "smugglers_routes",
+"confidence": 0.8,
+"why": "Smuggling a fleet through a wormhole"
+},
+{
+"ref": "the-terraformers",
+"title": "The Terraformers",
+"author": "Annalee Newitz",
+"gene": "terraforming",
+"confidence": 0.8,
+"why": "Millennia of shaping a planet"
+},
+{
+"ref": "/works/OL81655W",
+"title": "Green Mars",
+"author": "Kim Stanley Robinson",
+"gene": "terraforming",
+"confidence": 0.8,
+"why": "Mars partly terraformed"
+},
+{
+"ref": "semiosis",
+"title": "Semiosis",
+"author": "Sue Burke",
+"gene": "fungal_and_plant_minds",
+"confidence": 0.8,
+"why": "Stevland the intelligent bamboo"
+},
+{
+"ref": "rosewater",
+"title": "Rosewater",
+"author": "Tade Thompson",
+"gene": "fungal_and_plant_minds",
+"confidence": 0.8,
+"why": "Alien fungal xenosphere linking minds"
+},
+{
+"ref": "the-girl-with-all-the-gifts",
+"title": "The Girl with All the Gifts",
+"author": "M. R. Carey",
+"gene": "fungal_and_plant_minds",
+"confidence": 0.6,
+"why": "Cordyceps fungus shaping minds"
+},
+{
+"ref": "/works/OL59729W",
+"title": "The Puppet Masters",
+"author": "Robert A. Heinlein",
+"gene": "parasites_and_puppeteers",
+"confidence": 0.8,
+"why": "Slug parasites ride human hosts"
+},
+{
+"ref": "parasite-grant",
+"title": "Parasite",
+"author": "Mira Grant",
+"gene": "parasites_and_puppeteers",
+"confidence": 0.8,
+"why": "Engineered tapeworms take control"
+},
+{
+"ref": "solaris",
+"title": "Solaris",
+"author": "Stanisław Lem",
+"gene": "xenobiology_puzzle",
+"confidence": 0.8,
+"why": "Scientists fail to understand the ocean"
+},
+{
+"ref": "the-mountain-in-the-sea",
+"title": "The Mountain in the Sea",
+"author": "Ray Nayler",
+"gene": "xenobiology_puzzle",
+"confidence": 0.8,
+"why": "Decoding octopus culture"
+},
+{
+"ref": "alien-clay",
+"title": "Alien Clay",
+"author": "Adrian Tchaikovsky",
+"gene": "xenobiology_puzzle",
+"confidence": 0.8,
+"why": "Working out Kiln's strange ecology"
+},
+{
+"ref": "dragons-egg",
+"title": "Dragon's Egg",
+"author": "Robert L. Forward",
+"gene": "xenobiology_puzzle",
+"confidence": 0.8,
+"why": "Life on a neutron star"
+},
+{
+"ref": "the-stars-are-legion",
+"title": "The Stars Are Legion",
+"author": "Kameron Hurley",
+"gene": "living_technology",
+"confidence": 0.8,
+"why": "Organic ships and grown tech"
+},
+{
+"ref": "embassytown",
+"title": "Embassytown",
+"author": "China Miéville",
+"gene": "living_technology",
+"confidence": 0.8,
+"why": "Ariekei biorigging"
+},
+{
+"ref": "the-reality-dysfunction",
+"title": "The Reality Dysfunction",
+"author": "Peter F. Hamilton",
+"gene": "living_technology",
+"confidence": 0.8,
+"why": "Edenist bitek"
+},
+{
+"ref": "borne",
+"title": "Borne",
+"author": "Jeff VanderMeer",
+"gene": "living_technology",
+"confidence": 0.8,
+"why": "Biotech creatures and living tools"
+},
+{
+"ref": "/works/OL46876W",
+"title": "The Lost World",
+"author": "Michael Crichton",
+"gene": "de_extinction",
+"confidence": 0.8,
+"why": "Cloned dinosaurs on Site B"
+},
+{
+"ref": null,
+"title": "Mammoth",
+"author": "John Varley",
+"gene": "de_extinction",
+"confidence": 0.7,
+"why": "A cloned mammoth and its consequences"
+},
+{
+"ref": "/works/OL467158W",
+"title": "Deathworld 1",
+"author": "Harry Harrison and Christian Rummel",
+"gene": "ecology_fights_back",
+"confidence": 0.8,
+"why": "Pyrrus's life evolves to fight settlers"
+},
+{
+"ref": "alien-clay",
+"title": "Alien Clay",
+"author": "Adrian Tchaikovsky",
+"gene": "ecology_fights_back",
+"confidence": 0.8,
+"why": "Kiln's biosphere pushes back"
+},
+{
+"ref": "semiosis",
+"title": "Semiosis",
+"author": "Sue Burke",
+"gene": "ecology_fights_back",
+"confidence": 0.8,
+"why": "Pax's plants manipulate colonists"
+},
+{
+"ref": "the-space-between-worlds",
+"title": "The Space Between Worlds",
+"author": "Micaiah Johnson",
+"gene": "multiverse_hopping",
+"confidence": 0.8,
+"why": "Traversers cross into alternate Earths"
+},
+{
+"ref": "the-long-earth",
+"title": "The Long Earth",
+"author": "Terry Pratchett and Stephen Baxter",
+"gene": "multiverse_hopping",
+"confidence": 0.8,
+"why": "Stepping between parallel Earths"
+},
+{
+"ref": "/works/OL59858W",
+"title": "The Lathe of Heaven",
+"author": "Ursula K. Le Guin",
+"gene": "reality_bending",
+"confidence": 0.8,
+"why": "George's dreams rewrite reality"
+},
+{
+"ref": "ubik",
+"title": "Ubik",
+"author": "Philip K. Dick",
+"gene": "reality_bending",
+"confidence": 0.8,
+"why": "Reality regresses and warps"
+},
+{
+"ref": "the-diamond-age",
+"title": "The Diamond Age",
+"author": "Neal Stephenson",
+"gene": "nanotech",
+"confidence": 0.8,
+"why": "Matter compilers and nanites everywhere"
+},
+{
+"ref": "prey",
+"title": "Prey",
+"author": "Michael Crichton",
+"gene": "nanotech",
+"confidence": 0.8,
+"why": "Nanotech swarms"
+},
+{
+"ref": "prey",
+"title": "Prey",
+"author": "Michael Crichton",
+"gene": "grey_goo",
+"confidence": 0.8,
+"why": "Self-replicating nanoswarms escape"
+},
+{
+"ref": "blood-music",
+"title": "Blood Music",
+"author": "Greg Bear",
+"gene": "grey_goo",
+"confidence": 0.8,
+"why": "Noocytes consume and transform life"
+},
+{
+"ref": null,
+"title": "Bloom",
+"author": "Wil McCarthy",
+"gene": "grey_goo",
+"confidence": 0.8,
+"why": "The Mycora devour the inner system"
+},
+{
+"ref": "chasm-city",
+"title": "Chasm City",
+"author": "Alastair Reynolds",
+"gene": "grey_goo",
+"confidence": 0.6,
+"why": "The Melding Plague corrupts nanotech"
+},
+{
+"ref": "the-windup-girl",
+"title": "The Windup Girl",
+"author": "Paolo Bacigalupi",
+"gene": "energy_and_scarcity",
+"confidence": 0.8,
+"why": "Calories and kink-springs as power"
+},
+{
+"ref": "the-gods-themselves",
+"title": "The Gods Themselves",
+"author": "Isaac Asimov",
+"gene": "energy_and_scarcity",
+"confidence": 0.8,
+"why": "Free energy pump has a deadly cost"
+},
+{
+"ref": "the-water-knife",
+"title": "The Water Knife",
+"author": "Paolo Bacigalupi",
+"gene": "energy_and_scarcity",
+"confidence": 0.65,
+"why": "Water rights as the ultimate power"
+},
+{
+"ref": "dune",
+"title": "Dune",
+"author": "Frank Herbert",
+"gene": "energy_and_scarcity",
+"confidence": 0.6,
+"why": "Spice controls everything"
+},
+{
+"ref": "quarantine",
+"title": "Quarantine",
+"author": "Greg Egan",
+"gene": "quantum_weirdness",
+"confidence": 0.8,
+"why": "Observation collapses reality"
+},
+{
+"ref": "dark-matter",
+"title": "Dark Matter",
+"author": "Blake Crouch",
+"gene": "quantum_weirdness",
+"confidence": 0.8,
+"why": "Superposition across worlds"
+},
+{
+"ref": "anathem",
+"title": "Anathem",
+"author": "Neal Stephenson",
+"gene": "quantum_weirdness",
+"confidence": 0.7,
+"why": "Many-worlds cognition"
+},
+{
+"ref": "manifold-time",
+"title": "Manifold: Time",
+"author": "Stephen Baxter",
+"gene": "the_fermi_question",
+"confidence": 0.8,
+"why": "The Fermi paradox drives the plot"
+},
+{
+"ref": "revelation-space",
+"title": "Revelation Space",
+"author": "Alastair Reynolds",
+"gene": "the_fermi_question",
+"confidence": 0.8,
+"why": "Inhibitors explain the empty galaxy"
+},
+{
+"ref": "deaths-end",
+"title": "Death's End",
+"author": "Liu Cixin",
+"gene": "dark_forest",
+"confidence": 0.8,
+"why": "Dark forest strikes"
+},
+{
+"ref": "revelation-space",
+"title": "Revelation Space",
+"author": "Alastair Reynolds",
+"gene": "dark_forest",
+"confidence": 0.8,
+"why": "Inhibitors cull spacefaring life"
+},
+{
+"ref": "/works/OL16491W",
+"title": "City at the End of Time",
+"author": "Greg Bear",
+"gene": "entropy_and_endings",
+"confidence": 0.8,
+"why": "The end of time"
+},
+{
+"ref": "the-time-machine",
+"title": "The Time Machine",
+"author": "H. G. Wells",
+"gene": "entropy_and_endings",
+"confidence": 0.8,
+"why": "The dying far-future Earth"
+},
+{
+"ref": "there-is-no-antimemetics-division",
+"title": "There Is No Antimemetics Division",
+"author": "qntm",
+"gene": "information_is_physical",
+"confidence": 0.8,
+"why": "Ideas that erase themselves"
+},
+{
+"ref": "snow-crash",
+"title": "Snow Crash",
+"author": "Neal Stephenson",
+"gene": "information_is_physical",
+"confidence": 0.8,
+"why": "A linguistic virus"
+},
+{
+"ref": "babel-17",
+"title": "Babel-17",
+"author": "Samuel R. Delany",
+"gene": "information_is_physical",
+"confidence": 0.8,
+"why": "A language as a weapon"
+},
+{
+"ref": "lexicon",
+"title": "Lexicon",
+"author": "Max Barry",
+"gene": "information_is_physical",
+"confidence": 0.8,
+"why": "Words that compel"
+},
+{
+"ref": "gateway",
+"title": "Gateway",
+"author": "Frederik Pohl",
+"gene": "precursor_gates_and_tools",
+"confidence": 0.8,
+"why": "Heechee ships nobody understands"
+},
+{
+"ref": "abaddons-gate",
+"title": "Abaddon's Gate",
+"author": "James S. A. Corey",
+"gene": "precursor_gates_and_tools",
+"confidence": 0.8,
+"why": "Protomolecule-built Ring"
+},
+{
+"ref": "contact",
+"title": "Contact",
+"author": "Carl Sagan",
+"gene": "precursor_gates_and_tools",
+"confidence": 0.8,
+"why": "Machine from alien plans opens a precursor network"
+},
+{
+"ref": null,
+"title": "The Uplift War",
+"author": "David Brin",
+"gene": "uplift_chains",
+"confidence": 0.8,
+"why": "Patron races uplifting clients"
+},
+{
+"ref": "children-of-time",
+"title": "Children of Time",
+"author": "Adrian Tchaikovsky",
+"gene": "uplift_chains",
+"confidence": 0.8,
+"why": "Uplifted spiders"
+},
+{
+"ref": "startide-rising",
+"title": "Startide Rising",
+"author": "David Brin",
+"gene": "uplift_chains",
+"confidence": 0.8,
+"why": "Uplifted dolphins in galactic hierarchy"
+},
+{
+"ref": "2001-a-space-odyssey",
+"title": "2001: A Space Odyssey",
+"author": "Arthur C. Clarke",
+"gene": "messages_from_the_past",
+"confidence": 0.8,
+"why": "The monolith left millions of years ago"
+},
+{
+"ref": null,
+"title": "His Master's Voice",
+"author": "Stanisław Lem",
+"gene": "messages_from_the_past",
+"confidence": 0.8,
+"why": "Ancient neutrino message"
+},
+{
+"ref": null,
+"title": "A for Andromeda",
+"author": "Fred Hoyle and John Elliot",
+"gene": "messages_from_the_past",
+"confidence": 0.8,
+"why": "Signal from Andromeda sent long ago"
+},
+{
+"ref": "contact",
+"title": "Contact",
+"author": "Carl Sagan",
+"gene": "messages_from_the_past",
+"confidence": 0.8,
+"why": "Signal from Vega"
+},
+{
+"ref": "the-engines-of-god",
+"title": "The Engines of God",
+"author": "Jack McDevitt",
+"gene": "messages_from_the_past",
+"confidence": 0.65,
+"why": "Monuments from vanished makers"
+},
+{
+"ref": "revelation-space",
+"title": "Revelation Space",
+"author": "Alastair Reynolds",
+"gene": "messages_from_the_past",
+"confidence": 0.6,
+"why": "Amarantin relics"
+},
+{
+"ref": "the-engines-of-god",
+"title": "The Engines of God",
+"author": "Jack McDevitt",
+"gene": "fallen_empire_relics",
+"confidence": 0.8,
+"why": "Dead monument builders"
+},
+{
+"ref": "/works/OL579067W",
+"title": "Space Viking",
+"author": "H. Beam Piper",
+"gene": "fallen_empire_relics",
+"confidence": 0.8,
+"why": "Old Federation tech"
+},
+{
+"ref": "elder-race",
+"title": "Elder Race",
+"author": "Adrian Tchaikovsky",
+"gene": "fallen_empire_relics",
+"confidence": 0.7,
+"why": "Lynesse's tech remnant"
+},
+{
+"ref": "the-hydrogen-sonata",
+"title": "The Hydrogen Sonata",
+"author": "Iain M. Banks",
+"gene": "cosmic_inheritance",
+"confidence": 0.8,
+"why": "Gzilt Sublime and scavengers circle their legacy"
+},
+{
+"ref": "childhoods-end",
+"title": "Childhood's End",
+"author": "Arthur C. Clarke",
+"gene": "cosmic_inheritance",
+"confidence": 0.7,
+"why": "Humanity inherited by the Overmind"
+},
+{
+"ref": "/works/OL2685450W",
+"title": "Children Of The Lens (Lensman Series, No 6)",
+"author": "Edward E. Smith",
+"gene": "cosmic_inheritance",
+"confidence": 0.75,
+"why": "Arisians pass the galaxy's guardianship to humans"
+},
+{
+"ref": "sundiver",
+"title": "Sundiver",
+"author": "David Brin",
+"gene": "cosmic_inheritance",
+"confidence": 0.65,
+"why": "Galactic hierarchy inherited from the Progenitors"
+},
+{
+"ref": "startide-rising",
+"title": "Startide Rising",
+"author": "David Brin",
+"gene": "cosmic_inheritance",
+"confidence": 0.65,
+"why": "Discovery of the Progenitors' fleet"
+},
+{
+"ref": "a-fire-upon-the-deep",
+"title": "A Fire Upon the Deep",
+"author": "Vernor Vinge",
+"gene": "cosmic_inheritance",
+"confidence": 0.6,
+"why": "Transcended Powers leave the galaxy behind"
+},
+{
+"ref": "the-sparrow",
+"title": "The Sparrow",
+"author": "Mary Doria Russell",
+"gene": "survey_gone_wrong",
+"confidence": 0.8,
+"why": "Mission to Rakhat ends in horror"
+},
+{
+"ref": "sphere",
+"title": "Sphere",
+"author": "Michael Crichton",
+"gene": "survey_gone_wrong",
+"confidence": 0.8,
+"why": "Deep-sea survey finds an alien sphere"
+},
+{
+"ref": "the-luminous-dead",
+"title": "The Luminous Dead",
+"author": "Caitlin Starling",
+"gene": "survey_gone_wrong",
+"confidence": 0.8,
+"why": "Solo cave survey turns deadly"
+},
+{
+"ref": "ready-player-one",
+"title": "Ready Player One",
+"author": "Ernest Cline",
+"gene": "race_to_the_prize",
+"confidence": 0.8,
+"why": "Hunt for Halliday's egg"
+},
+{
+"ref": "saturn-run-sandford",
+"title": "Saturn Run",
+"author": "John Sandford and Ctein",
+"gene": "race_to_the_prize",
+"confidence": 0.8,
+"why": "US vs China race to Saturn"
+},
+{
+"ref": "the-long-way-to-a-small-angry-planet",
+"title": "The Long Way to a Small, Angry Planet",
+"author": "Becky Chambers",
+"gene": "long_voyage",
+"confidence": 0.8,
+"why": "The journey is the story"
+},
+{
+"ref": "tau-zero",
+"title": "Tau Zero",
+"author": "Poul Anderson",
+"gene": "long_voyage",
+"confidence": 0.8,
+"why": "The voyage that never ends"
+},
+{
+"ref": "aurora",
+"title": "Aurora",
+"author": "Kim Stanley Robinson",
+"gene": "long_voyage",
+"confidence": 0.8,
+"why": "Generation ship's long journey"
+},
+{
+"ref": "the-long-way-to-a-small-angry-planet",
+"title": "The Long Way to a Small, Angry Planet",
+"author": "Becky Chambers",
+"gene": "road_trip_across_worlds",
+"confidence": 0.8,
+"why": "Stops and strangers on the way to Hedra Ka"
+},
+{
+"ref": "the-hitchhikers-guide-to-the-galaxy",
+"title": "The Hitchhiker's Guide to the Galaxy",
+"author": "Douglas Adams",
+"gene": "road_trip_across_worlds",
+"confidence": 0.8,
+"why": "Hitching across the galaxy"
+},
+{
+"ref": "/works/OL46347W",
+"title": "Foundation and Earth",
+"author": "Isaac Asimov",
+"gene": "search_for_home",
+"confidence": 0.8,
+"why": "Search for the lost Earth"
+},
+{
+"ref": "the-lost-fleet-dauntless",
+"title": "The Lost Fleet: Dauntless",
+"author": "Jack Campbell",
+"gene": "search_for_home",
+"confidence": 0.8,
+"why": "Getting a stranded fleet home"
+},
+{
+"ref": "aurora",
+"title": "Aurora",
+"author": "Kim Stanley Robinson",
+"gene": "search_for_home",
+"confidence": 0.65,
+"why": "Turning back for Earth"
+},
+{
+"ref": "/works/OL60134W",
+"title": "The Homeward Bounders",
+"author": "Diana Wynne Jones",
+"gene": "search_for_home",
+"confidence": 0.6,
+"why": "Jamie tries to find his way home"
+},
+{
+"ref": "roadside-picnic-arkady",
+"title": "Roadside Picnic",
+"author": "Arkady and Boris Strugatsky",
+"gene": "mapping_the_anomaly",
+"confidence": 0.8,
+"why": "Stalkers map the Zone's traps"
+},
+{
+"ref": "annihilation",
+"title": "Annihilation",
+"author": "Jeff VanderMeer",
+"gene": "mapping_the_anomaly",
+"confidence": 0.8,
+"why": "Charting Area X"
+},
+{
+"ref": "rendezvous-with-rama",
+"title": "Rendezvous with Rama",
+"author": "Arthur C. Clarke",
+"gene": "mapping_the_anomaly",
+"confidence": 0.8,
+"why": "Exploring Rama's interior"
+},
+{
+"ref": "solaris",
+"title": "Solaris",
+"author": "Stanisław Lem",
+"gene": "mapping_the_anomaly",
+"confidence": 0.7,
+"why": "Generations of study of the ocean"
+},
+{
+"ref": "semiosis",
+"title": "Semiosis",
+"author": "Sue Burke",
+"gene": "colonization_story",
+"confidence": 0.8,
+"why": "Landing and surviving on Pax"
+},
+{
+"ref": "planetfall",
+"title": "Planetfall",
+"author": "Emma Newman",
+"gene": "colonization_story",
+"confidence": 0.8,
+"why": "Colony at the foot of God's City"
+},
+{
+"ref": "red-mars",
+"title": "Red Mars",
+"author": "Kim Stanley Robinson",
+"gene": "colonization_story",
+"confidence": 0.8,
+"why": "Building the first Mars colony"
+},
+{
+"ref": "the-forever-war",
+"title": "The Forever War",
+"author": "Joe Haldeman",
+"gene": "homecoming",
+"confidence": 0.8,
+"why": "Returning to an Earth changed beyond recognition"
+},
+{
+"ref": null,
+"title": "Return from the Stars",
+"author": "Stanisław Lem",
+"gene": "homecoming",
+"confidence": 0.8,
+"why": "Astronaut returns to an alien Earth"
+},
+{
+"ref": "aurora",
+"title": "Aurora",
+"author": "Kim Stanley Robinson",
+"gene": "homecoming",
+"confidence": 0.7,
+"why": "Colonists return to Earth"
+},
+{
+"ref": "planet-of-the-apes",
+"title": "Planet of the Apes",
+"author": "Pierre Boulle",
+"gene": "homecoming",
+"confidence": 0.6,
+"why": "Ulysse returns to find Earth changed"
+},
+{
+"ref": "/works/OL35356294W",
+"title": "Cetaganda (Miles Vorkosigan Adventures)",
+"author": "Lois McMaster Bujold",
+"gene": "spy_games",
+"confidence": 0.8,
+"why": "Miles caught in Cetagandan intrigue"
+},
+{
+"ref": "/works/OL15556860W",
+"title": "Agent of change",
+"author": "Sharon Lee and Steve Miller",
+"gene": "spy_games",
+"confidence": 0.7,
+"why": "Liaden scout and spy on the run"
+},
+{
+"ref": null,
+"title": "The Stainless Steel Rat",
+"author": "Harry Harrison",
+"gene": "con_artists",
+"confidence": 0.8,
+"why": "Slippery Jim diGriz's cons"
+},
+{
+"ref": "the-quantum-magician",
+"title": "The Quantum Magician",
+"author": "Derek Künsken",
+"gene": "con_artists",
+"confidence": 0.8,
+"why": "A con to move a fleet"
+},
+{
+"ref": "heroes-die",
+"title": "Heroes Die",
+"author": "Matthew Woodring Stover",
+"gene": "assassins",
+"confidence": 0.8,
+"why": "Caine, actor-assassin"
+},
+{
+"ref": "/works/OL17471996W",
+"title": "The Reluctant Assassin",
+"author": "Eoin Colfer",
+"gene": "assassins",
+"confidence": 0.8,
+"why": "Teen assassin apprentice through time"
+},
+{
+"ref": "use-of-weapons-banks",
+"title": "Use of Weapons",
+"author": "Iain M. Banks",
+"gene": "assassins",
+"confidence": 0.6,
+"why": "Zakalwe, Culture's deniable killer"
+},
+{
+"ref": "renegade-star",
+"title": "Renegade Star",
+"author": "J. N. Chaney",
+"gene": "smuggling_and_piracy",
+"confidence": 0.8,
+"why": "Smuggler with a ship"
+},
+{
+"ref": "chilling-effect",
+"title": "Chilling Effect",
+"author": "Valerie Valdes",
+"gene": "smuggling_and_piracy",
+"confidence": 0.8,
+"why": "Captain Eva's shady crew"
+},
+{
+"ref": "count-zero",
+"title": "Count Zero",
+"author": "William Gibson",
+"gene": "corporate_espionage",
+"confidence": 0.8,
+"why": "Extracting a defecting corporate researcher"
+},
+{
+"ref": "burning-chrome",
+"title": "Burning Chrome",
+"author": "William Gibson",
+"gene": "corporate_espionage",
+"confidence": 0.7,
+"why": "Stories of data theft from corps"
+},
+{
+"ref": "pattern-recognition",
+"title": "Pattern Recognition",
+"author": "William Gibson",
+"gene": "corporate_espionage",
+"confidence": 0.6,
+"why": "Corporate hunt for the footage"
+},
+{
+"ref": "fuzzy-nation",
+"title": "Fuzzy Nation",
+"author": "John Scalzi",
+"gene": "courtroom_and_tribunal",
+"confidence": 0.8,
+"why": "Courtroom fight over Fuzzy sapience"
+},
+{
+"ref": "/works/OL579085W",
+"title": "Little Fuzzy",
+"author": "H. Beam Piper",
+"gene": "courtroom_and_tribunal",
+"confidence": 0.8,
+"why": "Trial decides whether Fuzzies are people"
+},
+{
+"ref": null,
+"title": "Illegal Alien",
+"author": "Robert J. Sawyer",
+"gene": "courtroom_and_tribunal",
+"confidence": 0.8,
+"why": "An alien tried for murder in a US court"
+},
+{
+"ref": "/works/OL56902W",
+"title": "A Civil Campaign",
+"author": "Lois McMaster Bujold",
+"gene": "courtroom_and_tribunal",
+"confidence": 0.6,
+"why": "Contested inheritance argued before the Council of Counts"
+},
+{
+"ref": "lock-in-a-novel-of-the-near-future-lock-in-series-book-1",
+"title": "Lock In",
+"author": "John Scalzi",
+"gene": "whodunit_with_a_twist_of_tech",
+"confidence": 0.8,
+"why": "FBI murder case involving threeps"
+},
+{
+"ref": "/works/OL46398W",
+"title": "The Naked Sun",
+"author": "Isaac Asimov",
+"gene": "whodunit_with_a_twist_of_tech",
+"confidence": 0.8,
+"why": "Murder on robot-run Solaria"
+},
+{
+"ref": "the-maze-runner",
+"title": "The Maze Runner",
+"author": "James Dashner",
+"gene": "prison_break",
+"confidence": 0.8,
+"why": "Escaping the Maze"
+},
+{
+"ref": "wool",
+"title": "Wool",
+"author": "Hugh Howey",
+"gene": "prison_break",
+"confidence": 0.6,
+"why": "Breaking out of the silo"
+},
+{
+"ref": "do-androids-dream-of-electric-sheep",
+"title": "Do Androids Dream of Electric Sheep?",
+"author": "Philip K. Dick",
+"gene": "bounty_hunters",
+"confidence": 0.8,
+"why": "Deckard hunts androids for bounty"
+},
+{
+"ref": "gods-war",
+"title": "God's War",
+"author": "Kameron Hurley",
+"gene": "bounty_hunters",
+"confidence": 0.8,
+"why": "Nyx, bel dame bounty hunter"
+},
+{
+"ref": null,
+"title": "The Mandalorian Armor",
+"author": "K. W. Jeter",
+"gene": "bounty_hunters",
+"confidence": 0.8,
+"why": "Boba Fett and rival hunters"
+},
+{
+"ref": "the-moon-is-a-harsh-mistress",
+"title": "The Moon Is a Harsh Mistress",
+"author": "Robert A. Heinlein",
+"gene": "guerrilla_resistance",
+"confidence": 0.8,
+"why": "Cells organize the Lunar revolt"
+},
+{
+"ref": "the-word-for-world-is-forest",
+"title": "The Word for World Is Forest",
+"author": "Ursula K. Le Guin",
+"gene": "guerrilla_resistance",
+"confidence": 0.8,
+"why": "Athsheans fight colonists"
+},
+{
+"ref": "/works/OL14908941W",
+"title": "Mockingjay",
+"author": "Suzanne Collins",
+"gene": "guerrilla_resistance",
+"confidence": 0.8,
+"why": "District rebels against the Capitol"
+},
+{
+"ref": "ninefox-gambit",
+"title": "Ninefox Gambit",
+"author": "Yoon Ha Lee",
+"gene": "siege",
+"confidence": 0.8,
+"why": "Siege of the Fortress of Scattered Needles"
+},
+{
+"ref": null,
+"title": "Necropolis",
+"author": "Dan Abnett",
+"gene": "siege",
+"confidence": 0.8,
+"why": "Siege of Vervunhive"
+},
+{
+"ref": null,
+"title": "Helsreach",
+"author": "Aaron Dembski-Bowden",
+"gene": "siege",
+"confidence": 0.8,
+"why": "Holding Armageddon's hive city"
+},
+{
+"ref": "valors-choice",
+"title": "Valor's Choice",
+"author": "Tanya Huff",
+"gene": "siege",
+"confidence": 0.6,
+"why": "Defending a position against the enemy"
+},
+{
+"ref": null,
+"title": "Helsreach",
+"author": "Aaron Dembski-Bowden",
+"gene": "last_stand",
+"confidence": 0.8,
+"why": "Black Templars hold to the last"
+},
+{
+"ref": null,
+"title": "Necropolis",
+"author": "Dan Abnett",
+"gene": "last_stand",
+"confidence": 0.8,
+"why": "Ghosts and hivers defend the city"
+},
+{
+"ref": "armor",
+"title": "Armor",
+"author": "John Steakley",
+"gene": "last_stand",
+"confidence": 0.7,
+"why": "Felix's endless stand at Banshee"
+},
+{
+"ref": "halo-the-fall-of-reach",
+"title": "Halo: The Fall of Reach",
+"author": "Eric Nylund",
+"gene": "last_stand",
+"confidence": 0.7,
+"why": "Reach falls as Spartans fight on"
+},
+{
+"ref": "valors-choice",
+"title": "Valor's Choice",
+"author": "Tanya Huff",
+"gene": "last_stand",
+"confidence": 0.7,
+"why": "Outnumbered marines dig in"
+},
+{
+"ref": "all-you-need-is-kill",
+"title": "All You Need Is Kill",
+"author": "Hiroshi Sakurazaka",
+"gene": "last_stand",
+"confidence": 0.6,
+"why": "One battle fought over and over"
+},
+{
+"ref": "halo-the-fall-of-reach",
+"title": "Halo: The Fall of Reach",
+"author": "Eric Nylund",
+"gene": "special_forces",
+"confidence": 0.8,
+"why": "Spartan-II super soldiers"
+},
+{
+"ref": "hard-contact",
+"title": "Hard Contact",
+"author": "Karen Traviss",
+"gene": "special_forces",
+"confidence": 0.8,
+"why": "Republic Commando squad"
+},
+{
+"ref": "the-forever-peace",
+"title": "The Forever Peace",
+"author": "Joe Haldeman",
+"gene": "drone_and_remote_war",
+"confidence": 0.8,
+"why": "Soldierboys piloted remotely"
+},
+{
+"ref": "kill-decision",
+"title": "Kill Decision",
+"author": "Daniel Suarez",
+"gene": "drone_and_remote_war",
+"confidence": 0.8,
+"why": "Autonomous drone warfare"
+},
+{
+"ref": "iron-widow",
+"title": "Iron Widow",
+"author": "Xiran Jay Zhao",
+"gene": "mecha",
+"confidence": 0.8,
+"why": "Chrysalises piloted by pairs"
+},
+{
+"ref": "sleeping-giants",
+"title": "Sleeping Giants",
+"author": "Sylvain Neuvel",
+"gene": "mecha",
+"confidence": 0.8,
+"why": "Themis, the giant robot"
+},
+{
+"ref": null,
+"title": "Decision at Thunder Rift",
+"author": "William H. Keith",
+"gene": "mecha",
+"confidence": 0.8,
+"why": "BattleMech warfare"
+},
+{
+"ref": "/works/OL81628W",
+"title": "The Gunslinger",
+"author": "Stephen King",
+"gene": "gunfights_and_duels",
+"confidence": 0.65,
+"why": "Roland the gunslinger"
+},
+{
+"ref": "altered-carbon",
+"title": "Altered Carbon",
+"author": "Richard K. Morgan",
+"gene": "gunfights_and_duels",
+"confidence": 0.6,
+"why": "Close gunfights and brawls"
+},
+{
+"ref": "fortunes-pawn",
+"title": "Fortune's Pawn",
+"author": "Rachel Bach",
+"gene": "gunfights_and_duels",
+"confidence": 0.6,
+"why": "Devi's gunfights"
+},
+{
+"ref": "gideon-the-ninth",
+"title": "Gideon the Ninth",
+"author": "Tamsyn Muir",
+"gene": "martial_arts_and_blades",
+"confidence": 0.8,
+"why": "Gideon's swordplay"
+},
+{
+"ref": "red-rising",
+"title": "Red Rising",
+"author": "Pierce Brown",
+"gene": "martial_arts_and_blades",
+"confidence": 0.8,
+"why": "Razor duels"
+},
+{
+"ref": "the-forever-war",
+"title": "The Forever War",
+"author": "Joe Haldeman",
+"gene": "arms_race",
+"confidence": 0.8,
+"why": "Each war brings new weapons"
+},
+{
+"ref": "ball-lightning",
+"title": "Ball Lightning",
+"author": "Liu Cixin",
+"gene": "arms_race",
+"confidence": 0.8,
+"why": "Weaponizing ball lightning"
+},
+{
+"ref": "the-dark-forest",
+"title": "The Dark Forest",
+"author": "Liu Cixin",
+"gene": "arms_race",
+"confidence": 0.6,
+"why": "Preparing weapons for Doomsday Battle"
+},
+{
+"ref": "ghost-fleet",
+"title": "Ghost Fleet",
+"author": "P. W. Singer and August Cole",
+"gene": "arms_race",
+"confidence": 0.6,
+"why": "Hacked tech versus counter-tech"
+},
+{
+"ref": "the-forever-war",
+"title": "The Forever War",
+"author": "Joe Haldeman",
+"gene": "veterans_coming_home",
+"confidence": 0.8,
+"why": "Soldiers return to a changed Earth"
+},
+{
+"ref": "slaughterhouse-five",
+"title": "Slaughterhouse-Five",
+"author": "Kurt Vonnegut",
+"gene": "veterans_coming_home",
+"confidence": 0.8,
+"why": "Billy Pilgrim's war follows him"
+},
+{
+"ref": "hammered",
+"title": "Hammered",
+"author": "Elizabeth Bear",
+"gene": "veterans_coming_home",
+"confidence": 0.7,
+"why": "Jenny Casey, damaged veteran"
+},
+{
+"ref": "/works/OL6835839W",
+"title": "Black Man",
+"author": "Richard K. Morgan",
+"gene": "veterans_coming_home",
+"confidence": 0.65,
+"why": "Discarded supersoldier Marsalis"
+},
+{
+"ref": "a-desolation-called-peace",
+"title": "A Desolation Called Peace",
+"author": "Arkady Martine",
+"gene": "peace_is_harder",
+"confidence": 0.8,
+"why": "Ending the war with an alien enemy"
+},
+{
+"ref": "foreigner",
+"title": "Foreigner",
+"author": "C. J. Cherryh",
+"gene": "peace_is_harder",
+"confidence": 0.8,
+"why": "Keeping a fragile post-war peace"
+},
+{
+"ref": "iron-gold",
+"title": "Iron Gold",
+"author": "Pierce Brown",
+"gene": "peace_is_harder",
+"confidence": 0.8,
+"why": "Governing after the revolution"
+},
+{
+"ref": "dark-age",
+"title": "Dark Age",
+"author": "Pierce Brown",
+"gene": "peace_is_harder",
+"confidence": 0.7,
+"why": "The Republic struggles to end the war"
+},
+{
+"ref": "speaker-for-the-dead",
+"title": "Speaker for the Dead",
+"author": "Orson Scott Card",
+"gene": "peace_is_harder",
+"confidence": 0.6,
+"why": "Reconciliation after a xenocide"
+},
+{
+"ref": "translation-state",
+"title": "Translation State",
+"author": "Ann Leckie",
+"gene": "peace_is_harder",
+"confidence": 0.65,
+"why": "Keeping the treaty"
+},
+{
+"ref": "/works/OL1099915W",
+"title": "L'Île mystérieuse",
+"author": "Jules Verne",
+"gene": "castaway_ingenuity",
+"confidence": 0.8,
+"why": "Castaways rebuild with science"
+},
+{
+"ref": "/works/OL59712W",
+"title": "Tunnel in the sky",
+"author": "Robert A. Heinlein",
+"gene": "castaway_ingenuity",
+"confidence": 0.7,
+"why": "Students stranded on an alien world"
+},
+{
+"ref": "project-hail-mary",
+"title": "Project Hail Mary",
+"author": "Andy Weir",
+"gene": "castaway_ingenuity",
+"confidence": 0.8,
+"why": "Science his way out"
+},
+{
+"ref": null,
+"title": "Who Goes There?",
+"author": "John W. Campbell",
+"gene": "monster_on_the_loose",
+"confidence": 0.8,
+"why": "Shape-shifting thing in the base"
+},
+{
+"ref": "/works/OL21831W",
+"title": "The Voyage of the Space Beagle",
+"author": "A. E. van Vogt and Bruce Jensen",
+"gene": "monster_on_the_loose",
+"confidence": 0.8,
+"why": "Coeurl and Ixtl prowl the ship"
+},
+{
+"ref": "the-troop",
+"title": "The Troop",
+"author": "Nick Cutter",
+"gene": "monster_on_the_loose",
+"confidence": 0.8,
+"why": "Parasite-ravaged hunters on an island"
+},
+{
+"ref": null,
+"title": "Enemy Mine",
+"author": "Barry B. Longyear",
+"gene": "trapped_with_the_enemy",
+"confidence": 0.8,
+"why": "Human and Drac stranded together"
+},
+{
+"ref": "shards-of-honor",
+"title": "Shards of Honor",
+"author": "Lois McMaster Bujold",
+"gene": "trapped_with_the_enemy",
+"confidence": 0.8,
+"why": "Cordelia and Aral must cooperate to survive"
+},
+{
+"ref": "/works/OL17402W",
+"title": "A Fall of Moondust",
+"author": "Arthur C. Clarke and Oliver Wyman",
+"gene": "countdown",
+"confidence": 0.8,
+"why": "Air running out under lunar dust"
+},
+{
+"ref": "the-andromeda-strain",
+"title": "The Andromeda Strain",
+"author": "Michael Crichton",
+"gene": "countdown",
+"confidence": 0.8,
+"why": "The self-destruct clock"
+},
+{
+"ref": "seveneves",
+"title": "Seveneves",
+"author": "Neal Stephenson",
+"gene": "countdown",
+"confidence": 0.8,
+"why": "Two years until the Hard Rain"
+},
+{
+"ref": "/works/OL450124W",
+"title": "The Last Man",
+"author": "Mary Shelley",
+"gene": "last_humans",
+"confidence": 0.8,
+"why": "Lionel, the last man"
+},
+{
+"ref": "i-am-legend",
+"title": "I Am Legend",
+"author": "Richard Matheson",
+"gene": "last_humans",
+"confidence": 0.8,
+"why": "Neville, last human among vampires"
+},
+{
+"ref": "these-broken-stars-kaufman",
+"title": "These Broken Stars",
+"author": "Amie Kaufman and Meagan Spooner",
+"gene": "shipwreck",
+"confidence": 0.8,
+"why": "Survivors of a starliner crash"
+},
+{
+"ref": null,
+"title": "Enemy Mine",
+"author": "Barry B. Longyear",
+"gene": "shipwreck",
+"confidence": 0.8,
+"why": "Crash on Fyrine IV"
+},
+{
+"ref": "/works/OL1099915W",
+"title": "L'Île mystérieuse",
+"author": "Jules Verne",
+"gene": "shipwreck",
+"confidence": 0.7,
+"why": "Balloon crash on an island"
+},
+{
+"ref": "ice-planet-barbarians",
+"title": "Ice Planet Barbarians",
+"author": "Ruby Dixon",
+"gene": "shipwreck",
+"confidence": 0.6,
+"why": "Ship strands women on an ice world"
+},
+{
+"ref": "dune-messiah",
+"title": "Dune Messiah",
+"author": "Frank Herbert",
+"gene": "empire_rising",
+"confidence": 0.8,
+"why": "Paul's jihad sweeps the galaxy"
+},
+{
+"ref": "sun-eater-empire-of-silence",
+"title": "Sun Eater: Empire of Silence",
+"author": "Christopher Ruocchio",
+"gene": "empire_rising",
+"confidence": 0.6,
+"why": "Rise toward empire war"
+},
+{
+"ref": "the-collapsing-empire-the-interdependency",
+"title": "The Collapsing Empire",
+"author": "John Scalzi",
+"gene": "trade_wars",
+"confidence": 0.8,
+"why": "Guild houses with monopolies and fleets"
+},
+{
+"ref": "trading-in-danger",
+"title": "Trading in Danger",
+"author": "Elizabeth Moon",
+"gene": "trade_wars",
+"confidence": 0.6,
+"why": "Merchant family in war"
+},
+{
+"ref": "the-word-for-world-is-forest",
+"title": "The Word for World Is Forest",
+"author": "Ursula K. Le Guin",
+"gene": "colonial_reckoning",
+"confidence": 0.8,
+"why": "Colonists versus Athsheans"
+},
+{
+"ref": "fuzzy-nation",
+"title": "Fuzzy Nation",
+"author": "John Scalzi",
+"gene": "colonial_reckoning",
+"confidence": 0.8,
+"why": "Who owns Zara XXIII"
+},
+{
+"ref": "/works/OL579085W",
+"title": "Little Fuzzy",
+"author": "H. Beam Piper",
+"gene": "colonial_reckoning",
+"confidence": 0.8,
+"why": "Zarathustra company vs natives"
+},
+{
+"ref": "speaker-for-the-dead",
+"title": "Speaker for the Dead",
+"author": "Orson Scott Card",
+"gene": "colonial_reckoning",
+"confidence": 0.8,
+"why": "Colony and pequeninos on Lusitania"
+},
+{
+"ref": "ancillary-sword",
+"title": "Ancillary Sword",
+"author": "Ann Leckie",
+"gene": "colonial_reckoning",
+"confidence": 0.8,
+"why": "Athoek plantations and the Valskaayans"
+},
+{
+"ref": "the-terraformers",
+"title": "The Terraformers",
+"author": "Annalee Newitz",
+"gene": "colonial_reckoning",
+"confidence": 0.7,
+"why": "Who gets to live on Sask-E"
+},
+{
+"ref": "infomocracy",
+"title": "Infomocracy",
+"author": "Malka Older",
+"gene": "election_and_faction_games",
+"confidence": 0.8,
+"why": "Global micro-democracy election"
+},
+{
+"ref": "/works/OL59715W",
+"title": "Double Star",
+"author": "Robert A. Heinlein",
+"gene": "election_and_faction_games",
+"confidence": 0.8,
+"why": "Actor impersonates a politician in an election"
+},
+{
+"ref": "/works/OL21203989W",
+"title": "State Tectonics",
+"author": "Malka Older",
+"gene": "election_and_faction_games",
+"confidence": 0.8,
+"why": "Election and information politics"
+},
+{
+"ref": "the-moon-is-a-harsh-mistress",
+"title": "The Moon Is a Harsh Mistress",
+"author": "Robert A. Heinlein",
+"gene": "secession",
+"confidence": 0.8,
+"why": "Luna declares independence"
+},
+{
+"ref": "ecotopia",
+"title": "Ecotopia",
+"author": "Ernest Callenbach",
+"gene": "secession",
+"confidence": 0.8,
+"why": "Pacific Northwest secedes"
+},
+{
+"ref": "/works/OL81655W",
+"title": "Green Mars",
+"author": "Kim Stanley Robinson",
+"gene": "secession",
+"confidence": 0.8,
+"why": "Mars moves to independence"
+},
+{
+"ref": "red-mars",
+"title": "Red Mars",
+"author": "Kim Stanley Robinson",
+"gene": "secession",
+"confidence": 0.65,
+"why": "First Martian revolution"
+},
+{
+"ref": "/works/OL5730140W",
+"title": "Market Forces",
+"author": "Richard K. Morgan",
+"gene": "corporate_wars",
+"confidence": 0.8,
+"why": "Executives fight road duels"
+},
+{
+"ref": "fallen-dragon",
+"title": "Fallen Dragon",
+"author": "Peter F. Hamilton",
+"gene": "corporate_wars",
+"confidence": 0.8,
+"why": "Corporation invades a colony for asset realization"
+},
+{
+"ref": null,
+"title": "The Corporation Wars: Dissidence",
+"author": "Ken MacLeod",
+"gene": "corporate_wars",
+"confidence": 0.8,
+"why": "Corporate robot wars"
+},
+{
+"ref": "semiosis",
+"title": "Semiosis",
+"author": "Sue Burke",
+"gene": "generational_saga",
+"confidence": 0.8,
+"why": "Colony across generations"
+},
+{
+"ref": "the-old-drift",
+"title": "The Old Drift",
+"author": "Namwali Serpell",
+"gene": "generational_saga",
+"confidence": 0.8,
+"why": "Families across a century"
+},
+{
+"ref": "wool",
+"title": "Wool",
+"author": "Hugh Howey",
+"gene": "slow_reveal_mystery",
+"confidence": 0.8,
+"why": "The silo's truth layer by layer"
+},
+{
+"ref": "piranesi",
+"title": "Piranesi",
+"author": "Susanna Clarke",
+"gene": "slow_reveal_mystery",
+"confidence": 0.8,
+"why": "The House's secret revealed slowly"
+},
+{
+"ref": null,
+"title": "Orphans of the Sky",
+"author": "Robert A. Heinlein",
+"gene": "the_secret_of_the_ship",
+"confidence": 0.8,
+"why": "Crew doesn't know it's a ship"
+},
+{
+"ref": null,
+"title": "Non-Stop",
+"author": "Brian Aldiss",
+"gene": "the_secret_of_the_ship",
+"confidence": 0.8,
+"why": "Tribes discover their world is a ship"
+},
+{
+"ref": "across-the-universe",
+"title": "Across the Universe",
+"author": "Beth Revis",
+"gene": "the_secret_of_the_ship",
+"confidence": 0.8,
+"why": "Eldest's lies about Godspeed"
+},
+{
+"ref": "hull-zero-three",
+"title": "Hull Zero Three",
+"author": "Greg Bear",
+"gene": "the_secret_of_the_ship",
+"confidence": 0.8,
+"why": "Waking on a ship that isn't what it seems"
+},
+{
+"ref": "ship-of-fools",
+"title": "Ship of Fools",
+"author": "Richard Paul Russo",
+"gene": "the_secret_of_the_ship",
+"confidence": 0.8,
+"why": "Argonos and its hidden past"
+},
+{
+"ref": "/works/OL18160545W",
+"title": "The forever watch",
+"author": "David Ramirez",
+"gene": "the_secret_of_the_ship",
+"confidence": 0.8,
+"why": "Noah's hidden truth"
+},
+{
+"ref": "contact",
+"title": "Contact",
+"author": "Carl Sagan",
+"gene": "signal_from_space",
+"confidence": 0.8,
+"why": "Decoding the Vega signal"
+},
+{
+"ref": null,
+"title": "His Master's Voice",
+"author": "Stanisław Lem",
+"gene": "signal_from_space",
+"confidence": 0.8,
+"why": "Scientists decode a neutrino signal"
+},
+{
+"ref": "the-three-body-problem",
+"title": "The Three-Body Problem",
+"author": "Liu Cixin",
+"gene": "signal_from_space",
+"confidence": 0.8,
+"why": "Red Coast's reply"
+},
+{
+"ref": null,
+"title": "A for Andromeda",
+"author": "Fred Hoyle and John Elliot",
+"gene": "signal_from_space",
+"confidence": 0.8,
+"why": "Signal from Andromeda"
+},
+{
+"ref": "the-midwich-cuckoos",
+"title": "The Midwich Cuckoos",
+"author": "John Wyndham",
+"gene": "something_is_wrong_with_the_town",
+"confidence": 0.8,
+"why": "Midwich and its children"
+},
+{
+"ref": "american-elsewhere",
+"title": "American Elsewhere",
+"author": "Robert Jackson Bennett",
+"gene": "something_is_wrong_with_the_town",
+"confidence": 0.8,
+"why": "Wink, New Mexico"
+},
+{
+"ref": "count-zero",
+"title": "Count Zero",
+"author": "William Gibson",
+"gene": "haunted_tech",
+"confidence": 0.8,
+"why": "Loa in cyberspace"
+},
+{
+"ref": "ubik",
+"title": "Ubik",
+"author": "Philip K. Dick",
+"gene": "haunted_tech",
+"confidence": 0.8,
+"why": "Messages from the dead"
+},
+{
+"ref": "dead-silence",
+"title": "Dead Silence",
+"author": "S. A. Barnes",
+"gene": "haunted_tech",
+"confidence": 0.65,
+"why": "Haunted derelict liner"
+},
+{
+"ref": "speaker-for-the-dead",
+"title": "Speaker for the Dead",
+"author": "Orson Scott Card",
+"gene": "redemption_arc",
+"confidence": 0.8,
+"why": "Ender's atonement"
+},
+{
+"ref": "some-desperate-glory",
+"title": "Some Desperate Glory",
+"author": "Emily Tesh",
+"gene": "redemption_arc",
+"confidence": 0.8,
+"why": "Kyr unlearns her indoctrination"
+},
+{
+"ref": "use-of-weapons-banks",
+"title": "Use of Weapons",
+"author": "Iain M. Banks",
+"gene": "redemption_arc",
+"confidence": 0.6,
+"why": "Zakalwe's guilt"
+},
+{
+"ref": "stranger-in-a-strange-land",
+"title": "Stranger in a Strange Land",
+"author": "Robert A. Heinlein",
+"gene": "fish_out_of_water",
+"confidence": 0.8,
+"why": "Martian-raised man on Earth"
+},
+{
+"ref": "/works/OL54031W",
+"title": "A Connecticut Yankee in King Arthur's Court",
+"author": "Mark Twain",
+"gene": "fish_out_of_water",
+"confidence": 0.8,
+"why": "Yankee in Camelot"
+},
+{
+"ref": "red-rising",
+"title": "Red Rising",
+"author": "Pierce Brown",
+"gene": "rags_to_power",
+"confidence": 0.8,
+"why": "Red miner to Gold"
+},
+{
+"ref": "the-warriors-apprentice",
+"title": "The Warrior's Apprentice",
+"author": "Lois McMaster Bujold",
+"gene": "rags_to_power",
+"confidence": 0.8,
+"why": "Miles builds a mercenary fleet"
+},
+{
+"ref": "iron-widow",
+"title": "Iron Widow",
+"author": "Xiran Jay Zhao",
+"gene": "rags_to_power",
+"confidence": 0.65,
+"why": "Concubine-pilot rises"
+},
+{
+"ref": "hammered",
+"title": "Hammered",
+"author": "Elizabeth Bear",
+"gene": "retired_and_dragged_back_in",
+"confidence": 0.8,
+"why": "Jenny Casey recalled"
+},
+{
+"ref": "planetside",
+"title": "Planetside",
+"author": "Michael Mammay",
+"gene": "retired_and_dragged_back_in",
+"confidence": 0.8,
+"why": "Butler pulled out of retirement"
+},
+{
+"ref": "memory",
+"title": "Memory",
+"author": "Lois McMaster Bujold",
+"gene": "retired_and_dragged_back_in",
+"confidence": 0.6,
+"why": "Discharged Miles drawn back"
+},
+{
+"ref": "persepolis-rising",
+"title": "Persepolis Rising",
+"author": "James S. A. Corey",
+"gene": "retired_and_dragged_back_in",
+"confidence": 0.6,
+"why": "Holden drawn back"
+},
+{
+"ref": "an-absolutely-remarkable-thing",
+"title": "An Absolutely Remarkable Thing",
+"author": "Hank Green",
+"gene": "chosen_by_accident",
+"confidence": 0.8,
+"why": "April May finds the robot"
+},
+{
+"ref": "dungeon-crawler-carl",
+"title": "Dungeon Crawler Carl",
+"author": "Matt Dinniman",
+"gene": "chosen_by_accident",
+"confidence": 0.8,
+"why": "Carl in the dungeon"
+},
+{
+"ref": "annihilation",
+"title": "Annihilation",
+"author": "Jeff VanderMeer",
+"gene": "becoming_something_else",
+"confidence": 0.8,
+"why": "The biologist transforms"
+},
+{
+"ref": "binti",
+"title": "Binti",
+"author": "Nnedi Okorafor",
+"gene": "becoming_something_else",
+"confidence": 0.8,
+"why": "Binti's okuoko"
+},
+{
+"ref": "stories-of-your-life-and-others",
+"title": "Stories of Your Life and Others",
+"author": "Ted Chiang",
+"gene": "grief_journey",
+"confidence": 0.8,
+"why": "Louise and her daughter"
+},
+{
+"ref": "solaris",
+"title": "Solaris",
+"author": "Stanisław Lem",
+"gene": "grief_journey",
+"confidence": 0.8,
+"why": "Kelvin and Rheya"
+},
+{
+"ref": "recursion",
+"title": "Recursion",
+"author": "Blake Crouch",
+"gene": "grief_journey",
+"confidence": 0.8,
+"why": "Barry's daughter's death"
+},
+{
+"ref": "the-time-travelers-wife",
+"title": "The Time Traveler's Wife",
+"author": "Audrey Niffenegger",
+"gene": "grief_journey",
+"confidence": 0.7,
+"why": "Living with loss"
+},
+{
+"ref": "the-road",
+"title": "The Road",
+"author": "Cormac McCarthy",
+"gene": "grief_journey",
+"confidence": 0.65,
+"why": "Father's grief"
+},
+{
+"ref": "contact",
+"title": "Contact",
+"author": "Carl Sagan",
+"gene": "grief_journey",
+"confidence": 0.6,
+"why": "Ellie's father"
+},
+{
+"ref": "/works/OL19710791W",
+"title": "Gather the daughters",
+"author": "Jennie Melamed",
+"gene": "escape_from_the_cult",
+"confidence": 0.8,
+"why": "Island patriarchal cult"
+},
+{
+"ref": "/works/OL20159798W",
+"title": "The Water Cure",
+"author": "Sophie Mackintosh",
+"gene": "escape_from_the_cult",
+"confidence": 0.7,
+"why": "Sisters raised in a compound"
+},
+{
+"ref": "some-desperate-glory",
+"title": "Some Desperate Glory",
+"author": "Emily Tesh",
+"gene": "escape_from_the_cult",
+"confidence": 0.6,
+"why": "Leaving Gaea Station"
+},
+{
+"ref": "/works/OL59736W",
+"title": "Revolt in 2100",
+"author": "Robert A. Heinlein",
+"gene": "escape_from_the_cult",
+"confidence": 0.7,
+"why": "Rebellion against a theocracy"
+},
+{
+"ref": "/works/OL17933495W",
+"title": "Record of a Spaceborn Few",
+"author": "Becky Chambers",
+"gene": "slice_of_life_in_space",
+"confidence": 0.8,
+"why": "Daily life in the Exodus Fleet"
+},
+{
+"ref": "/works/OL20923693W",
+"title": "The Galaxy, and the Ground Within",
+"author": "Becky Chambers",
+"gene": "slice_of_life_in_space",
+"confidence": 0.8,
+"why": "Strangers at a planetary layover"
+},
+{
+"ref": "the-long-way-to-a-small-angry-planet",
+"title": "The Long Way to a Small, Angry Planet",
+"author": "Becky Chambers",
+"gene": "slice_of_life_in_space",
+"confidence": 0.8,
+"why": "Crew life aboard"
+},
+{
+"ref": "the-stars-my-destination",
+"title": "The Stars My Destination",
+"author": "Alfred Bester",
+"gene": "morally_grey_lead",
+"confidence": 0.8,
+"why": "Gully Foyle's revenge"
+},
+{
+"ref": "use-of-weapons-banks",
+"title": "Use of Weapons",
+"author": "Iain M. Banks",
+"gene": "morally_grey_lead",
+"confidence": 0.8,
+"why": "Zakalwe's past"
+},
+{
+"ref": "altered-carbon",
+"title": "Altered Carbon",
+"author": "Richard K. Morgan",
+"gene": "morally_grey_lead",
+"confidence": 0.8,
+"why": "Kovacs the Envoy"
+},
+{
+"ref": "project-hail-mary",
+"title": "Project Hail Mary",
+"author": "Andy Weir",
+"gene": "reluctant_hero",
+"confidence": 0.8,
+"why": "Grace didn't volunteer"
+},
+{
+"ref": "murderbot-all-systems-red",
+"title": "Murderbot: All Systems Red",
+"author": "Martha Wells",
+"gene": "reluctant_hero",
+"confidence": 0.8,
+"why": "Murderbot would rather watch shows"
+},
+{
+"ref": "the-hitchhikers-guide-to-the-galaxy",
+"title": "The Hitchhiker's Guide to the Galaxy",
+"author": "Douglas Adams",
+"gene": "reluctant_hero",
+"confidence": 0.8,
+"why": "Arthur wants his house back"
+},
+{
+"ref": "dungeon-crawler-carl",
+"title": "Dungeon Crawler Carl",
+"author": "Matt Dinniman",
+"gene": "reluctant_hero",
+"confidence": 0.8,
+"why": "Carl in his boxers"
+},
+{
+"ref": "the-player-of-games-banks",
+"title": "The Player of Games",
+"author": "Iain M. Banks",
+"gene": "reluctant_hero",
+"confidence": 0.65,
+"why": "Gurgeh dragged into Azad"
+},
+{
+"ref": "starter-villain",
+"title": "Starter Villain",
+"author": "John Scalzi",
+"gene": "reluctant_hero",
+"confidence": 0.6,
+"why": "Charlie inherits a villain empire"
+},
+{
+"ref": "bobiverse-we-are-legion-we-are-bob",
+"title": "Bobiverse: We Are Legion (We Are Bob)",
+"author": "Dennis E. Taylor",
+"gene": "engineer_who_fixes_things",
+"confidence": 0.8,
+"why": "Bob engineers everything"
+},
+{
+"ref": "project-hail-mary",
+"title": "Project Hail Mary",
+"author": "Andy Weir",
+"gene": "engineer_who_fixes_things",
+"confidence": 0.8,
+"why": "Grace improvises science fixes"
+},
+{
+"ref": "the-forever-war",
+"title": "The Forever War",
+"author": "Joe Haldeman",
+"gene": "soldier_with_doubts",
+"confidence": 0.8,
+"why": "Mandella questions the war"
+},
+{
+"ref": "the-light-brigade",
+"title": "The Light Brigade",
+"author": "Kameron Hurley",
+"gene": "soldier_with_doubts",
+"confidence": 0.8,
+"why": "Dietz questions orders"
+},
+{
+"ref": "the-forever-peace",
+"title": "The Forever Peace",
+"author": "Joe Haldeman",
+"gene": "soldier_with_doubts",
+"confidence": 0.8,
+"why": "Julian and the soldierboys"
+},
+{
+"ref": "renegade-star",
+"title": "Renegade Star",
+"author": "J. N. Chaney",
+"gene": "rogue_with_a_heart",
+"confidence": 0.8,
+"why": "Smuggler Hughes protects Abigail"
+},
+{
+"ref": "the-caves-of-steel",
+"title": "The Caves of Steel",
+"author": "Isaac Asimov",
+"gene": "detective_mind",
+"confidence": 0.8,
+"why": "Elijah Baley"
+},
+{
+"ref": "lock-in-a-novel-of-the-near-future-lock-in-series-book-1",
+"title": "Lock In",
+"author": "John Scalzi",
+"gene": "detective_mind",
+"confidence": 0.8,
+"why": "Chris Shane investigates"
+},
+{
+"ref": "a-memory-called-empire",
+"title": "A Memory Called Empire",
+"author": "Arkady Martine",
+"gene": "diplomat_and_talker",
+"confidence": 0.8,
+"why": "Mahit's diplomacy"
+},
+{
+"ref": "foreigner",
+"title": "Foreigner",
+"author": "C. J. Cherryh",
+"gene": "diplomat_and_talker",
+"confidence": 0.8,
+"why": "Bren the paidhi"
+},
+{
+"ref": "skyward",
+"title": "Skyward",
+"author": "Brandon Sanderson",
+"gene": "pilot_ace",
+"confidence": 0.8,
+"why": "Spensa the fighter pilot"
+},
+{
+"ref": "velocity-weapon",
+"title": "Velocity Weapon",
+"author": "Megan E. O'Keefe",
+"gene": "pilot_ace",
+"confidence": 0.6,
+"why": "Sanda the gunner-pilot"
+},
+{
+"ref": "skyward",
+"title": "Skyward",
+"author": "Brandon Sanderson",
+"gene": "outcast_and_misfit",
+"confidence": 0.8,
+"why": "Daughter of a coward"
+},
+{
+"ref": "the-warriors-apprentice",
+"title": "The Warrior's Apprentice",
+"author": "Lois McMaster Bujold",
+"gene": "outcast_and_misfit",
+"confidence": 0.8,
+"why": "Miles, rejected by the military"
+},
+{
+"ref": "/works/OL8404014W",
+"title": "Slan",
+"author": "A. E. van Vogt and Oliver Wyman and Kevin J. Anderson",
+"gene": "outcast_and_misfit",
+"confidence": 0.8,
+"why": "Hunted mutant Jommy Cross"
+},
+{
+"ref": "enders-shadow",
+"title": "Ender's Shadow",
+"author": "Orson Scott Card",
+"gene": "kid_genius",
+"confidence": 0.8,
+"why": "Bean the street-kid genius"
+},
+{
+"ref": "the-hitchhikers-guide-to-the-galaxy",
+"title": "The Hitchhiker's Guide to the Galaxy",
+"author": "Douglas Adams",
+"gene": "ordinary_person",
+"confidence": 0.8,
+"why": "Arthur Dent"
+},
+{
+"ref": "the-kaiju-preservation-society",
+"title": "The Kaiju Preservation Society",
+"author": "John Scalzi",
+"gene": "ordinary_person",
+"confidence": 0.8,
+"why": "Jamie, a delivery driver"
+},
+{
+"ref": "murderbot-all-systems-red",
+"title": "Murderbot: All Systems Red",
+"author": "Martha Wells",
+"gene": "non_human_lead",
+"confidence": 0.8,
+"why": "A SecUnit narrates"
+},
+{
+"ref": "ancillary-justice",
+"title": "Ancillary Justice",
+"author": "Ann Leckie",
+"gene": "non_human_lead",
+"confidence": 0.8,
+"why": "Breq, a ship's AI"
+},
+{
+"ref": "klara-and-the-sun",
+"title": "Klara and the Sun",
+"author": "Kazuo Ishiguro",
+"gene": "non_human_lead",
+"confidence": 0.8,
+"why": "Klara, an Artificial Friend"
+},
+{
+"ref": "sea-of-rust",
+"title": "Sea of Rust",
+"author": "C. Robert Cargill",
+"gene": "non_human_lead",
+"confidence": 0.8,
+"why": "Brittle the robot"
+},
+{
+"ref": "children-of-time",
+"title": "Children of Time",
+"author": "Adrian Tchaikovsky",
+"gene": "non_human_lead",
+"confidence": 0.8,
+"why": "Portia the spider"
+},
+{
+"ref": "the-ship-who-sang",
+"title": "The Ship Who Sang",
+"author": "Anne McCaffrey",
+"gene": "non_human_lead",
+"confidence": 0.75,
+"why": "Helva the brainship"
+},
+{
+"ref": "/works/OL261794W",
+"title": "A Clockwork Orange",
+"author": "Anthony Burgess",
+"gene": "villain_protagonist",
+"confidence": 0.8,
+"why": "Alex the delinquent"
+},
+{
+"ref": "the-sparrow",
+"title": "The Sparrow",
+"author": "Mary Doria Russell",
+"gene": "broken_and_healing",
+"confidence": 0.8,
+"why": "Emilio after Rakhat"
+},
+{
+"ref": "planetfall",
+"title": "Planetfall",
+"author": "Emma Newman",
+"gene": "broken_and_healing",
+"confidence": 0.8,
+"why": "Ren's hoarding and guilt"
+},
+{
+"ref": "the-long-way-to-a-small-angry-planet",
+"title": "The Long Way to a Small, Angry Planet",
+"author": "Becky Chambers",
+"gene": "ragtag_crew",
+"confidence": 0.8,
+"why": "The Wayfarer misfits"
+},
+{
+"ref": "chilling-effect",
+"title": "Chilling Effect",
+"author": "Valerie Valdes",
+"gene": "ragtag_crew",
+"confidence": 0.8,
+"why": "Eva's crew"
+},
+{
+"ref": "the-caves-of-steel",
+"title": "The Caves of Steel",
+"author": "Isaac Asimov",
+"gene": "buddy_duo",
+"confidence": 0.8,
+"why": "Baley and Daneel"
+},
+{
+"ref": "network-effect",
+"title": "Network Effect",
+"author": "Martha Wells",
+"gene": "buddy_duo",
+"confidence": 0.8,
+"why": "Murderbot and ART"
+},
+{
+"ref": "project-hail-mary",
+"title": "Project Hail Mary",
+"author": "Andy Weir",
+"gene": "buddy_duo",
+"confidence": 0.8,
+"why": "Grace and Rocky"
+},
+{
+"ref": null,
+"title": "Enemy Mine",
+"author": "Barry B. Longyear",
+"gene": "rivals_to_allies",
+"confidence": 0.8,
+"why": "Davidge and Jeriba"
+},
+{
+"ref": "shards-of-honor",
+"title": "Shards of Honor",
+"author": "Lois McMaster Bujold",
+"gene": "rivals_to_allies",
+"confidence": 0.8,
+"why": "Cordelia and Aral"
+},
+{
+"ref": "this-is-how-you-lose-the-time-war",
+"title": "This Is How You Lose the Time War",
+"author": "Amal El-Mohtar and Max Gladstone",
+"gene": "rivals_to_allies",
+"confidence": 0.8,
+"why": "Red and Blue"
+},
+{
+"ref": "the-diamond-age",
+"title": "The Diamond Age",
+"author": "Neal Stephenson",
+"gene": "mentor_and_student",
+"confidence": 0.8,
+"why": "The Primer teaches Nell"
+},
+{
+"ref": "anathem",
+"title": "Anathem",
+"author": "Neal Stephenson",
+"gene": "mentor_and_student",
+"confidence": 0.8,
+"why": "Orolo and Erasmas"
+},
+{
+"ref": "/works/OL73356W",
+"title": "Dragonsinger",
+"author": "Anne McCaffrey",
+"gene": "mentor_and_student",
+"confidence": 0.8,
+"why": "Menolly and Masterharper Robinton"
+},
+{
+"ref": "light-from-uncommon-stars",
+"title": "Light from Uncommon Stars",
+"author": "Ryka Aoki",
+"gene": "mentor_and_student",
+"confidence": 0.8,
+"why": "Shizuka teaches Katrina violin"
+},
+{
+"ref": "enders-game",
+"title": "Ender's Game",
+"author": "Orson Scott Card",
+"gene": "mentor_and_student",
+"confidence": 0.7,
+"why": "Mazer Rackham trains Ender"
+},
+{
+"ref": "golden-son",
+"title": "Golden Son",
+"author": "Pierce Brown",
+"gene": "mentor_and_student",
+"confidence": 0.7,
+"why": "Lorn au Arcos teaches Darrow"
+},
+{
+"ref": "first-and-only",
+"title": "First and Only",
+"author": "Dan Abnett",
+"gene": "band_of_soldiers",
+"confidence": 0.8,
+"why": "Gaunt's Ghosts"
+},
+{
+"ref": "klara-and-the-sun",
+"title": "Klara and the Sun",
+"author": "Kazuo Ishiguro",
+"gene": "loyal_companion",
+"confidence": 0.8,
+"why": "Klara devoted to Josie"
+},
+{
+"ref": "dogs-of-war",
+"title": "Dogs of War",
+"author": "Adrian Tchaikovsky",
+"gene": "loyal_companion",
+"confidence": 0.8,
+"why": "Rex the bioform dog"
+},
+{
+"ref": "project-hail-mary",
+"title": "Project Hail Mary",
+"author": "Andy Weir",
+"gene": "loyal_companion",
+"confidence": 0.7,
+"why": "Rocky stays with Grace"
+},
+{
+"ref": null,
+"title": "A Boy and His Dog",
+"author": "Harlan Ellison",
+"gene": "loyal_companion",
+"confidence": 0.8,
+"why": "Telepathic dog Blood"
+},
+{
+"ref": "enders-game",
+"title": "Ender's Game",
+"author": "Orson Scott Card",
+"gene": "siblings",
+"confidence": 0.8,
+"why": "Ender, Valentine and Peter"
+},
+{
+"ref": "children-of-dune",
+"title": "Children of Dune",
+"author": "Frank Herbert",
+"gene": "siblings",
+"confidence": 0.8,
+"why": "Twins Leto and Ghanima"
+},
+{
+"ref": "dune",
+"title": "Dune",
+"author": "Frank Herbert",
+"gene": "betrayal_from_inside",
+"confidence": 0.8,
+"why": "Dr. Yueh betrays the Atreides"
+},
+{
+"ref": "golden-son",
+"title": "Golden Son",
+"author": "Pierce Brown",
+"gene": "betrayal_from_inside",
+"confidence": 0.8,
+"why": "Roque's betrayal"
+},
+{
+"ref": "horus-rising",
+"title": "Horus Rising",
+"author": "Dan Abnett",
+"gene": "betrayal_from_inside",
+"confidence": 0.65,
+"why": "The Warmaster begins to turn"
+},
+{
+"ref": "ancillary-justice",
+"title": "Ancillary Justice",
+"author": "Ann Leckie",
+"gene": "betrayal_from_inside",
+"confidence": 0.6,
+"why": "Anaander divided against herself"
+},
+{
+"ref": "project-hail-mary",
+"title": "Project Hail Mary",
+"author": "Andy Weir",
+"gene": "human_and_alien_friendship",
+"confidence": 0.8,
+"why": "Grace and Rocky"
+},
+{
+"ref": null,
+"title": "Enemy Mine",
+"author": "Barry B. Longyear",
+"gene": "human_and_alien_friendship",
+"confidence": 0.8,
+"why": "Human and Drac"
+},
+{
+"ref": "axioms-end",
+"title": "Axiom's End",
+"author": "Lindsay Ellis",
+"gene": "human_and_alien_friendship",
+"confidence": 0.8,
+"why": "Cora and Ampersand"
+},
+{
+"ref": "foreigner",
+"title": "Foreigner",
+"author": "C. J. Cherryh",
+"gene": "human_and_alien_friendship",
+"confidence": 0.6,
+"why": "Bren and his atevi"
+},
+{
+"ref": "murderbot-all-systems-red",
+"title": "Murderbot: All Systems Red",
+"author": "Martha Wells",
+"gene": "lone_wolf",
+"confidence": 0.8,
+"why": "Murderbot prefers no one"
+},
+{
+"ref": "ancillary-justice",
+"title": "Ancillary Justice",
+"author": "Ann Leckie",
+"gene": "lone_wolf",
+"confidence": 0.8,
+"why": "Breq alone after her ship"
+},
+{
+"ref": "altered-carbon",
+"title": "Altered Carbon",
+"author": "Richard K. Morgan",
+"gene": "lone_wolf",
+"confidence": 0.6,
+"why": "Kovacs works alone"
+},
+{
+"ref": "thin-air",
+"title": "Thin Air",
+"author": "Richard K. Morgan",
+"gene": "lone_wolf",
+"confidence": 0.6,
+"why": "Hakan Veil, ex-enforcer"
+},
+{
+"ref": "the-stars-my-destination",
+"title": "The Stars My Destination",
+"author": "Alfred Bester",
+"gene": "lone_wolf",
+"confidence": 0.6,
+"why": "Gully's solitary revenge"
+},
+{
+"ref": "i-am-legend",
+"title": "I Am Legend",
+"author": "Richard Matheson",
+"gene": "lone_wolf",
+"confidence": 0.6,
+"why": "Neville alone"
+},
+{
+"ref": "ice-planet-barbarians",
+"title": "Ice Planet Barbarians",
+"author": "Ruby Dixon",
+"gene": "fated_mates",
+"confidence": 0.8,
+"why": "Resonance pairs mates"
+},
+{
+"ref": "barbarian-alien",
+"title": "Barbarian Alien",
+"author": "Ruby Dixon",
+"gene": "fated_mates",
+"confidence": 0.8,
+"why": "Resonance mates on the ice planet"
+},
+{
+"ref": "assigned-a-mate",
+"title": "Assigned a Mate",
+"author": "Grace Goodwin",
+"gene": "reverse_harem",
+"confidence": 0.7,
+"why": "Prillon bride claimed by two warriors"
+},
+{
+"ref": null,
+"title": "Mated to the Warriors",
+"author": "Grace Goodwin",
+"gene": "reverse_harem",
+"confidence": 0.7,
+"why": "Interstellar Brides: two Prillon mates"
+},
+{
+"ref": null,
+"title": "Claimed by Her Mates",
+"author": "Grace Goodwin",
+"gene": "reverse_harem",
+"confidence": 0.7,
+"why": "Interstellar Brides: two mates"
+},
+{
+"ref": null,
+"title": "Taken by Her Mates",
+"author": "Grace Goodwin",
+"gene": "reverse_harem",
+"confidence": 0.65,
+"why": "Interstellar Brides: two mates"
+},
+{
+"ref": null,
+"title": "Mastered by Her Mates",
+"author": "Grace Goodwin",
+"gene": "reverse_harem",
+"confidence": 0.65,
+"why": "Interstellar Brides: two mates"
+},
+{
+"ref": "the-moon-is-a-harsh-mistress",
+"title": "The Moon Is a Harsh Mistress",
+"author": "Robert A. Heinlein",
+"gene": "poly_relationships",
+"confidence": 0.8,
+"why": "Line marriage"
+},
+{
+"ref": "stranger-in-a-strange-land",
+"title": "Stranger in a Strange Land",
+"author": "Robert A. Heinlein",
+"gene": "poly_relationships",
+"confidence": 0.8,
+"why": "Water-brother group marriage"
+},
+{
+"ref": "woman-on-the-edge-of-time",
+"title": "Woman on the Edge of Time",
+"author": "Marge Piercy",
+"gene": "poly_relationships",
+"confidence": 0.6,
+"why": "Co-mothers and plural bonds"
+},
+{
+"ref": "ice-planet-barbarians",
+"title": "Ice Planet Barbarians",
+"author": "Ruby Dixon",
+"gene": "monster_romance",
+"confidence": 0.8,
+"why": "Horned, tailed sa-khui"
+},
+{
+"ref": "barbarian-lover",
+"title": "Barbarian Lover",
+"author": "Ruby Dixon",
+"gene": "monster_romance",
+"confidence": 0.8,
+"why": "Sa-khui romance"
+},
+{
+"ref": "barbarian-alien",
+"title": "Barbarian Alien",
+"author": "Ruby Dixon",
+"gene": "monster_romance",
+"confidence": 0.8,
+"why": "Sa-khui romance"
+},
+{
+"ref": "he-she-and-it",
+"title": "He, She and It",
+"author": "Marge Piercy",
+"gene": "android_and_ai_lovers",
+"confidence": 0.8,
+"why": "Shira and Yod"
+},
+{
+"ref": null,
+"title": "The Silver Metal Lover",
+"author": "Tanith Lee",
+"gene": "android_and_ai_lovers",
+"confidence": 0.8,
+"why": "Jane and robot Silver"
+},
+{
+"ref": null,
+"title": "The Mad Scientist's Daughter",
+"author": "Cassandra Rose Clarke",
+"gene": "android_and_ai_lovers",
+"confidence": 0.8,
+"why": "Cat and android Finn"
+},
+{
+"ref": "warprize",
+"title": "Warprize",
+"author": "Elizabeth Vaughan",
+"gene": "captive_and_captor",
+"confidence": 0.8,
+"why": "Lara taken by the Warlord"
+},
+{
+"ref": "shards-of-honor",
+"title": "Shards of Honor",
+"author": "Lois McMaster Bujold",
+"gene": "captive_and_captor",
+"confidence": 0.6,
+"why": "Cordelia as Aral's prisoner"
+},
+{
+"ref": "these-broken-stars-kaufman",
+"title": "These Broken Stars",
+"author": "Amie Kaufman and Meagan Spooner",
+"gene": "forced_proximity",
+"confidence": 0.8,
+"why": "Two survivors alone on a planet"
+},
+{
+"ref": "/works/OL20850223W",
+"title": "The Course of Honour",
+"author": "Everina Maxwell",
+"gene": "forced_proximity",
+"confidence": 0.8,
+"why": "Arranged marriage, sharing quarters"
+},
+{
+"ref": "gabriels-ghost",
+"title": "Gabriel's Ghost",
+"author": "Linnea Sinclair",
+"gene": "forced_proximity",
+"confidence": 0.6,
+"why": "Chaz and Sully thrown together"
+},
+{
+"ref": "fortunes-pawn",
+"title": "Fortune's Pawn",
+"author": "Rachel Bach",
+"gene": "forced_proximity",
+"confidence": 0.6,
+"why": "Devi aboard the Glorious Fool"
+},
+{
+"ref": "this-is-how-you-lose-the-time-war",
+"title": "This Is How You Lose the Time War",
+"author": "Amal El-Mohtar and Max Gladstone",
+"gene": "forbidden_love",
+"confidence": 0.8,
+"why": "Agents of opposing sides"
+},
+{
+"ref": "/works/OL15586813W",
+"title": "Delirium",
+"author": "Lauren Oliver",
+"gene": "forbidden_love",
+"confidence": 0.8,
+"why": "Love is outlawed"
+},
+{
+"ref": "shards-of-honor",
+"title": "Shards of Honor",
+"author": "Lois McMaster Bujold",
+"gene": "forbidden_love",
+"confidence": 0.8,
+"why": "Enemies in war"
+},
+{
+"ref": "/works/OL20850223W",
+"title": "The Course of Honour",
+"author": "Everina Maxwell",
+"gene": "queer_love_stories",
+"confidence": 0.8,
+"why": "Kiem and Jainan"
+},
+{
+"ref": "/works/OL27172711W",
+"title": "Ocean's Echo",
+"author": "Everina Maxwell",
+"gene": "queer_love_stories",
+"confidence": 0.8,
+"why": "Tennal and Surit"
+},
+{
+"ref": "this-is-how-you-lose-the-time-war",
+"title": "This Is How You Lose the Time War",
+"author": "Amal El-Mohtar and Max Gladstone",
+"gene": "queer_love_stories",
+"confidence": 0.8,
+"why": "Red and Blue"
+},
+{
+"ref": "assigned-a-mate",
+"title": "Assigned a Mate",
+"author": "Grace Goodwin",
+"gene": "erotic_sci_fi",
+"confidence": 0.8,
+"why": "Explicit Prillon bride romance"
+},
+{
+"ref": "fury",
+"title": "Fury",
+"author": "Laurann Dohner",
+"gene": "erotic_sci_fi",
+"confidence": 0.8,
+"why": "Explicit New Species romance"
+},
+{
+"ref": "barbarian-lover",
+"title": "Barbarian Lover",
+"author": "Ruby Dixon",
+"gene": "erotic_sci_fi",
+"confidence": 0.8,
+"why": "Explicit ice planet romance"
+},
+{
+"ref": "heir-to-the-empire",
+"title": "Heir to the Empire",
+"author": "Timothy Zahn",
+"gene": "charming_villain",
+"confidence": 0.8,
+"why": "Grand Admiral Thrawn"
+},
+{
+"ref": "ninefox-gambit",
+"title": "Ninefox Gambit",
+"author": "Yoon Ha Lee",
+"gene": "charming_villain",
+"confidence": 0.8,
+"why": "Jedao's charm"
+},
+{
+"ref": "thrawn",
+"title": "Thrawn",
+"author": "Timothy Zahn",
+"gene": "charming_villain",
+"confidence": 0.8,
+"why": "Thrawn's rise"
+},
+{
+"ref": "the-three-body-problem",
+"title": "The Three-Body Problem",
+"author": "Liu Cixin",
+"gene": "villain_with_a_point",
+"confidence": 0.8,
+"why": "Ye Wenjie's despair for humanity"
+},
+{
+"ref": "oryx-and-crake",
+"title": "Oryx and Crake",
+"author": "Margaret Atwood",
+"gene": "villain_with_a_point",
+"confidence": 0.8,
+"why": "Crake's plan"
+},
+{
+"ref": "/works/OL2897798W",
+"title": "Watchmen",
+"author": "Alan Moore and Dave Gibbons and John Higgins and DC Comics",
+"gene": "villain_with_a_point",
+"confidence": 0.8,
+"why": "Ozymandias's argument"
+},
+{
+"ref": "brave-new-world",
+"title": "Brave New World",
+"author": "Aldous Huxley",
+"gene": "villain_with_a_point",
+"confidence": 0.8,
+"why": "Mustapha Mond's case"
+},
+{
+"ref": "ninefox-gambit",
+"title": "Ninefox Gambit",
+"author": "Yoon Ha Lee",
+"gene": "villain_with_a_point",
+"confidence": 0.6,
+"why": "Jedao's massacre"
+},
+{
+"ref": "/works/OL893515W",
+"title": "God Emperor of Dune",
+"author": "Frank Herbert",
+"gene": "villain_with_a_point",
+"confidence": 0.8,
+"why": "Leto II's Golden Path"
+},
+{
+"ref": "nineteen-eighty-four",
+"title": "Nineteen Eighty-Four",
+"author": "George Orwell",
+"gene": "faceless_system",
+"confidence": 0.8,
+"why": "The Party"
+},
+{
+"ref": "we",
+"title": "We",
+"author": "Yevgeny Zamyatin",
+"gene": "faceless_system",
+"confidence": 0.8,
+"why": "The One State"
+},
+{
+"ref": "/works/OL88800W",
+"title": "The Machine Stops",
+"author": "E. M. Forster",
+"gene": "faceless_system",
+"confidence": 0.8,
+"why": "The Machine"
+},
+{
+"ref": "the-giver",
+"title": "The Giver",
+"author": "Lois Lowry",
+"gene": "faceless_system",
+"confidence": 0.6,
+"why": "The Community"
+},
+{
+"ref": "/works/OL893515W",
+"title": "God Emperor of Dune",
+"author": "Frank Herbert",
+"gene": "tyrant",
+"confidence": 0.8,
+"why": "Leto II's tyranny"
+},
+{
+"ref": "the-hunger-games",
+"title": "The Hunger Games",
+"author": "Suzanne Collins",
+"gene": "tyrant",
+"confidence": 0.7,
+"why": "President Snow"
+},
+{
+"ref": "the-dark-forest",
+"title": "The Dark Forest",
+"author": "Liu Cixin",
+"gene": "rival_genius",
+"confidence": 0.8,
+"why": "Wallfacers vs Wallbreakers"
+},
+{
+"ref": "golden-son",
+"title": "Golden Son",
+"author": "Pierce Brown",
+"gene": "rival_genius",
+"confidence": 0.65,
+"why": "Darrow vs the Jackal"
+},
+{
+"ref": "ninefox-gambit",
+"title": "Ninefox Gambit",
+"author": "Yoon Ha Lee",
+"gene": "rival_genius",
+"confidence": 0.6,
+"why": "Cheris vs Jedao"
+},
+{
+"ref": "a-scanner-darkly",
+"title": "A Scanner Darkly",
+"author": "Philip K. Dick",
+"gene": "enemy_within",
+"confidence": 0.8,
+"why": "Arctor's split mind"
+},
+{
+"ref": "ninefox-gambit",
+"title": "Ninefox Gambit",
+"author": "Yoon Ha Lee",
+"gene": "enemy_within",
+"confidence": 0.8,
+"why": "Jedao in Cheris's head"
+},
+{
+"ref": "the-girl-with-all-the-gifts",
+"title": "The Girl with All the Gifts",
+"author": "M. R. Carey",
+"gene": "enemy_within",
+"confidence": 0.8,
+"why": "Melanie's hunger"
+},
+{
+"ref": "/works/OL24156W",
+"title": "The Strange Case of Dr. Jekyll and Mr. Hyde",
+"author": "Robert Louis Stevenson",
+"gene": "enemy_within",
+"confidence": 0.8,
+"why": "Hyde within Jekyll"
+},
+{
+"ref": "upgrade",
+"title": "Upgrade",
+"author": "Blake Crouch",
+"gene": "enemy_within",
+"confidence": 0.7,
+"why": "Logan's modified brain"
+},
+{
+"ref": "a-memory-called-empire",
+"title": "A Memory Called Empire",
+"author": "Arkady Martine",
+"gene": "enemy_within",
+"confidence": 0.6,
+"why": "Imago in Mahit's head"
+},
+{
+"ref": "frankenstein",
+"title": "Frankenstein",
+"author": "Mary Shelley",
+"gene": "sympathetic_antagonist",
+"confidence": 0.8,
+"why": "The creature's grief"
+},
+{
+"ref": "the-three-body-problem",
+"title": "The Three-Body Problem",
+"author": "Liu Cixin",
+"gene": "sympathetic_antagonist",
+"confidence": 0.7,
+"why": "Ye Wenjie's betrayal"
+},
+{
+"ref": "/works/OL893515W",
+"title": "God Emperor of Dune",
+"author": "Frank Herbert",
+"gene": "sympathetic_antagonist",
+"confidence": 0.6,
+"why": "Leto II"
+},
+{
+"ref": "thrawn",
+"title": "Thrawn",
+"author": "Timothy Zahn",
+"gene": "sympathetic_antagonist",
+"confidence": 0.6,
+"why": "Thrawn's motives"
+},
+{
+"ref": "/works/OL83886W",
+"title": "The Man Who Fell to Earth",
+"author": "Walter S. Tevis",
+"gene": "outsider_looking_at_humans",
+"confidence": 0.8,
+"why": "Newton on Earth"
+},
+{
+"ref": "under-the-skin",
+"title": "Under the Skin",
+"author": "Michel Faber",
+"gene": "outsider_looking_at_humans",
+"confidence": 0.8,
+"why": "Isserley watches humans"
+},
+{
+"ref": "foreigner",
+"title": "Foreigner",
+"author": "C. J. Cherryh",
+"gene": "translator_and_go_between",
+"confidence": 0.8,
+"why": "The paidhi"
+},
+{
+"ref": "embassytown",
+"title": "Embassytown",
+"author": "China Miéville",
+"gene": "translator_and_go_between",
+"confidence": 0.8,
+"why": "Avice the simile"
+},
+{
+"ref": "downbelow-station",
+"title": "Downbelow Station",
+"author": "C. J. Cherryh",
+"gene": "refugees_and_exiles",
+"confidence": 0.8,
+"why": "Refugees on Pell"
+},
+{
+"ref": "parable-of-the-sower",
+"title": "Parable of the Sower",
+"author": "Octavia E. Butler",
+"gene": "refugees_and_exiles",
+"confidence": 0.8,
+"why": "Refugees walking north"
+},
+{
+"ref": "the-dispossessed",
+"title": "The Dispossessed",
+"author": "Ursula K. Le Guin",
+"gene": "refugees_and_exiles",
+"confidence": 0.6,
+"why": "Anarres founded by exiles"
+},
+{
+"ref": "shards-of-earth",
+"title": "Shards of Earth",
+"author": "Adrian Tchaikovsky",
+"gene": "refugees_and_exiles",
+"confidence": 0.7,
+"why": "Scattered humanity"
+},
+{
+"ref": "frankenstein",
+"title": "Frankenstein",
+"author": "Mary Shelley",
+"gene": "monsters_with_feelings",
+"confidence": 0.8,
+"why": "The creature"
+},
+{
+"ref": "the-girl-with-all-the-gifts",
+"title": "The Girl with All the Gifts",
+"author": "M. R. Carey",
+"gene": "monsters_with_feelings",
+"confidence": 0.8,
+"why": "Melanie"
+},
+{
+"ref": "borne",
+"title": "Borne",
+"author": "Jeff VanderMeer",
+"gene": "monsters_with_feelings",
+"confidence": 0.8,
+"why": "Borne"
+},
+{
+"ref": "permutation-city",
+"title": "Permutation City",
+"author": "Greg Egan",
+"gene": "what_makes_a_self",
+"confidence": 0.8,
+"why": "Copies and what makes a person"
+},
+{
+"ref": "diaspora",
+"title": "Diaspora",
+"author": "Greg Egan",
+"gene": "what_makes_a_self",
+"confidence": 0.8,
+"why": "Selves in software"
+},
+{
+"ref": "do-androids-dream-of-electric-sheep",
+"title": "Do Androids Dream of Electric Sheep?",
+"author": "Philip K. Dick",
+"gene": "what_it_means_to_be_human",
+"confidence": 0.8,
+"why": "Empathy as the human line"
+},
+{
+"ref": "never-let-me-go",
+"title": "Never Let Me Go",
+"author": "Kazuo Ishiguro",
+"gene": "what_it_means_to_be_human",
+"confidence": 0.8,
+"why": "Clones and their souls"
+},
+{
+"ref": "klara-and-the-sun",
+"title": "Klara and the Sun",
+"author": "Kazuo Ishiguro",
+"gene": "what_it_means_to_be_human",
+"confidence": 0.8,
+"why": "Can Klara continue Josie"
+},
+{
+"ref": "frankenstein",
+"title": "Frankenstein",
+"author": "Mary Shelley",
+"gene": "what_it_means_to_be_human",
+"confidence": 0.8,
+"why": "The creature's humanity"
+},
+{
+"ref": "the-long-way-to-a-small-angry-planet",
+"title": "The Long Way to a Small, Angry Planet",
+"author": "Becky Chambers",
+"gene": "belonging",
+"confidence": 0.8,
+"why": "Rosemary finds her crew"
+},
+{
+"ref": "a-closed-and-common-orbit",
+"title": "A Closed and Common Orbit",
+"author": "Becky Chambers",
+"gene": "belonging",
+"confidence": 0.8,
+"why": "Sidra finds a place"
+},
+{
+"ref": "binti",
+"title": "Binti",
+"author": "Nnedi Okorafor",
+"gene": "belonging",
+"confidence": 0.8,
+"why": "Binti between peoples"
+},
+{
+"ref": "/works/OL17933495W",
+"title": "Record of a Spaceborn Few",
+"author": "Becky Chambers",
+"gene": "belonging",
+"confidence": 0.8,
+"why": "Fitting in the Fleet"
+},
+{
+"ref": "light-from-uncommon-stars",
+"title": "Light from Uncommon Stars",
+"author": "Ryka Aoki",
+"gene": "belonging",
+"confidence": 0.8,
+"why": "Katrina finds family"
+},
+{
+"ref": "stranger-in-a-strange-land",
+"title": "Stranger in a Strange Land",
+"author": "Robert A. Heinlein",
+"gene": "belonging",
+"confidence": 0.6,
+"why": "Mike seeks belonging"
+},
+{
+"ref": "the-forever-war",
+"title": "The Forever War",
+"author": "Joe Haldeman",
+"gene": "war_and_its_damage",
+"confidence": 0.8,
+"why": "What centuries of war do to Mandella"
+},
+{
+"ref": "slaughterhouse-five",
+"title": "Slaughterhouse-Five",
+"author": "Kurt Vonnegut",
+"gene": "war_and_its_damage",
+"confidence": 0.8,
+"why": "Dresden and its aftermath"
+},
+{
+"ref": "the-light-brigade",
+"title": "The Light Brigade",
+"author": "Kameron Hurley",
+"gene": "propaganda_and_truth",
+"confidence": 0.8,
+"why": "Corporate war propaganda versus what Dietz sees"
+},
+{
+"ref": "nineteen-eighty-four",
+"title": "Nineteen Eighty-Four",
+"author": "George Orwell",
+"gene": "propaganda_and_truth",
+"confidence": 0.8,
+"why": "The Ministry of Truth"
+},
+{
+"ref": "i-am-legend",
+"title": "I Am Legend",
+"author": "Richard Matheson",
+"gene": "loneliness",
+"confidence": 0.8,
+"why": "Neville's solitude"
+},
+{
+"ref": null,
+"title": "The Space Merchants",
+"author": "Frederik Pohl and C. M. Kornbluth",
+"gene": "capitalism_unchained",
+"confidence": 0.8,
+"why": "Advertising agencies rule"
+},
+{
+"ref": "/works/OL19792034W",
+"title": "QualityLand",
+"author": "Marc-Uwe Kling",
+"gene": "capitalism_unchained",
+"confidence": 0.8,
+"why": "Algorithmic consumer society"
+},
+{
+"ref": "/works/OL14908941W",
+"title": "Mockingjay",
+"author": "Suzanne Collins",
+"gene": "revolution_s_price",
+"confidence": 0.8,
+"why": "The cost of overthrowing the Capitol"
+},
+{
+"ref": "iron-gold",
+"title": "Iron Gold",
+"author": "Pierce Brown",
+"gene": "revolution_s_price",
+"confidence": 0.8,
+"why": "The aftermath of Darrow's revolution"
+},
+{
+"ref": "dark-age",
+"title": "Dark Age",
+"author": "Pierce Brown",
+"gene": "revolution_s_price",
+"confidence": 0.8,
+"why": "Revolution's endless war"
+},
+{
+"ref": "the-moon-is-a-harsh-mistress",
+"title": "The Moon Is a Harsh Mistress",
+"author": "Robert A. Heinlein",
+"gene": "revolution_s_price",
+"confidence": 0.7,
+"why": "Sacrifices of Luna's revolt"
+},
+{
+"ref": "red-mars",
+"title": "Red Mars",
+"author": "Kim Stanley Robinson",
+"gene": "revolution_s_price",
+"confidence": 0.7,
+"why": "The failed 2061 revolution"
+},
+{
+"ref": "dune-messiah",
+"title": "Dune Messiah",
+"author": "Frank Herbert",
+"gene": "revolution_s_price",
+"confidence": 0.7,
+"why": "Jihad's billions dead"
+},
+{
+"ref": "fuzzy-nation",
+"title": "Fuzzy Nation",
+"author": "John Scalzi",
+"gene": "law_and_justice",
+"confidence": 0.8,
+"why": "Legal fight over sapience"
+},
+{
+"ref": null,
+"title": "Illegal Alien",
+"author": "Robert J. Sawyer",
+"gene": "law_and_justice",
+"confidence": 0.8,
+"why": "An alien on trial"
+},
+{
+"ref": "scythe",
+"title": "Scythe",
+"author": "Neal Shusterman",
+"gene": "law_and_justice",
+"confidence": 0.8,
+"why": "Law of the Scythedom"
+},
+{
+"ref": "/works/OL261794W",
+"title": "A Clockwork Orange",
+"author": "Anthony Burgess",
+"gene": "law_and_justice",
+"confidence": 0.6,
+"why": "Punishment and free will"
+},
+{
+"ref": "/works/OL579085W",
+"title": "Little Fuzzy",
+"author": "H. Beam Piper",
+"gene": "law_and_justice",
+"confidence": 0.8,
+"why": "The Fuzzy trial"
+},
+{
+"ref": "the-demolished-man",
+"title": "The Demolished Man",
+"author": "Alfred Bester",
+"gene": "law_and_justice",
+"confidence": 0.6,
+"why": "Justice in a telepathic society"
+},
+{
+"ref": "the-water-knife",
+"title": "The Water Knife",
+"author": "Paolo Bacigalupi",
+"gene": "refuge_and_borders",
+"confidence": 0.8,
+"why": "Texans blocked at state borders"
+},
+{
+"ref": "downbelow-station",
+"title": "Downbelow Station",
+"author": "C. J. Cherryh",
+"gene": "refuge_and_borders",
+"confidence": 0.8,
+"why": "Refugees forced on Pell"
+},
+{
+"ref": "parable-of-the-sower",
+"title": "Parable of the Sower",
+"author": "Octavia E. Butler",
+"gene": "refuge_and_borders",
+"confidence": 0.8,
+"why": "Climate refugees"
+},
+{
+"ref": null,
+"title": "Exit West",
+"author": "Mohsin Hamid",
+"gene": "refuge_and_borders",
+"confidence": 0.7,
+"why": "Doors bring migrants everywhere"
+},
+{
+"ref": "the-ministry-for-the-future",
+"title": "The Ministry for the Future",
+"author": "Kim Stanley Robinson",
+"gene": "refuge_and_borders",
+"confidence": 0.6,
+"why": "Climate refugees"
+},
+{
+"ref": "binti",
+"title": "Binti",
+"author": "Nnedi Okorafor",
+"gene": "tradition_against_change",
+"confidence": 0.8,
+"why": "Binti leaves Himba tradition"
+},
+{
+"ref": "/works/OL1911334W",
+"title": "The Chrysalids",
+"author": "John Wyndham",
+"gene": "tradition_against_change",
+"confidence": 0.8,
+"why": "Waknuk's orthodoxy versus mutation"
+},
+{
+"ref": "anathem",
+"title": "Anathem",
+"author": "Neal Stephenson",
+"gene": "tradition_against_change",
+"confidence": 0.6,
+"why": "Concent versus saecular world"
+},
+{
+"ref": "the-giver",
+"title": "The Giver",
+"author": "Lois Lowry",
+"gene": "tradition_against_change",
+"confidence": 0.6,
+"why": "Sameness versus memory"
+},
+{
+"ref": "jurassic-park",
+"title": "Jurassic Park",
+"author": "Michael Crichton",
+"gene": "progress_has_a_price",
+"confidence": 0.8,
+"why": "Genetic power without restraint"
+},
+{
+"ref": "cats-cradle",
+"title": "Cat's Cradle",
+"author": "Kurt Vonnegut",
+"gene": "progress_has_a_price",
+"confidence": 0.8,
+"why": "Ice-nine"
+},
+{
+"ref": "/works/OL98484W",
+"title": "Player Piano",
+"author": "Kurt Vonnegut and Christian Rummel",
+"gene": "progress_has_a_price",
+"confidence": 0.8,
+"why": "Automation leaves people useless"
+},
+{
+"ref": "flowers-for-algernon",
+"title": "Flowers for Algernon",
+"author": "Daniel Keyes",
+"gene": "progress_has_a_price",
+"confidence": 0.8,
+"why": "Charlie's decline"
+},
+{
+"ref": "oryx-and-crake",
+"title": "Oryx and Crake",
+"author": "Margaret Atwood",
+"gene": "progress_has_a_price",
+"confidence": 0.8,
+"why": "Biotech ends the world"
+},
+{
+"ref": "frankenstein",
+"title": "Frankenstein",
+"author": "Mary Shelley",
+"gene": "progress_has_a_price",
+"confidence": 0.8,
+"why": "Creation's cost"
+},
+{
+"ref": "vurt",
+"title": "Vurt",
+"author": "Jeff Noon",
+"gene": "technology_and_addiction",
+"confidence": 0.8,
+"why": "Feathers you get lost in"
+},
+{
+"ref": null,
+"title": "Feed",
+"author": "M. T. Anderson",
+"gene": "technology_and_addiction",
+"confidence": 0.8,
+"why": "Brain-feeds consume teens"
+},
+{
+"ref": "/works/OL2172402W",
+"title": "The three stigmata of Palmer Eldritch",
+"author": "Philip K. Dick",
+"gene": "technology_and_addiction",
+"confidence": 0.8,
+"why": "Can-D and Chew-Z"
+},
+{
+"ref": "ready-player-one",
+"title": "Ready Player One",
+"author": "Ernest Cline",
+"gene": "technology_and_addiction",
+"confidence": 0.6,
+"why": "Everyone lives in the OASIS"
+},
+{
+"ref": "childhoods-end",
+"title": "Childhood's End",
+"author": "Arthur C. Clarke",
+"gene": "humanity_s_place",
+"confidence": 0.8,
+"why": "Humanity's role in the cosmos"
+},
+{
+"ref": "2001-a-space-odyssey",
+"title": "2001: A Space Odyssey",
+"author": "Arthur C. Clarke",
+"gene": "humanity_s_place",
+"confidence": 0.8,
+"why": "Humans as an experiment"
+},
+{
+"ref": "/works/OL3290739W",
+"title": "Star Maker",
+"author": "Olaf Stapledon",
+"gene": "humanity_s_place",
+"confidence": 0.8,
+"why": "Humanity as a speck in the cosmos"
+},
+{
+"ref": "contact",
+"title": "Contact",
+"author": "Carl Sagan",
+"gene": "humanity_s_place",
+"confidence": 0.8,
+"why": "Our place in the galaxy"
+},
+{
+"ref": "ecotopia",
+"title": "Ecotopia",
+"author": "Ernest Callenbach",
+"gene": "ecology_and_stewardship",
+"confidence": 0.8,
+"why": "Ecological society"
+},
+{
+"ref": "tuf-voyaging",
+"title": "Tuf Voyaging",
+"author": "George R. R. Martin",
+"gene": "ecology_and_stewardship",
+"confidence": 0.8,
+"why": "Tuf the ecological engineer"
+},
+{
+"ref": "frankenstein",
+"title": "Frankenstein",
+"author": "Mary Shelley",
+"gene": "knowledge_and_its_dangers",
+"confidence": 0.8,
+"why": "Victor's knowledge"
+},
+{
+"ref": "cats-cradle",
+"title": "Cat's Cradle",
+"author": "Kurt Vonnegut",
+"gene": "knowledge_and_its_dangers",
+"confidence": 0.8,
+"why": "Hoenikker's ice-nine"
+},
+{
+"ref": "neuropath",
+"title": "Neuropath",
+"author": "R. Scott Bakker",
+"gene": "knowledge_and_its_dangers",
+"confidence": 0.8,
+"why": "The Argument destroys meaning"
+},
+{
+"ref": "there-is-no-antimemetics-division",
+"title": "There Is No Antimemetics Division",
+"author": "qntm",
+"gene": "knowledge_and_its_dangers",
+"confidence": 0.8,
+"why": "Ideas that kill"
+},
+{
+"ref": "project-hail-mary",
+"title": "Project Hail Mary",
+"author": "Andy Weir",
+"gene": "hope_against_odds",
+"confidence": 0.8,
+"why": "Saving the Sun"
+},
+{
+"ref": "the-martian",
+"title": "The Martian",
+"author": "Andy Weir",
+"gene": "hope_against_odds",
+"confidence": 0.8,
+"why": "Survival against odds"
+},
+{
+"ref": "station-eleven",
+"title": "Station Eleven",
+"author": "Emily St. John Mandel",
+"gene": "hope_against_odds",
+"confidence": 0.8,
+"why": "Art endures"
+},
+{
+"ref": "parable-of-the-sower",
+"title": "Parable of the Sower",
+"author": "Octavia E. Butler",
+"gene": "hope_against_odds",
+"confidence": 0.7,
+"why": "Earthseed hope"
+},
+{
+"ref": "the-time-travelers-wife",
+"title": "The Time Traveler's Wife",
+"author": "Audrey Niffenegger",
+"gene": "love",
+"confidence": 0.8,
+"why": "Love across time"
+},
+{
+"ref": "this-is-how-you-lose-the-time-war",
+"title": "This Is How You Lose the Time War",
+"author": "Amal El-Mohtar and Max Gladstone",
+"gene": "love",
+"confidence": 0.8,
+"why": "Love across a war"
+},
+{
+"ref": "ancillary-justice",
+"title": "Ancillary Justice",
+"author": "Ann Leckie",
+"gene": "duty_and_conscience",
+"confidence": 0.8,
+"why": "Duty vs conscience in Awn's death"
+},
+{
+"ref": "the-light-brigade",
+"title": "The Light Brigade",
+"author": "Kameron Hurley",
+"gene": "duty_and_conscience",
+"confidence": 0.8,
+"why": "Orders versus truth"
+},
+{
+"ref": "some-desperate-glory",
+"title": "Some Desperate Glory",
+"author": "Emily Tesh",
+"gene": "duty_and_conscience",
+"confidence": 0.8,
+"why": "Kyr's duty"
+},
+{
+"ref": "project-hail-mary",
+"title": "Project Hail Mary",
+"author": "Andy Weir",
+"gene": "sacrifice",
+"confidence": 0.8,
+"why": "Grace turns back to save Rocky"
+},
+{
+"ref": "never-let-me-go",
+"title": "Never Let Me Go",
+"author": "Kazuo Ishiguro",
+"gene": "sacrifice",
+"confidence": 0.8,
+"why": "Donations"
+},
+{
+"ref": "the-hunger-games",
+"title": "The Hunger Games",
+"author": "Suzanne Collins",
+"gene": "sacrifice",
+"confidence": 0.8,
+"why": "Katniss volunteers"
+},
+{
+"ref": "murderbot-all-systems-red",
+"title": "Murderbot: All Systems Red",
+"author": "Martha Wells",
+"gene": "trust",
+"confidence": 0.8,
+"why": "Murderbot learns to trust humans"
+},
+{
+"ref": "the-dark-forest",
+"title": "The Dark Forest",
+"author": "Liu Cixin",
+"gene": "trust",
+"confidence": 0.8,
+"why": "Chain of suspicion"
+},
+{
+"ref": "network-effect",
+"title": "Network Effect",
+"author": "Martha Wells",
+"gene": "trust",
+"confidence": 0.8,
+"why": "Murderbot and ART"
+},
+{
+"ref": "foreigner",
+"title": "Foreigner",
+"author": "C. J. Cherryh",
+"gene": "trust",
+"confidence": 0.8,
+"why": "Can Bren trust the atevi"
+},
+{
+"ref": "shards-of-honor",
+"title": "Shards of Honor",
+"author": "Lois McMaster Bujold",
+"gene": "trust",
+"confidence": 0.65,
+"why": "Cordelia trusting Aral"
+},
+{
+"ref": "liliths-brood-dawn",
+"title": "Lilith's Brood: Dawn",
+"author": "Octavia E. Butler",
+"gene": "trust",
+"confidence": 0.65,
+"why": "Trusting the Oankali"
+},
+{
+"ref": "the-road",
+"title": "The Road",
+"author": "Cormac McCarthy",
+"gene": "parenthood",
+"confidence": 0.8,
+"why": "Father and son"
+},
+{
+"ref": "barrayar",
+"title": "Barrayar",
+"author": "Lois McMaster Bujold",
+"gene": "parenthood",
+"confidence": 0.8,
+"why": "Cordelia's pregnancy and fight for Miles"
+},
+{
+"ref": "project-hail-mary",
+"title": "Project Hail Mary",
+"author": "Andy Weir",
+"gene": "friendship",
+"confidence": 0.8,
+"why": "Grace and Rocky"
+},
+{
+"ref": "the-long-way-to-a-small-angry-planet",
+"title": "The Long Way to a Small, Angry Planet",
+"author": "Becky Chambers",
+"gene": "friendship",
+"confidence": 0.8,
+"why": "Crew bonds"
+},
+{
+"ref": "a-closed-and-common-orbit",
+"title": "A Closed and Common Orbit",
+"author": "Becky Chambers",
+"gene": "friendship",
+"confidence": 0.8,
+"why": "Pepper and Sidra"
+},
+{
+"ref": "skyward",
+"title": "Skyward",
+"author": "Brandon Sanderson",
+"gene": "courage",
+"confidence": 0.8,
+"why": "Spensa versus cowardice"
+},
+{
+"ref": "the-hunger-games",
+"title": "The Hunger Games",
+"author": "Suzanne Collins",
+"gene": "courage",
+"confidence": 0.8,
+"why": "Katniss"
+},
+{
+"ref": "a-wrinkle-in-time",
+"title": "A Wrinkle in Time",
+"author": "Madeleine L'Engle",
+"gene": "courage",
+"confidence": 0.8,
+"why": "Meg's courage"
+},
+{
+"ref": "divergent",
+"title": "Divergent",
+"author": "Veronica Roth",
+"gene": "courage",
+"confidence": 0.8,
+"why": "Dauntless faction"
+},
+{
+"ref": "project-hail-mary",
+"title": "Project Hail Mary",
+"author": "Andy Weir",
+"gene": "courage",
+"confidence": 0.7,
+"why": "Choosing to go back"
+},
+{
+"ref": "the-giver",
+"title": "The Giver",
+"author": "Lois Lowry",
+"gene": "courage",
+"confidence": 0.65,
+"why": "Jonas leaves"
+},
+{
+"ref": "speaker-for-the-dead",
+"title": "Speaker for the Dead",
+"author": "Orson Scott Card",
+"gene": "forgiveness",
+"confidence": 0.8,
+"why": "Ender and forgiveness"
+},
+{
+"ref": null,
+"title": "Children of God",
+"author": "Mary Doria Russell",
+"gene": "forgiveness",
+"confidence": 0.8,
+"why": "Emilio and forgiveness"
+},
+{
+"ref": "xenocide",
+"title": "Xenocide",
+"author": "Orson Scott Card",
+"gene": "forgiveness",
+"confidence": 0.6,
+"why": "Forgiveness for Ender"
+},
+{
+"ref": "morning-star",
+"title": "Morning Star",
+"author": "Pierce Brown",
+"gene": "forgiveness",
+"confidence": 0.6,
+"why": "Darrow and Cassius move past old wrongs"
+},
+{
+"ref": null,
+"title": "Binti: Home",
+"author": "Nnedi Okorafor",
+"gene": "home",
+"confidence": 0.8,
+"why": "Binti returns home"
+},
+{
+"ref": "/works/OL17933495W",
+"title": "Record of a Spaceborn Few",
+"author": "Becky Chambers",
+"gene": "home",
+"confidence": 0.8,
+"why": "The Fleet as home"
+},
+{
+"ref": "aurora",
+"title": "Aurora",
+"author": "Kim Stanley Robinson",
+"gene": "home",
+"confidence": 0.7,
+"why": "Returning to Earth"
+},
+{
+"ref": "the-forever-war",
+"title": "The Forever War",
+"author": "Joe Haldeman",
+"gene": "home",
+"confidence": 0.6,
+"why": "Can't go home"
+},
+{
+"ref": null,
+"title": "Return from the Stars",
+"author": "Stanisław Lem",
+"gene": "home",
+"confidence": 0.65,
+"why": "Return to an Earth that isn't home"
+},
+{
+"ref": "/works/OL46347W",
+"title": "Foundation and Earth",
+"author": "Isaac Asimov",
+"gene": "home",
+"confidence": 0.6,
+"why": "Searching for Earth"
+},
+{
+"ref": "murderbot-all-systems-red",
+"title": "Murderbot: All Systems Red",
+"author": "Martha Wells",
+"gene": "deadpan_narrator",
+"confidence": 0.8,
+"why": "Murderbot's dry voice"
+},
+{
+"ref": "slaughterhouse-five",
+"title": "Slaughterhouse-Five",
+"author": "Kurt Vonnegut",
+"gene": "deadpan_narrator",
+"confidence": 0.8,
+"why": "So it goes"
+},
+{
+"ref": "the-hitchhikers-guide-to-the-galaxy",
+"title": "The Hitchhiker's Guide to the Galaxy",
+"author": "Douglas Adams",
+"gene": "deadpan_narrator",
+"confidence": 0.7,
+"why": "Calm narration of absurdity"
+},
+{
+"ref": "project-hail-mary",
+"title": "Project Hail Mary",
+"author": "Andy Weir",
+"gene": "single_tight_pov",
+"confidence": 0.8,
+"why": "Grace's first person"
+},
+{
+"ref": "the-fifth-season",
+"title": "The Fifth Season",
+"author": "N. K. Jemisin",
+"gene": "second_person",
+"confidence": 0.8,
+"why": "Essun's chapters in second person"
+},
+{
+"ref": "harrow-the-ninth",
+"title": "Harrow the Ninth",
+"author": "Tamsyn Muir",
+"gene": "second_person",
+"confidence": 0.8,
+"why": "Harrow in second person"
+},
+{
+"ref": null,
+"title": "Halting State",
+"author": "Charles Stross",
+"gene": "second_person",
+"confidence": 0.8,
+"why": "Written in second person"
+},
+{
+"ref": "murderbot-all-systems-red",
+"title": "Murderbot: All Systems Red",
+"author": "Martha Wells",
+"gene": "non_human_narrator",
+"confidence": 0.8,
+"why": "SecUnit narration"
+},
+{
+"ref": "klara-and-the-sun",
+"title": "Klara and the Sun",
+"author": "Kazuo Ishiguro",
+"gene": "non_human_narrator",
+"confidence": 0.8,
+"why": "Klara's narration"
+},
+{
+"ref": "ancillary-justice",
+"title": "Ancillary Justice",
+"author": "Ann Leckie",
+"gene": "non_human_narrator",
+"confidence": 0.8,
+"why": "Breq narrates"
+},
+{
+"ref": "sea-of-rust",
+"title": "Sea of Rust",
+"author": "C. Robert Cargill",
+"gene": "non_human_narrator",
+"confidence": 0.8,
+"why": "Brittle narrates"
+},
+{
+"ref": "hyperion",
+"title": "Hyperion",
+"author": "Dan Simmons",
+"gene": "nested_stories",
+"confidence": 0.8,
+"why": "Pilgrims' tales"
+},
+{
+"ref": "cloud-atlas",
+"title": "Cloud Atlas",
+"author": "David Mitchell",
+"gene": "nested_stories",
+"confidence": 0.8,
+"why": "Nested narratives"
+},
+{
+"ref": "sleeping-giants",
+"title": "Sleeping Giants",
+"author": "Sylvain Neuvel",
+"gene": "oral_history",
+"confidence": 0.8,
+"why": "Interview files"
+},
+{
+"ref": "illuminae-kaufman",
+"title": "Illuminae",
+"author": "Amie Kaufman and Jay Kristoff",
+"gene": "oral_history",
+"confidence": 0.6,
+"why": "Dossier of documents"
+},
+{
+"ref": "the-ministry-for-the-future",
+"title": "The Ministry for the Future",
+"author": "Kim Stanley Robinson",
+"gene": "oral_history",
+"confidence": 0.7,
+"why": "Eyewitness voices"
+},
+{
+"ref": "the-hitchhikers-guide-to-the-galaxy",
+"title": "The Hitchhiker's Guide to the Galaxy",
+"author": "Douglas Adams",
+"gene": "footnotes_and_asides",
+"confidence": 0.8,
+"why": "Guide entries"
+},
+{
+"ref": "anathem",
+"title": "Anathem",
+"author": "Neal Stephenson",
+"gene": "footnotes_and_asides",
+"confidence": 0.7,
+"why": "Calca and glossary"
+},
+{
+"ref": "how-to-live-safely-in-a-science-fictional-universe",
+"title": "How to Live Safely in a Science Fictional Universe",
+"author": "Charles Yu",
+"gene": "footnotes_and_asides",
+"confidence": 0.6,
+"why": "Metafictional asides"
+},
+{
+"ref": "dungeon-crawler-carl",
+"title": "Dungeon Crawler Carl",
+"author": "Matt Dinniman",
+"gene": "footnotes_and_asides",
+"confidence": 0.6,
+"why": "System messages and asides"
+},
+{
+"ref": "the-martian",
+"title": "The Martian",
+"author": "Andy Weir",
+"gene": "plain_and_fast",
+"confidence": 0.8,
+"why": "Clear quick prose"
+},
+{
+"ref": "old-mans-war",
+"title": "Old Man's War",
+"author": "John Scalzi",
+"gene": "plain_and_fast",
+"confidence": 0.8,
+"why": "Brisk prose"
+},
+{
+"ref": "jurassic-park",
+"title": "Jurassic Park",
+"author": "Michael Crichton",
+"gene": "cinematic",
+"confidence": 0.8,
+"why": "Visual set pieces"
+},
+{
+"ref": "red-rising",
+"title": "Red Rising",
+"author": "Pierce Brown",
+"gene": "cinematic",
+"confidence": 0.7,
+"why": "Action you can see"
+},
+{
+"ref": "the-road",
+"title": "The Road",
+"author": "Cormac McCarthy",
+"gene": "minimalist",
+"confidence": 0.8,
+"why": "Sparse prose"
+},
+{
+"ref": "never-let-me-go",
+"title": "Never Let Me Go",
+"author": "Kazuo Ishiguro",
+"gene": "minimalist",
+"confidence": 0.8,
+"why": "Restrained voice"
+},
+{
+"ref": "the-shadow-of-the-torturer",
+"title": "The Shadow of the Torturer",
+"author": "Gene Wolfe",
+"gene": "baroque_and_lush",
+"confidence": 0.8,
+"why": "Ornate prose"
+},
+{
+"ref": "perdido-street-station",
+"title": "Perdido Street Station",
+"author": "China Miéville",
+"gene": "baroque_and_lush",
+"confidence": 0.8,
+"why": "Lush description"
+},
+{
+"ref": "dark-matter",
+"title": "Dark Matter",
+"author": "Blake Crouch",
+"gene": "short_chapters",
+"confidence": 0.8,
+"why": "Short punchy chapters"
+},
+{
+"ref": "recursion",
+"title": "Recursion",
+"author": "Blake Crouch",
+"gene": "short_chapters",
+"confidence": 0.8,
+"why": "Short chapters"
+},
+{
+"ref": "the-three-body-problem",
+"title": "The Three-Body Problem",
+"author": "Liu Cixin",
+"gene": "slow_burn_build",
+"confidence": 0.8,
+"why": "Slow build to reveal"
+},
+{
+"ref": "anathem",
+"title": "Anathem",
+"author": "Neal Stephenson",
+"gene": "slow_burn_build",
+"confidence": 0.8,
+"why": "Slow start, big payoff"
+},
+{
+"ref": "the-sparrow",
+"title": "The Sparrow",
+"author": "Mary Doria Russell",
+"gene": "slow_burn_build",
+"confidence": 0.8,
+"why": "Slow build to horror"
+},
+{
+"ref": "the-left-hand-of-darkness",
+"title": "The Left Hand of Darkness",
+"author": "Ursula K. Le Guin",
+"gene": "slow_burn_build",
+"confidence": 0.8,
+"why": "Patient build"
+},
+{
+"ref": "the-dark-forest",
+"title": "The Dark Forest",
+"author": "Liu Cixin",
+"gene": "slow_burn_build",
+"confidence": 0.8,
+"why": "Slow build to Doomsday"
+},
+{
+"ref": "revelation-space",
+"title": "Revelation Space",
+"author": "Alastair Reynolds",
+"gene": "slow_burn_build",
+"confidence": 0.65,
+"why": "Threads converge slowly"
+},
+{
+"ref": "the-martian",
+"title": "The Martian",
+"author": "Andy Weir",
+"gene": "starts_with_a_bang",
+"confidence": 0.8,
+"why": "Opens stranded"
+},
+{
+"ref": "dark-matter",
+"title": "Dark Matter",
+"author": "Blake Crouch",
+"gene": "starts_with_a_bang",
+"confidence": 0.8,
+"why": "Abducted at gunpoint"
+},
+{
+"ref": "illuminae-kaufman",
+"title": "Illuminae",
+"author": "Amie Kaufman and Jay Kristoff",
+"gene": "starts_with_a_bang",
+"confidence": 0.8,
+"why": "Opens with an invasion"
+},
+{
+"ref": "all-you-need-is-kill",
+"title": "All You Need Is Kill",
+"author": "Hiroshi Sakurazaka",
+"gene": "starts_with_a_bang",
+"confidence": 0.8,
+"why": "Opens in battle"
+},
+{
+"ref": "murderbot-all-systems-red",
+"title": "Murderbot: All Systems Red",
+"author": "Martha Wells",
+"gene": "starts_with_a_bang",
+"confidence": 0.8,
+"why": "Opens with an attack"
+},
+{
+"ref": "leviathan-wakes",
+"title": "Leviathan Wakes",
+"author": "James S. A. Corey",
+"gene": "starts_with_a_bang",
+"confidence": 0.65,
+"why": "Prologue on a captured ship"
+},
+{
+"ref": "the-maze-runner",
+"title": "The Maze Runner",
+"author": "James Dashner",
+"gene": "cliffhangers",
+"confidence": 0.8,
+"why": "Chapter-end hooks"
+},
+{
+"ref": "golden-son",
+"title": "Golden Son",
+"author": "Pierce Brown",
+"gene": "cliffhangers",
+"confidence": 0.8,
+"why": "Huge cliffhanger ending"
+},
+{
+"ref": "dark-matter",
+"title": "Dark Matter",
+"author": "Blake Crouch",
+"gene": "twisty_plotting",
+"confidence": 0.8,
+"why": "Multiverse twists"
+},
+{
+"ref": "recursion",
+"title": "Recursion",
+"author": "Blake Crouch",
+"gene": "twisty_plotting",
+"confidence": 0.8,
+"why": "Timeline twists"
+},
+{
+"ref": "golden-son",
+"title": "Golden Son",
+"author": "Pierce Brown",
+"gene": "twisty_plotting",
+"confidence": 0.8,
+"why": "Twists and betrayals"
+},
+{
+"ref": "enders-game",
+"title": "Ender's Game",
+"author": "Orson Scott Card",
+"gene": "twisty_plotting",
+"confidence": 0.8,
+"why": "The game twist"
+},
+{
+"ref": "the-giver",
+"title": "The Giver",
+"author": "Lois Lowry",
+"gene": "open_ending",
+"confidence": 0.8,
+"why": "Ambiguous end"
+},
+{
+"ref": "solaris",
+"title": "Solaris",
+"author": "Stanisław Lem",
+"gene": "open_ending",
+"confidence": 0.8,
+"why": "Unresolved ocean"
+},
+{
+"ref": "roadside-picnic-arkady",
+"title": "Roadside Picnic",
+"author": "Arkady and Boris Strugatsky",
+"gene": "open_ending",
+"confidence": 0.8,
+"why": "The golden ball ending"
+},
+{
+"ref": "2001-a-space-odyssey",
+"title": "2001: A Space Odyssey",
+"author": "Arthur C. Clarke",
+"gene": "open_ending",
+"confidence": 0.8,
+"why": "Star-Child ending"
+},
+{
+"ref": "dhalgren",
+"title": "Dhalgren",
+"author": "Samuel R. Delany",
+"gene": "open_ending",
+"confidence": 0.8,
+"why": "Circular ending"
+},
+{
+"ref": "annihilation",
+"title": "Annihilation",
+"author": "Jeff VanderMeer",
+"gene": "open_ending",
+"confidence": 0.65,
+"why": "Unanswered questions"
+},
+{
+"ref": "ninefox-gambit",
+"title": "Ninefox Gambit",
+"author": "Yoon Ha Lee",
+"gene": "thrown_in_the_deep_end",
+"confidence": 0.8,
+"why": "Calendrical jargon"
+},
+{
+"ref": "the-quantum-thief",
+"title": "The Quantum Thief",
+"author": "Hannu Rajaniemi",
+"gene": "thrown_in_the_deep_end",
+"confidence": 0.8,
+"why": "Unexplained terms"
+},
+{
+"ref": "gideon-the-ninth",
+"title": "Gideon the Ninth",
+"author": "Tamsyn Muir",
+"gene": "thrown_in_the_deep_end",
+"confidence": 0.8,
+"why": "No hand-holding"
+},
+{
+"ref": "seveneves",
+"title": "Seveneves",
+"author": "Neal Stephenson",
+"gene": "info_dumps_done_right",
+"confidence": 0.8,
+"why": "Orbital mechanics lectures"
+},
+{
+"ref": "cryptonomicon",
+"title": "Cryptonomicon",
+"author": "Neal Stephenson",
+"gene": "info_dumps_done_right",
+"confidence": 0.8,
+"why": "Enjoyable digressions"
+},
+{
+"ref": "the-martian",
+"title": "The Martian",
+"author": "Andy Weir",
+"gene": "info_dumps_done_right",
+"confidence": 0.8,
+"why": "Fun science explanations"
+},
+{
+"ref": "anathem",
+"title": "Anathem",
+"author": "Neal Stephenson",
+"gene": "info_dumps_done_right",
+"confidence": 0.7,
+"why": "Philosophical dialogs"
+},
+{
+"ref": "the-three-body-problem",
+"title": "The Three-Body Problem",
+"author": "Liu Cixin",
+"gene": "gave_me_chills",
+"confidence": 0.8,
+"why": "Do not answer"
+},
+{
+"ref": "annihilation",
+"title": "Annihilation",
+"author": "Jeff VanderMeer",
+"gene": "gave_me_chills",
+"confidence": 0.8,
+"why": "The Crawler's words"
+},
+{
+"ref": "there-is-no-antimemetics-division",
+"title": "There Is No Antimemetics Division",
+"author": "qntm",
+"gene": "gave_me_chills",
+"confidence": 0.8,
+"why": "Unseen horrors"
+},
+{
+"ref": "blindsight",
+"title": "Blindsight",
+"author": "Peter Watts",
+"gene": "gave_me_chills",
+"confidence": 0.8,
+"why": "Intelligence without consciousness"
+},
+{
+"ref": "i-am-legend",
+"title": "I Am Legend",
+"author": "Richard Matheson",
+"gene": "gave_me_chills",
+"confidence": 0.8,
+"why": "The final realization"
+},
+{
+"ref": "the-dark-forest",
+"title": "The Dark Forest",
+"author": "Liu Cixin",
+"gene": "gave_me_chills",
+"confidence": 0.7,
+"why": "The dark forest revealed"
+},
+{
+"ref": "red-rising",
+"title": "Red Rising",
+"author": "Pierce Brown",
+"gene": "rage_at_the_villain",
+"confidence": 0.8,
+"why": "The Jackal"
+},
+{
+"ref": "golden-son",
+"title": "Golden Son",
+"author": "Pierce Brown",
+"gene": "rage_at_the_villain",
+"confidence": 0.8,
+"why": "The Jackal's cruelty"
+},
+{
+"ref": "the-handmaids-tale",
+"title": "The Handmaid's Tale",
+"author": "Margaret Atwood",
+"gene": "rage_at_the_villain",
+"confidence": 0.6,
+"why": "Gilead's commanders"
+},
+{
+"ref": "dark-matter",
+"title": "Dark Matter",
+"author": "Blake Crouch",
+"gene": "heart_pounding",
+"confidence": 0.8,
+"why": "Relentless chase"
+},
+{
+"ref": "jurassic-park",
+"title": "Jurassic Park",
+"author": "Michael Crichton",
+"gene": "heart_pounding",
+"confidence": 0.8,
+"why": "Raptors loose"
+},
+{
+"ref": "project-hail-mary",
+"title": "Project Hail Mary",
+"author": "Andy Weir",
+"gene": "ending_that_landed",
+"confidence": 0.8,
+"why": "Satisfying ending"
+},
+{
+"ref": "flowers-for-algernon",
+"title": "Flowers for Algernon",
+"author": "Daniel Keyes",
+"gene": "ending_that_landed",
+"confidence": 0.8,
+"why": "Devastating ending"
+},
+{
+"ref": "the-long-way-to-a-small-angry-planet",
+"title": "The Long Way to a Small, Angry Planet",
+"author": "Becky Chambers",
+"gene": "fell_for_the_characters",
+"confidence": 0.8,
+"why": "Beloved crew"
+},
+{
+"ref": "project-hail-mary",
+"title": "Project Hail Mary",
+"author": "Andy Weir",
+"gene": "fell_for_the_characters",
+"confidence": 0.8,
+"why": "Rocky"
+},
+{
+"ref": "the-player-of-games-banks",
+"title": "The Player of Games",
+"author": "Iain M. Banks",
+"gene": "wanted_to_live_there",
+"confidence": 0.8,
+"why": "The Culture"
+},
+{
+"ref": "a-psalm-for-the-wild-built",
+"title": "A Psalm for the Wild-Built",
+"author": "Becky Chambers",
+"gene": "wanted_to_live_there",
+"confidence": 0.8,
+"why": "Panga"
+},
+{
+"ref": "the-road",
+"title": "The Road",
+"author": "Cormac McCarthy",
+"gene": "glad_i_do_not_live_there",
+"confidence": 0.8,
+"why": "Ashen world"
+},
+{
+"ref": "the-handmaids-tale",
+"title": "The Handmaid's Tale",
+"author": "Margaret Atwood",
+"gene": "glad_i_do_not_live_there",
+"confidence": 0.8,
+"why": "Gilead"
+},
+{
+"ref": "the-water-knife",
+"title": "The Water Knife",
+"author": "Paolo Bacigalupi",
+"gene": "glad_i_do_not_live_there",
+"confidence": 0.8,
+"why": "Drought Southwest"
+},
+{
+"ref": "nineteen-eighty-four",
+"title": "Nineteen Eighty-Four",
+"author": "George Orwell",
+"gene": "glad_i_do_not_live_there",
+"confidence": 0.8,
+"why": "Oceania"
+},
+{
+"ref": "morning-star",
+"title": "Morning Star",
+"author": "Pierce Brown",
+"gene": "triumphant",
+"confidence": 0.8,
+"why": "Final victory"
+},
+{
+"ref": "the-martian",
+"title": "The Martian",
+"author": "Andy Weir",
+"gene": "triumphant",
+"confidence": 0.8,
+"why": "Rescue"
+},
+{
+"ref": "under-the-skin",
+"title": "Under the Skin",
+"author": "Michel Faber",
+"gene": "unsettled",
+"confidence": 0.8,
+"why": "Isserley's truth"
+},
+{
+"ref": "never-let-me-go",
+"title": "Never Let Me Go",
+"author": "Kazuo Ishiguro",
+"gene": "unsettled",
+"confidence": 0.8,
+"why": "Quiet horror"
+},
+{
+"ref": "the-martian",
+"title": "The Martian",
+"author": "Andy Weir",
+"gene": "inspired",
+"confidence": 0.8,
+"why": "Science saves the day"
+},
+{
+"ref": "project-hail-mary",
+"title": "Project Hail Mary",
+"author": "Andy Weir",
+"gene": "inspired",
+"confidence": 0.8,
+"why": "Problem-solving joy"
+},
+{
+"ref": "the-ministry-for-the-future",
+"title": "The Ministry for the Future",
+"author": "Kim Stanley Robinson",
+"gene": "inspired",
+"confidence": 0.8,
+"why": "Building climate solutions"
+},
+{
+"ref": "the-calculating-stars",
+"title": "The Calculating Stars",
+"author": "Mary Robinette Kowal",
+"gene": "inspired",
+"confidence": 0.8,
+"why": "Women in spaceflight"
+},
+{
+"ref": "a-psalm-for-the-wild-built",
+"title": "A Psalm for the Wild-Built",
+"author": "Becky Chambers",
+"gene": "inspired",
+"confidence": 0.8,
+"why": "Gentle purpose"
+},
+{
+"ref": "contact",
+"title": "Contact",
+"author": "Carl Sagan",
+"gene": "inspired",
+"confidence": 0.8,
+"why": "Science and wonder"
+},
+{
+"ref": "project-hail-mary",
+"title": "Project Hail Mary",
+"author": "Andy Weir",
+"gene": "great_on_audio",
+"confidence": 0.8,
+"why": "Ray Porter's narration"
+},
+{
+"ref": "dungeon-crawler-carl",
+"title": "Dungeon Crawler Carl",
+"author": "Matt Dinniman",
+"gene": "great_on_audio",
+"confidence": 0.8,
+"why": "Jeff Hays's narration"
+}
+],
+"hard_genes": [
+{
+"gene": "gas_giant_cities",
+"reason": "Few well-known novels center cities floating in gas giants"
+},
+{
+"gene": "tidally_locked_worlds",
+"reason": "Only a couple of prominent novels set on tidally locked planets"
+},
+{
+"gene": "rogue_planets",
+"reason": "Rogue planets rarely the central setting; only 4 solid fits"
+},
+{
+"gene": "planet_sized_computers",
+"reason": "Mostly appears as a background idea, few central examples"
+},
+{
+"gene": "machine_wasteland",
+"reason": "Few novels set after machines have won"
+},
+{
+"gene": "gig_economy_hell",
+"reason": "Niche near-future subject with few well-known sf novels"
+},
+{
+"gene": "orbital_slums",
+"reason": "Usually a minor setting detail rather than the core"
+},
+{
+"gene": "stealth_in_space",
+"reason": "Space stealth is rarely a central element"
+},
+{
+"gene": "de_extinction",
+"reason": "Beyond Jurassic Park titles, few well-known central examples"
+},
+{
+"gene": "assassins",
+"reason": "Few well-known sf novels centered on assassins"
+},
+{
+"gene": "harem",
+"reason": "Not confident of specific well-known sf harem titles; only a loose fit given"
+},
+{
+"gene": "dark_romance",
+"reason": "Not confident of specific well-known sf dark romance titles"
+}
+]
+}

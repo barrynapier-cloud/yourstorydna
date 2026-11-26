@@ -367,6 +367,52 @@ def step_kimiv2(db):
                 c.execute("INSERT INTO ingest_rows(batch,kind,payload) VALUES (%s,'gene_proposal',%s)", (bname, json.dumps(r)))
             log(f"kimiv2 {bname}: {n}")
 
+# ---------- gene fill (editorial picks for thin genes) ----------
+# GENE_FILL="seq_01,..." loads ingest/claude_v2/<batch>.json rows {ref,title,author,gene,confidence,why}.
+# ref = book slug or /works/ key; null ref -> Open Library title+author lookup, added as a catalog book.
+# Rows land as source claude-v2, state shown, evidence = the one-line why.
+def step_genefill(db):
+    batches = [b for b in os.environ.get("GENE_FILL", "").split(",") if b]
+    with db.cursor() as c:
+        gids = gene_id_map(c)
+        for bname in batches:
+            d = json.load(open(os.path.join(HERE, "claude_v2", bname + ".json")))
+            n = {"rows": 0, "linked": 0, "new_books": 0, "nobook": 0, "nogene": 0}
+            cache = {}
+            for r in d["rows"]:
+                n["rows"] += 1
+                gid = gids.get(r["gene"])
+                if not gid: n["nogene"] += 1; continue
+                ref = r.get("ref"); key = ref or (norm(r["title"]), norm(r["author"]))
+                if key in cache: bid = cache[key]
+                else:
+                    bid = None
+                    try:
+                        if ref:
+                            c.execute("SELECT id FROM books WHERE slug=%s OR ol_key=%s", (ref, ref)); h = c.fetchone(); bid = h[0] if h else None
+                        if not bid:
+                            c.execute("SELECT id FROM books WHERE lower(title)=lower(%s) AND excluded_reason IS NULL ORDER BY (tier='core') DESC, readers DESC NULLS LAST LIMIT 1", (r["title"],))
+                            h = c.fetchone()
+                            if h: bid = h[0]
+                        if not bid:
+                            doc = ol_match(r["title"], r["author"])
+                            if doc and doc.get("author_name"):
+                                slug = slugify(doc.get("title") or r["title"])
+                                c.execute("SELECT 1 FROM books WHERE slug=%s", (slug,))
+                                if c.fetchone(): slug = slugify((doc.get("title") or r["title"]) + " " + doc["author_name"][0].split()[-1])
+                                bid, created = upsert_book(c, slug=slug, title=doc.get("title") or r["title"], author=doc["author_name"][0],
+                                                           year=doc.get("first_publish_year"), series=None, series_no=None, tier="catalog", doc=doc, source="claude-v2")
+                                n["new_books"] += created
+                    except Exception as e:
+                        log("  genefill error", r.get("title"), repr(e)[:200])
+                    cache[key] = bid
+                if not bid: n["nobook"] += 1; continue
+                c.execute("""INSERT INTO book_genes(book_id,gene_id,source,presence,confidence,state,evidence) VALUES (%s,%s,'claude-v2',1,%s,'shown',%s)
+                             ON CONFLICT (book_id,gene_id,source) DO UPDATE SET confidence=EXCLUDED.confidence, state=EXCLUDED.state, evidence=EXCLUDED.evidence""",
+                          (bid, gid, float(r.get("confidence") or 0.7), r.get("why")))
+                n["linked"] += 1
+            log(f"genefill {bname}: {n}")
+
 # ---------- descriptions ----------
 def clean_desc(d):
     if isinstance(d, dict): d = d.get("value")
