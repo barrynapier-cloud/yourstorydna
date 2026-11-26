@@ -877,8 +877,8 @@ function remodel() {
   nodes = out; if (focus && !seeds.some(b => b.id === focus)) focus = null; tools();
 }
 const IM = {};
-function pic(b) { let o = IM[b.id]; if (!o) { o = IM[b.id] = new Image(); o.real = true; // a jacket saved next to the page, then Open Library, then the generated art
-    const q = ['covers/' + b.id + '.jpg'].concat(b.cv ? [`https://covers.openlibrary.org/b/id/${b.cv}-M.jpg`] : []), next = () => { if (q.length) o.src = q.shift(); else { o.onerror = o.onload = null; o.real = false; o.src = art(b); } };
+function pic(b) { let o = IM[b.id]; if (!o) { o = IM[b.id] = new Image(); o.real = true; // Open Library jacket when the book has one, else a jacket saved next to the page, then the generated art
+    const q = b.cv ? [`https://covers.openlibrary.org/b/id/${b.cv}-M.jpg`] : ['covers/' + b.id + '.jpg'], next = () => { if (q.length) o.src = q.shift(); else { o.onerror = o.onload = null; o.real = false; o.src = art(b); } };
     o.onerror = next; o.onload = () => { if (o.real && o.naturalWidth <= 20) next(); }; next(); }
   return o.complete && o.naturalWidth > 20 ? o : null; }
 function drawCv(x, n, w, h) {
