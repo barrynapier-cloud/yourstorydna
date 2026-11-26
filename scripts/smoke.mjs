@@ -23,6 +23,13 @@ assert.ok(html.includes('http-equiv="Content-Security-Policy"'), 'Missing CSP me
 assert.ok(html.includes('name="referrer"'), 'Missing referrer policy meta tag');
 assert.ok(!html.includes("i.src = 'covers/' + b.id + '.jpg'; d.append(i); return d;"), 'Eager unguarded /covers/*.jpg 404 probe still present');
 
+const adminHtml = fs.readFileSync(path.join(root, 'site/admin/index.html'), 'utf8');
+const adminScripts = [...adminHtml.matchAll(/<script(?![^>]*src=)[^>]*>([\s\S]*?)<\/script>/gi)];
+assert.equal(adminScripts.length, 1, 'Expected 1 inline script block in site/admin/index.html');
+new vm.Script(adminScripts[0][1], { filename: 'site/admin/index.html' });
+assert.ok(adminHtml.includes('http-equiv="Content-Security-Policy"'), 'Missing CSP meta tag in site/admin/index.html');
+assert.equal((adminHtml.match(/\u2014/g) || []).length, 0, 'Found forbidden em dash in site/admin/index.html');
+
 // Ensure no em dashes exist in non-data UI script/template code (outside SEED/GENES/ABOUT/SAYS data blocks)
 const afterDataIdx = html.indexOf('// ---- fx: shared');
 assert.ok(afterDataIdx > 0, 'Missing fx section marker');
