@@ -100,8 +100,11 @@ def ol_match(title, author):
     if not docs:
         return None
     nt = norm(title)
-    best = sorted(docs, key=lambda x: (norm(x.get("title")) != nt, -(x.get("readinglog_count") or 0), -(x.get("edition_count") or 0)))
-    return best[0]
+    best = sorted(docs, key=lambda x: (norm(x.get("title")) != nt, -(x.get("readinglog_count") or 0), -(x.get("edition_count") or 0)))[0]
+    bt = norm(best.get("title"))
+    if bt != nt and not (nt and (nt in bt or bt in nt)):
+        return None
+    return best
 
 def upsert_book(c, *, slug, title, author, year, series, series_no, tier, doc, source):
     ol_key = doc.get("key") if doc else None
@@ -172,6 +175,9 @@ def step_core(db):
             ex = c.fetchone()
             if ex and norm(ex[0]) != norm(r["author"]):
                 slug = slugify(r["title"] + " " + r["author"].split(" and ")[0].split()[-1])
+            c.execute("SELECT 1 FROM books WHERE ol_key=%s AND slug<>%s", ((doc or {}).get("key"), slug))
+            if doc and c.fetchone():
+                doc = {k: v for k, v in doc.items() if k != "key"}
             bid, created = upsert_book(c, slug=slug, title=r["title"], author=r["author"], year=r["year"], series=r["series"],
                                        series_no=r["series_no"], tier="core", doc=doc, source="claude-v1")
             new += created
