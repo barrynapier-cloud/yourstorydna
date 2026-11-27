@@ -343,9 +343,10 @@ def step_promote(db):
                      SELECT e.book_id, g.id, 'facts', 1, max(e.strength), 'shown', string_agg(DISTINCT e.receipt_text, '; ')
                      FROM evidence e JOIN genes g ON g.slug=e.target
                      WHERE e.target_kind='gene' AND e.target IN ('award_winner','free_to_read_legally') AND e.source IN ('wikidata','gutenberg')
+                       AND EXISTS (SELECT 1 FROM book_genes s WHERE s.book_id=e.book_id AND s.state='shown' AND s.source<>'facts')
                      GROUP BY e.book_id, g.id
                      ON CONFLICT (book_id,gene_id,source) DO UPDATE SET confidence=EXCLUDED.confidence, evidence=EXCLUDED.evidence""")
-        log(f"promote: {c.rowcount} fact genes shown (award_winner, free_to_read_legally)")
+        log(f"promote: {c.rowcount} fact genes shown on books that already have DNA (award_winner, free_to_read_legally)")
         c.execute("""INSERT INTO book_genes(book_id,gene_id,source,presence,confidence,state,evidence)
                      SELECT e.book_id, g.id, 'wikidata', 1, 0.6, 'hidden', string_agg(DISTINCT e.receipt_text, '; ')
                      FROM evidence e JOIN genes g ON g.slug=e.target
