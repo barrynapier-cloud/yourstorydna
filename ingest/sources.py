@@ -165,7 +165,7 @@ def wd_facts(c, book_id, qid, rows, source, valid):
             g = LABEL_GENES.get(val.lower())
             if g and g in valid:
                 n += add(c, book_id, "gene", g, source, 0.6, value=val, url=url, text=f"Wikidata {key.replace('_',' ')}: {val}", lic=WD_LIC)
-        if key == "award_won" and valid.__contains__("award_winner"):
+        if key == "award_won" and "award_winner" in valid and re.search(r"award|prize|medal|premio|preis|prix|seiun|hugo|nebula", val, re.I):
             n += add(c, book_id, "gene", "award_winner", source, 0.95, value=val, url=url, text=f"Won: {val}", lic=WD_LIC)
         if key == "series" and "long_series" in valid:
             pass
@@ -334,6 +334,11 @@ def step_gutenberg(db):
 # ---------- promote hard facts into shown genes ----------
 def step_promote(db):
     with db.cursor() as c:
+        # Wikidata P166 also holds "best of" lists (NPR Top 100 and the like): those are not awards
+        c.execute("""DELETE FROM evidence WHERE target_kind='gene' AND target='award_winner' AND source='wikidata'
+                     AND value !~* '(award|prize|medal|premio|preis|prix|seiun|hugo|nebula)'""")
+        log(f"promote: dropped {c.rowcount} award_winner rows that were lists, not awards")
+        c.execute("DELETE FROM book_genes WHERE source='facts'")
         c.execute("""INSERT INTO book_genes(book_id,gene_id,source,presence,confidence,state,evidence)
                      SELECT e.book_id, g.id, 'facts', 1, max(e.strength), 'shown', string_agg(DISTINCT e.receipt_text, '; ')
                      FROM evidence e JOIN genes g ON g.slug=e.target
