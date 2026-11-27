@@ -1,0 +1,475 @@
+# Curated core, batch 1: the original 53, retagged against the full gene library.
+# Format: Title | Author | Year | Series #n | gene slugs (space separated)
+# Tags are Claude's editorial read (source claude-v1, confidence 0.7). Not reader data.
+Perdido Street Station | China Miéville | 2000 | Bas-Lag #1 | urban_weird megacity_sprawl city_as_a_character weird_biology body_horror scientist_hero morally_grey_lead the_monster dense_and_demanding baroque_and_lush invented_slang literary multiple_povs creeping_dread gut_punch wanted_to_live_there award_winner series_start
+Shards of Earth | Adrian Tchaikovsky | 2021 | The Final Architecture #1 | space_opera hyperspace_has_a_geography unknowable_enemy salvage_crews beat_up_freighter found_family_crew ragtag_crew engineered_genius cosmic_horror ancient_aliens mind_hacks war_and_its_damage multiple_povs awe_at_the_scale fell_for_the_characters series_start modern_hit
+Eyes of the Void | Adrian Tchaikovsky | 2022 | The Final Architecture #2 | space_opera hyperspace_has_a_geography unknowable_enemy found_family_crew ancient_aliens cosmic_horror court_intrigue xenoarchaeology multiple_povs awe_at_the_scale fell_for_the_characters long_series
+Lords of Uncreation | Adrian Tchaikovsky | 2023 | The Final Architecture #3 | space_opera hyperspace_has_a_geography unknowable_enemy found_family_crew ancient_aliens cosmic_horror big_finale ending_that_landed triumphant multiple_povs complete_series
+Revelation Space | Alastair Reynolds | 2000 | Revelation Space #1 | space_opera hard_science xenoarchaeology ancient_aliens sleeping_threat the_fermi_question cycles_of_extinction ship_minds slower_than_light derelict_ships cosmic_horror multiple_povs dense_and_demanding creeping_dread awe_at_the_scale series_start
+Altered Carbon | Richard K. Morgan | 2002 | Takeshi Kovacs #1 | cyberpunk noir_detective mind_transfer immortality_tech longevity_gap body_swapping special_forces antihero badass_combat noir_voice class_war what_makes_a_self murder_in_space gunfights_and_duels steamy_and_explicit could_not_put_it_down series_start
+Hyperion | Dan Simmons | 1989 | Hyperion Cantos #1 | nested_stories mosaic_novel time_travel ai_gods the_singularity the_monster religion_in_space faith_and_doubt parent_and_child grief space_opera wormhole_networks literary lyrical_prose haunting made_me_cry award_winner classic series_start
+The Fall of Hyperion | Dan Simmons | 1990 | Hyperion Cantos #2 | ai_gods interstellar_war empire_falling wormhole_networks the_singularity time_travel religion_in_space sacrifice multiple_povs awe_at_the_scale big_finale ending_that_landed series_start
+Endymion | Dan Simmons | 1996 | Hyperion Cantos #3 | road_trip_across_worlds religion_as_power zealots escape_and_pursuit chosen_by_accident love_across_the_gap far_future_humanity mythic single_tight_pov long_series
+The Rise of Endymion | Dan Simmons | 1997 | Hyperion Cantos #4 | religion_as_power zealots love_across_the_gap transcendence sacrifice mythic made_me_cry doorstopper complete_series bittersweet
+The Library at Mount Char | Scott Hawkins | 2015 | | urban_weird reality_bending something_is_wrong_with_the_town villain_protagonist morally_grey_lead dark_romance revenge the_big_twist genuinely_scary gut_punch mind_blown_twist deadpan_narrator standalone debut
+Snow Crash | Neal Stephenson | 1992 | | cyberpunk virtual_reality virtual_cities language_shapes_thought corporate_dystopia balkanized_nations hacker witty_dialogue funny pure_fun big_ideas_per_page info_dumps_done_right classic standalone
+Neuromancer | William Gibson | 1984 | Sprawl #1 | cyberpunk hacker heists ai_awakening the_singularity megacity_sprawl orbital_habitats neural_interfaces drugs_and_enhancements noir_voice dense_and_demanding invented_slang award_winner classic series_start
+The Scar | China Miéville | 2002 | Bas-Lag #2 | nomad_fleets floating_and_flying_cities ocean_worlds weird_biology expedition_into_the_unknown captive_and_captor scientist_hero puppet_masters baroque_and_lush literary dense_and_demanding wanted_to_live_there gut_punch award_winner
+Embassytown | China Miéville | 2011 | | language_shapes_thought truly_alien_aliens alien_cultures_in_depth colonialism communication translator_and_go_between drugs_and_enhancements female_lead_who_hits_hard literary dense_and_demanding made_me_think_for_days standalone
+The Quantum Thief | Hannu Rajaniemi | 2010 | Jean le Flambeur #1 | heists con_artists post_human_forms mind_transfer forked_selves memory_editing prison_break the_solar_system_settled thrown_in_the_deep_end invented_slang dense_and_demanding big_ideas_per_page rogue_with_a_heart debut series_start
+Annihilation | Jeff VanderMeer | 2014 | Southern Reach #1 | expedition_into_the_unknown survey_gone_wrong ecology_fights_back weird_biology fungal_and_plant_minds unknowable_enemy cosmic_horror unreliable_narrator scientist_hero becoming_something_else dreamlike_and_surreal creeping_dread haunting unsettled award_winner series_start
+The Shadow of the Torturer | Gene Wolfe | 1980 | The Book of the New Sun #1 | dying_earth far_future_humanity unreliable_narrator lost_tech mythic baroque_and_lush dense_and_demanding literary coming_of_age fall_from_grace hidden_history classic series_start
+Pushing Ice | Alastair Reynolds | 2005 | | expedition_into_the_unknown stranded ancient_aliens megastructures alien_cultures_in_depth time_dilation hard_science rivals_to_allies scientist_hero ensemble_cast awe_at_the_scale sense_of_wonder standalone
+The Engines of God | Jack McDevitt | 1994 | The Academy #1 | xenoarchaeology ancient_aliens cycles_of_extinction expedition_into_the_unknown scientist_hero sleeping_threat slow_reveal_mystery sense_of_wonder series_start
+Ship of Fools | Richard Paul Russo | 2001 | | generation_ships derelict_ships cosmic_horror religion_as_power faith_and_doubt horror_in_the_dark genuinely_scary single_tight_pov award_winner standalone
+Shroud | Adrian Tchaikovsky | 2024 | | survival_against_the_planet stranded truly_alien_aliens alien_ecosystems first_contact communication scientist_hero creeping_dread sense_of_wonder standalone
+A Fire Upon the Deep | Vernor Vinge | 1992 | Zones of Thought #1 | space_opera the_singularity ai_gods hive_minds alien_pov truly_alien_aliens rescue_mission sleeping_threat big_ideas_per_page awe_at_the_scale award_winner classic series_start
+House of Suns | Alastair Reynolds | 2008 | | deep_time far_future_humanity forked_selves the_long_view time_dilation conspiracy_thriller machine_civilizations love_across_the_gap dual_timelines awe_at_the_scale mind_blown_twist standalone
+Matter | Iain M. Banks | 2008 | Culture | space_opera artificial_worlds megastructures post_scarcity_society court_intrigue succession_crisis fallen_empire_relics multiple_povs witty_dialogue gut_punch awe_at_the_scale shared_universe
+The Gone World | Tom Sweterlitsch | 2018 | | time_travel paradoxes noir_detective murder_in_space entropy_and_endings cosmic_horror female_lead_who_hits_hard mind_blown_twist creeping_dread standalone
+Blindsight | Peter Watts | 2006 | Firefall #1 | first_contact truly_alien_aliens consciousness_puzzles what_makes_a_self hard_science cosmic_horror post_human_forms expedition_into_the_unknown footnotes_and_asides dense_and_demanding made_me_think_for_days unsettled glad_i_do_not_live_there
+The Skinner | Neal Asher | 2002 | Spatterjay #1 | jungle_and_death_worlds weird_biology alien_ecosystems ai_detective_or_partner body_horror immortality_tech badass_combat pure_fun multiple_povs series_start
+Alien Clay | Adrian Tchaikovsky | 2024 | | jungle_and_death_worlds weird_biology alien_ecosystems dystopian_state scientist_hero guerrilla_resistance becoming_something_else freedom_and_control sense_of_wonder standalone
+Pandora's Star | Peter F. Hamilton | 2004 | Commonwealth Saga #1 | space_opera wormhole_networks immortality_tech longevity_gap sleeping_threat unknowable_enemy alien_pov multiple_povs ensemble_cast doorstopper awe_at_the_scale series_start
+Broken Angels | Richard K. Morgan | 2003 | Takeshi Kovacs #2 | military mercenary_companies xenoarchaeology ancient_aliens mind_transfer war_is_hell antihero badass_combat noir_voice steamy_and_explicit
+Chasm City | Alastair Reynolds | 2001 | Revelation Space | revenge generation_ships amnesia_unraveling the_big_twist megacity_sprawl body_horror longevity_gap noir_voice dual_timelines mind_blown_twist award_winner shared_universe
+Thin Air | Richard K. Morgan | 2018 | | noir_detective the_solar_system_settled frontier_towns combat_implants corporate_evil antihero badass_combat steamy_and_explicit noir_voice standalone
+Titanium Noir | Nick Harkaway | 2023 | | noir_detective longevity_gap immortality_tech class_war murder_in_space noir_voice snarky_first_person single_tight_pov standalone
+God's War | Kameron Hurley | 2011 | Bel Dame Apocrypha #1 | biopunk desert_planets religion_as_power interstellar_war bounty_hunters assassins female_lead_who_hits_hard antihero queer_leads matriarchies_and_new_families living_technology gut_punch debut series_start
+Leviathan Wakes | James S. A. Corey | 2011 | The Expanse #1 | the_solar_system_settled asteroid_belt_frontier noir_detective conspiracy_thriller engineered_plagues orbital_mechanics_matter hard_science beat_up_freighter found_family_crew competent_operator class_war could_not_put_it_down series_start modern_hit
+Red Rising | Pierce Brown | 2014 | Red Rising #1 | caste_worlds dystopian_state revolution_and_after competition_and_games rebellion undercover badass_combat rags_to_power cliffhangers could_not_put_it_down heart_pounding rage_at_the_villain series_start modern_hit
+Lord of Light | Roger Zelazny | 1967 | | colony_worlds immortality_tech religion_as_power mythic body_swapping rebellion lyrical_prose award_winner classic standalone
+There Is No Antimemetics Division | qntm | 2020 | | information_is_physical memory_editing unknowable_enemy cosmic_horror mind_blown_twist creeping_dread mosaic_novel big_ideas_per_page free_to_read_legally standalone
+Lexicon | Max Barry | 2013 | | language_shapes_thought mind_hacks conspiracy_thriller dual_timelines escape_and_pursuit puppet_masters the_big_twist could_not_put_it_down five_minutes_from_now standalone
+Nexus | Ramez Naam | 2012 | Nexus #1 | neural_interfaces shared_minds drugs_and_enhancements spy_games five_minutes_from_now freedom_and_control evolution_and_what_comes_next badass_combat debut series_start
+When Gravity Fails | George Alec Effinger | 1987 | Marîd Audran #1 | cyberpunk noir_detective body_mods mind_hacks drugs_and_enhancements megacity_sprawl antihero noir_voice classic series_start
+The Windup Girl | Paolo Bacigalupi | 2009 | | biopunk climate_collapse engineered_plagues corporate_dystopia genetic_engineering created_beings slavery_and_personhood multiple_povs award_winner debut standalone
+The Stars My Destination | Alfred Bester | 1956 | | revenge teleportation antihero body_mods rags_to_power corporate_evil cinematic classic standalone
+American Elsewhere | Robert Jackson Bennett | 2013 | | something_is_wrong_with_the_town higher_dimensions cosmic_horror monsters_with_feelings parent_and_child slow_reveal_mystery creeping_dread standalone
+Marrow | Robert Reed | 2000 | The Great Ship #1 | world_ships megastructures immortality_tech artificial_worlds deep_time evolution_on_fast_forward expedition_into_the_unknown awe_at_the_scale series_start
+Heroes Die | Matthew Woodring Stover | 1998 | The Acts of Caine #1 | parallel_worlds caste_worlds competition_and_games antihero badass_combat martial_arts_and_blades corporate_evil dual_timelines gut_punch series_start
+36 Streets | T. R. Napper | 2022 | | cyberpunk competition_and_games virtual_reality female_lead_who_hits_hard martial_arts_and_blades corporate_evil noir_voice standalone
+Armor | John Steakley | 1984 | | military power_armor insect_and_swarm_aliens war_is_hell soldier_with_doubts dual_timelines badass_combat gut_punch classic standalone
+Dogs of War | Adrian Tchaikovsky | 2017 | Dogs of War #1 | uplifted_animals created_beings slavery_and_personhood robot_rights non_human_narrator military sympathetic_antagonist made_me_think_for_days series_start
+All You Need Is Kill | Hiroshi Sakurazaka | 2004 | | time_loops alien_invasion power_armor military badass_combat training_and_mastery short_chapters translated could_not_put_it_down standalone
+Old Man's War | John Scalzi | 2005 | Old Man's War #1 | military boot_camp_to_battlefield body_swapping interstellar_war old_veteran snarky_first_person witty_dialogue plain_and_fast pure_fun debut series_start
+Dungeon Crawler Carl | Matt Dinniman | 2020 | Dungeon Crawler Carl #1 | alien_invasion competition_and_games ruined_earth_humans_gone snarky_first_person laughed_out_loud loyal_companion funny pure_fun could_not_put_it_down great_on_audio series_start modern_hit
+# Curated core, batch 2: classics and award winners
+Dune | Frank Herbert | 1965 | Dune #1 | desert_planets space_opera court_intrigue religion_as_power succession_crisis empire_and_its_costs ecology_and_stewardship psychic_powers chosen_by_accident coming_of_age revenge rebellion mythic dense_and_demanding awe_at_the_scale wanted_to_live_there award_winner classic series_start
+Dune Messiah | Frank Herbert | 1969 | Dune #2 | desert_planets court_intrigue religion_as_power puppet_masters fall_from_grace free_will faith_and_doubt dense_and_demanding gut_punch long_series
+Children of Dune | Frank Herbert | 1976 | Dune #3 | desert_planets court_intrigue religion_as_power succession_crisis becoming_something_else the_long_view siblings dense_and_demanding long_series
+Foundation | Isaac Asimov | 1951 | Foundation #1 | empire_falling dark_age_after_empire mathematics_as_plot the_long_view diplomacy trade_wars religion_as_power mosaic_novel big_ideas_per_page plain_and_fast classic series_start
+Foundation and Empire | Isaac Asimov | 1952 | Foundation #2 | empire_falling psychic_powers the_big_twist mathematics_as_plot the_long_view mind_hacks classic long_series
+Second Foundation | Isaac Asimov | 1953 | Foundation #3 | psychic_powers mathematics_as_plot puzzle_box the_big_twist puppet_masters classic long_series
+I, Robot | Isaac Asimov | 1950 | Robot | three_laws_and_loopholes robot_companions robot_rights puzzle_box ai_point_of_view short_stories classic
+The Caves of Steel | Isaac Asimov | 1954 | Robot #1 | ai_detective_or_partner domed_cities murder_in_space whodunit_with_a_twist_of_tech androids_passing_as_human buddy_duo three_laws_and_loopholes classic series_start
+The Left Hand of Darkness | Ursula K. Le Guin | 1969 | Hainish Cycle | ice_worlds gender_and_body alien_cultures_in_depth diplomacy outsider_looking_at_humans survival_against_the_planet friendship love_across_the_gap lyrical_prose literary made_me_think_for_days award_winner classic shared_universe
+The Dispossessed | Ursula K. Le Guin | 1974 | Hainish Cycle | anarchist_commune utopia_with_a_crack scientist_hero dual_timelines class_war freedom_and_control capitalism_unchained literary made_me_think_for_days award_winner classic shared_universe
+The Word for World Is Forest | Ursula K. Le Guin | 1972 | Hainish Cycle | colonialism alien_cultures_in_depth war_and_its_damage dream_tech slavery_and_personhood ecology_and_stewardship novella award_winner
+Ender's Game | Orson Scott Card | 1985 | Ender's Saga #1 | military kid_genius training_and_mastery competition_and_games alien_invasion insect_and_swarm_aliens the_big_twist boot_camp_to_battlefield gut_punch could_not_put_it_down award_winner classic series_start
+Speaker for the Dead | Orson Scott Card | 1986 | Ender's Saga #2 | first_contact colony_worlds alien_cultures_in_depth xenobiology_puzzle forgiveness redemption_arc communication parent_and_child literary made_me_cry award_winner
+Starship Troopers | Robert A. Heinlein | 1959 | | military power_armor boot_camp_to_battlefield insect_and_swarm_aliens duty_and_conscience coming_of_age classic award_winner standalone
+The Moon Is a Harsh Mistress | Robert A. Heinlein | 1966 | | revolution_and_after ai_awakening benevolent_ai colonialism rebellion invented_slang engineer_who_fixes_things human_and_ai_partnership bittersweet award_winner classic standalone
+Stranger in a Strange Land | Robert A. Heinlein | 1961 | | outsider_looking_at_humans religion_as_power psychic_powers fish_out_of_water free_will award_winner classic standalone
+Childhood's End | Arthur C. Clarke | 1953 | | alien_invasion benevolent_ai transcendence evolution_and_what_comes_next humanity_s_place the_long_view awe_at_the_scale bittersweet classic standalone
+Rendezvous with Rama | Arthur C. Clarke | 1973 | Rama #1 | expedition_into_the_unknown megastructures ancient_aliens hard_science sense_of_wonder mapping_the_anomaly competent_operator awe_at_the_scale award_winner classic series_start
+2001: A Space Odyssey | Arthur C. Clarke | 1968 | Space Odyssey #1 | rogue_ai ship_minds ancient_aliens transcendence evolution_and_what_comes_next long_voyage cinematic sense_of_wonder classic series_start
+The Martian Chronicles | Ray Bradbury | 1950 | | colonization_story colonialism lyrical_prose mosaic_novel short_stories haunting classic
+Fahrenheit 451 | Ray Bradbury | 1953 | | dystopian_state surveillance_society propaganda_and_truth knowledge_and_its_dangers technology_and_addiction lyrical_prose classic standalone
+Nineteen Eighty-Four | George Orwell | 1949 | | dystopian_state surveillance_society propaganda_and_truth freedom_and_control memory_and_truth faceless_system gut_punch glad_i_do_not_live_there classic standalone
+Brave New World | Aldous Huxley | 1932 | | dystopian_state caste_worlds genetic_engineering drugs_and_enhancements utopia_with_a_crack freedom_and_control classic standalone
+Do Androids Dream of Electric Sheep? | Philip K. Dick | 1968 | | androids_passing_as_human bounty_hunters what_it_means_to_be_human ruined_earth_humans_gone religion_in_space unreliable_reality noir_detective classic standalone
+Ubik | Philip K. Dick | 1969 | | unreliable_reality psychic_powers corporate_espionage reality_bending entropy_and_endings mind_blown_twist dreamlike_and_surreal classic standalone
+The Man in the High Castle | Philip K. Dick | 1962 | | alternate_history multiple_povs unreliable_reality propaganda_and_truth faith_and_doubt literary award_winner classic standalone
+A Scanner Darkly | Philip K. Dick | 1977 | | drugs_and_enhancements surveillance_society undercover lost_identity unreliable_narrator gut_punch haunting classic standalone
+Solaris | Stanisław Lem | 1961 | | first_contact ocean_intelligence truly_alien_aliens consciousness_puzzles grief memory_and_truth scientist_hero translated made_me_think_for_days classic standalone
+The Forever War | Joe Haldeman | 1974 | | military time_dilation interstellar_war war_is_hell veterans_coming_home soldier_with_doubts power_armor loneliness award_winner classic standalone
+Gateway | Frederik Pohl | 1977 | Heechee Saga #1 | precursor_gates_and_tools ancient_aliens race_to_the_prize grief dual_timelines broken_and_healing award_winner classic series_start
+Ringworld | Larry Niven | 1970 | Ringworld #1 | ringworlds megastructures expedition_into_the_unknown alien_pov stranded sense_of_wonder award_winner classic series_start
+The Mote in God's Eye | Larry Niven | 1974 | | first_contact truly_alien_aliens alien_cultures_in_depth space_navy_life diplomacy the_big_twist cycles_of_extinction classic standalone
+Neverness | David Zindell | 1988 | Requiem for Homo Sapiens | mathematics_as_plot transcendence far_future_humanity pilot_ace ai_gods lyrical_prose dense_and_demanding standalone
+The Snow Queen | Joan D. Vinge | 1980 | | court_intrigue succession_crisis clones ocean_worlds lost_tech mythic award_winner series_start
+Dhalgren | Samuel R. Delany | 1975 | | something_is_wrong_with_the_town unreliable_reality amnesia_unraveling dreamlike_and_surreal dense_and_demanding literary classic standalone
+Babel-17 | Samuel R. Delany | 1966 | | language_shapes_thought interstellar_war spy_games translator_and_go_between award_winner classic
+Downbelow Station | C. J. Cherryh | 1981 | Alliance-Union | space_stations interstellar_war refugees_and_exiles space_opera multiple_povs award_winner shared_universe
+Cyteen | C. J. Cherryh | 1988 | | clones genetic_engineering sleepers_and_conditioning court_intrigue identity_and_copies dense_and_demanding award_winner doorstopper
+Startide Rising | David Brin | 1983 | Uplift #2 | uplifted_animals uplift_chains ancient_aliens stranded ocean_worlds ensemble_cast award_winner
+Doomsday Book | Connie Willis | 1992 | Oxford Time Travel #1 | time_travel plague_aftermath outbreak dual_timelines grief made_me_cry award_winner series_start
+To Say Nothing of the Dog | Connie Willis | 1998 | Oxford Time Travel #2 | time_travel paradoxes funny witty_dialogue laughed_out_loud felt_like_a_warm_blanket award_winner
+The Diamond Age | Neal Stephenson | 1995 | | nanotech post_scarcity_society coming_of_age parent_and_child class_war tradition_against_change dense_and_demanding award_winner standalone
+Cryptonomicon | Neal Stephenson | 1999 | | mathematics_as_plot dual_timelines treasure_hunt spy_games technical_detail witty_dialogue doorstopper standalone
+Anathem | Neal Stephenson | 2008 | | monastery_worlds parallel_worlds mathematics_as_plot higher_dimensions invented_slang first_contact dense_and_demanding big_ideas_per_page doorstopper standalone
+Seveneves | Neal Stephenson | 2015 | | slow_apocalypse last_humans orbital_mechanics_matter hard_science space_stations far_future_humanity technical_detail doorstopper standalone
+Consider Phlebas | Iain M. Banks | 1987 | Culture #1 | space_opera interstellar_war ship_minds post_scarcity_society megastructures shapeshifters antihero war_is_hell gut_punch series_start shared_universe
+The Player of Games | Iain M. Banks | 1988 | Culture #2 | competition_and_games empire_and_its_costs ship_minds post_scarcity_society diplomat_and_talker puppet_masters witty_dialogue made_me_think_for_days shared_universe
+Use of Weapons | Iain M. Banks | 1990 | Culture #3 | dual_timelines the_big_twist antihero war_is_hell mercenary_companies mind_blown_twist gut_punch shared_universe
+Excession | Iain M. Banks | 1996 | Culture #5 | ship_minds ai_point_of_view sleeping_threat puppet_masters higher_dimensions witty_dialogue big_ideas_per_page shared_universe
+Surface Detail | Iain M. Banks | 2010 | Culture #9 | digital_afterlife virtual_reality revenge interstellar_war slavery_and_personhood ship_minds multiple_povs shared_universe
+The Sparrow | Mary Doria Russell | 1996 | | first_contact religion_in_space faith_and_doubt alien_cultures_in_depth expedition_into_the_unknown dual_timelines gut_punch made_me_cry award_winner debut
+A Canticle for Leibowitz | Walter M. Miller Jr. | 1959 | | post_apocalypse monastery_worlds rebuilding_civilization religion_in_space the_long_view cycles_of_extinction award_winner classic standalone
+Flowers for Algernon | Daniel Keyes | 1966 | | engineered_genius epistolary_and_found_documents what_makes_a_self made_me_cry gut_punch award_winner classic standalone
+The Handmaid's Tale | Margaret Atwood | 1985 | | dystopian_state religion_as_power gender_and_body freedom_and_control single_tight_pov haunting literary classic award_winner
+Oryx and Crake | Margaret Atwood | 2003 | MaddAddam #1 | genetic_engineering engineered_plagues corporate_dystopia last_humans dual_timelines playing_god literary series_start
+Never Let Me Go | Kazuo Ishiguro | 2005 | | clones slavery_and_personhood mortality slow_reveal_mystery minimalist literary made_me_cry haunting standalone
+Klara and the Sun | Kazuo Ishiguro | 2021 | | robot_companions ai_point_of_view parenthood mortality love minimalist literary bittersweet standalone
+The Road | Cormac McCarthy | 2006 | | post_apocalypse parent_and_child survival_against_the_planet minimalist gut_punch made_me_cry award_winner standalone
+Station Eleven | Emily St. John Mandel | 2014 | | plague_aftermath rebuilding_civilization dual_timelines mosaic_novel literary haunting award_winner standalone
+The Time Machine | H. G. Wells | 1895 | | time_travel far_future_humanity class_war evolution_and_what_comes_next dying_earth classic free_to_read_legally novella
+The War of the Worlds | H. G. Wells | 1898 | | alien_invasion survival_against_the_planet unknowable_enemy classic free_to_read_legally standalone
+Frankenstein | Mary Shelley | 1818 | | playing_god created_beings monsters_with_feelings nested_stories epistolary_and_found_documents classic free_to_read_legally standalone
+# Curated core, batch 3: modern hits (2010 onward)
+Project Hail Mary | Andy Weir | 2021 | | amnesia_unraveling scientist_hero first_contact human_and_alien_friendship hard_science castaway_ingenuity countdown snarky_first_person dual_timelines could_not_put_it_down made_me_cry triumphant great_on_audio modern_hit standalone
+The Martian | Andy Weir | 2011 | | stranded castaway_ingenuity hard_science engineer_who_fixes_things snarky_first_person rescue_mission technical_detail laughed_out_loud could_not_put_it_down modern_hit debut standalone
+Artemis | Andy Weir | 2017 | | heists domed_cities frontier_towns snarky_first_person rogue_with_a_heart technical_detail pure_fun standalone
+Children of Time | Adrian Tchaikovsky | 2015 | Children of Time #1 | uplifted_animals evolution_on_fast_forward generation_ships insect_and_swarm_aliens alien_pov terraforming the_long_view dual_timelines awe_at_the_scale sense_of_wonder award_winner series_start modern_hit
+Children of Ruin | Adrian Tchaikovsky | 2019 | Children of Time #2 | ocean_intelligence uplifted_animals parasites_and_puppeteers first_contact alien_pov communication creeping_dread long_series
+Children of Memory | Adrian Tchaikovsky | 2022 | Children of Time #3 | colony_worlds unreliable_reality consciousness_puzzles uplifted_animals simulation_theory complete_series
+Ancillary Justice | Ann Leckie | 2013 | Imperial Radch #1 | ship_minds shared_minds empire_and_its_costs revenge ai_point_of_view gender_and_body dual_timelines colonialism award_winner debut series_start
+Ancillary Sword | Ann Leckie | 2014 | Imperial Radch #2 | ship_minds colonialism class_war empire_and_its_costs ai_point_of_view long_series
+The Long Way to a Small, Angry Planet | Becky Chambers | 2014 | Wayfarers #1 | found_family_crew beat_up_freighter alien_cultures_in_depth queer_leads slice_of_life_in_space human_and_ai_partnership felt_like_a_warm_blanket fell_for_the_characters debut series_start
+A Closed and Common Orbit | Becky Chambers | 2016 | Wayfarers #2 | ai_awakening digital_beings what_makes_a_self found_family_crew dual_timelines felt_like_a_warm_blanket made_me_cry award_winner
+A Psalm for the Wild-Built | Becky Chambers | 2021 | Monk and Robot #1 | solarpunk robot_companions rewilded_earth slice_of_life_in_space road_trip_across_worlds friendship felt_like_a_warm_blanket novella award_winner series_start
+The Three-Body Problem | Liu Cixin | 2008 | Remembrance of Earth's Past #1 | first_contact dark_forest the_fermi_question hard_science virtual_reality alien_invasion conspiracy_thriller scientist_hero big_ideas_per_page translated award_winner series_start
+The Dark Forest | Liu Cixin | 2008 | Remembrance of Earth's Past #2 | dark_forest the_fermi_question fleet_battles alien_invasion puppet_masters cryosleep awe_at_the_scale mind_blown_twist translated
+Death's End | Liu Cixin | 2010 | Remembrance of Earth's Past #3 | dark_forest entropy_and_endings higher_dimensions deep_time the_long_view awe_at_the_scale translated complete_series
+Murderbot: All Systems Red | Martha Wells | 2017 | The Murderbot Diaries #1 | ai_point_of_view robot_rights snarky_first_person survey_gone_wrong competent_operator found_family_crew laughed_out_loud novella award_winner series_start modern_hit
+Network Effect | Martha Wells | 2020 | The Murderbot Diaries #5 | ai_point_of_view ship_minds human_and_ai_partnership snarky_first_person found_family_crew badass_combat award_winner long_series
+A Memory Called Empire | Arkady Martine | 2019 | Teixcalaan #1 | empire_and_its_costs court_intrigue diplomat_and_talker neural_interfaces memory_and_truth succession_crisis colonialism literary award_winner debut series_start
+A Desolation Called Peace | Arkady Martine | 2021 | Teixcalaan #2 | first_contact truly_alien_aliens diplomacy hive_minds court_intrigue queer_love_stories award_winner
+Gideon the Ninth | Tamsyn Muir | 2019 | The Locked Tomb #1 | whodunit_with_a_twist_of_tech queer_leads rivals_to_allies snarky_first_person martial_arts_and_blades haunting funny dying_earth mythic debut series_start
+Harrow the Ninth | Tamsyn Muir | 2020 | The Locked Tomb #2 | second_person unreliable_narrator puzzle_box memory_and_truth mind_blown_twist dense_and_demanding
+This Is How You Lose the Time War | Amal El-Mohtar and Max Gladstone | 2019 | | time_travel epistolary_and_found_documents enemies_to_lovers queer_love_stories lyrical_prose novella made_me_cry award_winner
+The Calculating Stars | Mary Robinette Kowal | 2018 | Lady Astronaut #1 | alternate_history space_race_round_two climate_collapse female_lead_who_hits_hard scientist_hero award_winner series_start
+Recursion | Blake Crouch | 2019 | | memory_editing time_loops paradoxes conspiracy_thriller detective_mind short_chapters could_not_put_it_down mind_blown_twist standalone
+Dark Matter | Blake Crouch | 2016 | | parallel_worlds multiverse_hopping identity_and_copies parent_and_child short_chapters cliffhangers could_not_put_it_down standalone
+Upgrade | Blake Crouch | 2022 | | genetic_engineering engineered_genius conspiracy_thriller short_chapters could_not_put_it_down standalone
+Ready Player One | Ernest Cline | 2011 | | virtual_reality treasure_hunt competition_and_games corporate_evil retro_futures pure_fun debut modern_hit
+Wool | Hugh Howey | 2011 | Silo #1 | underground_civilizations hidden_history dystopian_state engineer_who_fixes_things slow_reveal_mystery rebellion could_not_put_it_down series_start
+Sea of Tranquility | Emily St. John Mandel | 2022 | | time_travel simulation_theory domed_cities dual_timelines literary standalone
+The Ministry for the Future | Kim Stanley Robinson | 2020 | | climate_fiction five_minutes_from_now mosaic_novel capitalism_unchained hope_against_odds made_me_think_for_days standalone
+Red Mars | Kim Stanley Robinson | 1992 | Mars Trilogy #1 | terraforming colonization_story hard_science revolution_and_after ensemble_cast technical_detail award_winner series_start
+Aurora | Kim Stanley Robinson | 2015 | | generation_ships ship_minds ai_point_of_view space_is_dangerous homecoming hard_science standalone
+Light from Uncommon Stars | Ryka Aoki | 2021 | | queer_leads alien_romance found_family_crew felt_like_a_warm_blanket made_me_cry standalone
+Some Desperate Glory | Emily Tesh | 2023 | | military zealots escape_from_the_cult parallel_worlds female_lead_who_hits_hard redemption_arc award_winner standalone
+The Space Between Worlds | Micaiah Johnson | 2020 | | multiverse_hopping class_war identity_and_copies female_lead_who_hits_hard debut standalone
+Ninefox Gambit | Yoon Ha Lee | 2016 | Machineries of Empire #1 | military mathematics_as_plot shared_minds siege empire_and_its_costs dense_and_demanding thrown_in_the_deep_end debut series_start
+The Fifth Season | N. K. Jemisin | 2015 | The Broken Earth #1 | slow_apocalypse dying_earth slavery_and_personhood second_person parent_and_child the_big_twist award_winner series_start
+Semiosis | Sue Burke | 2018 | | colony_worlds fungal_and_plant_minds alien_pov generational_saga communication debut
+Termination Shock | Neal Stephenson | 2021 | | climate_fiction five_minutes_from_now witty_dialogue doorstopper standalone
+Dead Silence | S. A. Barnes | 2022 | | derelict_ships horror_in_the_dark salvage_crews haunted_tech genuinely_scary standalone
+Sun Eater: Empire of Silence | Christopher Ruocchio | 2018 | Sun Eater #1 | space_opera empire_rising interstellar_war unreliable_narrator fall_from_grace training_and_mastery martial_arts_and_blades lyrical_prose doorstopper debut series_start
+The Mountain in the Sea | Ray Nayler | 2022 | | ocean_intelligence communication five_minutes_from_now ai_awakening scientist_hero debut standalone
+Translation State | Ann Leckie | 2023 | Imperial Radch | diplomacy truly_alien_aliens gender_and_body found_family_crew shared_universe
+Starter Villain | John Scalzi | 2023 | | villain_protagonist uplifted_animals funny laughed_out_loud pure_fun standalone
+The Kaiju Preservation Society | John Scalzi | 2022 | | parallel_worlds alien_ecosystems the_monster funny pure_fun felt_like_a_warm_blanket standalone
+Redshirts | John Scalzi | 2012 | | reality_bending funny laughed_out_loud space_navy_life award_winner standalone
+Bobiverse: We Are Legion (We Are Bob) | Dennis E. Taylor | 2016 | Bobiverse #1 | mind_transfer forked_selves ai_point_of_view scout_and_survey snarky_first_person funny pure_fun great_on_audio series_start
+Expeditionary Force: Columbus Day | Craig Alanson | 2016 | Expeditionary Force #1 | alien_invasion military ai_detective_or_partner human_and_ai_partnership snarky_first_person funny great_on_audio long_series series_start
+Caliban's War | James S. A. Corey | 2012 | The Expanse #2 | the_solar_system_settled engineered_plagues rescue_mission found_family_crew multiple_povs fleet_battles long_series
+Abaddon's Gate | James S. A. Corey | 2013 | The Expanse #3 | precursor_gates_and_tools ancient_aliens religion_in_space found_family_crew long_series
+Cibola Burn | James S. A. Corey | 2014 | The Expanse #4 | colony_worlds alien_ecosystems colonialism survival_against_the_planet long_series
+Golden Son | Pierce Brown | 2015 | Red Rising #2 | caste_worlds rebellion undercover badass_combat fleet_battles betrayal_from_inside cliffhangers heart_pounding long_series
+Morning Star | Pierce Brown | 2016 | Red Rising #3 | revolution_and_after rebellion fleet_battles big_finale triumphant long_series
+The Ministry of Time | Kaliane Bradley | 2024 | | time_travel enemies_to_lovers fish_out_of_water witty_dialogue funny debut standalone
+Service Model | Adrian Tchaikovsky | 2024 | | robot_companions ai_point_of_view ruined_earth_humans_gone deadpan_narrator funny standalone
+Cage of Souls | Adrian Tchaikovsky | 2019 | | dying_earth prison_break far_future_humanity unreliable_narrator standalone
+Iron Widow | Xiran Jay Zhao | 2021 | Iron Widow #1 | mecha revenge female_lead_who_hits_hard poly_relationships rage_at_the_villain series_start debut
+Scythe | Neal Shusterman | 2016 | Arc of a Scythe #1 | post_scarcity_society immortality_tech benevolent_ai mortality training_and_mastery series_start
+Skyward | Brandon Sanderson | 2018 | Skyward #1 | pilot_ace training_and_mastery found_family_crew ai_detective_or_partner underground_civilizations series_start
+The Hunger Games | Suzanne Collins | 2008 | The Hunger Games #1 | dystopian_state competition_and_games rebellion survival_against_the_planet female_lead_who_hits_hard could_not_put_it_down modern_hit series_start
+Severance | Ling Ma | 2018 | | plague_aftermath five_minutes_from_now funny literary debut standalone
+Infinity Gate | M. R. Carey | 2023 | Pandominion #1 | multiverse_hopping ai_awakening machine_civilizations multiple_povs series_start
+Rosewater | Tade Thompson | 2016 | Wormwood #1 | alien_invasion psychic_powers biopunk undercover award_winner series_start
+Exhalation | Ted Chiang | 2019 | | short_stories free_will consciousness_puzzles big_ideas_per_page made_me_think_for_days literary award_winner
+Stories of Your Life and Others | Ted Chiang | 2002 | | short_stories language_shapes_thought first_contact free_will made_me_think_for_days award_winner
+# Curated core, batch 4: space opera, military and franchise sci-fi
+On Basilisk Station | David Weber | 1993 | Honor Harrington #1 | military space_navy_life fleet_battles warships_and_dreadnoughts female_lead_who_hits_hard competent_operator duty_and_conscience technical_detail series_start long_series
+The Lost Fleet: Dauntless | Jack Campbell | 2006 | The Lost Fleet #1 | military fleet_battles space_navy_life old_veteran retired_and_dragged_back_in search_for_home orbital_mechanics_matter series_start
+Shards of Honor | Lois McMaster Bujold | 1986 | Vorkosigan Saga | space_opera enemies_to_lovers military female_lead_who_hits_hard diplomacy series_start
+The Warrior's Apprentice | Lois McMaster Bujold | 1986 | Vorkosigan Saga | mercenary_companies con_artists kid_genius witty_dialogue funny pure_fun rogue_with_a_heart long_series
+Barrayar | Lois McMaster Bujold | 1991 | Vorkosigan Saga | court_intrigue succession_crisis parenthood female_lead_who_hits_hard award_winner
+The Vor Game | Lois McMaster Bujold | 1990 | Vorkosigan Saga | military mercenary_companies witty_dialogue pure_fun award_winner
+Terms of Enlistment | Marko Kloos | 2013 | Frontlines #1 | military boot_camp_to_battlefield dystopian_state alien_invasion plain_and_fast series_start
+Trading in Danger | Elizabeth Moon | 2003 | Vatta's War #1 | space_opera beat_up_freighter female_lead_who_hits_hard trade_wars mercenary_companies coming_of_age series_start
+Valor's Choice | Tanya Huff | 2000 | Confederation #1 | military band_of_soldiers alien_cultures_in_depth female_lead_who_hits_hard series_start
+Halo: The Fall of Reach | Eric Nylund | 2001 | Halo #1 | military power_armor special_forces alien_invasion boot_camp_to_battlefield badass_combat shared_universe
+Horus Rising | Dan Abnett | 2006 | The Horus Heresy #1 | military space_opera empire_rising zealots badass_combat fall_from_grace shared_universe series_start
+Xenos | Dan Abnett | 2001 | Eisenhorn #1 | noir_detective religion_as_power zealots psychic_powers conspiracy_thriller shared_universe series_start
+First and Only | Dan Abnett | 1999 | Gaunt's Ghosts #1 | military band_of_soldiers war_is_hell badass_combat shared_universe series_start
+Heir to the Empire | Timothy Zahn | 1991 | Thrawn Trilogy #1 | space_opera charming_villain fleet_battles smugglers_routes shared_universe series_start classic
+Thrawn | Timothy Zahn | 2017 | Thrawn | villain_protagonist charming_villain rival_genius military shared_universe
+Ghost Fleet | P. W. Singer and August Cole | 2015 | | five_minutes_from_now drone_and_remote_war fleet_battles technical_detail standalone
+Ender's Shadow | Orson Scott Card | 1999 | Shadow #1 | kid_genius military training_and_mastery competition_and_games outcast_and_misfit series_start
+Hammer's Slammers | David Drake | 1979 | | military mercenary_companies war_is_hell short_stories classic
+The Forever Peace | Joe Haldeman | 1997 | | drone_and_remote_war shared_minds war_is_hell award_winner standalone
+Ancillary Mercy | Ann Leckie | 2015 | Imperial Radch #3 | ship_minds ai_point_of_view robot_rights found_family_crew complete_series
+Leviathan Falls | James S. A. Corey | 2021 | The Expanse #9 | unknowable_enemy ancient_aliens found_family_crew big_finale ending_that_landed bittersweet complete_series
+Persepolis Rising | James S. A. Corey | 2017 | The Expanse #7 | empire_rising tyrant guerrilla_resistance old_veteran found_family_crew long_series
+The Algebraist | Iain M. Banks | 2004 | | space_opera alien_cultures_in_depth gas_giant_cities treasure_hunt tyrant deep_time witty_dialogue standalone
+Saturn Run | John Sandford and Ctein | 2015 | | space_race_round_two race_to_the_prize hard_science standalone
+Hard Contact | Karen Traviss | 2004 | Republic Commando #1 | special_forces clones band_of_soldiers shared_universe
+Starship's Mage | Glynn Stewart | 2013 | Starship's Mage #1 | space_opera psychic_powers ftl_with_a_catch beat_up_freighter series_start
+Mutineer | Mike Shepherd | 2004 | Kris Longknife #1 | military space_navy_life female_lead_who_hits_hard rescue_mission series_start
+Fortune's Pawn | Rachel Bach | 2013 | Paradox #1 | power_armor mercenary_companies female_lead_who_hits_hard slow_burn_romance badass_combat series_start
+Grimspace | Ann Aguirre | 2008 | Sirantha Jax #1 | pilot_ace ftl_with_a_catch ragtag_crew snarky_first_person slow_burn_romance series_start
+The Outback Stars | Sandra McDonald | 2007 | | space_navy_life ancient_aliens forbidden_love standalone
+Revenger | Alastair Reynolds | 2016 | Revenger #1 | revenge salvage_crews treasure_hunt fallen_empire_relics siblings female_lead_who_hits_hard series_start
+Elysium Fire | Alastair Reynolds | 2018 | Prefect Dreyfus #2 | noir_detective orbital_habitats conspiracy_thriller shared_universe
+The Prefect | Alastair Reynolds | 2007 | Prefect Dreyfus #1 | noir_detective orbital_habitats rogue_ai conspiracy_thriller shared_universe series_start
+Velocity Weapon | Megan E. O'Keefe | 2019 | The Protectorate #1 | ship_minds human_and_ai_partnership the_big_twist interstellar_war series_start
+Light of the Jedi | Charles Soule | 2021 | The High Republic #1 | space_opera rescue_mission ensemble_cast shared_universe
+The Stars Are Legion | Kameron Hurley | 2017 | | living_ships world_ships body_horror amnesia_unraveling queer_leads female_lead_who_hits_hard weird_biology standalone
+Planetfall | Emma Newman | 2015 | Planetfall #1 | colony_worlds religion_in_space broken_and_healing hidden_history literary series_start
+After Atlas | Emma Newman | 2016 | Planetfall #2 | noir_detective corporate_dystopia murder_in_space five_minutes_from_now
+Space Unicorn Blues | T. J. Berry | 2018 | | space_opera beat_up_freighter funny standalone
+Nophek Gloss | Essa Hansen | 2020 | The Graven #1 | revenge living_ships multiverse_hopping found_family_crew series_start
+Battlefield Earth | L. Ron Hubbard | 1982 | | alien_invasion rebellion standalone
+Sundiver | David Brin | 1980 | Uplift #1 | uplift_chains uplifted_animals murder_in_space series_start
+Spin | Robert Charles Wilson | 2005 | | deep_time time_dilation the_long_view siblings literary award_winner standalone
+Accelerando | Charles Stross | 2005 | | the_singularity post_human_forms mind_transfer generational_saga big_ideas_per_page dense_and_demanding standalone
+Singularity Sky | Charles Stross | 2003 | | the_singularity ai_gods empire_falling witty_dialogue standalone
+Saturn's Children | Charles Stross | 2008 | | robot_companions ruined_earth_humans_gone android_and_ai_lovers steamy_and_explicit standalone
+# Curated core, batch 5: cyberpunk, hard SF, horror SF, weird and literary
+Count Zero | William Gibson | 1986 | Sprawl #2 | cyberpunk hacker ai_gods corporate_espionage multiple_povs noir_voice long_series
+Mona Lisa Overdrive | William Gibson | 1988 | Sprawl #3 | cyberpunk ai_gods virtual_reality multiple_povs complete_series
+The Peripheral | William Gibson | 2014 | Jackpot #1 | time_travel slow_apocalypse drone_and_remote_war five_minutes_from_now conspiracy_thriller dense_and_demanding series_start
+Pattern Recognition | William Gibson | 2003 | Blue Ant #1 | five_minutes_from_now conspiracy_thriller literary series_start
+Burning Chrome | William Gibson | 1986 | | cyberpunk short_stories hacker classic
+Hardwired | Walter Jon Williams | 1986 | | cyberpunk smuggling_and_piracy combat_implants balkanized_nations badass_combat classic standalone
+Islands in the Net | Bruce Sterling | 1988 | | five_minutes_from_now corporate_wars balkanized_nations award_winner standalone
+Schismatrix | Bruce Sterling | 1985 | | post_human_forms the_solar_system_settled body_mods genetic_engineering dense_and_demanding classic
+Trouble and Her Friends | Melissa Scott | 1994 | | cyberpunk hacker queer_leads standalone
+Synners | Pat Cadigan | 1991 | | cyberpunk neural_interfaces virtual_reality award_winner standalone
+Mindplayers | Pat Cadigan | 1987 | | mind_hacks shared_minds dream_tech standalone
+Neuropath | R. Scott Bakker | 2008 | | mind_hacks consciousness_puzzles free_will genuinely_scary standalone
+Infomocracy | Malka Older | 2016 | Centenal Cycle #1 | election_and_faction_games surveillance_society five_minutes_from_now series_start debut
+Cyberpunk 2077: No Coincidence | Rafał Kosik | 2023 | | cyberpunk heists megacity_sprawl shared_universe translated
+Diaspora | Greg Egan | 1997 | | post_human_forms digital_beings higher_dimensions mathematics_as_plot deep_time dense_and_demanding big_ideas_per_page standalone
+Permutation City | Greg Egan | 1994 | | simulation_theory digital_afterlife identity_and_copies consciousness_puzzles big_ideas_per_page award_winner standalone
+Quarantine | Greg Egan | 1992 | | quantum_weirdness mind_hacks noir_detective big_ideas_per_page standalone
+Echopraxia | Peter Watts | 2014 | Firefall #2 | post_human_forms hive_minds religion_in_space body_horror dense_and_demanding
+Starfish | Peter Watts | 1999 | Rifters #1 | underwater_habitats body_mods broken_and_healing creeping_dread debut series_start
+Tau Zero | Poul Anderson | 1970 | | time_dilation long_voyage hard_science entropy_and_endings awe_at_the_scale classic standalone
+Mission of Gravity | Hal Clement | 1953 | | hard_science alien_pov expedition_into_the_unknown classic
+Dragon's Egg | Robert L. Forward | 1980 | | hard_science alien_pov evolution_on_fast_forward truly_alien_aliens standalone
+The Gods Themselves | Isaac Asimov | 1972 | | parallel_worlds truly_alien_aliens energy_and_scarcity award_winner classic standalone
+Contact | Carl Sagan | 1985 | | signal_from_space first_contact scientist_hero faith_and_doubt standalone
+The Andromeda Strain | Michael Crichton | 1969 | | outbreak countdown scientist_hero technical_detail standalone classic
+Sphere | Michael Crichton | 1987 | | underwater_habitats derelict_ships psychic_powers trapped_with_the_enemy standalone
+Jurassic Park | Michael Crichton | 1990 | | de_extinction playing_god monster_on_the_loose survival_against_the_planet heart_pounding modern_hit standalone
+Prey | Michael Crichton | 2002 | | nanotech swarm_intelligence grey_goo standalone
+Sea of Rust | C. Robert Cargill | 2017 | | machine_wasteland robot_companions ai_point_of_view ruined_earth_humans_gone badass_combat standalone
+Robopocalypse | Daniel H. Wilson | 2011 | | rogue_ai killer_machines mosaic_novel oral_history standalone
+Sleeping Giants | Sylvain Neuvel | 2016 | Themis Files #1 | mecha ancient_aliens epistolary_and_found_documents conspiracy_thriller series_start debut
+World War Z | Max Brooks | 2006 | | outbreak oral_history war_is_hell standalone
+Devolution | Max Brooks | 2020 | | the_monster epistolary_and_found_documents survival_against_the_planet standalone
+The Girl with All the Gifts | M. R. Carey | 2014 | | plague_aftermath parasites_and_puppeteers kid_genius parent_and_child gut_punch standalone
+The Troop | Nick Cutter | 2014 | | parasites_and_puppeteers body_horror genuinely_scary standalone
+The Deep | Nick Cutter | 2015 | | underwater_habitats cosmic_horror genuinely_scary standalone
+Into the Drowning Deep | Mira Grant | 2017 | | ocean_intelligence the_monster expedition_into_the_unknown genuinely_scary standalone
+Feed | Mira Grant | 2010 | Newsflesh #1 | outbreak election_and_faction_games propaganda_and_truth gut_punch series_start
+Parasite | Mira Grant | 2013 | Parasitology #1 | parasites_and_puppeteers biotech_boom series_start
+The Luminous Dead | Caitlin Starling | 2019 | | survival_against_the_planet exosuits trapped_with_the_enemy creeping_dread queer_leads debut standalone
+Authority | Jeff VanderMeer | 2014 | Southern Reach #2 | conspiracy_thriller creeping_dread unknowable_enemy long_series
+Borne | Jeff VanderMeer | 2017 | | biopunk ruined_earth_humans_gone created_beings parent_and_child weird_biology standalone
+Roadside Picnic | Arkady and Boris Strugatsky | 1972 | | quarantine_zones ancient_aliens treasure_hunt translated classic standalone
+Hard to Be a God | Arkady and Boris Strugatsky | 1964 | | undercover dark_age_after_empire translated classic
+Piranesi | Susanna Clarke | 2020 | | puzzle_box amnesia_unraveling parallel_worlds dreamlike_and_surreal award_winner standalone
+The City & the City | China Miéville | 2009 | | noir_detective urban_weird unreliable_reality award_winner standalone
+Cloud Atlas | David Mitchell | 2004 | | nested_stories far_future_humanity clones dystopian_state literary standalone
+The Book of Strange New Things | Michel Faber | 2014 | | first_contact religion_in_space loneliness literary standalone
+Under the Skin | Michel Faber | 2000 | | alien_pov body_horror literary unsettled standalone
+Slaughterhouse-Five | Kurt Vonnegut | 1969 | | time_travel war_is_hell funny literary classic standalone
+Cat's Cradle | Kurt Vonnegut | 1963 | | religion_as_power slow_apocalypse funny classic standalone
+Lilith's Brood: Dawn | Octavia E. Butler | 1987 | Xenogenesis #1 | captive_and_captor alien_invasion genetic_engineering gender_and_body truly_alien_aliens series_start
+Kindred | Octavia E. Butler | 1979 | | time_travel slavery_and_personhood gut_punch classic standalone
+Parable of the Sower | Octavia E. Butler | 1993 | Earthseed #1 | slow_apocalypse climate_collapse religion_as_power epistolary_and_found_documents coming_of_age classic series_start
+Light | M. John Harrison | 2002 | Kefahuchi Tract #1 | the_big_twist dense_and_demanding award_winner series_start
+The Expert System's Brother | Adrian Tchaikovsky | 2018 | | lost_colonies hidden_history novella standalone
+Stand on Zanzibar | John Brunner | 1968 | | five_minutes_from_now mosaic_novel award_winner classic standalone
+The Sheep Look Up | John Brunner | 1972 | | climate_collapse mosaic_novel classic standalone
+# Curated core, batch 6: sci-fi romance, adult sub-genres, LitRPG and YA
+# Adult sub-genre tags (harem, reverse_harem, steamy_and_explicit, erotic_sci_fi) are only set where Claude is confident; the swarm and reader data should fill the rest.
+Ice Planet Barbarians | Ruby Dixon | 2015 | Ice Planet Barbarians #1 | alien_romance fated_mates ice_worlds stranded symbiotes steamy_and_explicit monster_romance felt_like_a_warm_blanket series_start long_series
+Barbarian Alien | Ruby Dixon | 2015 | Ice Planet Barbarians #2 | alien_romance fated_mates ice_worlds steamy_and_explicit long_series
+Barbarian Lover | Ruby Dixon | 2015 | Ice Planet Barbarians #3 | alien_romance fated_mates ice_worlds steamy_and_explicit long_series
+Assigned a Mate | Grace Goodwin | 2016 | Interstellar Brides #1 | alien_romance fated_mates poly_relationships steamy_and_explicit erotic_sci_fi series_start long_series
+Fury | Laurann Dohner | 2009 | New Species #1 | genetic_engineering created_beings steamy_and_explicit erotic_sci_fi monster_romance series_start
+Alien Gladiator | Anna Hackett | 2017 | Galaxy Gladiators #1 | alien_romance captive_and_captor competition_and_games steamy_and_explicit series_start
+At Star's End | Anna Hackett | 2014 | Phoenix Adventures #1 | treasure_hunt xenoarchaeology slow_burn_romance pure_fun series_start
+Games of Command | Linnea Sinclair | 2007 | | space_opera enemies_to_lovers cyborgs steamy_and_explicit standalone
+Gabriel's Ghost | Linnea Sinclair | 2005 | | prison_break enemies_to_lovers psychic_powers steamy_and_explicit standalone
+The Legend of Banzai Maguire | Susan Grant | 2004 | 2176 #1 | cryosleep rebellion slow_burn_romance pilot_ace series_start
+Warprize | Elizabeth Vaughan | 2005 | Chronicles of the Warlands #1 | captive_and_captor enemies_to_lovers series_start
+Archangel | Sharon Shinn | 1996 | Samaria #1 | colony_worlds religion_as_power ship_minds forbidden_love series_start
+Heart of Steel | Meljean Brook | 2011 | The Iron Seas #2 | retro_futures smuggling_and_piracy cyborgs enemies_to_lovers steamy_and_explicit
+The Iron Duke | Meljean Brook | 2010 | The Iron Seas #1 | retro_futures nanotech cyborgs steamy_and_explicit series_start
+Cinder | Marissa Meyer | 2012 | The Lunar Chronicles #1 | cyborgs plague_aftermath court_intrigue slow_burn_romance coming_of_age series_start debut
+These Broken Stars | Amie Kaufman and Meagan Spooner | 2013 | Starbound #1 | stranded shipwreck slow_burn_romance forced_proximity series_start
+Illuminae | Amie Kaufman and Jay Kristoff | 2015 | The Illuminae Files #1 | epistolary_and_found_documents rogue_ai outbreak fleet_battles could_not_put_it_down series_start
+Aurora Rising | Amie Kaufman and Jay Kristoff | 2019 | The Aurora Cycle #1 | ragtag_crew found_family_crew multiple_povs funny series_start
+Across the Universe | Beth Revis | 2011 | Across the Universe #1 | generation_ships cryosleep murder_in_space dystopian_state series_start
+Uglies | Scott Westerfeld | 2005 | Uglies #1 | dystopian_state body_mods utopia_with_a_crack coming_of_age series_start
+The Maze Runner | James Dashner | 2009 | The Maze Runner #1 | amnesia_unraveling puzzle_box survival_against_the_planet series_start
+Divergent | Veronica Roth | 2011 | Divergent #1 | caste_worlds dystopian_state training_and_mastery series_start
+Legend | Marie Lu | 2011 | Legend #1 | dystopian_state rebellion dual_timelines series_start
+The 5th Wave | Rick Yancey | 2013 | The 5th Wave #1 | alien_invasion survival_against_the_planet multiple_povs series_start
+Sword Art Online: Aincrad | Reki Kawahara | 2009 | Sword Art Online #1 | virtual_reality competition_and_games trapped_with_the_enemy translated series_start
+Awaken Online: Catharsis | Travis Bagwell | 2016 | Awaken Online #1 | virtual_reality competition_and_games villain_protagonist series_start
+Ready Player Two | Ernest Cline | 2020 | | virtual_reality treasure_hunt standalone
+Ascend Online | Luke Chmilenko | 2017 | Ascend Online #1 | virtual_reality competition_and_games found_family_crew series_start
+An Absolutely Remarkable Thing | Hank Green | 2018 | | first_contact five_minutes_from_now snarky_first_person debut
+Space Opera | Catherynne M. Valente | 2018 | | competition_and_games funny baroque_and_lush laughed_out_loud standalone
+The Hitchhiker's Guide to the Galaxy | Douglas Adams | 1979 | Hitchhiker's Guide #1 | funny laughed_out_loud road_trip_across_worlds fish_out_of_water pure_fun classic series_start
+Light Bringer | Pierce Brown | 2023 | Red Rising #6 | interstellar_war revolution_and_after fleet_battles long_series
+Iron Gold | Pierce Brown | 2018 | Red Rising #4 | revolution_and_after multiple_povs long_series
+Dark Age | Pierce Brown | 2019 | Red Rising #5 | war_is_hell gut_punch long_series
+The Murderbot Diaries: Artificial Condition | Martha Wells | 2018 | The Murderbot Diaries #2 | ai_point_of_view ship_minds snarky_first_person novella award_winner
+# Curated core, batch 7: more series starts, recent favorites and deep cuts
+Absolution Gap | Alastair Reynolds | 2003 | Revelation Space #3 | sleeping_threat cycles_of_extinction religion_in_space body_horror awe_at_the_scale long_series
+Redemption Ark | Alastair Reynolds | 2002 | Revelation Space #2 | sleeping_threat ship_minds fleet_battles race_to_the_prize long_series
+The Reality Dysfunction | Peter F. Hamilton | 1996 | Night's Dawn #1 | space_opera living_ships horror_in_the_dark multiple_povs doorstopper series_start
+Fallen Dragon | Peter F. Hamilton | 2001 | | military mercenary_companies corporate_evil time_travel the_big_twist standalone
+Salvation | Peter F. Hamilton | 2018 | Salvation Sequence #1 | jump_gates alien_invasion dual_timelines multiple_povs series_start
+The Dreaming Void | Peter F. Hamilton | 2007 | Void Trilogy #1 | dream_tech religion_as_power higher_dimensions shared_universe series_start
+Ilium | Dan Simmons | 2003 | Ilium #1 | mythic post_human_forms the_solar_system_settled multiple_povs dense_and_demanding series_start
+Hull Zero Three | Greg Bear | 2010 | | generation_ships amnesia_unraveling clones survival_against_the_planet standalone
+Blood Music | Greg Bear | 1985 | | nanotech evolution_on_fast_forward transcendence body_horror classic standalone
+Eon | Greg Bear | 1985 | Thistledown #1 | megastructures higher_dimensions artificial_worlds series_start
+Darwin's Radio | Greg Bear | 1999 | | evolution_and_what_comes_next outbreak scientist_hero award_winner standalone
+Vurt | Jeff Noon | 1993 | | dream_tech virtual_reality drugs_and_enhancements dreamlike_and_surreal invented_slang award_winner standalone
+Look to Windward | Iain M. Banks | 2000 | Culture #7 | ship_minds orbital_habitats grief war_and_its_damage literary shared_universe
+The Hydrogen Sonata | Iain M. Banks | 2012 | Culture #10 | transcendence ship_minds conspiracy_thriller shared_universe
+The Collapsing Empire | John Scalzi | 2017 | Interdependency #1 | empire_falling hyperspace_has_a_geography court_intrigue witty_dialogue funny series_start
+Lock In | John Scalzi | 2014 | | noir_detective neural_interfaces five_minutes_from_now buddy_duo standalone
+Fuzzy Nation | John Scalzi | 2011 | | first_contact courtroom_and_tribunal corporate_evil funny standalone
+The Android's Dream | John Scalzi | 2006 | | diplomacy funny pure_fun standalone
+Agency | William Gibson | 2020 | Jackpot #2 | ai_awakening time_travel five_minutes_from_now
+Walkaway | Cory Doctorow | 2017 | | post_scarcity_society anarchist_commune mind_transfer capitalism_unchained standalone
+Little Brother | Cory Doctorow | 2008 | | surveillance_society hacker five_minutes_from_now coming_of_age standalone
+Autonomous | Annalee Newitz | 2017 | | robot_rights biotech_boom smuggling_and_piracy queer_leads debut standalone
+The Future of Another Timeline | Annalee Newitz | 2019 | | time_travel alternate_history female_lead_who_hits_hard standalone
+The Light Brigade | Kameron Hurley | 2019 | | military time_travel war_is_hell corporate_dystopia twisty_plotting standalone
+Elder Race | Adrian Tchaikovsky | 2021 | | lost_colonies outsider_looking_at_humans scientist_hero novella standalone
+Doors of Eden | Adrian Tchaikovsky | 2020 | | parallel_worlds evolution_on_fast_forward conspiracy_thriller queer_leads standalone
+Walking to Aldebaran | Adrian Tchaikovsky | 2019 | | survival_against_the_planet horror_in_the_dark unreliable_narrator novella standalone
+Firebreak | Nicole Kornher-Stace | 2021 | | corporate_dystopia competition_and_games virtual_reality female_lead_who_hits_hard standalone
+Machine | Elizabeth Bear | 2020 | White Space #2 | medical_frontier space_stations ai_detective_or_partner shared_universe
+Ancestral Night | Elizabeth Bear | 2019 | White Space #1 | salvage_crews ancient_aliens ship_minds mind_hacks series_start
+Hammered | Elizabeth Bear | 2005 | Jenny Casey #1 | cyborgs old_veteran military series_start
+The Expert System's Champion | Adrian Tchaikovsky | 2021 | | lost_colonies hidden_history novella
+A Deepness in the Sky | Vernor Vinge | 1999 | Zones of Thought #2 | slower_than_light alien_pov sleepers_and_conditioning trade_wars tyrant award_winner
+Rainbows End | Vernor Vinge | 2006 | | augmented_reality_layers five_minutes_from_now old_veteran award_winner standalone
+Marooned in Realtime | Vernor Vinge | 1986 | | murder_in_space the_singularity deep_time standalone
+The Ship Who Sang | Anne McCaffrey | 1969 | | ship_minds body_mods human_and_ai_partnership short_stories classic
+Dragonflight | Anne McCaffrey | 1968 | Pern #1 | colony_worlds lost_tech telepathy series_start classic
+Foreigner | C. J. Cherryh | 1994 | Foreigner #1 | diplomat_and_talker alien_cultures_in_depth translator_and_go_between long_series series_start
+The Pride of Chanur | C. J. Cherryh | 1982 | Chanur #1 | alien_pov beat_up_freighter trade_wars series_start
+The Stars in My Pocket Like Grains of Sand | Samuel R. Delany | 1984 | | love_across_the_gap alien_cultures_in_depth dense_and_demanding
+Nova | Samuel R. Delany | 1968 | | space_opera revenge mythic classic standalone
+Grass | Sheri S. Tepper | 1989 | | colony_worlds alien_ecosystems religion_as_power plague_aftermath standalone
+The Gate to Women's Country | Sheri S. Tepper | 1988 | | post_apocalypse matriarchies_and_new_families standalone
+Woman on the Edge of Time | Marge Piercy | 1976 | | time_travel utopia_with_a_crack medical_frontier classic standalone
+He, She and It | Marge Piercy | 1991 | | androids_passing_as_human android_and_ai_lovers corporate_enclaves award_winner standalone
+Native Tongue | Suzette Haden Elgin | 1984 | | language_shapes_thought dystopian_state standalone
+Herland | Charlotte Perkins Gilman | 1915 | | matriarchies_and_new_families utopia_with_a_crack free_to_read_legally classic
+We | Yevgeny Zamyatin | 1924 | | dystopian_state surveillance_society translated classic standalone
+R.U.R. | Karel Čapek | 1920 | | robot_rights killer_machines translated classic free_to_read_legally
+The Invisible Man | H. G. Wells | 1897 | | playing_god scientist_hero classic free_to_read_legally
+Twenty Thousand Leagues Under the Seas | Jules Verne | 1870 | | underwater_habitats expedition_into_the_unknown classic free_to_read_legally translated
+Journey to the Center of the Earth | Jules Verne | 1864 | | expedition_into_the_unknown underground_civilizations classic free_to_read_legally translated
+A Princess of Mars | Edgar Rice Burroughs | 1912 | Barsoom #1 | the_solar_system_settled alien_romance badass_combat classic free_to_read_legally series_start
+# Curated core, batch 8: indie favorites, time travel, classics of the 50s to 80s, recent literary SF
+Legionnaire | Jason Anspach and Nick Cole | 2017 | Galaxy's Edge #1 | military band_of_soldiers badass_combat war_is_hell gunfights_and_duels cinematic series_start long_series
+Backyard Starship | J. N. Chaney and Terry Maggert | 2019 | Backyard Starship #1 | ordinary_person chosen_by_accident ship_minds human_and_ai_partnership snarky_first_person pure_fun series_start long_series
+Renegade Star | J. N. Chaney | 2017 | Renegade Star #1 | smugglers_routes beat_up_freighter rogue_with_a_heart space_opera pure_fun series_start
+Steel World | B. V. Larson | 2014 | Undying Mercenaries #1 | mercenary_companies military body_swapping clones badass_combat snarky_first_person series_start long_series
+Swarm | B. V. Larson | 2010 | Star Force #1 | alien_invasion military fleet_battles ordinary_person series_start long_series
+Aurora: CV-01 | Ryk Brown | 2011 | The Frontiers Saga #1 | space_navy_life military warships_and_dreadnoughts series_start long_series
+Odyssey One: Into the Black | Evan Currie | 2011 | Odyssey One #1 | space_navy_life first_contact fleet_battles series_start
+Warship | Joshua Dalzelle | 2015 | Black Fleet #1 | space_navy_life military fleet_battles series_start
+The Lost Starship | Vaughn Heppner | 2015 | Lost Starship #1 | space_opera ancient_aliens lost_tech fleet_battles series_start
+Scrapyard Ship | Mark Wayne McGinnis | 2013 | Scrapyard Ship #1 | ordinary_person lost_tech ship_minds alien_invasion pure_fun series_start
+Space Team | Barry J. Hutchison | 2017 | Space Team #1 | funny laughed_out_loud ragtag_crew pure_fun series_start
+Planetside | Michael Mammay | 2018 | Planetside #1 | military noir_detective conspiracy_thriller old_veteran the_big_twist debut series_start
+Daemon | Daniel Suarez | 2006 | Daemon #1 | rogue_ai conspiracy_thriller five_minutes_from_now hacker technical_detail debut series_start
+Delta-v | Daniel Suarez | 2019 | | asteroid_belt_frontier space_race_round_two hard_science competent_operator standalone
+Kill Decision | Daniel Suarez | 2012 | | drone_and_remote_war swarm_intelligence conspiracy_thriller standalone
+Chilling Effect | Valerie Valdes | 2019 | Chilling Effect #1 | beat_up_freighter found_family_crew snarky_first_person funny pure_fun series_start
+Exordia | Seth Dickinson | 2024 | | first_contact cosmic_horror alien_romance war_and_its_damage dense_and_demanding standalone
+The Terraformers | Annalee Newitz | 2023 | | terraforming uplifted_animals the_long_view robot_rights standalone
+Infinite Detail | Tim Maughan | 2019 | | five_minutes_from_now dual_timelines corporate_dystopia standalone
+The Body Scout | Lincoln Michel | 2021 | | noir_detective body_mods drugs_and_enhancements corporate_dystopia standalone
+Gnomon | Nick Harkaway | 2017 | | surveillance_society nested_stories mind_hacks dense_and_demanding standalone
+The Echo Wife | Sarah Gailey | 2021 | | clones murder_in_space playing_god standalone
+Seeker | Jack McDevitt | 2005 | Alex Benedict #3 | xenoarchaeology treasure_hunt detective_mind award_winner
+A Talent for War | Jack McDevitt | 1989 | Alex Benedict #1 | xenoarchaeology hidden_history detective_mind series_start
+Inhibitor Phase | Alastair Reynolds | 2021 | Revelation Space | sleeping_threat survival_against_the_planet shared_universe
+Eversion | Alastair Reynolds | 2022 | | time_loops expedition_into_the_unknown mind_blown_twist standalone
+Great North Road | Peter F. Hamilton | 2012 | | noir_detective murder_in_space clones colony_worlds doorstopper standalone
+Judas Unchained | Peter F. Hamilton | 2005 | Commonwealth Saga #2 | space_opera alien_invasion big_finale complete_series
+Beggars in Spain | Nancy Kress | 1993 | Sleepless #1 | genetic_engineering engineered_genius class_war award_winner series_start
+Jumper | Steven Gould | 1992 | Jumper #1 | teleportation coming_of_age escape_and_pursuit series_start
+The Demolished Man | Alfred Bester | 1953 | | telepathy murder_in_space noir_detective award_winner classic standalone
+More Than Human | Theodore Sturgeon | 1953 | | shared_minds psychic_powers outcast_and_misfit classic standalone
+City | Clifford D. Simak | 1952 | | uplifted_animals robot_companions far_future_humanity mosaic_novel classic
+Way Station | Clifford D. Simak | 1963 | | alien_cultures_in_depth loneliness award_winner classic standalone
+Earth Abides | George R. Stewart | 1949 | | plague_aftermath rebuilding_civilization the_long_view classic standalone
+Alas, Babylon | Pat Frank | 1959 | | nuclear_wasteland survival_against_the_planet classic standalone
+On the Beach | Nevil Shute | 1957 | | nuclear_wasteland mortality haunting classic standalone
+The Day of the Triffids | John Wyndham | 1951 | | monster_on_the_loose ecology_fights_back post_apocalypse classic standalone
+The Midwich Cuckoos | John Wyndham | 1957 | | alien_invasion something_is_wrong_with_the_town psychic_powers classic standalone
+I Am Legend | Richard Matheson | 1954 | | last_humans outbreak loneliness the_big_twist classic standalone
+Logan's Run | William F. Nolan and George Clayton Johnson | 1967 | | dystopian_state escape_and_pursuit domed_cities classic standalone
+Planet of the Apes | Pierre Boulle | 1963 | | uplifted_animals the_big_twist translated classic standalone
+A Wrinkle in Time | Madeleine L'Engle | 1962 | Time Quintet #1 | higher_dimensions parent_and_child coming_of_age award_winner classic series_start
+The Giver | Lois Lowry | 1993 | The Giver Quartet #1 | utopia_with_a_crack memory_and_truth coming_of_age award_winner series_start
+Timeline | Michael Crichton | 1999 | | time_travel rescue_mission heart_pounding standalone
+Congo | Michael Crichton | 1980 | | expedition_into_the_unknown uplifted_animals standalone
+11/22/63 | Stephen King | 2011 | | time_travel paradoxes love doorstopper award_winner standalone
+Replay | Ken Grimwood | 1986 | | time_loops love mortality award_winner standalone
+The Time Traveler's Wife | Audrey Niffenegger | 2003 | | time_travel love_across_the_gap dual_timelines made_me_cry debut standalone
+The First Fifteen Lives of Harry August | Claire North | 2014 | | time_loops rival_genius the_long_view standalone
+Touch | Claire North | 2015 | | body_swapping escape_and_pursuit standalone
+Version Control | Dexter Palmer | 2016 | | time_travel parallel_worlds grief literary standalone
+All Our Wrong Todays | Elan Mastai | 2017 | | time_travel retro_futures parallel_worlds funny debut standalone
+How to Live Safely in a Science Fictional Universe | Charles Yu | 2010 | | time_loops parent_and_child funny literary debut standalone
+Riddley Walker | Russell Hoban | 1980 | | post_apocalypse invented_slang dense_and_demanding classic standalone
+The Female Man | Joanna Russ | 1975 | | parallel_worlds gender_and_body classic standalone
+Engine Summer | John Crowley | 1979 | | far_future_humanity lyrical_prose classic standalone
+Tomorrow's Kin | Nancy Kress | 2017 | Yesterday's Kin #1 | first_contact outbreak scientist_hero series_start
+# Curated core, batch 9: climate, solarpunk, biopunk, near future and short fiction
+New York 2140 | Kim Stanley Robinson | 2017 | | climate_fiction underwater_habitats capitalism_unchained ensemble_cast standalone
+2312 | Kim Stanley Robinson | 2012 | | the_solar_system_settled post_scarcity_society gender_and_body award_winner standalone
+The Water Knife | Paolo Bacigalupi | 2015 | | climate_collapse noir_detective corporate_wars standalone
+Ship Breaker | Paolo Bacigalupi | 2010 | Ship Breaker #1 | climate_collapse salvage_crews coming_of_age award_winner series_start
+Ecotopia | Ernest Callenbach | 1975 | | utopia_with_a_crack ecology_and_stewardship secession classic standalone
+Blackfish City | Sam J. Miller | 2018 | | underwater_habitats floating_and_flying_cities queer_leads plague_aftermath award_winner standalone
+The Old Drift | Namwali Serpell | 2019 | | generational_saga five_minutes_from_now literary standalone
+Ribofunk | Paul Di Filippo | 1996 | | biopunk genetic_engineering short_stories funny
+Wetware | Rudy Rucker | 1988 | Ware #2 | robot_rights drugs_and_enhancements dreamlike_and_surreal award_winner
+Software | Rudy Rucker | 1982 | Ware #1 | mind_transfer robot_rights award_winner series_start
+The Quantum Magician | Derek Künsken | 2018 | Quantum Evolution #1 | heists con_artists genetic_engineering wormhole_networks series_start
+Axiom's End | Lindsay Ellis | 2020 | Noumena #1 | first_contact translator_and_go_between alternate_history snarky_first_person series_start debut
+The Long Earth | Terry Pratchett and Stephen Baxter | 2012 | The Long Earth #1 | parallel_worlds expedition_into_the_unknown series_start
+Proxima | Stephen Baxter | 2013 | Proxima #1 | colony_worlds tidally_locked_worlds ai_awakening series_start
+The Time Ships | Stephen Baxter | 1995 | | time_travel paradoxes deep_time award_winner standalone
+Manifold: Time | Stephen Baxter | 1999 | Manifold #1 | the_fermi_question deep_time big_ideas_per_page series_start
+Spin State | Chris Moriarty | 2003 | Spin #1 | noir_detective clones ai_detective_or_partner queer_leads series_start
+Mirror Dance | Lois McMaster Bujold | 1994 | Vorkosigan Saga | clones identity_and_copies rescue_mission award_winner
+Memory | Lois McMaster Bujold | 1996 | Vorkosigan Saga | mind_hacks memory_and_truth fall_from_grace whodunit_with_a_twist_of_tech
+Ethan of Athos | Lois McMaster Bujold | 1986 | Vorkosigan Saga | queer_leads matriarchies_and_new_families spy_games
+Xenocide | Orson Scott Card | 1991 | Ender's Saga #3 | alien_cultures_in_depth engineered_plagues religion_in_space long_series
+Tuf Voyaging | George R. R. Martin | 1986 | | biopunk ecology_and_stewardship beat_up_freighter short_stories funny
+Nightflyers | George R. R. Martin | 1980 | | haunted_tech derelict_ships horror_in_the_dark novella
+Sandkings | George R. R. Martin | 1981 | | insect_and_swarm_aliens horror_in_the_dark short_stories award_winner
+Bloodchild and Other Stories | Octavia E. Butler | 1995 | | short_stories symbiotes award_winner
+The Lifecycle of Software Objects | Ted Chiang | 2010 | | digital_beings robot_rights parenthood novella award_winner
+Binti | Nnedi Okorafor | 2015 | Binti #1 | alien_cultures_in_depth diplomat_and_talker coming_of_age novella award_winner series_start
+Lagoon | Nnedi Okorafor | 2014 | | first_contact ocean_intelligence multiple_povs standalone
+Pump Six and Other Stories | Paolo Bacigalupi | 2008 | | short_stories climate_collapse biotech_boom
+The Paper Menagerie and Other Stories | Ken Liu | 2016 | | short_stories literary made_me_cry award_winner
+Invisible Planets | Ken Liu | 2016 | | short_stories translated
+The Wandering Earth | Liu Cixin | 2000 | | stellar_engineering slow_apocalypse awe_at_the_scale short_stories translated
+Ball Lightning | Liu Cixin | 2004 | | quantum_weirdness scientist_hero arms_race translated standalone
+Vagabonds | Hao Jingfang | 2016 | | the_solar_system_settled colonialism translated literary standalone

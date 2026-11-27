@@ -1,0 +1,362 @@
+{
+ "_note": "Open Library subject text (lowercased, substring match) -> gene slugs. Used only for catalog books at low confidence (state hidden) until a person or tagger confirms.",
+ "space opera": [
+  "space_opera"
+ ],
+ "space warfare": [
+  "military",
+  "fleet_battles",
+  "interstellar_war"
+ ],
+ "interstellar travel": [
+  "long_voyage"
+ ],
+ "interplanetary voyages": [
+  "long_voyage"
+ ],
+ "space ships": [
+  "ship_as_home"
+ ],
+ "spaceships": [
+  "ship_as_home"
+ ],
+ "space colonies": [
+  "colony_worlds",
+  "colonization_story"
+ ],
+ "life on other planets": [
+  "alien_cultures_in_depth"
+ ],
+ "extraterrestrial beings": [
+  "truly_alien_aliens"
+ ],
+ "human-alien encounters": [
+  "first_contact"
+ ],
+ "alien invasion": [
+  "alien_invasion"
+ ],
+ "invasion": [
+  "alien_invasion"
+ ],
+ "imaginary wars and battles": [
+  "military",
+  "war_is_hell"
+ ],
+ "military": [
+  "military"
+ ],
+ "soldiers": [
+  "military",
+  "band_of_soldiers"
+ ],
+ "cyberpunk": [
+  "cyberpunk"
+ ],
+ "dystopia": [
+  "dystopian_state"
+ ],
+ "totalitarianism": [
+  "dystopian_state",
+  "freedom_and_control"
+ ],
+ "utopia": [
+  "utopia_with_a_crack"
+ ],
+ "time travel": [
+  "time_travel"
+ ],
+ "time-travel": [
+  "time_travel"
+ ],
+ "alternative histories": [
+  "alternate_history"
+ ],
+ "alternate history": [
+  "alternate_history"
+ ],
+ "robots": [
+  "robot_companions"
+ ],
+ "androids": [
+  "androids_passing_as_human"
+ ],
+ "cyborgs": [
+  "cyborgs"
+ ],
+ "artificial intelligence": [
+  "ai_awakening"
+ ],
+ "computers": [
+  "hacker"
+ ],
+ "virtual reality": [
+  "virtual_reality"
+ ],
+ "genetic engineering": [
+  "genetic_engineering"
+ ],
+ "cloning": [
+  "clones"
+ ],
+ "clones": [
+  "clones"
+ ],
+ "nanotechnology": [
+  "nanotech"
+ ],
+ "telepathy": [
+  "telepathy"
+ ],
+ "psychic ability": [
+  "psychic_powers"
+ ],
+ "post-apocalyptic": [
+  "post_apocalypse"
+ ],
+ "end of the world": [
+  "post_apocalypse"
+ ],
+ "regression (civilization)": [
+  "post_apocalypse",
+  "rebuilding_civilization"
+ ],
+ "nuclear warfare": [
+  "nuclear_wasteland"
+ ],
+ "epidemics": [
+  "outbreak"
+ ],
+ "pandemics": [
+  "outbreak"
+ ],
+ "virus diseases": [
+  "outbreak"
+ ],
+ "climatic changes": [
+  "climate_fiction"
+ ],
+ "climate change": [
+  "climate_fiction"
+ ],
+ "mars (planet)": [
+  "the_solar_system_settled"
+ ],
+ "moon": [
+  "the_solar_system_settled"
+ ],
+ "space stations": [
+  "space_stations"
+ ],
+ "space flight": [
+  "long_voyage"
+ ],
+ "astronauts": [
+  "competent_operator"
+ ],
+ "terraforming": [
+  "terraforming"
+ ],
+ "galactic empires": [
+  "space_opera",
+  "empire_and_its_costs"
+ ],
+ "imaginary places": [
+  "alien_cultures_in_depth"
+ ],
+ "parallel universes": [
+  "parallel_worlds"
+ ],
+ "multiverse": [
+  "multiverse_hopping"
+ ],
+ "immortality": [
+  "immortality_tech"
+ ],
+ "cryonics": [
+  "cryosleep"
+ ],
+ "humorous": [
+  "funny"
+ ],
+ "humor": [
+  "funny"
+ ],
+ "satire": [
+  "funny"
+ ],
+ "horror": [
+  "horror_in_the_dark"
+ ],
+ "detective": [
+  "noir_detective"
+ ],
+ "mystery": [
+  "slow_reveal_mystery"
+ ],
+ "murder": [
+  "murder_in_space"
+ ],
+ "thriller": [
+  "conspiracy_thriller"
+ ],
+ "espionage": [
+  "spy_games"
+ ],
+ "spies": [
+  "spy_games"
+ ],
+ "pirates": [
+  "smuggling_and_piracy"
+ ],
+ "heist": [
+  "heists"
+ ],
+ "revenge": [
+  "revenge"
+ ],
+ "romance": [
+  "love"
+ ],
+ "love stories": [
+  "love"
+ ],
+ "science fiction romance": [
+  "alien_romance"
+ ],
+ "alien romance": [
+  "alien_romance"
+ ],
+ "paranormal romance": [
+  "fated_mates"
+ ],
+ "erotica": [
+  "erotic_sci_fi",
+  "steamy_and_explicit"
+ ],
+ "erotic": [
+  "erotic_sci_fi",
+  "steamy_and_explicit"
+ ],
+ "harem": [
+  "harem"
+ ],
+ "reverse harem": [
+  "reverse_harem"
+ ],
+ "why choose": [
+  "reverse_harem"
+ ],
+ "menage": [
+  "poly_relationships"
+ ],
+ "lgbt": [
+  "queer_leads"
+ ],
+ "gay": [
+  "queer_leads"
+ ],
+ "lesbian": [
+  "queer_leads"
+ ],
+ "litrpg": [
+  "competition_and_games",
+  "virtual_reality"
+ ],
+ "gamelit": [
+  "competition_and_games"
+ ],
+ "video games": [
+  "competition_and_games"
+ ],
+ "games": [
+  "competition_and_games"
+ ],
+ "coming of age": [
+  "coming_of_age"
+ ],
+ "young adult": [
+  "coming_of_age"
+ ],
+ "short stories": [
+  "short_stories"
+ ],
+ "anthologies": [
+  "short_stories"
+ ],
+ "translations": [
+  "translated"
+ ],
+ "hugo award": [
+  "award_winner"
+ ],
+ "nebula award": [
+  "award_winner"
+ ],
+ "award": [
+  "award_winner"
+ ],
+ "classic": [
+  "classic"
+ ],
+ "religion": [
+  "religion_in_space"
+ ],
+ "monsters": [
+  "the_monster"
+ ],
+ "dinosaurs": [
+  "de_extinction"
+ ],
+ "mechs": [
+  "mecha"
+ ],
+ "mecha": [
+  "mecha"
+ ],
+ "ocean": [
+  "ocean_worlds"
+ ],
+ "submarines": [
+  "underwater_habitats"
+ ],
+ "first contact": [
+  "first_contact"
+ ],
+ "archaeology": [
+  "xenoarchaeology"
+ ],
+ "survival": [
+  "survival_against_the_planet"
+ ],
+ "families": [
+  "parent_and_child"
+ ],
+ "friendship": [
+  "friendship"
+ ],
+ "politics": [
+  "election_and_faction_games"
+ ],
+ "revolutions": [
+  "revolution_and_after"
+ ],
+ "rebellion": [
+  "rebellion"
+ ],
+ "slavery": [
+  "slavery_and_personhood"
+ ],
+ "colonization": [
+  "colonialism"
+ ],
+ "corporations": [
+  "corporate_evil"
+ ],
+ "drugs": [
+  "drugs_and_enhancements"
+ ],
+ "insects": [
+  "insect_and_swarm_aliens"
+ ]
+}

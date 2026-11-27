@@ -1,0 +1,7886 @@
+{
+ "batch": "claude_vibes_a",
+ "rows": [
+  {
+   "ref": "nineteen-eighty-four",
+   "title": "Nineteen Eighty-Four",
+   "author": "George Orwell",
+   "gene": "vibe_paranoid",
+   "confidence": 0.9,
+   "why": "constant surveillance, trust no one"
+  },
+  {
+   "ref": "nineteen-eighty-four",
+   "title": "Nineteen Eighty-Four",
+   "author": "George Orwell",
+   "gene": "vibe_bleak",
+   "confidence": 0.9,
+   "why": "grey, merciless regime"
+  },
+  {
+   "ref": "nineteen-eighty-four",
+   "title": "Nineteen Eighty-Four",
+   "author": "George Orwell",
+   "gene": "vibe_claustrophobic",
+   "confidence": 0.7,
+   "why": "no private space anywhere"
+  },
+  {
+   "ref": "the-hunger-games",
+   "title": "The Hunger Games",
+   "author": "Suzanne Collins",
+   "gene": "vibe_adrenaline",
+   "confidence": 0.85,
+   "why": "arena fight for survival"
+  },
+  {
+   "ref": "the-hunger-games",
+   "title": "The Hunger Games",
+   "author": "Suzanne Collins",
+   "gene": "vibe_gritty",
+   "confidence": 0.7,
+   "why": "hunger and blood in the arena"
+  },
+  {
+   "ref": "dune",
+   "title": "Dune",
+   "author": "Frank Herbert",
+   "gene": "vibe_epic",
+   "confidence": 0.9,
+   "why": "empires, houses, prophecy"
+  },
+  {
+   "ref": "dune",
+   "title": "Dune",
+   "author": "Frank Herbert",
+   "gene": "vibe_desolate",
+   "confidence": 0.75,
+   "why": "vast desert of Arrakis"
+  },
+  {
+   "ref": "dune",
+   "title": "Dune",
+   "author": "Frank Herbert",
+   "gene": "vibe_cerebral",
+   "confidence": 0.6,
+   "why": "ecology and politics of power"
+  },
+  {
+   "ref": "fahrenheit-451",
+   "title": "Fahrenheit 451",
+   "author": "Ray Bradbury",
+   "gene": "vibe_paranoid",
+   "confidence": 0.7,
+   "why": "informers and firemen"
+  },
+  {
+   "ref": "fahrenheit-451",
+   "title": "Fahrenheit 451",
+   "author": "Ray Bradbury",
+   "gene": "vibe_bleak",
+   "confidence": 0.7,
+   "why": "hollowed-out society"
+  },
+  {
+   "ref": "fahrenheit-451",
+   "title": "Fahrenheit 451",
+   "author": "Ray Bradbury",
+   "gene": "vibe_dreamlike",
+   "confidence": 0.6,
+   "why": "Bradbury's lyrical haze"
+  },
+  {
+   "ref": "brave-new-world",
+   "title": "Brave New World",
+   "author": "Aldous Huxley",
+   "gene": "vibe_cold_clinical",
+   "confidence": 0.85,
+   "why": "hatcheries and conditioning"
+  },
+  {
+   "ref": "brave-new-world",
+   "title": "Brave New World",
+   "author": "Aldous Huxley",
+   "gene": "vibe_cerebral",
+   "confidence": 0.75,
+   "why": "satire of ideas"
+  },
+  {
+   "ref": "brave-new-world",
+   "title": "Brave New World",
+   "author": "Aldous Huxley",
+   "gene": "vibe_eerie",
+   "confidence": 0.6,
+   "why": "cheerful hollowness"
+  },
+  {
+   "ref": "the-handmaids-tale",
+   "title": "The Handmaid's Tale",
+   "author": "Margaret Atwood",
+   "gene": "vibe_paranoid",
+   "confidence": 0.85,
+   "why": "Eyes everywhere"
+  },
+  {
+   "ref": "the-handmaids-tale",
+   "title": "The Handmaid's Tale",
+   "author": "Margaret Atwood",
+   "gene": "vibe_claustrophobic",
+   "confidence": 0.8,
+   "why": "confined household life"
+  },
+  {
+   "ref": "the-handmaids-tale",
+   "title": "The Handmaid's Tale",
+   "author": "Margaret Atwood",
+   "gene": "vibe_bleak",
+   "confidence": 0.75,
+   "why": "joyless theocracy"
+  },
+  {
+   "ref": "the-giver",
+   "title": "The Giver",
+   "author": "Lois Lowry",
+   "gene": "vibe_eerie",
+   "confidence": 0.75,
+   "why": "too-perfect sameness"
+  },
+  {
+   "ref": "the-giver",
+   "title": "The Giver",
+   "author": "Lois Lowry",
+   "gene": "vibe_melancholy",
+   "confidence": 0.7,
+   "why": "loss of memory and colour"
+  },
+  {
+   "ref": "the-giver",
+   "title": "The Giver",
+   "author": "Lois Lowry",
+   "gene": "vibe_hopeful",
+   "confidence": 0.6,
+   "why": "ending glimmer"
+  },
+  {
+   "ref": "the-hitchhikers-guide-to-the-galaxy",
+   "title": "The Hitchhiker's Guide to the Galaxy",
+   "author": "Douglas Adams",
+   "gene": "vibe_whimsical",
+   "confidence": 0.9,
+   "why": "absurd cosmic comedy"
+  },
+  {
+   "ref": "the-hitchhikers-guide-to-the-galaxy",
+   "title": "The Hitchhiker's Guide to the Galaxy",
+   "author": "Douglas Adams",
+   "gene": "vibe_swashbuckling",
+   "confidence": 0.6,
+   "why": "madcap escapes"
+  },
+  {
+   "ref": "the-maze-runner",
+   "title": "The Maze Runner",
+   "author": "James Dashner",
+   "gene": "vibe_adrenaline",
+   "confidence": 0.85,
+   "why": "running from Grievers"
+  },
+  {
+   "ref": "the-maze-runner",
+   "title": "The Maze Runner",
+   "author": "James Dashner",
+   "gene": "vibe_mysterious",
+   "confidence": 0.8,
+   "why": "who built the maze"
+  },
+  {
+   "ref": "the-maze-runner",
+   "title": "The Maze Runner",
+   "author": "James Dashner",
+   "gene": "vibe_claustrophobic",
+   "confidence": 0.6,
+   "why": "walled Glade"
+  },
+  {
+   "ref": "divergent",
+   "title": "Divergent",
+   "author": "Veronica Roth",
+   "gene": "vibe_adrenaline",
+   "confidence": 0.75,
+   "why": "trials and fights"
+  },
+  {
+   "ref": "divergent",
+   "title": "Divergent",
+   "author": "Veronica Roth",
+   "gene": "vibe_paranoid",
+   "confidence": 0.6,
+   "why": "hiding being Divergent"
+  },
+  {
+   "ref": "the-invisible-man",
+   "title": "The Invisible Man",
+   "author": "H. G. Wells",
+   "gene": "vibe_eerie",
+   "confidence": 0.75,
+   "why": "unseen menace"
+  },
+  {
+   "ref": "the-invisible-man",
+   "title": "The Invisible Man",
+   "author": "H. G. Wells",
+   "gene": "vibe_bleak",
+   "confidence": 0.6,
+   "why": "descent into madness"
+  },
+  {
+   "ref": "the-time-machine",
+   "title": "The Time Machine",
+   "author": "H. G. Wells",
+   "gene": "vibe_desolate",
+   "confidence": 0.8,
+   "why": "dying far-future earth"
+  },
+  {
+   "ref": "the-time-machine",
+   "title": "The Time Machine",
+   "author": "H. G. Wells",
+   "gene": "vibe_eerie",
+   "confidence": 0.75,
+   "why": "Morlocks in the dark"
+  },
+  {
+   "ref": "the-time-machine",
+   "title": "The Time Machine",
+   "author": "H. G. Wells",
+   "gene": "vibe_melancholy",
+   "confidence": 0.6,
+   "why": "end of humanity"
+  },
+  {
+   "ref": "foundation",
+   "title": "Foundation",
+   "author": "Isaac Asimov",
+   "gene": "vibe_cerebral",
+   "confidence": 0.9,
+   "why": "ideas and politics first"
+  },
+  {
+   "ref": "foundation",
+   "title": "Foundation",
+   "author": "Isaac Asimov",
+   "gene": "vibe_epic",
+   "confidence": 0.8,
+   "why": "galactic empire over centuries"
+  },
+  {
+   "ref": "i-robot",
+   "title": "I, Robot",
+   "author": "Isaac Asimov",
+   "gene": "vibe_cerebral",
+   "confidence": 0.85,
+   "why": "logic puzzles about robots"
+  },
+  {
+   "ref": "i-robot",
+   "title": "I, Robot",
+   "author": "Isaac Asimov",
+   "gene": "vibe_mysterious",
+   "confidence": 0.65,
+   "why": "robot malfunctions to solve"
+  },
+  {
+   "ref": "enders-game",
+   "title": "Ender's Game",
+   "author": "Orson Scott Card",
+   "gene": "vibe_cerebral",
+   "confidence": 0.7,
+   "why": "tactics and strategy"
+  },
+  {
+   "ref": "enders-game",
+   "title": "Ender's Game",
+   "author": "Orson Scott Card",
+   "gene": "vibe_cold_clinical",
+   "confidence": 0.65,
+   "why": "sterile Battle School"
+  },
+  {
+   "ref": "enders-game",
+   "title": "Ender's Game",
+   "author": "Orson Scott Card",
+   "gene": "vibe_bleak",
+   "confidence": 0.6,
+   "why": "manipulated child soldier"
+  },
+  {
+   "ref": "jurassic-park",
+   "title": "Jurassic Park",
+   "author": "Michael Crichton",
+   "gene": "vibe_adrenaline",
+   "confidence": 0.9,
+   "why": "dinosaurs loose"
+  },
+  {
+   "ref": "jurassic-park",
+   "title": "Jurassic Park",
+   "author": "Michael Crichton",
+   "gene": "vibe_cerebral",
+   "confidence": 0.6,
+   "why": "chaos theory lectures"
+  },
+  {
+   "ref": "ready-player-one",
+   "title": "Ready Player One",
+   "author": "Ernest Cline",
+   "gene": "vibe_retro_pulp",
+   "confidence": 0.75,
+   "why": "80s nostalgia quest"
+  },
+  {
+   "ref": "ready-player-one",
+   "title": "Ready Player One",
+   "author": "Ernest Cline",
+   "gene": "vibe_adrenaline",
+   "confidence": 0.7,
+   "why": "race for the egg"
+  },
+  {
+   "ref": "ready-player-one",
+   "title": "Ready Player One",
+   "author": "Ernest Cline",
+   "gene": "vibe_neon_noir",
+   "confidence": 0.6,
+   "why": "dystopian VR stacks"
+  },
+  {
+   "ref": "a-wrinkle-in-time",
+   "title": "A Wrinkle in Time",
+   "author": "Madeleine L'Engle",
+   "gene": "vibe_whimsical",
+   "confidence": 0.75,
+   "why": "Mrs Whatsit and friends"
+  },
+  {
+   "ref": "a-wrinkle-in-time",
+   "title": "A Wrinkle in Time",
+   "author": "Madeleine L'Engle",
+   "gene": "vibe_dreamlike",
+   "confidence": 0.7,
+   "why": "tessering through odd worlds"
+  },
+  {
+   "ref": "a-wrinkle-in-time",
+   "title": "A Wrinkle in Time",
+   "author": "Madeleine L'Engle",
+   "gene": "vibe_hopeful",
+   "confidence": 0.7,
+   "why": "love conquers IT"
+  },
+  {
+   "ref": "slaughterhouse-five",
+   "title": "Slaughterhouse-Five",
+   "author": "Kurt Vonnegut",
+   "gene": "vibe_dreamlike",
+   "confidence": 0.8,
+   "why": "unstuck in time"
+  },
+  {
+   "ref": "slaughterhouse-five",
+   "title": "Slaughterhouse-Five",
+   "author": "Kurt Vonnegut",
+   "gene": "vibe_melancholy",
+   "confidence": 0.8,
+   "why": "so it goes"
+  },
+  {
+   "ref": "slaughterhouse-five",
+   "title": "Slaughterhouse-Five",
+   "author": "Kurt Vonnegut",
+   "gene": "vibe_bleak",
+   "confidence": 0.6,
+   "why": "Dresden firebombing"
+  },
+  {
+   "ref": "project-hail-mary",
+   "title": "Project Hail Mary",
+   "author": "Andy Weir",
+   "gene": "vibe_hopeful",
+   "confidence": 0.85,
+   "why": "science and friendship save the day"
+  },
+  {
+   "ref": "project-hail-mary",
+   "title": "Project Hail Mary",
+   "author": "Andy Weir",
+   "gene": "vibe_desolate",
+   "confidence": 0.7,
+   "why": "alone light-years from home"
+  },
+  {
+   "ref": "project-hail-mary",
+   "title": "Project Hail Mary",
+   "author": "Andy Weir",
+   "gene": "vibe_tender",
+   "confidence": 0.65,
+   "why": "Rocky friendship"
+  },
+  {
+   "ref": "the-war-of-the-worlds",
+   "title": "The War of the Worlds",
+   "author": "H. G. Wells",
+   "gene": "vibe_bleak",
+   "confidence": 0.7,
+   "why": "helpless humanity"
+  },
+  {
+   "ref": "the-war-of-the-worlds",
+   "title": "The War of the Worlds",
+   "author": "H. G. Wells",
+   "gene": "vibe_eerie",
+   "confidence": 0.65,
+   "why": "tripods and red weed"
+  },
+  {
+   "ref": "the-war-of-the-worlds",
+   "title": "The War of the Worlds",
+   "author": "H. G. Wells",
+   "gene": "vibe_adrenaline",
+   "confidence": 0.6,
+   "why": "fleeing the Martians"
+  },
+  {
+   "ref": "the-martian",
+   "title": "The Martian",
+   "author": "Andy Weir",
+   "gene": "vibe_hopeful",
+   "confidence": 0.8,
+   "why": "problem-solving optimism"
+  },
+  {
+   "ref": "the-martian",
+   "title": "The Martian",
+   "author": "Andy Weir",
+   "gene": "vibe_desolate",
+   "confidence": 0.75,
+   "why": "alone on Mars"
+  },
+  {
+   "ref": "the-martian",
+   "title": "The Martian",
+   "author": "Andy Weir",
+   "gene": "vibe_lived_in",
+   "confidence": 0.6,
+   "why": "jury-rigged hab"
+  },
+  {
+   "ref": "flowers-for-algernon",
+   "title": "Flowers for Algernon",
+   "author": "Daniel Keyes",
+   "gene": "vibe_melancholy",
+   "confidence": 0.9,
+   "why": "rise and decline"
+  },
+  {
+   "ref": "flowers-for-algernon",
+   "title": "Flowers for Algernon",
+   "author": "Daniel Keyes",
+   "gene": "vibe_tender",
+   "confidence": 0.75,
+   "why": "gentle, intimate voice"
+  },
+  {
+   "ref": "the-road",
+   "title": "The Road",
+   "author": "Cormac McCarthy",
+   "gene": "vibe_bleak",
+   "confidence": 0.9,
+   "why": "ash-grey world"
+  },
+  {
+   "ref": "the-road",
+   "title": "The Road",
+   "author": "Cormac McCarthy",
+   "gene": "vibe_desolate",
+   "confidence": 0.85,
+   "why": "empty roads"
+  },
+  {
+   "ref": "the-road",
+   "title": "The Road",
+   "author": "Cormac McCarthy",
+   "gene": "vibe_tender",
+   "confidence": 0.7,
+   "why": "father and son"
+  },
+  {
+   "ref": "red-rising",
+   "title": "Red Rising",
+   "author": "Pierce Brown",
+   "gene": "vibe_gritty",
+   "confidence": 0.85,
+   "why": "brutal Institute"
+  },
+  {
+   "ref": "red-rising",
+   "title": "Red Rising",
+   "author": "Pierce Brown",
+   "gene": "vibe_epic",
+   "confidence": 0.75,
+   "why": "solar-system rebellion"
+  },
+  {
+   "ref": "red-rising",
+   "title": "Red Rising",
+   "author": "Pierce Brown",
+   "gene": "vibe_adrenaline",
+   "confidence": 0.7,
+   "why": "constant battles"
+  },
+  {
+   "ref": "do-androids-dream-of-electric-sheep",
+   "title": "Do Androids Dream of Electric Sheep?",
+   "author": "Philip K. Dick",
+   "gene": "vibe_melancholy",
+   "confidence": 0.75,
+   "why": "kipple and loneliness"
+  },
+  {
+   "ref": "do-androids-dream-of-electric-sheep",
+   "title": "Do Androids Dream of Electric Sheep?",
+   "author": "Philip K. Dick",
+   "gene": "vibe_desolate",
+   "confidence": 0.7,
+   "why": "emptied Earth"
+  },
+  {
+   "ref": "do-androids-dream-of-electric-sheep",
+   "title": "Do Androids Dream of Electric Sheep?",
+   "author": "Philip K. Dick",
+   "gene": "vibe_paranoid",
+   "confidence": 0.65,
+   "why": "who is human"
+  },
+  {
+   "ref": "neuromancer",
+   "title": "Neuromancer",
+   "author": "William Gibson",
+   "gene": "vibe_neon_noir",
+   "confidence": 0.9,
+   "why": "Chiba, cyberspace, crime"
+  },
+  {
+   "ref": "neuromancer",
+   "title": "Neuromancer",
+   "author": "William Gibson",
+   "gene": "vibe_gritty",
+   "confidence": 0.7,
+   "why": "street-level hustlers"
+  },
+  {
+   "ref": "neuromancer",
+   "title": "Neuromancer",
+   "author": "William Gibson",
+   "gene": "vibe_dreamlike",
+   "confidence": 0.6,
+   "why": "cyberspace hallucinations"
+  },
+  {
+   "ref": "never-let-me-go",
+   "title": "Never Let Me Go",
+   "author": "Kazuo Ishiguro",
+   "gene": "vibe_melancholy",
+   "confidence": 0.9,
+   "why": "quiet doomed ache"
+  },
+  {
+   "ref": "never-let-me-go",
+   "title": "Never Let Me Go",
+   "author": "Kazuo Ishiguro",
+   "gene": "vibe_tender",
+   "confidence": 0.75,
+   "why": "gentle friendships"
+  },
+  {
+   "ref": "never-let-me-go",
+   "title": "Never Let Me Go",
+   "author": "Kazuo Ishiguro",
+   "gene": "vibe_eerie",
+   "confidence": 0.6,
+   "why": "something wrong at Hailsham"
+  },
+  {
+   "ref": "11-22-63",
+   "title": "11/22/63",
+   "author": "Stephen King",
+   "gene": "vibe_melancholy",
+   "confidence": 0.7,
+   "why": "bittersweet love"
+  },
+  {
+   "ref": "11-22-63",
+   "title": "11/22/63",
+   "author": "Stephen King",
+   "gene": "vibe_tender",
+   "confidence": 0.7,
+   "why": "romance with Sadie"
+  },
+  {
+   "ref": "11-22-63",
+   "title": "11/22/63",
+   "author": "Stephen King",
+   "gene": "vibe_retro_pulp",
+   "confidence": 0.6,
+   "why": "nostalgic 1950s Americana"
+  },
+  {
+   "ref": "contact",
+   "title": "Contact",
+   "author": "Carl Sagan",
+   "gene": "vibe_cerebral",
+   "confidence": 0.8,
+   "why": "science and faith debates"
+  },
+  {
+   "ref": "contact",
+   "title": "Contact",
+   "author": "Carl Sagan",
+   "gene": "vibe_hopeful",
+   "confidence": 0.7,
+   "why": "wonder at contact"
+  },
+  {
+   "ref": "contact",
+   "title": "Contact",
+   "author": "Carl Sagan",
+   "gene": "vibe_mysterious",
+   "confidence": 0.6,
+   "why": "decoding the message"
+  },
+  {
+   "ref": "parable-of-the-sower",
+   "title": "Parable of the Sower",
+   "author": "Octavia E. Butler",
+   "gene": "vibe_bleak",
+   "confidence": 0.8,
+   "why": "collapsing California"
+  },
+  {
+   "ref": "parable-of-the-sower",
+   "title": "Parable of the Sower",
+   "author": "Octavia E. Butler",
+   "gene": "vibe_gritty",
+   "confidence": 0.8,
+   "why": "violence and scarcity"
+  },
+  {
+   "ref": "parable-of-the-sower",
+   "title": "Parable of the Sower",
+   "author": "Octavia E. Butler",
+   "gene": "vibe_hopeful",
+   "confidence": 0.6,
+   "why": "Earthseed faith"
+  },
+  {
+   "ref": "dune-messiah",
+   "title": "Dune Messiah",
+   "author": "Frank Herbert",
+   "gene": "vibe_melancholy",
+   "confidence": 0.75,
+   "why": "tragic emperor"
+  },
+  {
+   "ref": "dune-messiah",
+   "title": "Dune Messiah",
+   "author": "Frank Herbert",
+   "gene": "vibe_cerebral",
+   "confidence": 0.7,
+   "why": "schemes and philosophy"
+  },
+  {
+   "ref": "dune-messiah",
+   "title": "Dune Messiah",
+   "author": "Frank Herbert",
+   "gene": "vibe_paranoid",
+   "confidence": 0.6,
+   "why": "conspiracy around Paul"
+  },
+  {
+   "ref": "cinder",
+   "title": "Cinder",
+   "author": "Marissa Meyer",
+   "gene": "vibe_whimsical",
+   "confidence": 0.6,
+   "why": "fairy-tale retelling"
+  },
+  {
+   "ref": "cinder",
+   "title": "Cinder",
+   "author": "Marissa Meyer",
+   "gene": "vibe_swashbuckling",
+   "confidence": 0.6,
+   "why": "plucky heroine"
+  },
+  {
+   "ref": "dark-matter",
+   "title": "Dark Matter",
+   "author": "Blake Crouch",
+   "gene": "vibe_paranoid",
+   "confidence": 0.75,
+   "why": "which world is real"
+  },
+  {
+   "ref": "dark-matter",
+   "title": "Dark Matter",
+   "author": "Blake Crouch",
+   "gene": "vibe_adrenaline",
+   "confidence": 0.75,
+   "why": "chase through worlds"
+  },
+  {
+   "ref": "dark-matter",
+   "title": "Dark Matter",
+   "author": "Blake Crouch",
+   "gene": "vibe_eerie",
+   "confidence": 0.6,
+   "why": "corridor of doors"
+  },
+  {
+   "ref": "the-martian-chronicles",
+   "title": "The Martian Chronicles",
+   "author": "Ray Bradbury",
+   "gene": "vibe_melancholy",
+   "confidence": 0.8,
+   "why": "elegiac Mars"
+  },
+  {
+   "ref": "the-martian-chronicles",
+   "title": "The Martian Chronicles",
+   "author": "Ray Bradbury",
+   "gene": "vibe_dreamlike",
+   "confidence": 0.75,
+   "why": "poetic, haunting vignettes"
+  },
+  {
+   "ref": "the-martian-chronicles",
+   "title": "The Martian Chronicles",
+   "author": "Ray Bradbury",
+   "gene": "vibe_desolate",
+   "confidence": 0.7,
+   "why": "empty Martian towns"
+  },
+  {
+   "ref": "world-war-z",
+   "title": "World War Z",
+   "author": "Max Brooks",
+   "gene": "vibe_bleak",
+   "confidence": 0.7,
+   "why": "global collapse"
+  },
+  {
+   "ref": "world-war-z",
+   "title": "World War Z",
+   "author": "Max Brooks",
+   "gene": "vibe_gritty",
+   "confidence": 0.7,
+   "why": "frontline accounts"
+  },
+  {
+   "ref": "scythe",
+   "title": "Scythe",
+   "author": "Neal Shusterman",
+   "gene": "vibe_cerebral",
+   "confidence": 0.7,
+   "why": "ethics of death"
+  },
+  {
+   "ref": "scythe",
+   "title": "Scythe",
+   "author": "Neal Shusterman",
+   "gene": "vibe_gleaming",
+   "confidence": 0.65,
+   "why": "polished post-scarcity world"
+  },
+  {
+   "ref": "scythe",
+   "title": "Scythe",
+   "author": "Neal Shusterman",
+   "gene": "vibe_eerie",
+   "confidence": 0.6,
+   "why": "calm killers"
+  },
+  {
+   "ref": "hyperion",
+   "title": "Hyperion",
+   "author": "Dan Simmons",
+   "gene": "vibe_epic",
+   "confidence": 0.8,
+   "why": "pilgrimage across worlds"
+  },
+  {
+   "ref": "hyperion",
+   "title": "Hyperion",
+   "author": "Dan Simmons",
+   "gene": "vibe_eerie",
+   "confidence": 0.75,
+   "why": "the Shrike"
+  },
+  {
+   "ref": "hyperion",
+   "title": "Hyperion",
+   "author": "Dan Simmons",
+   "gene": "vibe_melancholy",
+   "confidence": 0.7,
+   "why": "tragic tales"
+  },
+  {
+   "ref": "the-left-hand-of-darkness",
+   "title": "The Left Hand of Darkness",
+   "author": "Ursula K. Le Guin",
+   "gene": "vibe_desolate",
+   "confidence": 0.85,
+   "why": "icy Gethen"
+  },
+  {
+   "ref": "the-left-hand-of-darkness",
+   "title": "The Left Hand of Darkness",
+   "author": "Ursula K. Le Guin",
+   "gene": "vibe_cerebral",
+   "confidence": 0.75,
+   "why": "anthropological distance"
+  },
+  {
+   "ref": "the-left-hand-of-darkness",
+   "title": "The Left Hand of Darkness",
+   "author": "Ursula K. Le Guin",
+   "gene": "vibe_tender",
+   "confidence": 0.6,
+   "why": "Genly and Estraven bond"
+  },
+  {
+   "ref": "snow-crash",
+   "title": "Snow Crash",
+   "author": "Neal Stephenson",
+   "gene": "vibe_neon_noir",
+   "confidence": 0.75,
+   "why": "Metaverse and franchise sprawl"
+  },
+  {
+   "ref": "snow-crash",
+   "title": "Snow Crash",
+   "author": "Neal Stephenson",
+   "gene": "vibe_adrenaline",
+   "confidence": 0.75,
+   "why": "pizza-delivery chases"
+  },
+  {
+   "ref": "snow-crash",
+   "title": "Snow Crash",
+   "author": "Neal Stephenson",
+   "gene": "vibe_whimsical",
+   "confidence": 0.6,
+   "why": "satirical absurdity"
+  },
+  {
+   "ref": "kindred",
+   "title": "Kindred",
+   "author": "Octavia E. Butler",
+   "gene": "vibe_claustrophobic",
+   "confidence": 0.7,
+   "why": "trapped in slavery"
+  },
+  {
+   "ref": "kindred",
+   "title": "Kindred",
+   "author": "Octavia E. Butler",
+   "gene": "vibe_gritty",
+   "confidence": 0.75,
+   "why": "brutality of plantation life"
+  },
+  {
+   "ref": "kindred",
+   "title": "Kindred",
+   "author": "Octavia E. Butler",
+   "gene": "vibe_bleak",
+   "confidence": 0.6,
+   "why": "no escape"
+  },
+  {
+   "ref": "the-man-in-the-high-castle",
+   "title": "The Man in the High Castle",
+   "author": "Philip K. Dick",
+   "gene": "vibe_paranoid",
+   "confidence": 0.8,
+   "why": "occupied America"
+  },
+  {
+   "ref": "the-man-in-the-high-castle",
+   "title": "The Man in the High Castle",
+   "author": "Philip K. Dick",
+   "gene": "vibe_melancholy",
+   "confidence": 0.7,
+   "why": "quiet defeated lives"
+  },
+  {
+   "ref": "the-man-in-the-high-castle",
+   "title": "The Man in the High Castle",
+   "author": "Philip K. Dick",
+   "gene": "vibe_dreamlike",
+   "confidence": 0.6,
+   "why": "shifting reality"
+  },
+  {
+   "ref": "uglies",
+   "title": "Uglies",
+   "author": "Scott Westerfeld",
+   "gene": "vibe_gleaming",
+   "confidence": 0.7,
+   "why": "shiny Pretty town"
+  },
+  {
+   "ref": "uglies",
+   "title": "Uglies",
+   "author": "Scott Westerfeld",
+   "gene": "vibe_adrenaline",
+   "confidence": 0.65,
+   "why": "hoverboard escapes"
+  },
+  {
+   "ref": "cats-cradle",
+   "title": "Cat's Cradle",
+   "author": "Kurt Vonnegut",
+   "gene": "vibe_whimsical",
+   "confidence": 0.7,
+   "why": "absurdist satire"
+  },
+  {
+   "ref": "cats-cradle",
+   "title": "Cat's Cradle",
+   "author": "Kurt Vonnegut",
+   "gene": "vibe_bleak",
+   "confidence": 0.7,
+   "why": "ice-nine apocalypse"
+  },
+  {
+   "ref": "foundation-and-empire",
+   "title": "Foundation and Empire",
+   "author": "Isaac Asimov",
+   "gene": "vibe_cerebral",
+   "confidence": 0.8,
+   "why": "politics and prediction"
+  },
+  {
+   "ref": "foundation-and-empire",
+   "title": "Foundation and Empire",
+   "author": "Isaac Asimov",
+   "gene": "vibe_epic",
+   "confidence": 0.75,
+   "why": "galactic sweep"
+  },
+  {
+   "ref": "foundation-and-empire",
+   "title": "Foundation and Empire",
+   "author": "Isaac Asimov",
+   "gene": "vibe_mysterious",
+   "confidence": 0.65,
+   "why": "who is the Mule"
+  },
+  {
+   "ref": "the-time-travelers-wife",
+   "title": "The Time Traveler's Wife",
+   "author": "Audrey Niffenegger",
+   "gene": "vibe_melancholy",
+   "confidence": 0.8,
+   "why": "love out of time"
+  },
+  {
+   "ref": "the-time-travelers-wife",
+   "title": "The Time Traveler's Wife",
+   "author": "Audrey Niffenegger",
+   "gene": "vibe_tender",
+   "confidence": 0.8,
+   "why": "intimate love story"
+  },
+  {
+   "ref": "annihilation",
+   "title": "Annihilation",
+   "author": "Jeff VanderMeer",
+   "gene": "vibe_eerie",
+   "confidence": 0.9,
+   "why": "Area X strangeness"
+  },
+  {
+   "ref": "annihilation",
+   "title": "Annihilation",
+   "author": "Jeff VanderMeer",
+   "gene": "vibe_dreamlike",
+   "confidence": 0.75,
+   "why": "hallucinatory biology"
+  },
+  {
+   "ref": "annihilation",
+   "title": "Annihilation",
+   "author": "Jeff VanderMeer",
+   "gene": "vibe_mysterious",
+   "confidence": 0.75,
+   "why": "what is the Crawler"
+  },
+  {
+   "ref": "rendezvous-with-rama",
+   "title": "Rendezvous with Rama",
+   "author": "Arthur C. Clarke",
+   "gene": "vibe_mysterious",
+   "confidence": 0.85,
+   "why": "alien ship unexplained"
+  },
+  {
+   "ref": "rendezvous-with-rama",
+   "title": "Rendezvous with Rama",
+   "author": "Arthur C. Clarke",
+   "gene": "vibe_cerebral",
+   "confidence": 0.75,
+   "why": "hard science exploration"
+  },
+  {
+   "ref": "rendezvous-with-rama",
+   "title": "Rendezvous with Rama",
+   "author": "Arthur C. Clarke",
+   "gene": "vibe_desolate",
+   "confidence": 0.65,
+   "why": "empty vast cylinder"
+  },
+  {
+   "ref": "piranesi",
+   "title": "Piranesi",
+   "author": "Susanna Clarke",
+   "gene": "vibe_dreamlike",
+   "confidence": 0.85,
+   "why": "endless halls of statues"
+  },
+  {
+   "ref": "piranesi",
+   "title": "Piranesi",
+   "author": "Susanna Clarke",
+   "gene": "vibe_mysterious",
+   "confidence": 0.8,
+   "why": "who is the Other"
+  },
+  {
+   "ref": "piranesi",
+   "title": "Piranesi",
+   "author": "Susanna Clarke",
+   "gene": "vibe_tender",
+   "confidence": 0.65,
+   "why": "gentle narrator"
+  },
+  {
+   "ref": "dragonflight",
+   "title": "Dragonflight",
+   "author": "Anne McCaffrey",
+   "gene": "vibe_epic",
+   "confidence": 0.65,
+   "why": "dragonriders vs Thread"
+  },
+  {
+   "ref": "dragonflight",
+   "title": "Dragonflight",
+   "author": "Anne McCaffrey",
+   "gene": "vibe_swashbuckling",
+   "confidence": 0.6,
+   "why": "bold adventure"
+  },
+  {
+   "ref": "second-foundation",
+   "title": "Second Foundation",
+   "author": "Isaac Asimov",
+   "gene": "vibe_cerebral",
+   "confidence": 0.85,
+   "why": "mental chess"
+  },
+  {
+   "ref": "second-foundation",
+   "title": "Second Foundation",
+   "author": "Isaac Asimov",
+   "gene": "vibe_mysterious",
+   "confidence": 0.75,
+   "why": "where is the Second Foundation"
+  },
+  {
+   "ref": "a-canticle-for-leibowitz",
+   "title": "A Canticle for Leibowitz",
+   "author": "Walter M. Miller Jr.",
+   "gene": "vibe_melancholy",
+   "confidence": 0.75,
+   "why": "cycles of ruin"
+  },
+  {
+   "ref": "a-canticle-for-leibowitz",
+   "title": "A Canticle for Leibowitz",
+   "author": "Walter M. Miller Jr.",
+   "gene": "vibe_desolate",
+   "confidence": 0.7,
+   "why": "abbey in the wasteland"
+  },
+  {
+   "ref": "a-canticle-for-leibowitz",
+   "title": "A Canticle for Leibowitz",
+   "author": "Walter M. Miller Jr.",
+   "gene": "vibe_cerebral",
+   "confidence": 0.65,
+   "why": "faith and science"
+  },
+  {
+   "ref": "leviathan-wakes",
+   "title": "Leviathan Wakes",
+   "author": "James S. A. Corey",
+   "gene": "vibe_lived_in",
+   "confidence": 0.85,
+   "why": "Belter grime and old ships"
+  },
+  {
+   "ref": "leviathan-wakes",
+   "title": "Leviathan Wakes",
+   "author": "James S. A. Corey",
+   "gene": "vibe_neon_noir",
+   "confidence": 0.7,
+   "why": "Miller's noir on Ceres"
+  },
+  {
+   "ref": "leviathan-wakes",
+   "title": "Leviathan Wakes",
+   "author": "James S. A. Corey",
+   "gene": "vibe_adrenaline",
+   "confidence": 0.65,
+   "why": "action set pieces"
+  },
+  {
+   "ref": "children-of-time",
+   "title": "Children of Time",
+   "author": "Adrian Tchaikovsky",
+   "gene": "vibe_epic",
+   "confidence": 0.85,
+   "why": "millennia of spider evolution"
+  },
+  {
+   "ref": "children-of-time",
+   "title": "Children of Time",
+   "author": "Adrian Tchaikovsky",
+   "gene": "vibe_cerebral",
+   "confidence": 0.7,
+   "why": "big-idea evolution"
+  },
+  {
+   "ref": "children-of-time",
+   "title": "Children of Time",
+   "author": "Adrian Tchaikovsky",
+   "gene": "vibe_desolate",
+   "confidence": 0.6,
+   "why": "ark ship drift"
+  },
+  {
+   "ref": "gideon-the-ninth",
+   "title": "Gideon the Ninth",
+   "author": "Tamsyn Muir",
+   "gene": "vibe_eerie",
+   "confidence": 0.75,
+   "why": "gothic necromantic mansion"
+  },
+  {
+   "ref": "gideon-the-ninth",
+   "title": "Gideon the Ninth",
+   "author": "Tamsyn Muir",
+   "gene": "vibe_mysterious",
+   "confidence": 0.75,
+   "why": "locked-house murders"
+  },
+  {
+   "ref": "gideon-the-ninth",
+   "title": "Gideon the Ninth",
+   "author": "Tamsyn Muir",
+   "gene": "vibe_whimsical",
+   "confidence": 0.6,
+   "why": "irreverent banter"
+  },
+  {
+   "ref": "the-moon-is-a-harsh-mistress",
+   "title": "The Moon Is a Harsh Mistress",
+   "author": "Robert A. Heinlein",
+   "gene": "vibe_lived_in",
+   "confidence": 0.7,
+   "why": "rough Luna colony"
+  },
+  {
+   "ref": "the-moon-is-a-harsh-mistress",
+   "title": "The Moon Is a Harsh Mistress",
+   "author": "Robert A. Heinlein",
+   "gene": "vibe_cerebral",
+   "confidence": 0.65,
+   "why": "political engineering"
+  },
+  {
+   "ref": "the-moon-is-a-harsh-mistress",
+   "title": "The Moon Is a Harsh Mistress",
+   "author": "Robert A. Heinlein",
+   "gene": "vibe_swashbuckling",
+   "confidence": 0.6,
+   "why": "revolution bravado"
+  },
+  {
+   "ref": "horus-rising",
+   "title": "Horus Rising",
+   "author": "Dan Abnett",
+   "gene": "vibe_epic",
+   "confidence": 0.85,
+   "why": "Great Crusade"
+  },
+  {
+   "ref": "horus-rising",
+   "title": "Horus Rising",
+   "author": "Dan Abnett",
+   "gene": "vibe_gritty",
+   "confidence": 0.75,
+   "why": "brutal warfare"
+  },
+  {
+   "ref": "station-eleven",
+   "title": "Station Eleven",
+   "author": "Emily St. John Mandel",
+   "gene": "vibe_melancholy",
+   "confidence": 0.85,
+   "why": "elegy for lost world"
+  },
+  {
+   "ref": "station-eleven",
+   "title": "Station Eleven",
+   "author": "Emily St. John Mandel",
+   "gene": "vibe_hopeful",
+   "confidence": 0.7,
+   "why": "survival is insufficient"
+  },
+  {
+   "ref": "station-eleven",
+   "title": "Station Eleven",
+   "author": "Emily St. John Mandel",
+   "gene": "vibe_desolate",
+   "confidence": 0.6,
+   "why": "emptied roads"
+  },
+  {
+   "ref": "children-of-dune",
+   "title": "Children of Dune",
+   "author": "Frank Herbert",
+   "gene": "vibe_cerebral",
+   "confidence": 0.75,
+   "why": "dense prescience politics"
+  },
+  {
+   "ref": "children-of-dune",
+   "title": "Children of Dune",
+   "author": "Frank Herbert",
+   "gene": "vibe_epic",
+   "confidence": 0.7,
+   "why": "dynastic saga"
+  },
+  {
+   "ref": "children-of-dune",
+   "title": "Children of Dune",
+   "author": "Frank Herbert",
+   "gene": "vibe_melancholy",
+   "confidence": 0.6,
+   "why": "Leto's sacrifice"
+  },
+  {
+   "ref": "solaris",
+   "title": "Solaris",
+   "author": "Stanisław Lem",
+   "gene": "vibe_mysterious",
+   "confidence": 0.85,
+   "why": "the unknowable ocean"
+  },
+  {
+   "ref": "solaris",
+   "title": "Solaris",
+   "author": "Stanisław Lem",
+   "gene": "vibe_melancholy",
+   "confidence": 0.8,
+   "why": "grief for Rheya"
+  },
+  {
+   "ref": "solaris",
+   "title": "Solaris",
+   "author": "Stanisław Lem",
+   "gene": "vibe_eerie",
+   "confidence": 0.75,
+   "why": "visitors on the station"
+  },
+  {
+   "ref": "wool",
+   "title": "Wool",
+   "author": "Hugh Howey",
+   "gene": "vibe_claustrophobic",
+   "confidence": 0.9,
+   "why": "underground silo"
+  },
+  {
+   "ref": "wool",
+   "title": "Wool",
+   "author": "Hugh Howey",
+   "gene": "vibe_paranoid",
+   "confidence": 0.75,
+   "why": "lies of IT"
+  },
+  {
+   "ref": "wool",
+   "title": "Wool",
+   "author": "Hugh Howey",
+   "gene": "vibe_mysterious",
+   "confidence": 0.7,
+   "why": "what is outside"
+  },
+  {
+   "ref": "klara-and-the-sun",
+   "title": "Klara and the Sun",
+   "author": "Kazuo Ishiguro",
+   "gene": "vibe_tender",
+   "confidence": 0.85,
+   "why": "devoted AI friend"
+  },
+  {
+   "ref": "klara-and-the-sun",
+   "title": "Klara and the Sun",
+   "author": "Kazuo Ishiguro",
+   "gene": "vibe_melancholy",
+   "confidence": 0.75,
+   "why": "quiet ache of mortality"
+  },
+  {
+   "ref": "klara-and-the-sun",
+   "title": "Klara and the Sun",
+   "author": "Kazuo Ishiguro",
+   "gene": "vibe_eerie",
+   "confidence": 0.6,
+   "why": "subtly off world"
+  },
+  {
+   "ref": "the-dispossessed",
+   "title": "The Dispossessed",
+   "author": "Ursula K. Le Guin",
+   "gene": "vibe_cerebral",
+   "confidence": 0.85,
+   "why": "ideas of society"
+  },
+  {
+   "ref": "the-dispossessed",
+   "title": "The Dispossessed",
+   "author": "Ursula K. Le Guin",
+   "gene": "vibe_desolate",
+   "confidence": 0.6,
+   "why": "barren Anarres"
+  },
+  {
+   "ref": "the-dispossessed",
+   "title": "The Dispossessed",
+   "author": "Ursula K. Le Guin",
+   "gene": "vibe_melancholy",
+   "confidence": 0.6,
+   "why": "lonely physicist"
+  },
+  {
+   "ref": "artemis",
+   "title": "Artemis",
+   "author": "Andy Weir",
+   "gene": "vibe_swashbuckling",
+   "confidence": 0.7,
+   "why": "heist bravado"
+  },
+  {
+   "ref": "artemis",
+   "title": "Artemis",
+   "author": "Andy Weir",
+   "gene": "vibe_lived_in",
+   "confidence": 0.7,
+   "why": "working-class moon town"
+  },
+  {
+   "ref": "artemis",
+   "title": "Artemis",
+   "author": "Andy Weir",
+   "gene": "vibe_whimsical",
+   "confidence": 0.6,
+   "why": "snarky fun"
+  },
+  {
+   "ref": "the-long-way-to-a-small-angry-planet",
+   "title": "The Long Way to a Small, Angry Planet",
+   "author": "Becky Chambers",
+   "gene": "vibe_cozy",
+   "confidence": 0.9,
+   "why": "found family ship"
+  },
+  {
+   "ref": "the-long-way-to-a-small-angry-planet",
+   "title": "The Long Way to a Small, Angry Planet",
+   "author": "Becky Chambers",
+   "gene": "vibe_tender",
+   "confidence": 0.8,
+   "why": "kind crew"
+  },
+  {
+   "ref": "the-long-way-to-a-small-angry-planet",
+   "title": "The Long Way to a Small, Angry Planet",
+   "author": "Becky Chambers",
+   "gene": "vibe_hopeful",
+   "confidence": 0.75,
+   "why": "warm future"
+  },
+  {
+   "ref": "consider-phlebas-banks",
+   "title": "Consider Phlebas",
+   "author": "Iain M. Banks",
+   "gene": "vibe_epic",
+   "confidence": 0.8,
+   "why": "galactic war"
+  },
+  {
+   "ref": "consider-phlebas-banks",
+   "title": "Consider Phlebas",
+   "author": "Iain M. Banks",
+   "gene": "vibe_gritty",
+   "confidence": 0.7,
+   "why": "brutal set pieces"
+  },
+  {
+   "ref": "consider-phlebas-banks",
+   "title": "Consider Phlebas",
+   "author": "Iain M. Banks",
+   "gene": "vibe_swashbuckling",
+   "confidence": 0.6,
+   "why": "mercenary adventure"
+  },
+  {
+   "ref": "ringworld",
+   "title": "Ringworld",
+   "author": "Larry Niven",
+   "gene": "vibe_mysterious",
+   "confidence": 0.7,
+   "why": "vast artifact"
+  },
+  {
+   "ref": "ringworld",
+   "title": "Ringworld",
+   "author": "Larry Niven",
+   "gene": "vibe_retro_pulp",
+   "confidence": 0.6,
+   "why": "old-school adventure"
+  },
+  {
+   "ref": "ringworld",
+   "title": "Ringworld",
+   "author": "Larry Niven",
+   "gene": "vibe_desolate",
+   "confidence": 0.6,
+   "why": "huge empty ring"
+  },
+  {
+   "ref": "the-5th-wave",
+   "title": "The 5th Wave",
+   "author": "Rick Yancey",
+   "gene": "vibe_paranoid",
+   "confidence": 0.8,
+   "why": "aliens look human"
+  },
+  {
+   "ref": "the-5th-wave",
+   "title": "The 5th Wave",
+   "author": "Rick Yancey",
+   "gene": "vibe_bleak",
+   "confidence": 0.7,
+   "why": "waves of extinction"
+  },
+  {
+   "ref": "the-5th-wave",
+   "title": "The 5th Wave",
+   "author": "Rick Yancey",
+   "gene": "vibe_adrenaline",
+   "confidence": 0.7,
+   "why": "survival action"
+  },
+  {
+   "ref": "childhoods-end",
+   "title": "Childhood's End",
+   "author": "Arthur C. Clarke",
+   "gene": "vibe_melancholy",
+   "confidence": 0.8,
+   "why": "end of humanity"
+  },
+  {
+   "ref": "childhoods-end",
+   "title": "Childhood's End",
+   "author": "Arthur C. Clarke",
+   "gene": "vibe_cerebral",
+   "confidence": 0.7,
+   "why": "big ideas"
+  },
+  {
+   "ref": "childhoods-end",
+   "title": "Childhood's End",
+   "author": "Arthur C. Clarke",
+   "gene": "vibe_eerie",
+   "confidence": 0.65,
+   "why": "Overlords' strange calm"
+  },
+  {
+   "ref": "cloud-atlas",
+   "title": "Cloud Atlas",
+   "author": "David Mitchell",
+   "gene": "vibe_epic",
+   "confidence": 0.7,
+   "why": "centuries of nested stories"
+  },
+  {
+   "ref": "cloud-atlas",
+   "title": "Cloud Atlas",
+   "author": "David Mitchell",
+   "gene": "vibe_melancholy",
+   "confidence": 0.65,
+   "why": "lost souls through time"
+  },
+  {
+   "ref": "a-princess-of-mars",
+   "title": "A Princess of Mars",
+   "author": "Edgar Rice Burroughs",
+   "gene": "vibe_retro_pulp",
+   "confidence": 0.9,
+   "why": "swords and Barsoom"
+  },
+  {
+   "ref": "a-princess-of-mars",
+   "title": "A Princess of Mars",
+   "author": "Edgar Rice Burroughs",
+   "gene": "vibe_swashbuckling",
+   "confidence": 0.85,
+   "why": "John Carter heroics"
+  },
+  {
+   "ref": "starship-troopers",
+   "title": "Starship Troopers",
+   "author": "Robert A. Heinlein",
+   "gene": "vibe_gritty",
+   "confidence": 0.65,
+   "why": "combat drops"
+  },
+  {
+   "ref": "starship-troopers",
+   "title": "Starship Troopers",
+   "author": "Robert A. Heinlein",
+   "gene": "vibe_cerebral",
+   "confidence": 0.6,
+   "why": "political lectures"
+  },
+  {
+   "ref": "starship-troopers",
+   "title": "Starship Troopers",
+   "author": "Robert A. Heinlein",
+   "gene": "vibe_retro_pulp",
+   "confidence": 0.6,
+   "why": "classic power armor"
+  },
+  {
+   "ref": "golden-son",
+   "title": "Golden Son",
+   "author": "Pierce Brown",
+   "gene": "vibe_adrenaline",
+   "confidence": 0.8,
+   "why": "battles and betrayals"
+  },
+  {
+   "ref": "golden-son",
+   "title": "Golden Son",
+   "author": "Pierce Brown",
+   "gene": "vibe_epic",
+   "confidence": 0.75,
+   "why": "solar-system war"
+  },
+  {
+   "ref": "golden-son",
+   "title": "Golden Son",
+   "author": "Pierce Brown",
+   "gene": "vibe_gritty",
+   "confidence": 0.7,
+   "why": "brutal violence"
+  },
+  {
+   "ref": "stories-of-your-life-and-others",
+   "title": "Stories of Your Life and Others",
+   "author": "Ted Chiang",
+   "gene": "vibe_cerebral",
+   "confidence": 0.85,
+   "why": "idea-driven stories"
+  },
+  {
+   "ref": "stories-of-your-life-and-others",
+   "title": "Stories of Your Life and Others",
+   "author": "Ted Chiang",
+   "gene": "vibe_melancholy",
+   "confidence": 0.7,
+   "why": "quiet grief"
+  },
+  {
+   "ref": "oryx-and-crake",
+   "title": "Oryx and Crake",
+   "author": "Margaret Atwood",
+   "gene": "vibe_bleak",
+   "confidence": 0.8,
+   "why": "post-plague ruins"
+  },
+  {
+   "ref": "oryx-and-crake",
+   "title": "Oryx and Crake",
+   "author": "Margaret Atwood",
+   "gene": "vibe_eerie",
+   "confidence": 0.7,
+   "why": "Crakers and emptiness"
+  },
+  {
+   "ref": "oryx-and-crake",
+   "title": "Oryx and Crake",
+   "author": "Margaret Atwood",
+   "gene": "vibe_melancholy",
+   "confidence": 0.65,
+   "why": "Snowman's loneliness"
+  },
+  {
+   "ref": "ready-player-two",
+   "title": "Ready Player Two",
+   "author": "Ernest Cline",
+   "gene": "vibe_retro_pulp",
+   "confidence": 0.7,
+   "why": "pop-culture quest"
+  },
+  {
+   "ref": "ready-player-two",
+   "title": "Ready Player Two",
+   "author": "Ernest Cline",
+   "gene": "vibe_adrenaline",
+   "confidence": 0.6,
+   "why": "race against time"
+  },
+  {
+   "ref": "recursion",
+   "title": "Recursion",
+   "author": "Blake Crouch",
+   "gene": "vibe_paranoid",
+   "confidence": 0.75,
+   "why": "false memories"
+  },
+  {
+   "ref": "recursion",
+   "title": "Recursion",
+   "author": "Blake Crouch",
+   "gene": "vibe_adrenaline",
+   "confidence": 0.7,
+   "why": "thriller pace"
+  },
+  {
+   "ref": "recursion",
+   "title": "Recursion",
+   "author": "Blake Crouch",
+   "gene": "vibe_melancholy",
+   "confidence": 0.6,
+   "why": "grief and loops"
+  },
+  {
+   "ref": "old-mans-war",
+   "title": "Old Man's War",
+   "author": "John Scalzi",
+   "gene": "vibe_adrenaline",
+   "confidence": 0.7,
+   "why": "combat ops"
+  },
+  {
+   "ref": "old-mans-war",
+   "title": "Old Man's War",
+   "author": "John Scalzi",
+   "gene": "vibe_whimsical",
+   "confidence": 0.6,
+   "why": "Scalzi wit"
+  },
+  {
+   "ref": "old-mans-war",
+   "title": "Old Man's War",
+   "author": "John Scalzi",
+   "gene": "vibe_gleaming",
+   "confidence": 0.6,
+   "why": "new green bodies"
+  },
+  {
+   "ref": "the-dark-forest",
+   "title": "The Dark Forest",
+   "author": "Liu Cixin",
+   "gene": "vibe_cerebral",
+   "confidence": 0.85,
+   "why": "game theory of cosmos"
+  },
+  {
+   "ref": "the-dark-forest",
+   "title": "The Dark Forest",
+   "author": "Liu Cixin",
+   "gene": "vibe_bleak",
+   "confidence": 0.7,
+   "why": "doom from Trisolaris"
+  },
+  {
+   "ref": "the-dark-forest",
+   "title": "The Dark Forest",
+   "author": "Liu Cixin",
+   "gene": "vibe_epic",
+   "confidence": 0.7,
+   "why": "centuries of struggle"
+  },
+  {
+   "ref": "the-forever-war",
+   "title": "The Forever War",
+   "author": "Joe Haldeman",
+   "gene": "vibe_bleak",
+   "confidence": 0.75,
+   "why": "endless pointless war"
+  },
+  {
+   "ref": "the-forever-war",
+   "title": "The Forever War",
+   "author": "Joe Haldeman",
+   "gene": "vibe_desolate",
+   "confidence": 0.7,
+   "why": "years lost to relativity"
+  },
+  {
+   "ref": "the-forever-war",
+   "title": "The Forever War",
+   "author": "Joe Haldeman",
+   "gene": "vibe_melancholy",
+   "confidence": 0.7,
+   "why": "alienation at home"
+  },
+  {
+   "ref": "speaker-for-the-dead",
+   "title": "Speaker for the Dead",
+   "author": "Orson Scott Card",
+   "gene": "vibe_tender",
+   "confidence": 0.7,
+   "why": "compassion and forgiveness"
+  },
+  {
+   "ref": "speaker-for-the-dead",
+   "title": "Speaker for the Dead",
+   "author": "Orson Scott Card",
+   "gene": "vibe_melancholy",
+   "confidence": 0.65,
+   "why": "family grief"
+  },
+  {
+   "ref": "speaker-for-the-dead",
+   "title": "Speaker for the Dead",
+   "author": "Orson Scott Card",
+   "gene": "vibe_mysterious",
+   "confidence": 0.65,
+   "why": "piggies' biology"
+  },
+  {
+   "ref": "ubik",
+   "title": "Ubik",
+   "author": "Philip K. Dick",
+   "gene": "vibe_dreamlike",
+   "confidence": 0.85,
+   "why": "reality decaying"
+  },
+  {
+   "ref": "ubik",
+   "title": "Ubik",
+   "author": "Philip K. Dick",
+   "gene": "vibe_paranoid",
+   "confidence": 0.8,
+   "why": "what is real"
+  },
+  {
+   "ref": "ubik",
+   "title": "Ubik",
+   "author": "Philip K. Dick",
+   "gene": "vibe_eerie",
+   "confidence": 0.7,
+   "why": "regression of objects"
+  },
+  {
+   "ref": "the-troop",
+   "title": "The Troop",
+   "author": "Nick Cutter",
+   "gene": "vibe_claustrophobic",
+   "confidence": 0.8,
+   "why": "trapped on an island"
+  },
+  {
+   "ref": "the-troop",
+   "title": "The Troop",
+   "author": "Nick Cutter",
+   "gene": "vibe_eerie",
+   "confidence": 0.7,
+   "why": "creeping horror"
+  },
+  {
+   "ref": "the-troop",
+   "title": "The Troop",
+   "author": "Nick Cutter",
+   "gene": "vibe_bleak",
+   "confidence": 0.7,
+   "why": "no mercy"
+  },
+  {
+   "ref": "the-diamond-age",
+   "title": "The Diamond Age",
+   "author": "Neal Stephenson",
+   "gene": "vibe_cerebral",
+   "confidence": 0.8,
+   "why": "dense nanotech society"
+  },
+  {
+   "ref": "the-diamond-age",
+   "title": "The Diamond Age",
+   "author": "Neal Stephenson",
+   "gene": "vibe_whimsical",
+   "confidence": 0.6,
+   "why": "Primer fairy tales"
+  },
+  {
+   "ref": "the-diamond-age",
+   "title": "The Diamond Age",
+   "author": "Neal Stephenson",
+   "gene": "vibe_neon_noir",
+   "confidence": 0.6,
+   "why": "Shanghai sprawl"
+  },
+  {
+   "ref": "deaths-end",
+   "title": "Death's End",
+   "author": "Liu Cixin",
+   "gene": "vibe_epic",
+   "confidence": 0.9,
+   "why": "time scale of eons"
+  },
+  {
+   "ref": "deaths-end",
+   "title": "Death's End",
+   "author": "Liu Cixin",
+   "gene": "vibe_desolate",
+   "confidence": 0.8,
+   "why": "empty cosmos"
+  },
+  {
+   "ref": "deaths-end",
+   "title": "Death's End",
+   "author": "Liu Cixin",
+   "gene": "vibe_melancholy",
+   "confidence": 0.75,
+   "why": "end of everything"
+  },
+  {
+   "ref": "the-caves-of-steel",
+   "title": "The Caves of Steel",
+   "author": "Isaac Asimov",
+   "gene": "vibe_mysterious",
+   "confidence": 0.8,
+   "why": "murder investigation"
+  },
+  {
+   "ref": "the-caves-of-steel",
+   "title": "The Caves of Steel",
+   "author": "Isaac Asimov",
+   "gene": "vibe_claustrophobic",
+   "confidence": 0.7,
+   "why": "enclosed cities"
+  },
+  {
+   "ref": "the-caves-of-steel",
+   "title": "The Caves of Steel",
+   "author": "Isaac Asimov",
+   "gene": "vibe_cerebral",
+   "confidence": 0.65,
+   "why": "logical deduction"
+  },
+  {
+   "ref": "the-gods-themselves",
+   "title": "The Gods Themselves",
+   "author": "Isaac Asimov",
+   "gene": "vibe_cerebral",
+   "confidence": 0.85,
+   "why": "physics and aliens"
+  },
+  {
+   "ref": "the-gods-themselves",
+   "title": "The Gods Themselves",
+   "author": "Isaac Asimov",
+   "gene": "vibe_mysterious",
+   "confidence": 0.6,
+   "why": "strange para-universe"
+  },
+  {
+   "ref": "roadside-picnic-arkady",
+   "title": "Roadside Picnic",
+   "author": "Arkady and Boris Strugatsky",
+   "gene": "vibe_eerie",
+   "confidence": 0.85,
+   "why": "the Zone's traps"
+  },
+  {
+   "ref": "roadside-picnic-arkady",
+   "title": "Roadside Picnic",
+   "author": "Arkady and Boris Strugatsky",
+   "gene": "vibe_gritty",
+   "confidence": 0.75,
+   "why": "stalker underworld"
+  },
+  {
+   "ref": "roadside-picnic-arkady",
+   "title": "Roadside Picnic",
+   "author": "Arkady and Boris Strugatsky",
+   "gene": "vibe_bleak",
+   "confidence": 0.65,
+   "why": "grim lives"
+  },
+  {
+   "ref": "red-mars",
+   "title": "Red Mars",
+   "author": "Kim Stanley Robinson",
+   "gene": "vibe_cerebral",
+   "confidence": 0.8,
+   "why": "politics and science"
+  },
+  {
+   "ref": "red-mars",
+   "title": "Red Mars",
+   "author": "Kim Stanley Robinson",
+   "gene": "vibe_epic",
+   "confidence": 0.75,
+   "why": "colonizing a planet"
+  },
+  {
+   "ref": "red-mars",
+   "title": "Red Mars",
+   "author": "Kim Stanley Robinson",
+   "gene": "vibe_desolate",
+   "confidence": 0.7,
+   "why": "vast empty Mars"
+  },
+  {
+   "ref": "dungeon-crawler-carl",
+   "title": "Dungeon Crawler Carl",
+   "author": "Matt Dinniman",
+   "gene": "vibe_whimsical",
+   "confidence": 0.8,
+   "why": "absurd game show"
+  },
+  {
+   "ref": "dungeon-crawler-carl",
+   "title": "Dungeon Crawler Carl",
+   "author": "Matt Dinniman",
+   "gene": "vibe_adrenaline",
+   "confidence": 0.8,
+   "why": "brutal dungeon fights"
+  },
+  {
+   "ref": "a-fire-upon-the-deep",
+   "title": "A Fire Upon the Deep",
+   "author": "Vernor Vinge",
+   "gene": "vibe_epic",
+   "confidence": 0.85,
+   "why": "galaxy-spanning"
+  },
+  {
+   "ref": "a-fire-upon-the-deep",
+   "title": "A Fire Upon the Deep",
+   "author": "Vernor Vinge",
+   "gene": "vibe_cerebral",
+   "confidence": 0.7,
+   "why": "Zones of Thought"
+  },
+  {
+   "ref": "a-fire-upon-the-deep",
+   "title": "A Fire Upon the Deep",
+   "author": "Vernor Vinge",
+   "gene": "vibe_swashbuckling",
+   "confidence": 0.6,
+   "why": "rescue adventure"
+  },
+  {
+   "ref": "morning-star",
+   "title": "Morning Star",
+   "author": "Pierce Brown",
+   "gene": "vibe_epic",
+   "confidence": 0.85,
+   "why": "finale war"
+  },
+  {
+   "ref": "morning-star",
+   "title": "Morning Star",
+   "author": "Pierce Brown",
+   "gene": "vibe_adrenaline",
+   "confidence": 0.8,
+   "why": "battles"
+  },
+  {
+   "ref": "morning-star",
+   "title": "Morning Star",
+   "author": "Pierce Brown",
+   "gene": "vibe_hopeful",
+   "confidence": 0.6,
+   "why": "hard-won victory"
+  },
+  {
+   "ref": "anathem",
+   "title": "Anathem",
+   "author": "Neal Stephenson",
+   "gene": "vibe_cerebral",
+   "confidence": 0.9,
+   "why": "philosophy and math"
+  },
+  {
+   "ref": "anathem",
+   "title": "Anathem",
+   "author": "Neal Stephenson",
+   "gene": "vibe_mysterious",
+   "confidence": 0.65,
+   "why": "alien arrival"
+  },
+  {
+   "ref": "the-fifth-season",
+   "title": "The Fifth Season",
+   "author": "N. K. Jemisin",
+   "gene": "vibe_bleak",
+   "confidence": 0.85,
+   "why": "world-ending seasons"
+  },
+  {
+   "ref": "the-fifth-season",
+   "title": "The Fifth Season",
+   "author": "N. K. Jemisin",
+   "gene": "vibe_gritty",
+   "confidence": 0.7,
+   "why": "harsh survival"
+  },
+  {
+   "ref": "the-fifth-season",
+   "title": "The Fifth Season",
+   "author": "N. K. Jemisin",
+   "gene": "vibe_epic",
+   "confidence": 0.65,
+   "why": "sweeping world"
+  },
+  {
+   "ref": "blindsight",
+   "title": "Blindsight",
+   "author": "Peter Watts",
+   "gene": "vibe_cold_clinical",
+   "confidence": 0.8,
+   "why": "detached posthuman crew"
+  },
+  {
+   "ref": "blindsight",
+   "title": "Blindsight",
+   "author": "Peter Watts",
+   "gene": "vibe_eerie",
+   "confidence": 0.8,
+   "why": "Rorschach terror"
+  },
+  {
+   "ref": "blindsight",
+   "title": "Blindsight",
+   "author": "Peter Watts",
+   "gene": "vibe_cerebral",
+   "confidence": 0.8,
+   "why": "consciousness ideas"
+  },
+  {
+   "ref": "timeline",
+   "title": "Timeline",
+   "author": "Michael Crichton",
+   "gene": "vibe_adrenaline",
+   "confidence": 0.85,
+   "why": "medieval peril"
+  },
+  {
+   "ref": "timeline",
+   "title": "Timeline",
+   "author": "Michael Crichton",
+   "gene": "vibe_swashbuckling",
+   "confidence": 0.7,
+   "why": "knights and escapes"
+  },
+  {
+   "ref": "the-day-of-the-triffids",
+   "title": "The Day of the Triffids",
+   "author": "John Wyndham",
+   "gene": "vibe_eerie",
+   "confidence": 0.75,
+   "why": "blinded world, stalking plants"
+  },
+  {
+   "ref": "the-day-of-the-triffids",
+   "title": "The Day of the Triffids",
+   "author": "John Wyndham",
+   "gene": "vibe_desolate",
+   "confidence": 0.7,
+   "why": "empty London"
+  },
+  {
+   "ref": "the-day-of-the-triffids",
+   "title": "The Day of the Triffids",
+   "author": "John Wyndham",
+   "gene": "vibe_bleak",
+   "confidence": 0.6,
+   "why": "collapse"
+  },
+  {
+   "ref": "altered-carbon",
+   "title": "Altered Carbon",
+   "author": "Richard K. Morgan",
+   "gene": "vibe_neon_noir",
+   "confidence": 0.9,
+   "why": "noir with sleeves"
+  },
+  {
+   "ref": "altered-carbon",
+   "title": "Altered Carbon",
+   "author": "Richard K. Morgan",
+   "gene": "vibe_gritty",
+   "confidence": 0.8,
+   "why": "violent future Bay City"
+  },
+  {
+   "ref": "altered-carbon",
+   "title": "Altered Carbon",
+   "author": "Richard K. Morgan",
+   "gene": "vibe_sultry",
+   "confidence": 0.6,
+   "why": "sex and seduction"
+  },
+  {
+   "ref": "heir-to-the-empire",
+   "title": "Heir to the Empire",
+   "author": "Timothy Zahn",
+   "gene": "vibe_swashbuckling",
+   "confidence": 0.8,
+   "why": "Star Wars adventures"
+  },
+  {
+   "ref": "heir-to-the-empire",
+   "title": "Heir to the Empire",
+   "author": "Timothy Zahn",
+   "gene": "vibe_epic",
+   "confidence": 0.65,
+   "why": "galactic scope"
+  },
+  {
+   "ref": "thrawn",
+   "title": "Thrawn",
+   "author": "Timothy Zahn",
+   "gene": "vibe_cerebral",
+   "confidence": 0.75,
+   "why": "tactical genius"
+  },
+  {
+   "ref": "thrawn",
+   "title": "Thrawn",
+   "author": "Timothy Zahn",
+   "gene": "vibe_cold_clinical",
+   "confidence": 0.6,
+   "why": "Imperial precision"
+  },
+  {
+   "ref": "the-player-of-games-banks",
+   "title": "The Player of Games",
+   "author": "Iain M. Banks",
+   "gene": "vibe_cerebral",
+   "confidence": 0.75,
+   "why": "game and culture"
+  },
+  {
+   "ref": "the-player-of-games-banks",
+   "title": "The Player of Games",
+   "author": "Iain M. Banks",
+   "gene": "vibe_gleaming",
+   "confidence": 0.7,
+   "why": "Culture utopia"
+  },
+  {
+   "ref": "the-player-of-games-banks",
+   "title": "The Player of Games",
+   "author": "Iain M. Banks",
+   "gene": "vibe_sultry",
+   "confidence": 0.6,
+   "why": "decadent Azad"
+  },
+  {
+   "ref": "xenocide",
+   "title": "Xenocide",
+   "author": "Orson Scott Card",
+   "gene": "vibe_cerebral",
+   "confidence": 0.8,
+   "why": "philosophical debates"
+  },
+  {
+   "ref": "xenocide",
+   "title": "Xenocide",
+   "author": "Orson Scott Card",
+   "gene": "vibe_melancholy",
+   "confidence": 0.6,
+   "why": "suffering families"
+  },
+  {
+   "ref": "iron-widow",
+   "title": "Iron Widow",
+   "author": "Xiran Jay Zhao",
+   "gene": "vibe_gritty",
+   "confidence": 0.7,
+   "why": "brutal patriarchy"
+  },
+  {
+   "ref": "iron-widow",
+   "title": "Iron Widow",
+   "author": "Xiran Jay Zhao",
+   "gene": "vibe_adrenaline",
+   "confidence": 0.75,
+   "why": "mecha battles"
+  },
+  {
+   "ref": "iron-widow",
+   "title": "Iron Widow",
+   "author": "Xiran Jay Zhao",
+   "gene": "vibe_sultry",
+   "confidence": 0.6,
+   "why": "tense poly romance"
+  },
+  {
+   "ref": "a-scanner-darkly",
+   "title": "A Scanner Darkly",
+   "author": "Philip K. Dick",
+   "gene": "vibe_paranoid",
+   "confidence": 0.9,
+   "why": "undercover surveillance"
+  },
+  {
+   "ref": "a-scanner-darkly",
+   "title": "A Scanner Darkly",
+   "author": "Philip K. Dick",
+   "gene": "vibe_melancholy",
+   "confidence": 0.8,
+   "why": "drug-wrecked lives"
+  },
+  {
+   "ref": "a-scanner-darkly",
+   "title": "A Scanner Darkly",
+   "author": "Philip K. Dick",
+   "gene": "vibe_dreamlike",
+   "confidence": 0.65,
+   "why": "fractured perception"
+  },
+  {
+   "ref": "legend",
+   "title": "Legend",
+   "author": "Marie Lu",
+   "gene": "vibe_adrenaline",
+   "confidence": 0.75,
+   "why": "cat and mouse"
+  },
+  {
+   "ref": "legend",
+   "title": "Legend",
+   "author": "Marie Lu",
+   "gene": "vibe_gritty",
+   "confidence": 0.6,
+   "why": "slums of LA"
+  },
+  {
+   "ref": "the-windup-girl",
+   "title": "The Windup Girl",
+   "author": "Paolo Bacigalupi",
+   "gene": "vibe_gritty",
+   "confidence": 0.8,
+   "why": "Bangkok heat and decay"
+  },
+  {
+   "ref": "the-windup-girl",
+   "title": "The Windup Girl",
+   "author": "Paolo Bacigalupi",
+   "gene": "vibe_bleak",
+   "confidence": 0.7,
+   "why": "collapse"
+  },
+  {
+   "ref": "the-windup-girl",
+   "title": "The Windup Girl",
+   "author": "Paolo Bacigalupi",
+   "gene": "vibe_sultry",
+   "confidence": 0.6,
+   "why": "humid seediness"
+  },
+  {
+   "ref": "calibans-war",
+   "title": "Caliban's War",
+   "author": "James S. A. Corey",
+   "gene": "vibe_lived_in",
+   "confidence": 0.8,
+   "why": "used solar system"
+  },
+  {
+   "ref": "calibans-war",
+   "title": "Caliban's War",
+   "author": "James S. A. Corey",
+   "gene": "vibe_adrenaline",
+   "confidence": 0.7,
+   "why": "protomolecule action"
+  },
+  {
+   "ref": "calibans-war",
+   "title": "Caliban's War",
+   "author": "James S. A. Corey",
+   "gene": "vibe_tender",
+   "confidence": 0.6,
+   "why": "crew bond"
+  },
+  {
+   "ref": "the-mote-in-gods-eye",
+   "title": "The Mote in God's Eye",
+   "author": "Larry Niven",
+   "gene": "vibe_mysterious",
+   "confidence": 0.75,
+   "why": "Moties' secret"
+  },
+  {
+   "ref": "the-mote-in-gods-eye",
+   "title": "The Mote in God's Eye",
+   "author": "Larry Niven",
+   "gene": "vibe_cerebral",
+   "confidence": 0.7,
+   "why": "first-contact puzzles"
+  },
+  {
+   "ref": "the-mote-in-gods-eye",
+   "title": "The Mote in God's Eye",
+   "author": "Larry Niven",
+   "gene": "vibe_retro_pulp",
+   "confidence": 0.6,
+   "why": "classic navy space opera"
+  },
+  {
+   "ref": "congo",
+   "title": "Congo",
+   "author": "Michael Crichton",
+   "gene": "vibe_adrenaline",
+   "confidence": 0.75,
+   "why": "jungle danger"
+  },
+  {
+   "ref": "congo",
+   "title": "Congo",
+   "author": "Michael Crichton",
+   "gene": "vibe_retro_pulp",
+   "confidence": 0.6,
+   "why": "lost city adventure"
+  },
+  {
+   "ref": "ancillary-justice",
+   "title": "Ancillary Justice",
+   "author": "Ann Leckie",
+   "gene": "vibe_cerebral",
+   "confidence": 0.8,
+   "why": "cool AI viewpoint"
+  },
+  {
+   "ref": "ancillary-justice",
+   "title": "Ancillary Justice",
+   "author": "Ann Leckie",
+   "gene": "vibe_epic",
+   "confidence": 0.7,
+   "why": "Radch empire"
+  },
+  {
+   "ref": "ancillary-justice",
+   "title": "Ancillary Justice",
+   "author": "Ann Leckie",
+   "gene": "vibe_melancholy",
+   "confidence": 0.6,
+   "why": "grief of a lost ship"
+  },
+  {
+   "ref": "prey",
+   "title": "Prey",
+   "author": "Michael Crichton",
+   "gene": "vibe_adrenaline",
+   "confidence": 0.85,
+   "why": "swarm hunt"
+  },
+  {
+   "ref": "prey",
+   "title": "Prey",
+   "author": "Michael Crichton",
+   "gene": "vibe_claustrophobic",
+   "confidence": 0.7,
+   "why": "trapped lab"
+  },
+  {
+   "ref": "prey",
+   "title": "Prey",
+   "author": "Michael Crichton",
+   "gene": "vibe_cold_clinical",
+   "confidence": 0.65,
+   "why": "desert lab setting"
+  },
+  {
+   "ref": "sphere",
+   "title": "Sphere",
+   "author": "Michael Crichton",
+   "gene": "vibe_claustrophobic",
+   "confidence": 0.85,
+   "why": "deep-sea habitat"
+  },
+  {
+   "ref": "sphere",
+   "title": "Sphere",
+   "author": "Michael Crichton",
+   "gene": "vibe_eerie",
+   "confidence": 0.8,
+   "why": "alien sphere"
+  },
+  {
+   "ref": "sphere",
+   "title": "Sphere",
+   "author": "Michael Crichton",
+   "gene": "vibe_paranoid",
+   "confidence": 0.7,
+   "why": "crew turns"
+  },
+  {
+   "ref": "enders-shadow",
+   "title": "Ender's Shadow",
+   "author": "Orson Scott Card",
+   "gene": "vibe_cerebral",
+   "confidence": 0.75,
+   "why": "Bean's analysis"
+  },
+  {
+   "ref": "enders-shadow",
+   "title": "Ender's Shadow",
+   "author": "Orson Scott Card",
+   "gene": "vibe_gritty",
+   "confidence": 0.65,
+   "why": "Rotterdam streets"
+  },
+  {
+   "ref": "enders-shadow",
+   "title": "Ender's Shadow",
+   "author": "Orson Scott Card",
+   "gene": "vibe_cold_clinical",
+   "confidence": 0.6,
+   "why": "Battle School"
+  },
+  {
+   "ref": "the-girl-with-all-the-gifts",
+   "title": "The Girl with All the Gifts",
+   "author": "M. R. Carey",
+   "gene": "vibe_bleak",
+   "confidence": 0.75,
+   "why": "ruined Britain"
+  },
+  {
+   "ref": "the-girl-with-all-the-gifts",
+   "title": "The Girl with All the Gifts",
+   "author": "M. R. Carey",
+   "gene": "vibe_tender",
+   "confidence": 0.7,
+   "why": "Melanie and Miss Justineau"
+  },
+  {
+   "ref": "the-girl-with-all-the-gifts",
+   "title": "The Girl with All the Gifts",
+   "author": "M. R. Carey",
+   "gene": "vibe_eerie",
+   "confidence": 0.7,
+   "why": "hungries silence"
+  },
+  {
+   "ref": "the-peripheral",
+   "title": "The Peripheral",
+   "author": "William Gibson",
+   "gene": "vibe_paranoid",
+   "confidence": 0.75,
+   "why": "conspiracy across time"
+  },
+  {
+   "ref": "the-peripheral",
+   "title": "The Peripheral",
+   "author": "William Gibson",
+   "gene": "vibe_cerebral",
+   "confidence": 0.7,
+   "why": "dense ideas"
+  },
+  {
+   "ref": "the-peripheral",
+   "title": "The Peripheral",
+   "author": "William Gibson",
+   "gene": "vibe_eerie",
+   "confidence": 0.6,
+   "why": "empty future London"
+  },
+  {
+   "ref": "stranger-in-a-strange-land",
+   "title": "Stranger in a Strange Land",
+   "author": "Robert A. Heinlein",
+   "gene": "vibe_cerebral",
+   "confidence": 0.75,
+   "why": "social satire"
+  },
+  {
+   "ref": "stranger-in-a-strange-land",
+   "title": "Stranger in a Strange Land",
+   "author": "Robert A. Heinlein",
+   "gene": "vibe_sultry",
+   "confidence": 0.65,
+   "why": "free love"
+  },
+  {
+   "ref": "stranger-in-a-strange-land",
+   "title": "Stranger in a Strange Land",
+   "author": "Robert A. Heinlein",
+   "gene": "vibe_whimsical",
+   "confidence": 0.6,
+   "why": "odd humor"
+  },
+  {
+   "ref": "network-effect",
+   "title": "Network Effect",
+   "author": "Martha Wells",
+   "gene": "vibe_adrenaline",
+   "confidence": 0.8,
+   "why": "combat rescues"
+  },
+  {
+   "ref": "network-effect",
+   "title": "Network Effect",
+   "author": "Martha Wells",
+   "gene": "vibe_whimsical",
+   "confidence": 0.6,
+   "why": "Murderbot's snark"
+  },
+  {
+   "ref": "network-effect",
+   "title": "Network Effect",
+   "author": "Martha Wells",
+   "gene": "vibe_tender",
+   "confidence": 0.6,
+   "why": "found family"
+  },
+  {
+   "ref": "gateway",
+   "title": "Gateway",
+   "author": "Frederik Pohl",
+   "gene": "vibe_melancholy",
+   "confidence": 0.8,
+   "why": "Robinette's guilt"
+  },
+  {
+   "ref": "gateway",
+   "title": "Gateway",
+   "author": "Frederik Pohl",
+   "gene": "vibe_mysterious",
+   "confidence": 0.75,
+   "why": "Heechee ships"
+  },
+  {
+   "ref": "gateway",
+   "title": "Gateway",
+   "author": "Frederik Pohl",
+   "gene": "vibe_claustrophobic",
+   "confidence": 0.6,
+   "why": "cramped capsules"
+  },
+  {
+   "ref": "liliths-brood-dawn",
+   "title": "Lilith's Brood: Dawn",
+   "author": "Octavia E. Butler",
+   "gene": "vibe_claustrophobic",
+   "confidence": 0.75,
+   "why": "captive aboard ship"
+  },
+  {
+   "ref": "liliths-brood-dawn",
+   "title": "Lilith's Brood: Dawn",
+   "author": "Octavia E. Butler",
+   "gene": "vibe_eerie",
+   "confidence": 0.75,
+   "why": "alien Oankali"
+  },
+  {
+   "ref": "liliths-brood-dawn",
+   "title": "Lilith's Brood: Dawn",
+   "author": "Octavia E. Butler",
+   "gene": "vibe_sultry",
+   "confidence": 0.6,
+   "why": "uneasy intimacy"
+  },
+  {
+   "ref": "skyward",
+   "title": "Skyward",
+   "author": "Brandon Sanderson",
+   "gene": "vibe_adrenaline",
+   "confidence": 0.85,
+   "why": "dogfights"
+  },
+  {
+   "ref": "skyward",
+   "title": "Skyward",
+   "author": "Brandon Sanderson",
+   "gene": "vibe_hopeful",
+   "confidence": 0.7,
+   "why": "underdog pilot"
+  },
+  {
+   "ref": "skyward",
+   "title": "Skyward",
+   "author": "Brandon Sanderson",
+   "gene": "vibe_claustrophobic",
+   "confidence": 0.6,
+   "why": "underground caverns"
+  },
+  {
+   "ref": "the-ministry-for-the-future",
+   "title": "The Ministry for the Future",
+   "author": "Kim Stanley Robinson",
+   "gene": "vibe_hopeful",
+   "confidence": 0.8,
+   "why": "climate fight that might work"
+  },
+  {
+   "ref": "the-ministry-for-the-future",
+   "title": "The Ministry for the Future",
+   "author": "Kim Stanley Robinson",
+   "gene": "vibe_cerebral",
+   "confidence": 0.8,
+   "why": "policy and economics"
+  },
+  {
+   "ref": "the-ministry-for-the-future",
+   "title": "The Ministry for the Future",
+   "author": "Kim Stanley Robinson",
+   "gene": "vibe_bleak",
+   "confidence": 0.6,
+   "why": "heatwave opening"
+  },
+  {
+   "ref": "on-the-beach",
+   "title": "On the Beach",
+   "author": "Nevil Shute",
+   "gene": "vibe_melancholy",
+   "confidence": 0.9,
+   "why": "quiet waiting for the end"
+  },
+  {
+   "ref": "on-the-beach",
+   "title": "On the Beach",
+   "author": "Nevil Shute",
+   "gene": "vibe_bleak",
+   "confidence": 0.75,
+   "why": "no escape from fallout"
+  },
+  {
+   "ref": "on-the-beach",
+   "title": "On the Beach",
+   "author": "Nevil Shute",
+   "gene": "vibe_tender",
+   "confidence": 0.6,
+   "why": "gentle final days"
+  },
+  {
+   "ref": "binti",
+   "title": "Binti",
+   "author": "Nnedi Okorafor",
+   "gene": "vibe_tender",
+   "confidence": 0.65,
+   "why": "gentle coming of age"
+  },
+  {
+   "ref": "binti",
+   "title": "Binti",
+   "author": "Nnedi Okorafor",
+   "gene": "vibe_hopeful",
+   "confidence": 0.65,
+   "why": "peace through understanding"
+  },
+  {
+   "ref": "redshirts",
+   "title": "Redshirts",
+   "author": "John Scalzi",
+   "gene": "vibe_whimsical",
+   "confidence": 0.85,
+   "why": "meta comedy"
+  },
+  {
+   "ref": "redshirts",
+   "title": "Redshirts",
+   "author": "John Scalzi",
+   "gene": "vibe_swashbuckling",
+   "confidence": 0.6,
+   "why": "parody away missions"
+  },
+  {
+   "ref": "cryptonomicon",
+   "title": "Cryptonomicon",
+   "author": "Neal Stephenson",
+   "gene": "vibe_cerebral",
+   "confidence": 0.8,
+   "why": "cryptography and math"
+  },
+  {
+   "ref": "cryptonomicon",
+   "title": "Cryptonomicon",
+   "author": "Neal Stephenson",
+   "gene": "vibe_swashbuckling",
+   "confidence": 0.6,
+   "why": "treasure hunting adventure"
+  },
+  {
+   "ref": "cryptonomicon",
+   "title": "Cryptonomicon",
+   "author": "Neal Stephenson",
+   "gene": "vibe_whimsical",
+   "confidence": 0.6,
+   "why": "digressive humor"
+  },
+  {
+   "ref": "sea-of-tranquility",
+   "title": "Sea of Tranquility",
+   "author": "Emily St. John Mandel",
+   "gene": "vibe_melancholy",
+   "confidence": 0.8,
+   "why": "quiet wistful ache"
+  },
+  {
+   "ref": "sea-of-tranquility",
+   "title": "Sea of Tranquility",
+   "author": "Emily St. John Mandel",
+   "gene": "vibe_dreamlike",
+   "confidence": 0.75,
+   "why": "time-slipping vignettes"
+  },
+  {
+   "ref": "sea-of-tranquility",
+   "title": "Sea of Tranquility",
+   "author": "Emily St. John Mandel",
+   "gene": "vibe_tender",
+   "confidence": 0.65,
+   "why": "gentle people"
+  },
+  {
+   "ref": "pattern-recognition",
+   "title": "Pattern Recognition",
+   "author": "William Gibson",
+   "gene": "vibe_cerebral",
+   "confidence": 0.75,
+   "why": "cool observational tone"
+  },
+  {
+   "ref": "pattern-recognition",
+   "title": "Pattern Recognition",
+   "author": "William Gibson",
+   "gene": "vibe_paranoid",
+   "confidence": 0.7,
+   "why": "corporate espionage"
+  },
+  {
+   "ref": "pattern-recognition",
+   "title": "Pattern Recognition",
+   "author": "William Gibson",
+   "gene": "vibe_mysterious",
+   "confidence": 0.7,
+   "why": "hunting the footage"
+  },
+  {
+   "ref": "lord-of-light",
+   "title": "Lord of Light",
+   "author": "Roger Zelazny",
+   "gene": "vibe_epic",
+   "confidence": 0.8,
+   "why": "mythic war of gods"
+  },
+  {
+   "ref": "lord-of-light",
+   "title": "Lord of Light",
+   "author": "Roger Zelazny",
+   "gene": "vibe_cerebral",
+   "confidence": 0.6,
+   "why": "philosophical"
+  },
+  {
+   "ref": "i-am-legend",
+   "title": "I Am Legend",
+   "author": "Richard Matheson",
+   "gene": "vibe_desolate",
+   "confidence": 0.85,
+   "why": "last man alive"
+  },
+  {
+   "ref": "i-am-legend",
+   "title": "I Am Legend",
+   "author": "Richard Matheson",
+   "gene": "vibe_bleak",
+   "confidence": 0.8,
+   "why": "nightly sieges"
+  },
+  {
+   "ref": "i-am-legend",
+   "title": "I Am Legend",
+   "author": "Richard Matheson",
+   "gene": "vibe_claustrophobic",
+   "confidence": 0.7,
+   "why": "barricaded house"
+  },
+  {
+   "ref": "little-brother",
+   "title": "Little Brother",
+   "author": "Cory Doctorow",
+   "gene": "vibe_paranoid",
+   "confidence": 0.85,
+   "why": "DHS surveillance"
+  },
+  {
+   "ref": "little-brother",
+   "title": "Little Brother",
+   "author": "Cory Doctorow",
+   "gene": "vibe_adrenaline",
+   "confidence": 0.65,
+   "why": "hacker resistance"
+  },
+  {
+   "ref": "the-fall-of-hyperion",
+   "title": "The Fall of Hyperion",
+   "author": "Dan Simmons",
+   "gene": "vibe_epic",
+   "confidence": 0.85,
+   "why": "war across the Web"
+  },
+  {
+   "ref": "the-fall-of-hyperion",
+   "title": "The Fall of Hyperion",
+   "author": "Dan Simmons",
+   "gene": "vibe_eerie",
+   "confidence": 0.7,
+   "why": "Time Tombs and Shrike"
+  },
+  {
+   "ref": "the-fall-of-hyperion",
+   "title": "The Fall of Hyperion",
+   "author": "Dan Simmons",
+   "gene": "vibe_melancholy",
+   "confidence": 0.6,
+   "why": "tragic sacrifices"
+  },
+  {
+   "ref": "the-murderbot-diaries-artificial-condition",
+   "title": "The Murderbot Diaries: Artificial Condition",
+   "author": "Martha Wells",
+   "gene": "vibe_whimsical",
+   "confidence": 0.7,
+   "why": "snarky SecUnit"
+  },
+  {
+   "ref": "the-murderbot-diaries-artificial-condition",
+   "title": "The Murderbot Diaries: Artificial Condition",
+   "author": "Martha Wells",
+   "gene": "vibe_adrenaline",
+   "confidence": 0.65,
+   "why": "action sequences"
+  },
+  {
+   "ref": "the-murderbot-diaries-artificial-condition",
+   "title": "The Murderbot Diaries: Artificial Condition",
+   "author": "Martha Wells",
+   "gene": "vibe_tender",
+   "confidence": 0.6,
+   "why": "awkward friendships"
+  },
+  {
+   "ref": "daemon",
+   "title": "Daemon",
+   "author": "Daniel Suarez",
+   "gene": "vibe_paranoid",
+   "confidence": 0.8,
+   "why": "rogue program everywhere"
+  },
+  {
+   "ref": "daemon",
+   "title": "Daemon",
+   "author": "Daniel Suarez",
+   "gene": "vibe_adrenaline",
+   "confidence": 0.8,
+   "why": "techno-thriller"
+  },
+  {
+   "ref": "daemon",
+   "title": "Daemon",
+   "author": "Daniel Suarez",
+   "gene": "vibe_cold_clinical",
+   "confidence": 0.6,
+   "why": "algorithmic menace"
+  },
+  {
+   "ref": "count-zero",
+   "title": "Count Zero",
+   "author": "William Gibson",
+   "gene": "vibe_neon_noir",
+   "confidence": 0.85,
+   "why": "cyberpunk sprawl"
+  },
+  {
+   "ref": "count-zero",
+   "title": "Count Zero",
+   "author": "William Gibson",
+   "gene": "vibe_mysterious",
+   "confidence": 0.7,
+   "why": "voodoo AIs"
+  },
+  {
+   "ref": "count-zero",
+   "title": "Count Zero",
+   "author": "William Gibson",
+   "gene": "vibe_gritty",
+   "confidence": 0.6,
+   "why": "mercenaries"
+  },
+  {
+   "ref": "the-city-the-city",
+   "title": "The City & the City",
+   "author": "China Miéville",
+   "gene": "vibe_eerie",
+   "confidence": 0.8,
+   "why": "unseeing the other city"
+  },
+  {
+   "ref": "the-city-the-city",
+   "title": "The City & the City",
+   "author": "China Miéville",
+   "gene": "vibe_mysterious",
+   "confidence": 0.8,
+   "why": "murder investigation"
+  },
+  {
+   "ref": "the-city-the-city",
+   "title": "The City & the City",
+   "author": "China Miéville",
+   "gene": "vibe_paranoid",
+   "confidence": 0.7,
+   "why": "Breach watching"
+  },
+  {
+   "ref": "a-memory-called-empire",
+   "title": "A Memory Called Empire",
+   "author": "Arkady Martine",
+   "gene": "vibe_cerebral",
+   "confidence": 0.8,
+   "why": "poetry and politics"
+  },
+  {
+   "ref": "a-memory-called-empire",
+   "title": "A Memory Called Empire",
+   "author": "Arkady Martine",
+   "gene": "vibe_paranoid",
+   "confidence": 0.7,
+   "why": "court intrigue"
+  },
+  {
+   "ref": "a-memory-called-empire",
+   "title": "A Memory Called Empire",
+   "author": "Arkady Martine",
+   "gene": "vibe_mysterious",
+   "confidence": 0.65,
+   "why": "predecessor's death"
+  },
+  {
+   "ref": "burning-chrome",
+   "title": "Burning Chrome",
+   "author": "William Gibson",
+   "gene": "vibe_neon_noir",
+   "confidence": 0.9,
+   "why": "classic cyberpunk stories"
+  },
+  {
+   "ref": "burning-chrome",
+   "title": "Burning Chrome",
+   "author": "William Gibson",
+   "gene": "vibe_gritty",
+   "confidence": 0.7,
+   "why": "hustlers and hackers"
+  },
+  {
+   "ref": "replay",
+   "title": "Replay",
+   "author": "Ken Grimwood",
+   "gene": "vibe_melancholy",
+   "confidence": 0.75,
+   "why": "lives lived over"
+  },
+  {
+   "ref": "replay",
+   "title": "Replay",
+   "author": "Ken Grimwood",
+   "gene": "vibe_tender",
+   "confidence": 0.65,
+   "why": "love across replays"
+  },
+  {
+   "ref": "replay",
+   "title": "Replay",
+   "author": "Ken Grimwood",
+   "gene": "vibe_hopeful",
+   "confidence": 0.6,
+   "why": "making peace with time"
+  },
+  {
+   "ref": "perdido-street-station",
+   "title": "Perdido Street Station",
+   "author": "China Miéville",
+   "gene": "vibe_gritty",
+   "confidence": 0.85,
+   "why": "filthy New Crobuzon"
+  },
+  {
+   "ref": "perdido-street-station",
+   "title": "Perdido Street Station",
+   "author": "China Miéville",
+   "gene": "vibe_eerie",
+   "confidence": 0.75,
+   "why": "slake-moths"
+  },
+  {
+   "ref": "perdido-street-station",
+   "title": "Perdido Street Station",
+   "author": "China Miéville",
+   "gene": "vibe_dreamlike",
+   "confidence": 0.6,
+   "why": "baroque weirdness"
+  },
+  {
+   "ref": "mona-lisa-overdrive",
+   "title": "Mona Lisa Overdrive",
+   "author": "William Gibson",
+   "gene": "vibe_neon_noir",
+   "confidence": 0.85,
+   "why": "cyberpunk finale"
+  },
+  {
+   "ref": "mona-lisa-overdrive",
+   "title": "Mona Lisa Overdrive",
+   "author": "William Gibson",
+   "gene": "vibe_dreamlike",
+   "confidence": 0.65,
+   "why": "matrix ghosts"
+  },
+  {
+   "ref": "use-of-weapons-banks",
+   "title": "Use of Weapons",
+   "author": "Iain M. Banks",
+   "gene": "vibe_bleak",
+   "confidence": 0.75,
+   "why": "brutal wars"
+  },
+  {
+   "ref": "use-of-weapons-banks",
+   "title": "Use of Weapons",
+   "author": "Iain M. Banks",
+   "gene": "vibe_melancholy",
+   "confidence": 0.75,
+   "why": "haunted past"
+  },
+  {
+   "ref": "use-of-weapons-banks",
+   "title": "Use of Weapons",
+   "author": "Iain M. Banks",
+   "gene": "vibe_cerebral",
+   "confidence": 0.6,
+   "why": "structure games"
+  },
+  {
+   "ref": "the-shadow-of-the-torturer",
+   "title": "The Shadow of the Torturer",
+   "author": "Gene Wolfe",
+   "gene": "vibe_dreamlike",
+   "confidence": 0.8,
+   "why": "strange far-future Urth"
+  },
+  {
+   "ref": "the-shadow-of-the-torturer",
+   "title": "The Shadow of the Torturer",
+   "author": "Gene Wolfe",
+   "gene": "vibe_mysterious",
+   "confidence": 0.75,
+   "why": "unreliable Severian"
+  },
+  {
+   "ref": "the-shadow-of-the-torturer",
+   "title": "The Shadow of the Torturer",
+   "author": "Gene Wolfe",
+   "gene": "vibe_melancholy",
+   "confidence": 0.65,
+   "why": "dying sun"
+  },
+  {
+   "ref": "the-sparrow",
+   "title": "The Sparrow",
+   "author": "Mary Doria Russell",
+   "gene": "vibe_melancholy",
+   "confidence": 0.8,
+   "why": "devastating aftermath"
+  },
+  {
+   "ref": "the-sparrow",
+   "title": "The Sparrow",
+   "author": "Mary Doria Russell",
+   "gene": "vibe_tender",
+   "confidence": 0.7,
+   "why": "close friendships"
+  },
+  {
+   "ref": "the-sparrow",
+   "title": "The Sparrow",
+   "author": "Mary Doria Russell",
+   "gene": "vibe_bleak",
+   "confidence": 0.65,
+   "why": "horrors on Rakhat"
+  },
+  {
+   "ref": "stand-on-zanzibar",
+   "title": "Stand on Zanzibar",
+   "author": "John Brunner",
+   "gene": "vibe_cerebral",
+   "confidence": 0.8,
+   "why": "collage of ideas"
+  },
+  {
+   "ref": "stand-on-zanzibar",
+   "title": "Stand on Zanzibar",
+   "author": "John Brunner",
+   "gene": "vibe_paranoid",
+   "confidence": 0.6,
+   "why": "overpopulated chaos"
+  },
+  {
+   "ref": "babel-17",
+   "title": "Babel-17",
+   "author": "Samuel R. Delany",
+   "gene": "vibe_cerebral",
+   "confidence": 0.8,
+   "why": "language as weapon"
+  },
+  {
+   "ref": "babel-17",
+   "title": "Babel-17",
+   "author": "Samuel R. Delany",
+   "gene": "vibe_swashbuckling",
+   "confidence": 0.6,
+   "why": "starship crew adventure"
+  },
+  {
+   "ref": "babel-17",
+   "title": "Babel-17",
+   "author": "Samuel R. Delany",
+   "gene": "vibe_mysterious",
+   "confidence": 0.65,
+   "why": "decoding Babel-17"
+  },
+  {
+   "ref": "excession-banks",
+   "title": "Excession",
+   "author": "Iain M. Banks",
+   "gene": "vibe_cerebral",
+   "confidence": 0.8,
+   "why": "Minds scheming"
+  },
+  {
+   "ref": "excession-banks",
+   "title": "Excession",
+   "author": "Iain M. Banks",
+   "gene": "vibe_mysterious",
+   "confidence": 0.7,
+   "why": "the Excession"
+  },
+  {
+   "ref": "excession-banks",
+   "title": "Excession",
+   "author": "Iain M. Banks",
+   "gene": "vibe_whimsical",
+   "confidence": 0.6,
+   "why": "ship names and wit"
+  },
+  {
+   "ref": "the-library-at-mount-char",
+   "title": "The Library at Mount Char",
+   "author": "Scott Hawkins",
+   "gene": "vibe_eerie",
+   "confidence": 0.8,
+   "why": "unsettling cruelty"
+  },
+  {
+   "ref": "the-library-at-mount-char",
+   "title": "The Library at Mount Char",
+   "author": "Scott Hawkins",
+   "gene": "vibe_dreamlike",
+   "confidence": 0.65,
+   "why": "surreal power"
+  },
+  {
+   "ref": "the-library-at-mount-char",
+   "title": "The Library at Mount Char",
+   "author": "Scott Hawkins",
+   "gene": "vibe_bleak",
+   "confidence": 0.65,
+   "why": "violent world"
+  },
+  {
+   "ref": "the-andromeda-strain",
+   "title": "The Andromeda Strain",
+   "author": "Michael Crichton",
+   "gene": "vibe_cold_clinical",
+   "confidence": 0.9,
+   "why": "sterile lab procedure"
+  },
+  {
+   "ref": "the-andromeda-strain",
+   "title": "The Andromeda Strain",
+   "author": "Michael Crichton",
+   "gene": "vibe_claustrophobic",
+   "confidence": 0.7,
+   "why": "sealed Wildfire lab"
+  },
+  {
+   "ref": "the-andromeda-strain",
+   "title": "The Andromeda Strain",
+   "author": "Michael Crichton",
+   "gene": "vibe_mysterious",
+   "confidence": 0.7,
+   "why": "what is the organism"
+  },
+  {
+   "ref": "exhalation",
+   "title": "Exhalation",
+   "author": "Ted Chiang",
+   "gene": "vibe_cerebral",
+   "confidence": 0.85,
+   "why": "big-idea stories"
+  },
+  {
+   "ref": "exhalation",
+   "title": "Exhalation",
+   "author": "Ted Chiang",
+   "gene": "vibe_melancholy",
+   "confidence": 0.65,
+   "why": "quiet endings"
+  },
+  {
+   "ref": "exhalation",
+   "title": "Exhalation",
+   "author": "Ted Chiang",
+   "gene": "vibe_tender",
+   "confidence": 0.6,
+   "why": "humane stories"
+  },
+  {
+   "ref": "harrow-the-ninth",
+   "title": "Harrow the Ninth",
+   "author": "Tamsyn Muir",
+   "gene": "vibe_dreamlike",
+   "confidence": 0.8,
+   "why": "distorted memories"
+  },
+  {
+   "ref": "harrow-the-ninth",
+   "title": "Harrow the Ninth",
+   "author": "Tamsyn Muir",
+   "gene": "vibe_eerie",
+   "confidence": 0.75,
+   "why": "gothic necromancy"
+  },
+  {
+   "ref": "harrow-the-ninth",
+   "title": "Harrow the Ninth",
+   "author": "Tamsyn Muir",
+   "gene": "vibe_mysterious",
+   "confidence": 0.8,
+   "why": "what is real"
+  },
+  {
+   "ref": "iron-gold",
+   "title": "Iron Gold",
+   "author": "Pierce Brown",
+   "gene": "vibe_gritty",
+   "confidence": 0.8,
+   "why": "brutal aftermath"
+  },
+  {
+   "ref": "iron-gold",
+   "title": "Iron Gold",
+   "author": "Pierce Brown",
+   "gene": "vibe_bleak",
+   "confidence": 0.65,
+   "why": "peace collapsing"
+  },
+  {
+   "ref": "iron-gold",
+   "title": "Iron Gold",
+   "author": "Pierce Brown",
+   "gene": "vibe_epic",
+   "confidence": 0.7,
+   "why": "many fronts"
+  },
+  {
+   "ref": "pandoras-star",
+   "title": "Pandora's Star",
+   "author": "Peter F. Hamilton",
+   "gene": "vibe_epic",
+   "confidence": 0.85,
+   "why": "sprawling Commonwealth"
+  },
+  {
+   "ref": "pandoras-star",
+   "title": "Pandora's Star",
+   "author": "Peter F. Hamilton",
+   "gene": "vibe_gleaming",
+   "confidence": 0.65,
+   "why": "wormhole-connected worlds"
+  },
+  {
+   "ref": "pandoras-star",
+   "title": "Pandora's Star",
+   "author": "Peter F. Hamilton",
+   "gene": "vibe_mysterious",
+   "confidence": 0.6,
+   "why": "Dyson barrier"
+  },
+  {
+   "ref": "the-word-for-world-is-forest",
+   "title": "The Word for World Is Forest",
+   "author": "Ursula K. Le Guin",
+   "gene": "vibe_dreamlike",
+   "confidence": 0.7,
+   "why": "dream-time Athsheans"
+  },
+  {
+   "ref": "the-word-for-world-is-forest",
+   "title": "The Word for World Is Forest",
+   "author": "Ursula K. Le Guin",
+   "gene": "vibe_bleak",
+   "confidence": 0.65,
+   "why": "colonial brutality"
+  },
+  {
+   "ref": "the-word-for-world-is-forest",
+   "title": "The Word for World Is Forest",
+   "author": "Ursula K. Le Guin",
+   "gene": "vibe_melancholy",
+   "confidence": 0.6,
+   "why": "loss of innocence"
+  },
+  {
+   "ref": "severance",
+   "title": "Severance",
+   "author": "Ling Ma",
+   "gene": "vibe_melancholy",
+   "confidence": 0.8,
+   "why": "numb loss"
+  },
+  {
+   "ref": "severance",
+   "title": "Severance",
+   "author": "Ling Ma",
+   "gene": "vibe_eerie",
+   "confidence": 0.7,
+   "why": "fevered routine loops"
+  },
+  {
+   "ref": "severance",
+   "title": "Severance",
+   "author": "Ling Ma",
+   "gene": "vibe_desolate",
+   "confidence": 0.65,
+   "why": "emptied New York"
+  },
+  {
+   "ref": "herland",
+   "title": "Herland",
+   "author": "Charlotte Perkins Gilman",
+   "gene": "vibe_hopeful",
+   "confidence": 0.7,
+   "why": "gentle utopia"
+  },
+  {
+   "ref": "herland",
+   "title": "Herland",
+   "author": "Charlotte Perkins Gilman",
+   "gene": "vibe_cerebral",
+   "confidence": 0.65,
+   "why": "idea-driven"
+  },
+  {
+   "ref": "abaddons-gate",
+   "title": "Abaddon's Gate",
+   "author": "James S. A. Corey",
+   "gene": "vibe_lived_in",
+   "confidence": 0.8,
+   "why": "grungy ships"
+  },
+  {
+   "ref": "abaddons-gate",
+   "title": "Abaddon's Gate",
+   "author": "James S. A. Corey",
+   "gene": "vibe_eerie",
+   "confidence": 0.65,
+   "why": "the slow zone"
+  },
+  {
+   "ref": "abaddons-gate",
+   "title": "Abaddon's Gate",
+   "author": "James S. A. Corey",
+   "gene": "vibe_adrenaline",
+   "confidence": 0.65,
+   "why": "standoffs"
+  },
+  {
+   "ref": "ice-planet-barbarians",
+   "title": "Ice Planet Barbarians",
+   "author": "Ruby Dixon",
+   "gene": "vibe_sultry",
+   "confidence": 0.9,
+   "why": "steamy romance"
+  },
+  {
+   "ref": "ice-planet-barbarians",
+   "title": "Ice Planet Barbarians",
+   "author": "Ruby Dixon",
+   "gene": "vibe_cozy",
+   "confidence": 0.7,
+   "why": "warm tribe"
+  },
+  {
+   "ref": "persepolis-rising",
+   "title": "Persepolis Rising",
+   "author": "James S. A. Corey",
+   "gene": "vibe_lived_in",
+   "confidence": 0.75,
+   "why": "worn veterans"
+  },
+  {
+   "ref": "persepolis-rising",
+   "title": "Persepolis Rising",
+   "author": "James S. A. Corey",
+   "gene": "vibe_bleak",
+   "confidence": 0.6,
+   "why": "occupation"
+  },
+  {
+   "ref": "persepolis-rising",
+   "title": "Persepolis Rising",
+   "author": "James S. A. Corey",
+   "gene": "vibe_tender",
+   "confidence": 0.6,
+   "why": "crew bonds"
+  },
+  {
+   "ref": "the-stars-my-destination",
+   "title": "The Stars My Destination",
+   "author": "Alfred Bester",
+   "gene": "vibe_gritty",
+   "confidence": 0.75,
+   "why": "violent revenge"
+  },
+  {
+   "ref": "the-stars-my-destination",
+   "title": "The Stars My Destination",
+   "author": "Alfred Bester",
+   "gene": "vibe_swashbuckling",
+   "confidence": 0.65,
+   "why": "Gully Foyle's bravado"
+  },
+  {
+   "ref": "the-stars-my-destination",
+   "title": "The Stars My Destination",
+   "author": "Alfred Bester",
+   "gene": "vibe_dreamlike",
+   "confidence": 0.6,
+   "why": "synesthesia sequences"
+  },
+  {
+   "ref": "permutation-city",
+   "title": "Permutation City",
+   "author": "Greg Egan",
+   "gene": "vibe_cerebral",
+   "confidence": 0.9,
+   "why": "consciousness theory"
+  },
+  {
+   "ref": "permutation-city",
+   "title": "Permutation City",
+   "author": "Greg Egan",
+   "gene": "vibe_cold_clinical",
+   "confidence": 0.6,
+   "why": "detached"
+  },
+  {
+   "ref": "the-long-earth",
+   "title": "The Long Earth",
+   "author": "Terry Pratchett and Stephen Baxter",
+   "gene": "vibe_desolate",
+   "confidence": 0.75,
+   "why": "empty parallel Earths"
+  },
+  {
+   "ref": "the-long-earth",
+   "title": "The Long Earth",
+   "author": "Terry Pratchett and Stephen Baxter",
+   "gene": "vibe_hopeful",
+   "confidence": 0.65,
+   "why": "exploration"
+  },
+  {
+   "ref": "the-long-earth",
+   "title": "The Long Earth",
+   "author": "Terry Pratchett and Stephen Baxter",
+   "gene": "vibe_whimsical",
+   "confidence": 0.6,
+   "why": "Pratchett touch"
+  },
+  {
+   "ref": "earth-abides",
+   "title": "Earth Abides",
+   "author": "George R. Stewart",
+   "gene": "vibe_melancholy",
+   "confidence": 0.85,
+   "why": "civilization fades"
+  },
+  {
+   "ref": "earth-abides",
+   "title": "Earth Abides",
+   "author": "George R. Stewart",
+   "gene": "vibe_desolate",
+   "confidence": 0.8,
+   "why": "emptied America"
+  },
+  {
+   "ref": "earth-abides",
+   "title": "Earth Abides",
+   "author": "George R. Stewart",
+   "gene": "vibe_hopeful",
+   "confidence": 0.6,
+   "why": "new tribe"
+  },
+  {
+   "ref": "dark-age",
+   "title": "Dark Age",
+   "author": "Pierce Brown",
+   "gene": "vibe_bleak",
+   "confidence": 0.9,
+   "why": "brutal war"
+  },
+  {
+   "ref": "dark-age",
+   "title": "Dark Age",
+   "author": "Pierce Brown",
+   "gene": "vibe_gritty",
+   "confidence": 0.85,
+   "why": "blood and loss"
+  },
+  {
+   "ref": "dark-age",
+   "title": "Dark Age",
+   "author": "Pierce Brown",
+   "gene": "vibe_epic",
+   "confidence": 0.7,
+   "why": "vast conflict"
+  },
+  {
+   "ref": "authority",
+   "title": "Authority",
+   "author": "Jeff VanderMeer",
+   "gene": "vibe_paranoid",
+   "confidence": 0.85,
+   "why": "Southern Reach bureaucracy"
+  },
+  {
+   "ref": "authority",
+   "title": "Authority",
+   "author": "Jeff VanderMeer",
+   "gene": "vibe_eerie",
+   "confidence": 0.8,
+   "why": "creeping dread"
+  },
+  {
+   "ref": "authority",
+   "title": "Authority",
+   "author": "Jeff VanderMeer",
+   "gene": "vibe_claustrophobic",
+   "confidence": 0.6,
+   "why": "office walls"
+  },
+  {
+   "ref": "the-collapsing-empire-the-interdependency",
+   "title": "The Collapsing Empire",
+   "author": "John Scalzi",
+   "gene": "vibe_whimsical",
+   "confidence": 0.7,
+   "why": "snark and swearing"
+  },
+  {
+   "ref": "the-collapsing-empire-the-interdependency",
+   "title": "The Collapsing Empire",
+   "author": "John Scalzi",
+   "gene": "vibe_epic",
+   "confidence": 0.6,
+   "why": "empire scope"
+  },
+  {
+   "ref": "seveneves",
+   "title": "Seveneves",
+   "author": "Neal Stephenson",
+   "gene": "vibe_cerebral",
+   "confidence": 0.8,
+   "why": "orbital engineering"
+  },
+  {
+   "ref": "seveneves",
+   "title": "Seveneves",
+   "author": "Neal Stephenson",
+   "gene": "vibe_bleak",
+   "confidence": 0.7,
+   "why": "extinction event"
+  },
+  {
+   "ref": "seveneves",
+   "title": "Seveneves",
+   "author": "Neal Stephenson",
+   "gene": "vibe_epic",
+   "confidence": 0.7,
+   "why": "five thousand years"
+  },
+  {
+   "ref": "a-psalm-for-the-wild-built",
+   "title": "A Psalm for the Wild-Built",
+   "author": "Becky Chambers",
+   "gene": "vibe_cozy",
+   "confidence": 0.9,
+   "why": "tea and wandering"
+  },
+  {
+   "ref": "a-psalm-for-the-wild-built",
+   "title": "A Psalm for the Wild-Built",
+   "author": "Becky Chambers",
+   "gene": "vibe_tender",
+   "confidence": 0.85,
+   "why": "gentle monk and robot"
+  },
+  {
+   "ref": "a-psalm-for-the-wild-built",
+   "title": "A Psalm for the Wild-Built",
+   "author": "Becky Chambers",
+   "gene": "vibe_hopeful",
+   "confidence": 0.85,
+   "why": "solarpunk peace"
+  },
+  {
+   "ref": "the-deep",
+   "title": "The Deep",
+   "author": "Nick Cutter",
+   "gene": "vibe_claustrophobic",
+   "confidence": 0.9,
+   "why": "deep-sea station"
+  },
+  {
+   "ref": "the-deep",
+   "title": "The Deep",
+   "author": "Nick Cutter",
+   "gene": "vibe_eerie",
+   "confidence": 0.8,
+   "why": "dread below"
+  },
+  {
+   "ref": "the-deep",
+   "title": "The Deep",
+   "author": "Nick Cutter",
+   "gene": "vibe_bleak",
+   "confidence": 0.7,
+   "why": "grim horror"
+  },
+  {
+   "ref": "doomsday-book",
+   "title": "Doomsday Book",
+   "author": "Connie Willis",
+   "gene": "vibe_melancholy",
+   "confidence": 0.8,
+   "why": "plague grief"
+  },
+  {
+   "ref": "doomsday-book",
+   "title": "Doomsday Book",
+   "author": "Connie Willis",
+   "gene": "vibe_tender",
+   "confidence": 0.7,
+   "why": "Kivrin's compassion"
+  },
+  {
+   "ref": "doomsday-book",
+   "title": "Doomsday Book",
+   "author": "Connie Willis",
+   "gene": "vibe_bleak",
+   "confidence": 0.65,
+   "why": "Black Death"
+  },
+  {
+   "ref": "spin",
+   "title": "Spin",
+   "author": "Robert Charles Wilson",
+   "gene": "vibe_melancholy",
+   "confidence": 0.7,
+   "why": "wistful siblings"
+  },
+  {
+   "ref": "spin",
+   "title": "Spin",
+   "author": "Robert Charles Wilson",
+   "gene": "vibe_mysterious",
+   "confidence": 0.75,
+   "why": "the Hypotheticals"
+  },
+  {
+   "ref": "spin",
+   "title": "Spin",
+   "author": "Robert Charles Wilson",
+   "gene": "vibe_cerebral",
+   "confidence": 0.7,
+   "why": "deep time"
+  },
+  {
+   "ref": "endymion",
+   "title": "Endymion",
+   "author": "Dan Simmons",
+   "gene": "vibe_swashbuckling",
+   "confidence": 0.7,
+   "why": "raft-journey adventure"
+  },
+  {
+   "ref": "endymion",
+   "title": "Endymion",
+   "author": "Dan Simmons",
+   "gene": "vibe_epic",
+   "confidence": 0.7,
+   "why": "universe-spanning"
+  },
+  {
+   "ref": "endymion",
+   "title": "Endymion",
+   "author": "Dan Simmons",
+   "gene": "vibe_tender",
+   "confidence": 0.6,
+   "why": "Aenea and Raul"
+  },
+  {
+   "ref": "a-deepness-in-the-sky-zones-of-thought",
+   "title": "A Deepness in the Sky",
+   "author": "Vernor Vinge",
+   "gene": "vibe_epic",
+   "confidence": 0.8,
+   "why": "centuries-long plot"
+  },
+  {
+   "ref": "a-deepness-in-the-sky-zones-of-thought",
+   "title": "A Deepness in the Sky",
+   "author": "Vernor Vinge",
+   "gene": "vibe_cerebral",
+   "confidence": 0.75,
+   "why": "spider civilization"
+  },
+  {
+   "ref": "a-deepness-in-the-sky-zones-of-thought",
+   "title": "A Deepness in the Sky",
+   "author": "Vernor Vinge",
+   "gene": "vibe_claustrophobic",
+   "confidence": 0.6,
+   "why": "trapped fleet"
+  },
+  {
+   "ref": "diaspora",
+   "title": "Diaspora",
+   "author": "Greg Egan",
+   "gene": "vibe_cerebral",
+   "confidence": 0.9,
+   "why": "dense ideas"
+  },
+  {
+   "ref": "diaspora",
+   "title": "Diaspora",
+   "author": "Greg Egan",
+   "gene": "vibe_cold_clinical",
+   "confidence": 0.65,
+   "why": "digital minds"
+  },
+  {
+   "ref": "diaspora",
+   "title": "Diaspora",
+   "author": "Greg Egan",
+   "gene": "vibe_desolate",
+   "confidence": 0.6,
+   "why": "deep space"
+  },
+  {
+   "ref": "the-first-fifteen-lives-of-harry-august",
+   "title": "The First Fifteen Lives of Harry August",
+   "author": "Claire North",
+   "gene": "vibe_cerebral",
+   "confidence": 0.75,
+   "why": "cool chess of lives"
+  },
+  {
+   "ref": "the-first-fifteen-lives-of-harry-august",
+   "title": "The First Fifteen Lives of Harry August",
+   "author": "Claire North",
+   "gene": "vibe_melancholy",
+   "confidence": 0.65,
+   "why": "lonely kalachakra"
+  },
+  {
+   "ref": "the-first-fifteen-lives-of-harry-august",
+   "title": "The First Fifteen Lives of Harry August",
+   "author": "Claire North",
+   "gene": "vibe_mysterious",
+   "confidence": 0.65,
+   "why": "world ending sooner"
+  },
+  {
+   "ref": "ancillary-sword",
+   "title": "Ancillary Sword",
+   "author": "Ann Leckie",
+   "gene": "vibe_cerebral",
+   "confidence": 0.7,
+   "why": "cool AI narrator"
+  },
+  {
+   "ref": "ancillary-sword",
+   "title": "Ancillary Sword",
+   "author": "Ann Leckie",
+   "gene": "vibe_lived_in",
+   "confidence": 0.6,
+   "why": "station undergarden"
+  },
+  {
+   "ref": "a-closed-and-common-orbit",
+   "title": "A Closed and Common Orbit",
+   "author": "Becky Chambers",
+   "gene": "vibe_cozy",
+   "confidence": 0.8,
+   "why": "warm found family"
+  },
+  {
+   "ref": "a-closed-and-common-orbit",
+   "title": "A Closed and Common Orbit",
+   "author": "Becky Chambers",
+   "gene": "vibe_tender",
+   "confidence": 0.85,
+   "why": "gentle care"
+  },
+  {
+   "ref": "a-closed-and-common-orbit",
+   "title": "A Closed and Common Orbit",
+   "author": "Becky Chambers",
+   "gene": "vibe_hopeful",
+   "confidence": 0.75,
+   "why": "belonging"
+  },
+  {
+   "ref": "leviathan-falls",
+   "title": "Leviathan Falls",
+   "author": "James S. A. Corey",
+   "gene": "vibe_melancholy",
+   "confidence": 0.7,
+   "why": "bittersweet end"
+  },
+  {
+   "ref": "leviathan-falls",
+   "title": "Leviathan Falls",
+   "author": "James S. A. Corey",
+   "gene": "vibe_eerie",
+   "confidence": 0.75,
+   "why": "unknowable enemy"
+  },
+  {
+   "ref": "leviathan-falls",
+   "title": "Leviathan Falls",
+   "author": "James S. A. Corey",
+   "gene": "vibe_epic",
+   "confidence": 0.7,
+   "why": "finale"
+  },
+  {
+   "ref": "lock-in-a-novel-of-the-near-future-lock-in-series-book-1",
+   "title": "Lock In",
+   "author": "John Scalzi",
+   "gene": "vibe_mysterious",
+   "confidence": 0.75,
+   "why": "murder case"
+  },
+  {
+   "ref": "lock-in-a-novel-of-the-near-future-lock-in-series-book-1",
+   "title": "Lock In",
+   "author": "John Scalzi",
+   "gene": "vibe_cerebral",
+   "confidence": 0.6,
+   "why": "tech procedural"
+  },
+  {
+   "ref": "the-ship-who-sang",
+   "title": "The Ship Who Sang",
+   "author": "Anne McCaffrey",
+   "gene": "vibe_tender",
+   "confidence": 0.75,
+   "why": "grief and love"
+  },
+  {
+   "ref": "the-ship-who-sang",
+   "title": "The Ship Who Sang",
+   "author": "Anne McCaffrey",
+   "gene": "vibe_melancholy",
+   "confidence": 0.65,
+   "why": "bittersweet"
+  },
+  {
+   "ref": "illuminae-kaufman",
+   "title": "Illuminae",
+   "author": "Amie Kaufman and Jay Kristoff",
+   "gene": "vibe_adrenaline",
+   "confidence": 0.85,
+   "why": "fleeing fleet"
+  },
+  {
+   "ref": "illuminae-kaufman",
+   "title": "Illuminae",
+   "author": "Amie Kaufman and Jay Kristoff",
+   "gene": "vibe_claustrophobic",
+   "confidence": 0.7,
+   "why": "trapped ships"
+  },
+  {
+   "ref": "illuminae-kaufman",
+   "title": "Illuminae",
+   "author": "Amie Kaufman and Jay Kristoff",
+   "gene": "vibe_paranoid",
+   "confidence": 0.65,
+   "why": "rogue AI"
+  },
+  {
+   "ref": "bobiverse-we-are-legion-we-are-bob",
+   "title": "Bobiverse: We Are Legion (We Are Bob)",
+   "author": "Dennis E. Taylor",
+   "gene": "vibe_whimsical",
+   "confidence": 0.8,
+   "why": "geeky humor"
+  },
+  {
+   "ref": "bobiverse-we-are-legion-we-are-bob",
+   "title": "Bobiverse: We Are Legion (We Are Bob)",
+   "author": "Dennis E. Taylor",
+   "gene": "vibe_hopeful",
+   "confidence": 0.7,
+   "why": "fun exploration"
+  },
+  {
+   "ref": "shards-of-honor",
+   "title": "Shards of Honor",
+   "author": "Lois McMaster Bujold",
+   "gene": "vibe_swashbuckling",
+   "confidence": 0.65,
+   "why": "daring captive escape"
+  },
+  {
+   "ref": "shards-of-honor",
+   "title": "Shards of Honor",
+   "author": "Lois McMaster Bujold",
+   "gene": "vibe_tender",
+   "confidence": 0.65,
+   "why": "romance"
+  },
+  {
+   "ref": "shards-of-honor",
+   "title": "Shards of Honor",
+   "author": "Lois McMaster Bujold",
+   "gene": "vibe_sultry",
+   "confidence": 0.6,
+   "why": "enemies tension"
+  },
+  {
+   "ref": "dhalgren",
+   "title": "Dhalgren",
+   "author": "Samuel R. Delany",
+   "gene": "vibe_dreamlike",
+   "confidence": 0.9,
+   "why": "surreal Bellona"
+  },
+  {
+   "ref": "dhalgren",
+   "title": "Dhalgren",
+   "author": "Samuel R. Delany",
+   "gene": "vibe_eerie",
+   "confidence": 0.7,
+   "why": "burning city"
+  },
+  {
+   "ref": "dhalgren",
+   "title": "Dhalgren",
+   "author": "Samuel R. Delany",
+   "gene": "vibe_desolate",
+   "confidence": 0.65,
+   "why": "emptied city"
+  },
+  {
+   "ref": "house-of-suns",
+   "title": "House of Suns",
+   "author": "Alastair Reynolds",
+   "gene": "vibe_epic",
+   "confidence": 0.85,
+   "why": "millions of years"
+  },
+  {
+   "ref": "house-of-suns",
+   "title": "House of Suns",
+   "author": "Alastair Reynolds",
+   "gene": "vibe_desolate",
+   "confidence": 0.75,
+   "why": "vast empty galaxy"
+  },
+  {
+   "ref": "house-of-suns",
+   "title": "House of Suns",
+   "author": "Alastair Reynolds",
+   "gene": "vibe_mysterious",
+   "confidence": 0.7,
+   "why": "the Line's secret"
+  },
+  {
+   "ref": "on-basilisk-station",
+   "title": "On Basilisk Station",
+   "author": "David Weber",
+   "gene": "vibe_swashbuckling",
+   "confidence": 0.65,
+   "why": "naval derring-do"
+  },
+  {
+   "ref": "on-basilisk-station",
+   "title": "On Basilisk Station",
+   "author": "David Weber",
+   "gene": "vibe_cerebral",
+   "confidence": 0.6,
+   "why": "tactical detail"
+  },
+  {
+   "ref": "on-basilisk-station",
+   "title": "On Basilisk Station",
+   "author": "David Weber",
+   "gene": "vibe_retro_pulp",
+   "confidence": 0.6,
+   "why": "old-school naval SF"
+  },
+  {
+   "ref": "accelerando",
+   "title": "Accelerando",
+   "author": "Charles Stross",
+   "gene": "vibe_cerebral",
+   "confidence": 0.9,
+   "why": "singularity ideas"
+  },
+  {
+   "ref": "accelerando",
+   "title": "Accelerando",
+   "author": "Charles Stross",
+   "gene": "vibe_whimsical",
+   "confidence": 0.6,
+   "why": "manic future"
+  },
+  {
+   "ref": "the-demolished-man",
+   "title": "The Demolished Man",
+   "author": "Alfred Bester",
+   "gene": "vibe_neon_noir",
+   "confidence": 0.75,
+   "why": "future noir"
+  },
+  {
+   "ref": "the-demolished-man",
+   "title": "The Demolished Man",
+   "author": "Alfred Bester",
+   "gene": "vibe_paranoid",
+   "confidence": 0.75,
+   "why": "telepathic police"
+  },
+  {
+   "ref": "the-demolished-man",
+   "title": "The Demolished Man",
+   "author": "Alfred Bester",
+   "gene": "vibe_adrenaline",
+   "confidence": 0.65,
+   "why": "chase"
+  },
+  {
+   "ref": "downbelow-station",
+   "title": "Downbelow Station",
+   "author": "C. J. Cherryh",
+   "gene": "vibe_claustrophobic",
+   "confidence": 0.7,
+   "why": "crowded station"
+  },
+  {
+   "ref": "downbelow-station",
+   "title": "Downbelow Station",
+   "author": "C. J. Cherryh",
+   "gene": "vibe_lived_in",
+   "confidence": 0.7,
+   "why": "worn station life"
+  },
+  {
+   "ref": "downbelow-station",
+   "title": "Downbelow Station",
+   "author": "C. J. Cherryh",
+   "gene": "vibe_paranoid",
+   "confidence": 0.6,
+   "why": "war politics"
+  },
+  {
+   "ref": "look-to-windward",
+   "title": "Look to Windward",
+   "author": "Iain M. Banks",
+   "gene": "vibe_melancholy",
+   "confidence": 0.85,
+   "why": "grief after war"
+  },
+  {
+   "ref": "look-to-windward",
+   "title": "Look to Windward",
+   "author": "Iain M. Banks",
+   "gene": "vibe_gleaming",
+   "confidence": 0.7,
+   "why": "Culture orbital"
+  },
+  {
+   "ref": "look-to-windward",
+   "title": "Look to Windward",
+   "author": "Iain M. Banks",
+   "gene": "vibe_tender",
+   "confidence": 0.6,
+   "why": "quiet reflection"
+  },
+  {
+   "ref": "jumper",
+   "title": "Jumper",
+   "author": "Steven Gould",
+   "gene": "vibe_adrenaline",
+   "confidence": 0.7,
+   "why": "escapes"
+  },
+  {
+   "ref": "jumper",
+   "title": "Jumper",
+   "author": "Steven Gould",
+   "gene": "vibe_tender",
+   "confidence": 0.6,
+   "why": "teen romance"
+  },
+  {
+   "ref": "2312",
+   "title": "2312",
+   "author": "Kim Stanley Robinson",
+   "gene": "vibe_gleaming",
+   "confidence": 0.75,
+   "why": "bright solar system"
+  },
+  {
+   "ref": "2312",
+   "title": "2312",
+   "author": "Kim Stanley Robinson",
+   "gene": "vibe_cerebral",
+   "confidence": 0.75,
+   "why": "ideas and lists"
+  },
+  {
+   "ref": "2312",
+   "title": "2312",
+   "author": "Kim Stanley Robinson",
+   "gene": "vibe_dreamlike",
+   "confidence": 0.6,
+   "why": "lyrical"
+  },
+  {
+   "ref": "sleeping-giants",
+   "title": "Sleeping Giants",
+   "author": "Sylvain Neuvel",
+   "gene": "vibe_mysterious",
+   "confidence": 0.8,
+   "why": "alien robot parts"
+  },
+  {
+   "ref": "sleeping-giants",
+   "title": "Sleeping Giants",
+   "author": "Sylvain Neuvel",
+   "gene": "vibe_paranoid",
+   "confidence": 0.65,
+   "why": "secret program"
+  },
+  {
+   "ref": "to-say-nothing-of-the-dog",
+   "title": "To Say Nothing of the Dog",
+   "author": "Connie Willis",
+   "gene": "vibe_whimsical",
+   "confidence": 0.9,
+   "why": "Victorian comedy"
+  },
+  {
+   "ref": "to-say-nothing-of-the-dog",
+   "title": "To Say Nothing of the Dog",
+   "author": "Connie Willis",
+   "gene": "vibe_cozy",
+   "confidence": 0.8,
+   "why": "boating and cats"
+  },
+  {
+   "ref": "to-say-nothing-of-the-dog",
+   "title": "To Say Nothing of the Dog",
+   "author": "Connie Willis",
+   "gene": "vibe_tender",
+   "confidence": 0.6,
+   "why": "romance"
+  },
+  {
+   "ref": "surface-detail-banks",
+   "title": "Surface Detail",
+   "author": "Iain M. Banks",
+   "gene": "vibe_gritty",
+   "confidence": 0.75,
+   "why": "virtual hells"
+  },
+  {
+   "ref": "surface-detail-banks",
+   "title": "Surface Detail",
+   "author": "Iain M. Banks",
+   "gene": "vibe_epic",
+   "confidence": 0.75,
+   "why": "war across realities"
+  },
+  {
+   "ref": "blood-music",
+   "title": "Blood Music",
+   "author": "Greg Bear",
+   "gene": "vibe_eerie",
+   "confidence": 0.75,
+   "why": "cellular takeover"
+  },
+  {
+   "ref": "blood-music",
+   "title": "Blood Music",
+   "author": "Greg Bear",
+   "gene": "vibe_dreamlike",
+   "confidence": 0.65,
+   "why": "transcendent end"
+  },
+  {
+   "ref": "blood-music",
+   "title": "Blood Music",
+   "author": "Greg Bear",
+   "gene": "vibe_cerebral",
+   "confidence": 0.65,
+   "why": "big ideas"
+  },
+  {
+   "ref": "eon",
+   "title": "Eon",
+   "author": "Greg Bear",
+   "gene": "vibe_mysterious",
+   "confidence": 0.85,
+   "why": "the Stone's secrets"
+  },
+  {
+   "ref": "eon",
+   "title": "Eon",
+   "author": "Greg Bear",
+   "gene": "vibe_epic",
+   "confidence": 0.7,
+   "why": "infinite Way"
+  },
+  {
+   "ref": "eon",
+   "title": "Eon",
+   "author": "Greg Bear",
+   "gene": "vibe_cerebral",
+   "confidence": 0.7,
+   "why": "hard SF"
+  },
+  {
+   "ref": "the-female-man",
+   "title": "The Female Man",
+   "author": "Joanna Russ",
+   "gene": "vibe_cerebral",
+   "confidence": 0.75,
+   "why": "experimental"
+  },
+  {
+   "ref": "the-female-man",
+   "title": "The Female Man",
+   "author": "Joanna Russ",
+   "gene": "vibe_dreamlike",
+   "confidence": 0.6,
+   "why": "fractured realities"
+  },
+  {
+   "ref": "embassytown",
+   "title": "Embassytown",
+   "author": "China Miéville",
+   "gene": "vibe_cerebral",
+   "confidence": 0.85,
+   "why": "language ideas"
+  },
+  {
+   "ref": "embassytown",
+   "title": "Embassytown",
+   "author": "China Miéville",
+   "gene": "vibe_eerie",
+   "confidence": 0.65,
+   "why": "alien Ariekei"
+  },
+  {
+   "ref": "embassytown",
+   "title": "Embassytown",
+   "author": "China Miéville",
+   "gene": "vibe_mysterious",
+   "confidence": 0.65,
+   "why": "strange language"
+  },
+  {
+   "ref": "bloodchild-and-other-stories",
+   "title": "Bloodchild and Other Stories",
+   "author": "Octavia E. Butler",
+   "gene": "vibe_eerie",
+   "confidence": 0.7,
+   "why": "uneasy symbiosis"
+  },
+  {
+   "ref": "bloodchild-and-other-stories",
+   "title": "Bloodchild and Other Stories",
+   "author": "Octavia E. Butler",
+   "gene": "vibe_tender",
+   "confidence": 0.65,
+   "why": "intimate humane stories"
+  },
+  {
+   "ref": "the-algebraist-banks",
+   "title": "The Algebraist",
+   "author": "Iain M. Banks",
+   "gene": "vibe_epic",
+   "confidence": 0.75,
+   "why": "vast galaxy"
+  },
+  {
+   "ref": "the-algebraist-banks",
+   "title": "The Algebraist",
+   "author": "Iain M. Banks",
+   "gene": "vibe_whimsical",
+   "confidence": 0.65,
+   "why": "Dwellers' humor"
+  },
+  {
+   "ref": "the-algebraist-banks",
+   "title": "The Algebraist",
+   "author": "Iain M. Banks",
+   "gene": "vibe_swashbuckling",
+   "confidence": 0.6,
+   "why": "treasure hunt"
+  },
+  {
+   "ref": "the-water-knife",
+   "title": "The Water Knife",
+   "author": "Paolo Bacigalupi",
+   "gene": "vibe_gritty",
+   "confidence": 0.9,
+   "why": "drought violence"
+  },
+  {
+   "ref": "the-water-knife",
+   "title": "The Water Knife",
+   "author": "Paolo Bacigalupi",
+   "gene": "vibe_neon_noir",
+   "confidence": 0.65,
+   "why": "noir thriller"
+  },
+  {
+   "ref": "the-water-knife",
+   "title": "The Water Knife",
+   "author": "Paolo Bacigalupi",
+   "gene": "vibe_bleak",
+   "confidence": 0.75,
+   "why": "collapse"
+  },
+  {
+   "ref": "upgrade",
+   "title": "Upgrade",
+   "author": "Blake Crouch",
+   "gene": "vibe_adrenaline",
+   "confidence": 0.8,
+   "why": "pace"
+  },
+  {
+   "ref": "upgrade",
+   "title": "Upgrade",
+   "author": "Blake Crouch",
+   "gene": "vibe_cerebral",
+   "confidence": 0.6,
+   "why": "genius mind"
+  },
+  {
+   "ref": "tau-zero",
+   "title": "Tau Zero",
+   "author": "Poul Anderson",
+   "gene": "vibe_desolate",
+   "confidence": 0.85,
+   "why": "void forever"
+  },
+  {
+   "ref": "tau-zero",
+   "title": "Tau Zero",
+   "author": "Poul Anderson",
+   "gene": "vibe_cerebral",
+   "confidence": 0.7,
+   "why": "relativity"
+  },
+  {
+   "ref": "tau-zero",
+   "title": "Tau Zero",
+   "author": "Poul Anderson",
+   "gene": "vibe_melancholy",
+   "confidence": 0.6,
+   "why": "lost universe"
+  },
+  {
+   "ref": "rainbows-end",
+   "title": "Rainbows End",
+   "author": "Vernor Vinge",
+   "gene": "vibe_gleaming",
+   "confidence": 0.7,
+   "why": "AR world"
+  },
+  {
+   "ref": "rainbows-end",
+   "title": "Rainbows End",
+   "author": "Vernor Vinge",
+   "gene": "vibe_whimsical",
+   "confidence": 0.6,
+   "why": "madcap plot"
+  },
+  {
+   "ref": "light-bringer",
+   "title": "Light Bringer",
+   "author": "Pierce Brown",
+   "gene": "vibe_epic",
+   "confidence": 0.85,
+   "why": "sprawling war"
+  },
+  {
+   "ref": "light-bringer",
+   "title": "Light Bringer",
+   "author": "Pierce Brown",
+   "gene": "vibe_adrenaline",
+   "confidence": 0.8,
+   "why": "battles"
+  },
+  {
+   "ref": "light-bringer",
+   "title": "Light Bringer",
+   "author": "Pierce Brown",
+   "gene": "vibe_gritty",
+   "confidence": 0.7,
+   "why": "brutal"
+  },
+  {
+   "ref": "the-rise-of-endymion",
+   "title": "The Rise of Endymion",
+   "author": "Dan Simmons",
+   "gene": "vibe_epic",
+   "confidence": 0.8,
+   "why": "universal scope"
+  },
+  {
+   "ref": "the-rise-of-endymion",
+   "title": "The Rise of Endymion",
+   "author": "Dan Simmons",
+   "gene": "vibe_tender",
+   "confidence": 0.75,
+   "why": "love story"
+  },
+  {
+   "ref": "the-rise-of-endymion",
+   "title": "The Rise of Endymion",
+   "author": "Dan Simmons",
+   "gene": "vibe_melancholy",
+   "confidence": 0.65,
+   "why": "sacrifice"
+  },
+  {
+   "ref": "aurora",
+   "title": "Aurora",
+   "author": "Kim Stanley Robinson",
+   "gene": "vibe_desolate",
+   "confidence": 0.8,
+   "why": "interstellar emptiness"
+  },
+  {
+   "ref": "aurora",
+   "title": "Aurora",
+   "author": "Kim Stanley Robinson",
+   "gene": "vibe_claustrophobic",
+   "confidence": 0.7,
+   "why": "failing ship"
+  },
+  {
+   "ref": "aurora",
+   "title": "Aurora",
+   "author": "Kim Stanley Robinson",
+   "gene": "vibe_melancholy",
+   "confidence": 0.7,
+   "why": "lost hope"
+  },
+  {
+   "ref": "the-hydrogen-sonata",
+   "title": "The Hydrogen Sonata",
+   "author": "Iain M. Banks",
+   "gene": "vibe_melancholy",
+   "confidence": 0.65,
+   "why": "civilization's end"
+  },
+  {
+   "ref": "the-hydrogen-sonata",
+   "title": "The Hydrogen Sonata",
+   "author": "Iain M. Banks",
+   "gene": "vibe_whimsical",
+   "confidence": 0.65,
+   "why": "Banksian wit"
+  },
+  {
+   "ref": "the-hydrogen-sonata",
+   "title": "The Hydrogen Sonata",
+   "author": "Iain M. Banks",
+   "gene": "vibe_cerebral",
+   "confidence": 0.65,
+   "why": "meaning questions"
+  },
+  {
+   "ref": "city",
+   "title": "City",
+   "author": "Clifford D. Simak",
+   "gene": "vibe_melancholy",
+   "confidence": 0.8,
+   "why": "humanity fades"
+  },
+  {
+   "ref": "city",
+   "title": "City",
+   "author": "Clifford D. Simak",
+   "gene": "vibe_tender",
+   "confidence": 0.65,
+   "why": "dogs and robots"
+  },
+  {
+   "ref": "city",
+   "title": "City",
+   "author": "Clifford D. Simak",
+   "gene": "vibe_dreamlike",
+   "confidence": 0.6,
+   "why": "legend frame"
+  },
+  {
+   "ref": "aurora-rising-kaufman",
+   "title": "Aurora Rising",
+   "author": "Amie Kaufman and Jay Kristoff",
+   "gene": "vibe_swashbuckling",
+   "confidence": 0.7,
+   "why": "ragtag team"
+  },
+  {
+   "ref": "aurora-rising-kaufman",
+   "title": "Aurora Rising",
+   "author": "Amie Kaufman and Jay Kristoff",
+   "gene": "vibe_whimsical",
+   "confidence": 0.6,
+   "why": "banter"
+  },
+  {
+   "ref": "aurora-rising-kaufman",
+   "title": "Aurora Rising",
+   "author": "Amie Kaufman and Jay Kristoff",
+   "gene": "vibe_adrenaline",
+   "confidence": 0.65,
+   "why": "action"
+  },
+  {
+   "ref": "under-the-skin",
+   "title": "Under the Skin",
+   "author": "Michel Faber",
+   "gene": "vibe_eerie",
+   "confidence": 0.9,
+   "why": "unsettling alien view"
+  },
+  {
+   "ref": "under-the-skin",
+   "title": "Under the Skin",
+   "author": "Michel Faber",
+   "gene": "vibe_bleak",
+   "confidence": 0.75,
+   "why": "cruel reality"
+  },
+  {
+   "ref": "under-the-skin",
+   "title": "Under the Skin",
+   "author": "Michel Faber",
+   "gene": "vibe_desolate",
+   "confidence": 0.65,
+   "why": "Scottish roads"
+  },
+  {
+   "ref": "the-quantum-thief",
+   "title": "The Quantum Thief",
+   "author": "Hannu Rajaniemi",
+   "gene": "vibe_swashbuckling",
+   "confidence": 0.75,
+   "why": "gentleman thief"
+  },
+  {
+   "ref": "the-quantum-thief",
+   "title": "The Quantum Thief",
+   "author": "Hannu Rajaniemi",
+   "gene": "vibe_cerebral",
+   "confidence": 0.75,
+   "why": "dense concepts"
+  },
+  {
+   "ref": "the-quantum-thief",
+   "title": "The Quantum Thief",
+   "author": "Hannu Rajaniemi",
+   "gene": "vibe_dreamlike",
+   "confidence": 0.6,
+   "why": "strange Mars"
+  },
+  {
+   "ref": "ancillary-mercy",
+   "title": "Ancillary Mercy",
+   "author": "Ann Leckie",
+   "gene": "vibe_tender",
+   "confidence": 0.65,
+   "why": "found family"
+  },
+  {
+   "ref": "ancillary-mercy",
+   "title": "Ancillary Mercy",
+   "author": "Ann Leckie",
+   "gene": "vibe_cerebral",
+   "confidence": 0.65,
+   "why": "cool AI voice"
+  },
+  {
+   "ref": "ancillary-mercy",
+   "title": "Ancillary Mercy",
+   "author": "Ann Leckie",
+   "gene": "vibe_whimsical",
+   "confidence": 0.6,
+   "why": "dry humor"
+  },
+  {
+   "ref": "sundiver",
+   "title": "Sundiver",
+   "author": "David Brin",
+   "gene": "vibe_mysterious",
+   "confidence": 0.75,
+   "why": "murder on the sun"
+  },
+  {
+   "ref": "sundiver",
+   "title": "Sundiver",
+   "author": "David Brin",
+   "gene": "vibe_retro_pulp",
+   "confidence": 0.6,
+   "why": "old-school adventure"
+  },
+  {
+   "ref": "borne",
+   "title": "Borne",
+   "author": "Jeff VanderMeer",
+   "gene": "vibe_eerie",
+   "confidence": 0.8,
+   "why": "ruined city"
+  },
+  {
+   "ref": "borne",
+   "title": "Borne",
+   "author": "Jeff VanderMeer",
+   "gene": "vibe_tender",
+   "confidence": 0.7,
+   "why": "caring for Borne"
+  },
+  {
+   "ref": "borne",
+   "title": "Borne",
+   "author": "Jeff VanderMeer",
+   "gene": "vibe_bleak",
+   "confidence": 0.7,
+   "why": "broken world"
+  },
+  {
+   "ref": "matter",
+   "title": "Matter",
+   "author": "Iain M. Banks",
+   "gene": "vibe_epic",
+   "confidence": 0.8,
+   "why": "shellworld scale"
+  },
+  {
+   "ref": "matter",
+   "title": "Matter",
+   "author": "Iain M. Banks",
+   "gene": "vibe_swashbuckling",
+   "confidence": 0.6,
+   "why": "princely quest"
+  },
+  {
+   "ref": "dragons-egg",
+   "title": "Dragon's Egg",
+   "author": "Robert L. Forward",
+   "gene": "vibe_cerebral",
+   "confidence": 0.85,
+   "why": "neutron star physics"
+  },
+  {
+   "ref": "dragons-egg",
+   "title": "Dragon's Egg",
+   "author": "Robert L. Forward",
+   "gene": "vibe_whimsical",
+   "confidence": 0.6,
+   "why": "cheela speed"
+  },
+  {
+   "ref": "cibola-burn",
+   "title": "Cibola Burn",
+   "author": "James S. A. Corey",
+   "gene": "vibe_gritty",
+   "confidence": 0.7,
+   "why": "frontier conflict"
+  },
+  {
+   "ref": "cibola-burn",
+   "title": "Cibola Burn",
+   "author": "James S. A. Corey",
+   "gene": "vibe_lived_in",
+   "confidence": 0.7,
+   "why": "colonists"
+  },
+  {
+   "ref": "cibola-burn",
+   "title": "Cibola Burn",
+   "author": "James S. A. Corey",
+   "gene": "vibe_bleak",
+   "confidence": 0.6,
+   "why": "hostile planet"
+  },
+  {
+   "ref": "the-midwich-cuckoos",
+   "title": "The Midwich Cuckoos",
+   "author": "John Wyndham",
+   "gene": "vibe_eerie",
+   "confidence": 0.9,
+   "why": "golden-eyed children"
+  },
+  {
+   "ref": "the-midwich-cuckoos",
+   "title": "The Midwich Cuckoos",
+   "author": "John Wyndham",
+   "gene": "vibe_paranoid",
+   "confidence": 0.7,
+   "why": "village dread"
+  },
+  {
+   "ref": "riddley-walker",
+   "title": "Riddley Walker",
+   "author": "Russell Hoban",
+   "gene": "vibe_bleak",
+   "confidence": 0.8,
+   "why": "post-nuclear England"
+  },
+  {
+   "ref": "riddley-walker",
+   "title": "Riddley Walker",
+   "author": "Russell Hoban",
+   "gene": "vibe_dreamlike",
+   "confidence": 0.7,
+   "why": "strange language"
+  },
+  {
+   "ref": "riddley-walker",
+   "title": "Riddley Walker",
+   "author": "Russell Hoban",
+   "gene": "vibe_desolate",
+   "confidence": 0.7,
+   "why": "wasteland"
+  },
+  {
+   "ref": "nexus",
+   "title": "Nexus",
+   "author": "Ramez Naam",
+   "gene": "vibe_adrenaline",
+   "confidence": 0.8,
+   "why": "action"
+  },
+  {
+   "ref": "nexus",
+   "title": "Nexus",
+   "author": "Ramez Naam",
+   "gene": "vibe_cerebral",
+   "confidence": 0.65,
+   "why": "posthuman ethics"
+  },
+  {
+   "ref": "nexus",
+   "title": "Nexus",
+   "author": "Ramez Naam",
+   "gene": "vibe_paranoid",
+   "confidence": 0.6,
+   "why": "surveillance"
+  },
+  {
+   "ref": "echopraxia",
+   "title": "Echopraxia",
+   "author": "Peter Watts",
+   "gene": "vibe_cerebral",
+   "confidence": 0.85,
+   "why": "dense ideas"
+  },
+  {
+   "ref": "echopraxia",
+   "title": "Echopraxia",
+   "author": "Peter Watts",
+   "gene": "vibe_eerie",
+   "confidence": 0.75,
+   "why": "vampires and bicamerals"
+  },
+  {
+   "ref": "echopraxia",
+   "title": "Echopraxia",
+   "author": "Peter Watts",
+   "gene": "vibe_cold_clinical",
+   "confidence": 0.7,
+   "why": "detached"
+  },
+  {
+   "ref": "the-paper-menagerie-and-other-stories",
+   "title": "The Paper Menagerie and Other Stories",
+   "author": "Ken Liu",
+   "gene": "vibe_tender",
+   "confidence": 0.85,
+   "why": "heartbreaking stories"
+  },
+  {
+   "ref": "the-paper-menagerie-and-other-stories",
+   "title": "The Paper Menagerie and Other Stories",
+   "author": "Ken Liu",
+   "gene": "vibe_melancholy",
+   "confidence": 0.8,
+   "why": "grief"
+  },
+  {
+   "ref": "axioms-end",
+   "title": "Axiom's End",
+   "author": "Lindsay Ellis",
+   "gene": "vibe_paranoid",
+   "confidence": 0.65,
+   "why": "government secrets"
+  },
+  {
+   "ref": "axioms-end",
+   "title": "Axiom's End",
+   "author": "Lindsay Ellis",
+   "gene": "vibe_tender",
+   "confidence": 0.65,
+   "why": "alien bond"
+  },
+  {
+   "ref": "axioms-end",
+   "title": "Axiom's End",
+   "author": "Lindsay Ellis",
+   "gene": "vibe_adrenaline",
+   "confidence": 0.6,
+   "why": "thriller"
+  },
+  {
+   "ref": "way-station",
+   "title": "Way Station",
+   "author": "Clifford D. Simak",
+   "gene": "vibe_tender",
+   "confidence": 0.65,
+   "why": "gentle loneliness"
+  },
+  {
+   "ref": "way-station",
+   "title": "Way Station",
+   "author": "Clifford D. Simak",
+   "gene": "vibe_melancholy",
+   "confidence": 0.7,
+   "why": "lonely keeper"
+  },
+  {
+   "ref": "way-station",
+   "title": "Way Station",
+   "author": "Clifford D. Simak",
+   "gene": "vibe_cozy",
+   "confidence": 0.65,
+   "why": "rural farmhouse"
+  },
+  {
+   "ref": "light-of-the-jedi",
+   "title": "Light of the Jedi",
+   "author": "Charles Soule",
+   "gene": "vibe_epic",
+   "confidence": 0.75,
+   "why": "republic-wide disaster"
+  },
+  {
+   "ref": "light-of-the-jedi",
+   "title": "Light of the Jedi",
+   "author": "Charles Soule",
+   "gene": "vibe_hopeful",
+   "confidence": 0.7,
+   "why": "heroic Jedi"
+  },
+  {
+   "ref": "light-of-the-jedi",
+   "title": "Light of the Jedi",
+   "author": "Charles Soule",
+   "gene": "vibe_adrenaline",
+   "confidence": 0.65,
+   "why": "rescue action"
+  },
+  {
+   "ref": "there-is-no-antimemetics-division",
+   "title": "There Is No Antimemetics Division",
+   "author": "qntm",
+   "gene": "vibe_eerie",
+   "confidence": 0.9,
+   "why": "forgetting horrors"
+  },
+  {
+   "ref": "there-is-no-antimemetics-division",
+   "title": "There Is No Antimemetics Division",
+   "author": "qntm",
+   "gene": "vibe_paranoid",
+   "confidence": 0.8,
+   "why": "unseen threats"
+  },
+  {
+   "ref": "there-is-no-antimemetics-division",
+   "title": "There Is No Antimemetics Division",
+   "author": "qntm",
+   "gene": "vibe_cold_clinical",
+   "confidence": 0.65,
+   "why": "SCP procedures"
+  },
+  {
+   "ref": "broken-angels",
+   "title": "Broken Angels",
+   "author": "Richard K. Morgan",
+   "gene": "vibe_gritty",
+   "confidence": 0.85,
+   "why": "war and violence"
+  },
+  {
+   "ref": "broken-angels",
+   "title": "Broken Angels",
+   "author": "Richard K. Morgan",
+   "gene": "vibe_neon_noir",
+   "confidence": 0.6,
+   "why": "noir voice"
+  },
+  {
+   "ref": "broken-angels",
+   "title": "Broken Angels",
+   "author": "Richard K. Morgan",
+   "gene": "vibe_adrenaline",
+   "confidence": 0.7,
+   "why": "action"
+  },
+  {
+   "ref": "an-absolutely-remarkable-thing",
+   "title": "An Absolutely Remarkable Thing",
+   "author": "Hank Green",
+   "gene": "vibe_whimsical",
+   "confidence": 0.65,
+   "why": "fun voice"
+  },
+  {
+   "ref": "an-absolutely-remarkable-thing",
+   "title": "An Absolutely Remarkable Thing",
+   "author": "Hank Green",
+   "gene": "vibe_mysterious",
+   "confidence": 0.7,
+   "why": "the Carls"
+  },
+  {
+   "ref": "an-absolutely-remarkable-thing",
+   "title": "An Absolutely Remarkable Thing",
+   "author": "Hank Green",
+   "gene": "vibe_hopeful",
+   "confidence": 0.6,
+   "why": "social optimism"
+  },
+  {
+   "ref": "chasm-city",
+   "title": "Chasm City",
+   "author": "Alastair Reynolds",
+   "gene": "vibe_neon_noir",
+   "confidence": 0.8,
+   "why": "decadent gothic city"
+  },
+  {
+   "ref": "chasm-city",
+   "title": "Chasm City",
+   "author": "Alastair Reynolds",
+   "gene": "vibe_gritty",
+   "confidence": 0.8,
+   "why": "violent revenge"
+  },
+  {
+   "ref": "chasm-city",
+   "title": "Chasm City",
+   "author": "Alastair Reynolds",
+   "gene": "vibe_mysterious",
+   "confidence": 0.65,
+   "why": "identity"
+  },
+  {
+   "ref": "the-sheep-look-up",
+   "title": "The Sheep Look Up",
+   "author": "John Brunner",
+   "gene": "vibe_bleak",
+   "confidence": 0.9,
+   "why": "environmental collapse"
+  },
+  {
+   "ref": "the-sheep-look-up",
+   "title": "The Sheep Look Up",
+   "author": "John Brunner",
+   "gene": "vibe_cerebral",
+   "confidence": 0.65,
+   "why": "collage"
+  },
+  {
+   "ref": "the-sheep-look-up",
+   "title": "The Sheep Look Up",
+   "author": "John Brunner",
+   "gene": "vibe_paranoid",
+   "confidence": 0.6,
+   "why": "cover-ups"
+  },
+  {
+   "ref": "the-scar",
+   "title": "The Scar",
+   "author": "China Miéville",
+   "gene": "vibe_epic",
+   "confidence": 0.75,
+   "why": "floating city voyage"
+  },
+  {
+   "ref": "the-scar",
+   "title": "The Scar",
+   "author": "China Miéville",
+   "gene": "vibe_gritty",
+   "confidence": 0.7,
+   "why": "pirates"
+  },
+  {
+   "ref": "the-scar",
+   "title": "The Scar",
+   "author": "China Miéville",
+   "gene": "vibe_eerie",
+   "confidence": 0.6,
+   "why": "sea monsters"
+  },
+  {
+   "ref": "feed-grant",
+   "title": "Feed",
+   "author": "Mira Grant",
+   "gene": "vibe_paranoid",
+   "confidence": 0.8,
+   "why": "conspiracy"
+  },
+  {
+   "ref": "feed-grant",
+   "title": "Feed",
+   "author": "Mira Grant",
+   "gene": "vibe_bleak",
+   "confidence": 0.65,
+   "why": "zombie world"
+  },
+  {
+   "ref": "feed-grant",
+   "title": "Feed",
+   "author": "Mira Grant",
+   "gene": "vibe_adrenaline",
+   "confidence": 0.7,
+   "why": "action"
+  },
+  {
+   "ref": "ship-breaker",
+   "title": "Ship Breaker",
+   "author": "Paolo Bacigalupi",
+   "gene": "vibe_gritty",
+   "confidence": 0.9,
+   "why": "shipbreaking labor"
+  },
+  {
+   "ref": "ship-breaker",
+   "title": "Ship Breaker",
+   "author": "Paolo Bacigalupi",
+   "gene": "vibe_bleak",
+   "confidence": 0.7,
+   "why": "drowned coast"
+  },
+  {
+   "ref": "ship-breaker",
+   "title": "Ship Breaker",
+   "author": "Paolo Bacigalupi",
+   "gene": "vibe_adrenaline",
+   "confidence": 0.65,
+   "why": "chase"
+  },
+  {
+   "ref": "ecotopia",
+   "title": "Ecotopia",
+   "author": "Ernest Callenbach",
+   "gene": "vibe_hopeful",
+   "confidence": 0.8,
+   "why": "ecological utopia"
+  },
+  {
+   "ref": "ecotopia",
+   "title": "Ecotopia",
+   "author": "Ernest Callenbach",
+   "gene": "vibe_cerebral",
+   "confidence": 0.6,
+   "why": "ideas"
+  },
+  {
+   "ref": "barrayar",
+   "title": "Barrayar",
+   "author": "Lois McMaster Bujold",
+   "gene": "vibe_paranoid",
+   "confidence": 0.65,
+   "why": "court plots"
+  },
+  {
+   "ref": "barrayar",
+   "title": "Barrayar",
+   "author": "Lois McMaster Bujold",
+   "gene": "vibe_tender",
+   "confidence": 0.65,
+   "why": "motherhood"
+  },
+  {
+   "ref": "barrayar",
+   "title": "Barrayar",
+   "author": "Lois McMaster Bujold",
+   "gene": "vibe_gritty",
+   "confidence": 0.6,
+   "why": "civil war"
+  },
+  {
+   "ref": "islands-in-the-net",
+   "title": "Islands in the Net",
+   "author": "Bruce Sterling",
+   "gene": "vibe_cerebral",
+   "confidence": 0.75,
+   "why": "near-future politics"
+  },
+  {
+   "ref": "islands-in-the-net",
+   "title": "Islands in the Net",
+   "author": "Bruce Sterling",
+   "gene": "vibe_paranoid",
+   "confidence": 0.65,
+   "why": "data havens"
+  },
+  {
+   "ref": "into-the-drowning-deep",
+   "title": "Into the Drowning Deep",
+   "author": "Mira Grant",
+   "gene": "vibe_eerie",
+   "confidence": 0.8,
+   "why": "deep sea"
+  },
+  {
+   "ref": "into-the-drowning-deep",
+   "title": "Into the Drowning Deep",
+   "author": "Mira Grant",
+   "gene": "vibe_claustrophobic",
+   "confidence": 0.65,
+   "why": "ship trapped"
+  },
+  {
+   "ref": "into-the-drowning-deep",
+   "title": "Into the Drowning Deep",
+   "author": "Mira Grant",
+   "gene": "vibe_adrenaline",
+   "confidence": 0.7,
+   "why": "mermaid attacks"
+  },
+  {
+   "ref": "startide-rising",
+   "title": "Startide Rising",
+   "author": "David Brin",
+   "gene": "vibe_epic",
+   "confidence": 0.65,
+   "why": "galactic chase"
+  },
+  {
+   "ref": "startide-rising",
+   "title": "Startide Rising",
+   "author": "David Brin",
+   "gene": "vibe_swashbuckling",
+   "confidence": 0.65,
+   "why": "dolphin crew adventure"
+  },
+  {
+   "ref": "startide-rising",
+   "title": "Startide Rising",
+   "author": "David Brin",
+   "gene": "vibe_mysterious",
+   "confidence": 0.6,
+   "why": "ancient fleet"
+  },
+  {
+   "ref": "light-from-uncommon-stars",
+   "title": "Light from Uncommon Stars",
+   "author": "Ryka Aoki",
+   "gene": "vibe_tender",
+   "confidence": 0.85,
+   "why": "healing found family"
+  },
+  {
+   "ref": "light-from-uncommon-stars",
+   "title": "Light from Uncommon Stars",
+   "author": "Ryka Aoki",
+   "gene": "vibe_cozy",
+   "confidence": 0.75,
+   "why": "donut shop"
+  },
+  {
+   "ref": "light-from-uncommon-stars",
+   "title": "Light from Uncommon Stars",
+   "author": "Ryka Aoki",
+   "gene": "vibe_hopeful",
+   "confidence": 0.75,
+   "why": "joy"
+  },
+  {
+   "ref": "the-vor-game",
+   "title": "The Vor Game",
+   "author": "Lois McMaster Bujold",
+   "gene": "vibe_swashbuckling",
+   "confidence": 0.85,
+   "why": "Miles's hyperactive schemes"
+  },
+  {
+   "ref": "the-vor-game",
+   "title": "The Vor Game",
+   "author": "Lois McMaster Bujold",
+   "gene": "vibe_whimsical",
+   "confidence": 0.65,
+   "why": "comic misadventures"
+  },
+  {
+   "ref": "armor",
+   "title": "Armor",
+   "author": "John Steakley",
+   "gene": "vibe_gritty",
+   "confidence": 0.85,
+   "why": "grinding combat"
+  },
+  {
+   "ref": "armor",
+   "title": "Armor",
+   "author": "John Steakley",
+   "gene": "vibe_bleak",
+   "confidence": 0.75,
+   "why": "endless war"
+  },
+  {
+   "ref": "armor",
+   "title": "Armor",
+   "author": "John Steakley",
+   "gene": "vibe_claustrophobic",
+   "confidence": 0.6,
+   "why": "locked in the suit"
+  },
+  {
+   "ref": "alas-babylon",
+   "title": "Alas, Babylon",
+   "author": "Pat Frank",
+   "gene": "vibe_hopeful",
+   "confidence": 0.65,
+   "why": "community endures"
+  },
+  {
+   "ref": "alas-babylon",
+   "title": "Alas, Babylon",
+   "author": "Pat Frank",
+   "gene": "vibe_lived_in",
+   "confidence": 0.6,
+   "why": "small-town Florida"
+  },
+  {
+   "ref": "alas-babylon",
+   "title": "Alas, Babylon",
+   "author": "Pat Frank",
+   "gene": "vibe_bleak",
+   "confidence": 0.6,
+   "why": "nuclear aftermath"
+  },
+  {
+   "ref": "ilium",
+   "title": "Ilium",
+   "author": "Dan Simmons",
+   "gene": "vibe_epic",
+   "confidence": 0.85,
+   "why": "Trojan War and gods"
+  },
+  {
+   "ref": "ilium",
+   "title": "Ilium",
+   "author": "Dan Simmons",
+   "gene": "vibe_whimsical",
+   "confidence": 0.6,
+   "why": "moravec banter"
+  },
+  {
+   "ref": "ilium",
+   "title": "Ilium",
+   "author": "Dan Simmons",
+   "gene": "vibe_dreamlike",
+   "confidence": 0.6,
+   "why": "mythic strangeness"
+  },
+  {
+   "ref": "the-snow-queen",
+   "title": "The Snow Queen",
+   "author": "Joan D. Vinge",
+   "gene": "vibe_epic",
+   "confidence": 0.7,
+   "why": "planetary saga"
+  },
+  {
+   "ref": "the-snow-queen",
+   "title": "The Snow Queen",
+   "author": "Joan D. Vinge",
+   "gene": "vibe_mysterious",
+   "confidence": 0.65,
+   "why": "the mers' secret"
+  },
+  {
+   "ref": "the-snow-queen",
+   "title": "The Snow Queen",
+   "author": "Joan D. Vinge",
+   "gene": "vibe_dreamlike",
+   "confidence": 0.6,
+   "why": "fairy-tale haze"
+  },
+  {
+   "ref": "cyteen",
+   "title": "Cyteen",
+   "author": "C. J. Cherryh",
+   "gene": "vibe_cerebral",
+   "confidence": 0.85,
+   "why": "psychological chess"
+  },
+  {
+   "ref": "cyteen",
+   "title": "Cyteen",
+   "author": "C. J. Cherryh",
+   "gene": "vibe_paranoid",
+   "confidence": 0.75,
+   "why": "Reseune politics"
+  },
+  {
+   "ref": "cyteen",
+   "title": "Cyteen",
+   "author": "C. J. Cherryh",
+   "gene": "vibe_claustrophobic",
+   "confidence": 0.6,
+   "why": "closed labs"
+  },
+  {
+   "ref": "the-kaiju-preservation-society",
+   "title": "The Kaiju Preservation Society",
+   "author": "John Scalzi",
+   "gene": "vibe_whimsical",
+   "confidence": 0.85,
+   "why": "goofy fun"
+  },
+  {
+   "ref": "the-kaiju-preservation-society",
+   "title": "The Kaiju Preservation Society",
+   "author": "John Scalzi",
+   "gene": "vibe_cozy",
+   "confidence": 0.65,
+   "why": "friendly crew"
+  },
+  {
+   "ref": "the-kaiju-preservation-society",
+   "title": "The Kaiju Preservation Society",
+   "author": "John Scalzi",
+   "gene": "vibe_adrenaline",
+   "confidence": 0.6,
+   "why": "kaiju peril"
+  },
+  {
+   "ref": "nova",
+   "title": "Nova",
+   "author": "Samuel R. Delany",
+   "gene": "vibe_swashbuckling",
+   "confidence": 0.7,
+   "why": "Lorq Von Ray's quest"
+  },
+  {
+   "ref": "nova",
+   "title": "Nova",
+   "author": "Samuel R. Delany",
+   "gene": "vibe_dreamlike",
+   "confidence": 0.65,
+   "why": "mythic lyricism"
+  },
+  {
+   "ref": "nova",
+   "title": "Nova",
+   "author": "Samuel R. Delany",
+   "gene": "vibe_epic",
+   "confidence": 0.6,
+   "why": "grand vendetta"
+  },
+  {
+   "ref": "pushing-ice",
+   "title": "Pushing Ice",
+   "author": "Alastair Reynolds",
+   "gene": "vibe_desolate",
+   "confidence": 0.8,
+   "why": "hurled across the void"
+  },
+  {
+   "ref": "pushing-ice",
+   "title": "Pushing Ice",
+   "author": "Alastair Reynolds",
+   "gene": "vibe_mysterious",
+   "confidence": 0.8,
+   "why": "the Spica artifact"
+  },
+  {
+   "ref": "pushing-ice",
+   "title": "Pushing Ice",
+   "author": "Alastair Reynolds",
+   "gene": "vibe_epic",
+   "confidence": 0.65,
+   "why": "deep time"
+  },
+  {
+   "ref": "the-forever-peace",
+   "title": "The Forever Peace",
+   "author": "Joe Haldeman",
+   "gene": "vibe_bleak",
+   "confidence": 0.75,
+   "why": "remote war"
+  },
+  {
+   "ref": "the-forever-peace",
+   "title": "The Forever Peace",
+   "author": "Joe Haldeman",
+   "gene": "vibe_cerebral",
+   "confidence": 0.7,
+   "why": "philosophy of peace"
+  },
+  {
+   "ref": "autonomous",
+   "title": "Autonomous",
+   "author": "Annalee Newitz",
+   "gene": "vibe_lived_in",
+   "confidence": 0.7,
+   "why": "smuggler sub"
+  },
+  {
+   "ref": "autonomous",
+   "title": "Autonomous",
+   "author": "Annalee Newitz",
+   "gene": "vibe_gritty",
+   "confidence": 0.65,
+   "why": "piracy and violence"
+  },
+  {
+   "ref": "autonomous",
+   "title": "Autonomous",
+   "author": "Annalee Newitz",
+   "gene": "vibe_cerebral",
+   "confidence": 0.6,
+   "why": "property and personhood"
+  },
+  {
+   "ref": "native-tongue",
+   "title": "Native Tongue",
+   "author": "Suzette Haden Elgin",
+   "gene": "vibe_bleak",
+   "confidence": 0.7,
+   "why": "oppressed women"
+  },
+  {
+   "ref": "native-tongue",
+   "title": "Native Tongue",
+   "author": "Suzette Haden Elgin",
+   "gene": "vibe_cerebral",
+   "confidence": 0.75,
+   "why": "linguistics as resistance"
+  },
+  {
+   "ref": "walkaway",
+   "title": "Walkaway",
+   "author": "Cory Doctorow",
+   "gene": "vibe_hopeful",
+   "confidence": 0.75,
+   "why": "utopian dropouts"
+  },
+  {
+   "ref": "walkaway",
+   "title": "Walkaway",
+   "author": "Cory Doctorow",
+   "gene": "vibe_cerebral",
+   "confidence": 0.75,
+   "why": "ideas debates"
+  },
+  {
+   "ref": "singularity-sky",
+   "title": "Singularity Sky",
+   "author": "Charles Stross",
+   "gene": "vibe_whimsical",
+   "confidence": 0.75,
+   "why": "absurd satire"
+  },
+  {
+   "ref": "singularity-sky",
+   "title": "Singularity Sky",
+   "author": "Charles Stross",
+   "gene": "vibe_cerebral",
+   "confidence": 0.65,
+   "why": "singularity ideas"
+  },
+  {
+   "ref": "devolution",
+   "title": "Devolution",
+   "author": "Max Brooks",
+   "gene": "vibe_eerie",
+   "confidence": 0.8,
+   "why": "woods watching"
+  },
+  {
+   "ref": "devolution",
+   "title": "Devolution",
+   "author": "Max Brooks",
+   "gene": "vibe_claustrophobic",
+   "confidence": 0.7,
+   "why": "cut-off community"
+  },
+  {
+   "ref": "devolution",
+   "title": "Devolution",
+   "author": "Max Brooks",
+   "gene": "vibe_bleak",
+   "confidence": 0.65,
+   "why": "brutal ending"
+  },
+  {
+   "ref": "darwins-radio",
+   "title": "Darwin's Radio",
+   "author": "Greg Bear",
+   "gene": "vibe_cerebral",
+   "confidence": 0.8,
+   "why": "genetic science"
+  },
+  {
+   "ref": "darwins-radio",
+   "title": "Darwin's Radio",
+   "author": "Greg Bear",
+   "gene": "vibe_paranoid",
+   "confidence": 0.65,
+   "why": "government response"
+  },
+  {
+   "ref": "darwins-radio",
+   "title": "Darwin's Radio",
+   "author": "Greg Bear",
+   "gene": "vibe_mysterious",
+   "confidence": 0.65,
+   "why": "the virus"
+  },
+  {
+   "ref": "children-of-ruin",
+   "title": "Children of Ruin",
+   "author": "Adrian Tchaikovsky",
+   "gene": "vibe_eerie",
+   "confidence": 0.8,
+   "why": "the Nod parasite"
+  },
+  {
+   "ref": "children-of-ruin",
+   "title": "Children of Ruin",
+   "author": "Adrian Tchaikovsky",
+   "gene": "vibe_cerebral",
+   "confidence": 0.75,
+   "why": "alien minds"
+  },
+  {
+   "ref": "children-of-ruin",
+   "title": "Children of Ruin",
+   "author": "Adrian Tchaikovsky",
+   "gene": "vibe_claustrophobic",
+   "confidence": 0.6,
+   "why": "infected ships"
+  },
+  {
+   "ref": "the-warriors-apprentice",
+   "title": "The Warrior's Apprentice",
+   "author": "Lois McMaster Bujold",
+   "gene": "vibe_swashbuckling",
+   "confidence": 0.85,
+   "why": "bluffing mercenary admiral"
+  },
+  {
+   "ref": "the-warriors-apprentice",
+   "title": "The Warrior's Apprentice",
+   "author": "Lois McMaster Bujold",
+   "gene": "vibe_whimsical",
+   "confidence": 0.7,
+   "why": "comic chaos"
+  },
+  {
+   "ref": "the-dreaming-void",
+   "title": "The Dreaming Void",
+   "author": "Peter F. Hamilton",
+   "gene": "vibe_epic",
+   "confidence": 0.8,
+   "why": "Commonwealth sweep"
+  },
+  {
+   "ref": "the-dreaming-void",
+   "title": "The Dreaming Void",
+   "author": "Peter F. Hamilton",
+   "gene": "vibe_dreamlike",
+   "confidence": 0.7,
+   "why": "Inigo's dreams"
+  },
+  {
+   "ref": "fuzzy-nation",
+   "title": "Fuzzy Nation",
+   "author": "John Scalzi",
+   "gene": "vibe_whimsical",
+   "confidence": 0.7,
+   "why": "snarky lawyerly fun"
+  },
+  {
+   "ref": "fuzzy-nation",
+   "title": "Fuzzy Nation",
+   "author": "John Scalzi",
+   "gene": "vibe_hopeful",
+   "confidence": 0.6,
+   "why": "justice wins"
+  },
+  {
+   "ref": "mirror-dance",
+   "title": "Mirror Dance",
+   "author": "Lois McMaster Bujold",
+   "gene": "vibe_gritty",
+   "confidence": 0.7,
+   "why": "torture and pain"
+  },
+  {
+   "ref": "mirror-dance",
+   "title": "Mirror Dance",
+   "author": "Lois McMaster Bujold",
+   "gene": "vibe_tender",
+   "confidence": 0.6,
+   "why": "brothers' bond"
+  },
+  {
+   "ref": "mirror-dance",
+   "title": "Mirror Dance",
+   "author": "Lois McMaster Bujold",
+   "gene": "vibe_adrenaline",
+   "confidence": 0.6,
+   "why": "raid"
+  },
+  {
+   "ref": "the-calculating-stars",
+   "title": "The Calculating Stars",
+   "author": "Mary Robinette Kowal",
+   "gene": "vibe_hopeful",
+   "confidence": 0.8,
+   "why": "space race optimism"
+  },
+  {
+   "ref": "the-calculating-stars",
+   "title": "The Calculating Stars",
+   "author": "Mary Robinette Kowal",
+   "gene": "vibe_retro_pulp",
+   "confidence": 0.65,
+   "why": "1950s rocketry"
+  },
+  {
+   "ref": "the-calculating-stars",
+   "title": "The Calculating Stars",
+   "author": "Mary Robinette Kowal",
+   "gene": "vibe_tender",
+   "confidence": 0.65,
+   "why": "marriage warmth"
+  },
+  {
+   "ref": "vurt",
+   "title": "Vurt",
+   "author": "Jeff Noon",
+   "gene": "vibe_dreamlike",
+   "confidence": 0.9,
+   "why": "feather trips"
+  },
+  {
+   "ref": "vurt",
+   "title": "Vurt",
+   "author": "Jeff Noon",
+   "gene": "vibe_neon_noir",
+   "confidence": 0.65,
+   "why": "Manchester underworld"
+  },
+  {
+   "ref": "vurt",
+   "title": "Vurt",
+   "author": "Jeff Noon",
+   "gene": "vibe_gritty",
+   "confidence": 0.6,
+   "why": "street gangs"
+  },
+  {
+   "ref": "shards-of-earth",
+   "title": "Shards of Earth",
+   "author": "Adrian Tchaikovsky",
+   "gene": "vibe_epic",
+   "confidence": 0.8,
+   "why": "sprawling space opera"
+  },
+  {
+   "ref": "shards-of-earth",
+   "title": "Shards of Earth",
+   "author": "Adrian Tchaikovsky",
+   "gene": "vibe_eerie",
+   "confidence": 0.7,
+   "why": "Architects"
+  },
+  {
+   "ref": "shards-of-earth",
+   "title": "Shards of Earth",
+   "author": "Adrian Tchaikovsky",
+   "gene": "vibe_lived_in",
+   "confidence": 0.65,
+   "why": "salvage ship crew"
+  },
+  {
+   "ref": "the-gone-world",
+   "title": "The Gone World",
+   "author": "Tom Sweterlitsch",
+   "gene": "vibe_bleak",
+   "confidence": 0.85,
+   "why": "end of everything"
+  },
+  {
+   "ref": "the-gone-world",
+   "title": "The Gone World",
+   "author": "Tom Sweterlitsch",
+   "gene": "vibe_neon_noir",
+   "confidence": 0.65,
+   "why": "noir investigation"
+  },
+  {
+   "ref": "the-gone-world",
+   "title": "The Gone World",
+   "author": "Tom Sweterlitsch",
+   "gene": "vibe_eerie",
+   "confidence": 0.75,
+   "why": "the Terminus"
+  },
+  {
+   "ref": "starfish",
+   "title": "Starfish",
+   "author": "Peter Watts",
+   "gene": "vibe_claustrophobic",
+   "confidence": 0.85,
+   "why": "deep-sea rift"
+  },
+  {
+   "ref": "starfish",
+   "title": "Starfish",
+   "author": "Peter Watts",
+   "gene": "vibe_bleak",
+   "confidence": 0.75,
+   "why": "broken people"
+  },
+  {
+   "ref": "starfish",
+   "title": "Starfish",
+   "author": "Peter Watts",
+   "gene": "vibe_eerie",
+   "confidence": 0.7,
+   "why": "dark ocean"
+  },
+  {
+   "ref": "light",
+   "title": "Light",
+   "author": "M. John Harrison",
+   "gene": "vibe_dreamlike",
+   "confidence": 0.75,
+   "why": "hallucinatory"
+  },
+  {
+   "ref": "light",
+   "title": "Light",
+   "author": "M. John Harrison",
+   "gene": "vibe_neon_noir",
+   "confidence": 0.65,
+   "why": "K-ships and tanks"
+  },
+  {
+   "ref": "light",
+   "title": "Light",
+   "author": "M. John Harrison",
+   "gene": "vibe_mysterious",
+   "confidence": 0.7,
+   "why": "the Tract"
+  },
+  {
+   "ref": "the-space-between-worlds",
+   "title": "The Space Between Worlds",
+   "author": "Micaiah Johnson",
+   "gene": "vibe_gritty",
+   "confidence": 0.7,
+   "why": "class-divided Wiley"
+  },
+  {
+   "ref": "the-space-between-worlds",
+   "title": "The Space Between Worlds",
+   "author": "Micaiah Johnson",
+   "gene": "vibe_cerebral",
+   "confidence": 0.6,
+   "why": "multiverse identity"
+  },
+  {
+   "ref": "the-space-between-worlds",
+   "title": "The Space Between Worlds",
+   "author": "Micaiah Johnson",
+   "gene": "vibe_tender",
+   "confidence": 0.6,
+   "why": "queer romance"
+  },
+  {
+   "ref": "the-ministry-of-time",
+   "title": "The Ministry of Time",
+   "author": "Kaliane Bradley",
+   "gene": "vibe_whimsical",
+   "confidence": 0.75,
+   "why": "fish-out-of-time comedy"
+  },
+  {
+   "ref": "the-ministry-of-time",
+   "title": "The Ministry of Time",
+   "author": "Kaliane Bradley",
+   "gene": "vibe_sultry",
+   "confidence": 0.7,
+   "why": "slow-burn romance"
+  },
+  {
+   "ref": "the-ministry-of-time",
+   "title": "The Ministry of Time",
+   "author": "Kaliane Bradley",
+   "gene": "vibe_paranoid",
+   "confidence": 0.6,
+   "why": "spy thriller"
+  },
+  {
+   "ref": "the-lost-fleet-dauntless",
+   "title": "The Lost Fleet: Dauntless",
+   "author": "Jack Campbell",
+   "gene": "vibe_cerebral",
+   "confidence": 0.6,
+   "why": "fleet tactics"
+  },
+  {
+   "ref": "the-lost-fleet-dauntless",
+   "title": "The Lost Fleet: Dauntless",
+   "author": "Jack Campbell",
+   "gene": "vibe_desolate",
+   "confidence": 0.6,
+   "why": "lost in enemy space"
+  },
+  {
+   "ref": "the-androids-dream",
+   "title": "The Android's Dream",
+   "author": "John Scalzi",
+   "gene": "vibe_whimsical",
+   "confidence": 0.85,
+   "why": "farcical caper"
+  },
+  {
+   "ref": "the-androids-dream",
+   "title": "The Android's Dream",
+   "author": "John Scalzi",
+   "gene": "vibe_adrenaline",
+   "confidence": 0.65,
+   "why": "chase"
+  },
+  {
+   "ref": "space-opera",
+   "title": "Space Opera",
+   "author": "Catherynne M. Valente",
+   "gene": "vibe_whimsical",
+   "confidence": 0.9,
+   "why": "Eurovision in space"
+  },
+  {
+   "ref": "space-opera",
+   "title": "Space Opera",
+   "author": "Catherynne M. Valente",
+   "gene": "vibe_dreamlike",
+   "confidence": 0.6,
+   "why": "baroque riffs"
+  },
+  {
+   "ref": "frankenstein",
+   "title": "Frankenstein",
+   "author": "Mary Shelley",
+   "gene": "vibe_melancholy",
+   "confidence": 0.85,
+   "why": "creature's anguish"
+  },
+  {
+   "ref": "frankenstein",
+   "title": "Frankenstein",
+   "author": "Mary Shelley",
+   "gene": "vibe_bleak",
+   "confidence": 0.7,
+   "why": "tragedy"
+  },
+  {
+   "ref": "frankenstein",
+   "title": "Frankenstein",
+   "author": "Mary Shelley",
+   "gene": "vibe_desolate",
+   "confidence": 0.7,
+   "why": "Arctic wastes"
+  },
+  {
+   "ref": "new-york-2140",
+   "title": "New York 2140",
+   "author": "Kim Stanley Robinson",
+   "gene": "vibe_hopeful",
+   "confidence": 0.7,
+   "why": "climate resilience"
+  },
+  {
+   "ref": "new-york-2140",
+   "title": "New York 2140",
+   "author": "Kim Stanley Robinson",
+   "gene": "vibe_lived_in",
+   "confidence": 0.7,
+   "why": "drowned city life"
+  },
+  {
+   "ref": "new-york-2140",
+   "title": "New York 2140",
+   "author": "Kim Stanley Robinson",
+   "gene": "vibe_cerebral",
+   "confidence": 0.65,
+   "why": "finance"
+  },
+  {
+   "ref": "sandkings",
+   "title": "Sandkings",
+   "author": "George R. R. Martin",
+   "gene": "vibe_eerie",
+   "confidence": 0.8,
+   "why": "creeping horror"
+  },
+  {
+   "ref": "sandkings",
+   "title": "Sandkings",
+   "author": "George R. R. Martin",
+   "gene": "vibe_claustrophobic",
+   "confidence": 0.6,
+   "why": "trapped in the house"
+  },
+  {
+   "ref": "infomocracy",
+   "title": "Infomocracy",
+   "author": "Malka Older",
+   "gene": "vibe_cerebral",
+   "confidence": 0.75,
+   "why": "election mechanics"
+  },
+  {
+   "ref": "infomocracy",
+   "title": "Infomocracy",
+   "author": "Malka Older",
+   "gene": "vibe_paranoid",
+   "confidence": 0.7,
+   "why": "info warfare"
+  },
+  {
+   "ref": "infomocracy",
+   "title": "Infomocracy",
+   "author": "Malka Older",
+   "gene": "vibe_adrenaline",
+   "confidence": 0.6,
+   "why": "thriller"
+  },
+  {
+   "ref": "quarantine",
+   "title": "Quarantine",
+   "author": "Greg Egan",
+   "gene": "vibe_cerebral",
+   "confidence": 0.9,
+   "why": "quantum ideas"
+  },
+  {
+   "ref": "quarantine",
+   "title": "Quarantine",
+   "author": "Greg Egan",
+   "gene": "vibe_neon_noir",
+   "confidence": 0.7,
+   "why": "detective framing"
+  },
+  {
+   "ref": "absolution-gap",
+   "title": "Absolution Gap",
+   "author": "Alastair Reynolds",
+   "gene": "vibe_bleak",
+   "confidence": 0.8,
+   "why": "Inhibitors"
+  },
+  {
+   "ref": "absolution-gap",
+   "title": "Absolution Gap",
+   "author": "Alastair Reynolds",
+   "gene": "vibe_epic",
+   "confidence": 0.8,
+   "why": "vast scale"
+  },
+  {
+   "ref": "absolution-gap",
+   "title": "Absolution Gap",
+   "author": "Alastair Reynolds",
+   "gene": "vibe_eerie",
+   "confidence": 0.7,
+   "why": "strange religion"
+  },
+  {
+   "ref": "invisible-planets",
+   "title": "Invisible Planets",
+   "author": "Ken Liu",
+   "gene": "vibe_cerebral",
+   "confidence": 0.75,
+   "why": "Chinese SF ideas"
+  },
+  {
+   "ref": "invisible-planets",
+   "title": "Invisible Planets",
+   "author": "Ken Liu",
+   "gene": "vibe_melancholy",
+   "confidence": 0.6,
+   "why": "reflective stories"
+  },
+  {
+   "ref": "the-lifecycle-of-software-objects",
+   "title": "The Lifecycle of Software Objects",
+   "author": "Ted Chiang",
+   "gene": "vibe_tender",
+   "confidence": 0.8,
+   "why": "raising digients"
+  },
+  {
+   "ref": "the-lifecycle-of-software-objects",
+   "title": "The Lifecycle of Software Objects",
+   "author": "Ted Chiang",
+   "gene": "vibe_melancholy",
+   "confidence": 0.7,
+   "why": "quiet persistence"
+  },
+  {
+   "ref": "the-lifecycle-of-software-objects",
+   "title": "The Lifecycle of Software Objects",
+   "author": "Ted Chiang",
+   "gene": "vibe_cerebral",
+   "confidence": 0.7,
+   "why": "personhood"
+  },
+  {
+   "ref": "these-broken-stars-kaufman",
+   "title": "These Broken Stars",
+   "author": "Amie Kaufman and Meagan Spooner",
+   "gene": "vibe_desolate",
+   "confidence": 0.75,
+   "why": "deserted planet"
+  },
+  {
+   "ref": "these-broken-stars-kaufman",
+   "title": "These Broken Stars",
+   "author": "Amie Kaufman and Meagan Spooner",
+   "gene": "vibe_sultry",
+   "confidence": 0.6,
+   "why": "slow romance"
+  },
+  {
+   "ref": "these-broken-stars-kaufman",
+   "title": "These Broken Stars",
+   "author": "Amie Kaufman and Meagan Spooner",
+   "gene": "vibe_eerie",
+   "confidence": 0.65,
+   "why": "strange whispers"
+  },
+  {
+   "ref": "termination-shock",
+   "title": "Termination Shock",
+   "author": "Neal Stephenson",
+   "gene": "vibe_cerebral",
+   "confidence": 0.8,
+   "why": "geoengineering"
+  },
+  {
+   "ref": "termination-shock",
+   "title": "Termination Shock",
+   "author": "Neal Stephenson",
+   "gene": "vibe_whimsical",
+   "confidence": 0.6,
+   "why": "Stephenson humor"
+  },
+  {
+   "ref": "agency",
+   "title": "Agency",
+   "author": "William Gibson",
+   "gene": "vibe_paranoid",
+   "confidence": 0.7,
+   "why": "conspiracy"
+  },
+  {
+   "ref": "agency",
+   "title": "Agency",
+   "author": "William Gibson",
+   "gene": "vibe_cerebral",
+   "confidence": 0.7,
+   "why": "cool Gibson tone"
+  },
+  {
+   "ref": "the-gate-to-womens-country",
+   "title": "The Gate to Women's Country",
+   "author": "Sheri S. Tepper",
+   "gene": "vibe_bleak",
+   "confidence": 0.65,
+   "why": "post-holocaust"
+  },
+  {
+   "ref": "the-gate-to-womens-country",
+   "title": "The Gate to Women's Country",
+   "author": "Sheri S. Tepper",
+   "gene": "vibe_cerebral",
+   "confidence": 0.65,
+   "why": "social design"
+  },
+  {
+   "ref": "memory",
+   "title": "Memory",
+   "author": "Lois McMaster Bujold",
+   "gene": "vibe_melancholy",
+   "confidence": 0.7,
+   "why": "career collapse"
+  },
+  {
+   "ref": "memory",
+   "title": "Memory",
+   "author": "Lois McMaster Bujold",
+   "gene": "vibe_mysterious",
+   "confidence": 0.7,
+   "why": "Illyan's breakdown"
+  },
+  {
+   "ref": "memory",
+   "title": "Memory",
+   "author": "Lois McMaster Bujold",
+   "gene": "vibe_cerebral",
+   "confidence": 0.6,
+   "why": "investigation"
+  },
+  {
+   "ref": "all-you-need-is-kill",
+   "title": "All You Need Is Kill",
+   "author": "Hiroshi Sakurazaka",
+   "gene": "vibe_adrenaline",
+   "confidence": 0.9,
+   "why": "repeated battles"
+  },
+  {
+   "ref": "all-you-need-is-kill",
+   "title": "All You Need Is Kill",
+   "author": "Hiroshi Sakurazaka",
+   "gene": "vibe_gritty",
+   "confidence": 0.7,
+   "why": "brutal deaths"
+  },
+  {
+   "ref": "all-you-need-is-kill",
+   "title": "All You Need Is Kill",
+   "author": "Hiroshi Sakurazaka",
+   "gene": "vibe_bleak",
+   "confidence": 0.6,
+   "why": "doomed loops"
+  },
+  {
+   "ref": "he-she-and-it",
+   "title": "He, She and It",
+   "author": "Marge Piercy",
+   "gene": "vibe_tender",
+   "confidence": 0.65,
+   "why": "android love"
+  },
+  {
+   "ref": "he-she-and-it",
+   "title": "He, She and It",
+   "author": "Marge Piercy",
+   "gene": "vibe_cerebral",
+   "confidence": 0.7,
+   "why": "personhood debates"
+  },
+  {
+   "ref": "he-she-and-it",
+   "title": "He, She and It",
+   "author": "Marge Piercy",
+   "gene": "vibe_neon_noir",
+   "confidence": 0.6,
+   "why": "corporate cyberpunk"
+  },
+  {
+   "ref": "pump-six-and-other-stories",
+   "title": "Pump Six and Other Stories",
+   "author": "Paolo Bacigalupi",
+   "gene": "vibe_bleak",
+   "confidence": 0.85,
+   "why": "grim futures"
+  },
+  {
+   "ref": "pump-six-and-other-stories",
+   "title": "Pump Six and Other Stories",
+   "author": "Paolo Bacigalupi",
+   "gene": "vibe_gritty",
+   "confidence": 0.7,
+   "why": "harsh lives"
+  },
+  {
+   "ref": "manifold-time",
+   "title": "Manifold: Time",
+   "author": "Stephen Baxter",
+   "gene": "vibe_cerebral",
+   "confidence": 0.85,
+   "why": "big physics ideas"
+  },
+  {
+   "ref": "manifold-time",
+   "title": "Manifold: Time",
+   "author": "Stephen Baxter",
+   "gene": "vibe_desolate",
+   "confidence": 0.65,
+   "why": "deep time"
+  },
+  {
+   "ref": "rosewater",
+   "title": "Rosewater",
+   "author": "Tade Thompson",
+   "gene": "vibe_paranoid",
+   "confidence": 0.7,
+   "why": "government secrets"
+  },
+  {
+   "ref": "rosewater",
+   "title": "Rosewater",
+   "author": "Tade Thompson",
+   "gene": "vibe_eerie",
+   "confidence": 0.7,
+   "why": "alien biodome"
+  },
+  {
+   "ref": "rosewater",
+   "title": "Rosewater",
+   "author": "Tade Thompson",
+   "gene": "vibe_neon_noir",
+   "confidence": 0.6,
+   "why": "Nigerian city noir"
+  },
+  {
+   "ref": "tuf-voyaging",
+   "title": "Tuf Voyaging",
+   "author": "George R. R. Martin",
+   "gene": "vibe_whimsical",
+   "confidence": 0.75,
+   "why": "dry comic Tuf"
+  },
+  {
+   "ref": "tuf-voyaging",
+   "title": "Tuf Voyaging",
+   "author": "George R. R. Martin",
+   "gene": "vibe_cerebral",
+   "confidence": 0.6,
+   "why": "ecological puzzles"
+  },
+  {
+   "ref": "starter-villain",
+   "title": "Starter Villain",
+   "author": "John Scalzi",
+   "gene": "vibe_whimsical",
+   "confidence": 0.9,
+   "why": "cats and dolphins"
+  },
+  {
+   "ref": "starter-villain",
+   "title": "Starter Villain",
+   "author": "John Scalzi",
+   "gene": "vibe_swashbuckling",
+   "confidence": 0.6,
+   "why": "villain lair caper"
+  },
+  {
+   "ref": "foreigner",
+   "title": "Foreigner",
+   "author": "C. J. Cherryh",
+   "gene": "vibe_cerebral",
+   "confidence": 0.8,
+   "why": "alien politics"
+  },
+  {
+   "ref": "foreigner",
+   "title": "Foreigner",
+   "author": "C. J. Cherryh",
+   "gene": "vibe_paranoid",
+   "confidence": 0.75,
+   "why": "assassinations"
+  },
+  {
+   "ref": "foreigner",
+   "title": "Foreigner",
+   "author": "C. J. Cherryh",
+   "gene": "vibe_claustrophobic",
+   "confidence": 0.6,
+   "why": "isolated envoy"
+  },
+  {
+   "ref": "nightflyers",
+   "title": "Nightflyers",
+   "author": "George R. R. Martin",
+   "gene": "vibe_eerie",
+   "confidence": 0.85,
+   "why": "haunted ship"
+  },
+  {
+   "ref": "nightflyers",
+   "title": "Nightflyers",
+   "author": "George R. R. Martin",
+   "gene": "vibe_claustrophobic",
+   "confidence": 0.8,
+   "why": "trapped crew"
+  },
+  {
+   "ref": "nightflyers",
+   "title": "Nightflyers",
+   "author": "George R. R. Martin",
+   "gene": "vibe_paranoid",
+   "confidence": 0.65,
+   "why": "who is the killer"
+  },
+  {
+   "ref": "lexicon",
+   "title": "Lexicon",
+   "author": "Max Barry",
+   "gene": "vibe_adrenaline",
+   "confidence": 0.75,
+   "why": "chase"
+  },
+  {
+   "ref": "lexicon",
+   "title": "Lexicon",
+   "author": "Max Barry",
+   "gene": "vibe_paranoid",
+   "confidence": 0.7,
+   "why": "words as weapons"
+  },
+  {
+   "ref": "lexicon",
+   "title": "Lexicon",
+   "author": "Max Barry",
+   "gene": "vibe_cerebral",
+   "confidence": 0.65,
+   "why": "language"
+  },
+  {
+   "ref": "the-prefect",
+   "title": "The Prefect",
+   "author": "Alastair Reynolds",
+   "gene": "vibe_paranoid",
+   "confidence": 0.7,
+   "why": "conspiracy"
+  },
+  {
+   "ref": "the-prefect",
+   "title": "The Prefect",
+   "author": "Alastair Reynolds",
+   "gene": "vibe_neon_noir",
+   "confidence": 0.65,
+   "why": "police procedural"
+  },
+  {
+   "ref": "the-prefect",
+   "title": "The Prefect",
+   "author": "Alastair Reynolds",
+   "gene": "vibe_claustrophobic",
+   "confidence": 0.6,
+   "why": "sealed habitat"
+  },
+  {
+   "ref": "saturns-children",
+   "title": "Saturn's Children",
+   "author": "Charles Stross",
+   "gene": "vibe_sultry",
+   "confidence": 0.8,
+   "why": "explicit android romance"
+  },
+  {
+   "ref": "saturns-children",
+   "title": "Saturn's Children",
+   "author": "Charles Stross",
+   "gene": "vibe_whimsical",
+   "confidence": 0.6,
+   "why": "tongue-in-cheek"
+  },
+  {
+   "ref": "saturns-children",
+   "title": "Saturn's Children",
+   "author": "Charles Stross",
+   "gene": "vibe_desolate",
+   "confidence": 0.6,
+   "why": "humans gone"
+  },
+  {
+   "ref": "ethan-of-athos",
+   "title": "Ethan of Athos",
+   "author": "Lois McMaster Bujold",
+   "gene": "vibe_whimsical",
+   "confidence": 0.65,
+   "why": "fish-out-of-water humor"
+  },
+  {
+   "ref": "ethan-of-athos",
+   "title": "Ethan of Athos",
+   "author": "Lois McMaster Bujold",
+   "gene": "vibe_swashbuckling",
+   "confidence": 0.6,
+   "why": "spy caper"
+  },
+  {
+   "ref": "elder-race",
+   "title": "Elder Race",
+   "author": "Adrian Tchaikovsky",
+   "gene": "vibe_melancholy",
+   "confidence": 0.75,
+   "why": "lonely anthropologist"
+  },
+  {
+   "ref": "elder-race",
+   "title": "Elder Race",
+   "author": "Adrian Tchaikovsky",
+   "gene": "vibe_tender",
+   "confidence": 0.65,
+   "why": "gentle"
+  },
+  {
+   "ref": "elder-race",
+   "title": "Elder Race",
+   "author": "Adrian Tchaikovsky",
+   "gene": "vibe_dreamlike",
+   "confidence": 0.6,
+   "why": "science as magic"
+  },
+  {
+   "ref": "a-desolation-called-peace",
+   "title": "A Desolation Called Peace",
+   "author": "Arkady Martine",
+   "gene": "vibe_cerebral",
+   "confidence": 0.8,
+   "why": "diplomacy and language"
+  },
+  {
+   "ref": "a-desolation-called-peace",
+   "title": "A Desolation Called Peace",
+   "author": "Arkady Martine",
+   "gene": "vibe_eerie",
+   "confidence": 0.7,
+   "why": "alien hive"
+  },
+  {
+   "ref": "a-desolation-called-peace",
+   "title": "A Desolation Called Peace",
+   "author": "Arkady Martine",
+   "gene": "vibe_epic",
+   "confidence": 0.6,
+   "why": "empire scope"
+  },
+  {
+   "ref": "schismatrix",
+   "title": "Schismatrix",
+   "author": "Bruce Sterling",
+   "gene": "vibe_cerebral",
+   "confidence": 0.85,
+   "why": "posthuman factions"
+  },
+  {
+   "ref": "schismatrix",
+   "title": "Schismatrix",
+   "author": "Bruce Sterling",
+   "gene": "vibe_gritty",
+   "confidence": 0.6,
+   "why": "shaper vs mechanist"
+  },
+  {
+   "ref": "schismatrix",
+   "title": "Schismatrix",
+   "author": "Bruce Sterling",
+   "gene": "vibe_epic",
+   "confidence": 0.65,
+   "why": "century span"
+  },
+  {
+   "ref": "heroes-die",
+   "title": "Heroes Die",
+   "author": "Matthew Woodring Stover",
+   "gene": "vibe_gritty",
+   "confidence": 0.9,
+   "why": "violent arena"
+  },
+  {
+   "ref": "heroes-die",
+   "title": "Heroes Die",
+   "author": "Matthew Woodring Stover",
+   "gene": "vibe_adrenaline",
+   "confidence": 0.75,
+   "why": "combat"
+  },
+  {
+   "ref": "heroes-die",
+   "title": "Heroes Die",
+   "author": "Matthew Woodring Stover",
+   "gene": "vibe_bleak",
+   "confidence": 0.6,
+   "why": "cruel world"
+  },
+  {
+   "ref": "cyberpunk-2077-no-coincidence",
+   "title": "Cyberpunk 2077: No Coincidence",
+   "author": "Rafał Kosik",
+   "gene": "vibe_neon_noir",
+   "confidence": 0.8,
+   "why": "Night City"
+  },
+  {
+   "ref": "cyberpunk-2077-no-coincidence",
+   "title": "Cyberpunk 2077: No Coincidence",
+   "author": "Rafał Kosik",
+   "gene": "vibe_gritty",
+   "confidence": 0.75,
+   "why": "violent heist"
+  },
+  {
+   "ref": "grass",
+   "title": "Grass",
+   "author": "Sheri S. Tepper",
+   "gene": "vibe_mysterious",
+   "confidence": 0.75,
+   "why": "Grassian secrets"
+  },
+  {
+   "ref": "grass",
+   "title": "Grass",
+   "author": "Sheri S. Tepper",
+   "gene": "vibe_eerie",
+   "confidence": 0.7,
+   "why": "the Hunt"
+  },
+  {
+   "ref": "grass",
+   "title": "Grass",
+   "author": "Sheri S. Tepper",
+   "gene": "vibe_cerebral",
+   "confidence": 0.6,
+   "why": "religion"
+  },
+  {
+   "ref": "logans-run",
+   "title": "Logan's Run",
+   "author": "William F. Nolan and George Clayton Johnson",
+   "gene": "vibe_adrenaline",
+   "confidence": 0.7,
+   "why": "chase"
+  },
+  {
+   "ref": "logans-run",
+   "title": "Logan's Run",
+   "author": "William F. Nolan and George Clayton Johnson",
+   "gene": "vibe_retro_pulp",
+   "confidence": 0.7,
+   "why": "60s domed future"
+  },
+  {
+   "ref": "gods-war",
+   "title": "God's War",
+   "author": "Kameron Hurley",
+   "gene": "vibe_gritty",
+   "confidence": 0.9,
+   "why": "bloody bounty hunting"
+  },
+  {
+   "ref": "gods-war",
+   "title": "God's War",
+   "author": "Kameron Hurley",
+   "gene": "vibe_bleak",
+   "confidence": 0.7,
+   "why": "endless holy war"
+  },
+  {
+   "ref": "gods-war",
+   "title": "God's War",
+   "author": "Kameron Hurley",
+   "gene": "vibe_desolate",
+   "confidence": 0.6,
+   "why": "desert"
+  },
+  {
+   "ref": "children-of-memory",
+   "title": "Children of Memory",
+   "author": "Adrian Tchaikovsky",
+   "gene": "vibe_mysterious",
+   "confidence": 0.75,
+   "why": "what is real"
+  },
+  {
+   "ref": "children-of-memory",
+   "title": "Children of Memory",
+   "author": "Adrian Tchaikovsky",
+   "gene": "vibe_melancholy",
+   "confidence": 0.7,
+   "why": "colony's fate"
+  },
+  {
+   "ref": "children-of-memory",
+   "title": "Children of Memory",
+   "author": "Adrian Tchaikovsky",
+   "gene": "vibe_cerebral",
+   "confidence": 0.7,
+   "why": "consciousness"
+  },
+  {
+   "ref": "semiosis",
+   "title": "Semiosis",
+   "author": "Sue Burke",
+   "gene": "vibe_cerebral",
+   "confidence": 0.7,
+   "why": "plant minds"
+  },
+  {
+   "ref": "semiosis",
+   "title": "Semiosis",
+   "author": "Sue Burke",
+   "gene": "vibe_epic",
+   "confidence": 0.65,
+   "why": "generational saga"
+  },
+  {
+   "ref": "semiosis",
+   "title": "Semiosis",
+   "author": "Sue Burke",
+   "gene": "vibe_eerie",
+   "confidence": 0.6,
+   "why": "alien plants"
+  },
+  {
+   "ref": "robopocalypse",
+   "title": "Robopocalypse",
+   "author": "Daniel H. Wilson",
+   "gene": "vibe_adrenaline",
+   "confidence": 0.8,
+   "why": "robot uprising"
+  },
+  {
+   "ref": "robopocalypse",
+   "title": "Robopocalypse",
+   "author": "Daniel H. Wilson",
+   "gene": "vibe_bleak",
+   "confidence": 0.65,
+   "why": "war"
+  },
+  {
+   "ref": "how-to-live-safely-in-a-science-fictional-universe",
+   "title": "How to Live Safely in a Science Fictional Universe",
+   "author": "Charles Yu",
+   "gene": "vibe_melancholy",
+   "confidence": 0.8,
+   "why": "longing for father"
+  },
+  {
+   "ref": "how-to-live-safely-in-a-science-fictional-universe",
+   "title": "How to Live Safely in a Science Fictional Universe",
+   "author": "Charles Yu",
+   "gene": "vibe_whimsical",
+   "confidence": 0.7,
+   "why": "meta humor"
+  },
+  {
+   "ref": "how-to-live-safely-in-a-science-fictional-universe",
+   "title": "How to Live Safely in a Science Fictional Universe",
+   "author": "Charles Yu",
+   "gene": "vibe_dreamlike",
+   "confidence": 0.65,
+   "why": "time-loop drift"
+  },
+  {
+   "ref": "delta-v",
+   "title": "Delta-v",
+   "author": "Daniel Suarez",
+   "gene": "vibe_cerebral",
+   "confidence": 0.7,
+   "why": "engineering detail"
+  },
+  {
+   "ref": "delta-v",
+   "title": "Delta-v",
+   "author": "Daniel Suarez",
+   "gene": "vibe_adrenaline",
+   "confidence": 0.7,
+   "why": "dangerous mission"
+  },
+  {
+   "ref": "delta-v",
+   "title": "Delta-v",
+   "author": "Daniel Suarez",
+   "gene": "vibe_desolate",
+   "confidence": 0.6,
+   "why": "deep space"
+  },
+  {
+   "ref": "battlefield-earth",
+   "title": "Battlefield Earth",
+   "author": "L. Ron Hubbard",
+   "gene": "vibe_retro_pulp",
+   "confidence": 0.75,
+   "why": "pulpy aliens"
+  },
+  {
+   "ref": "battlefield-earth",
+   "title": "Battlefield Earth",
+   "author": "L. Ron Hubbard",
+   "gene": "vibe_swashbuckling",
+   "confidence": 0.65,
+   "why": "heroic rebellion"
+  },
+  {
+   "ref": "the-time-ships",
+   "title": "The Time Ships",
+   "author": "Stephen Baxter",
+   "gene": "vibe_epic",
+   "confidence": 0.8,
+   "why": "vast timelines"
+  },
+  {
+   "ref": "the-time-ships",
+   "title": "The Time Ships",
+   "author": "Stephen Baxter",
+   "gene": "vibe_cerebral",
+   "confidence": 0.75,
+   "why": "time paradoxes"
+  },
+  {
+   "ref": "the-time-ships",
+   "title": "The Time Ships",
+   "author": "Stephen Baxter",
+   "gene": "vibe_retro_pulp",
+   "confidence": 0.6,
+   "why": "Victorian sequel"
+  },
+  {
+   "ref": "the-engines-of-god",
+   "title": "The Engines of God",
+   "author": "Jack McDevitt",
+   "gene": "vibe_mysterious",
+   "confidence": 0.8,
+   "why": "alien monuments"
+  },
+  {
+   "ref": "the-engines-of-god",
+   "title": "The Engines of God",
+   "author": "Jack McDevitt",
+   "gene": "vibe_epic",
+   "confidence": 0.6,
+   "why": "galactic scope"
+  },
+  {
+   "ref": "the-engines-of-god",
+   "title": "The Engines of God",
+   "author": "Jack McDevitt",
+   "gene": "vibe_eerie",
+   "confidence": 0.6,
+   "why": "approaching Omega"
+  },
+  {
+   "ref": "the-future-of-another-timeline",
+   "title": "The Future of Another Timeline",
+   "author": "Annalee Newitz",
+   "gene": "vibe_gritty",
+   "confidence": 0.65,
+   "why": "punk violence"
+  },
+  {
+   "ref": "the-future-of-another-timeline",
+   "title": "The Future of Another Timeline",
+   "author": "Annalee Newitz",
+   "gene": "vibe_cerebral",
+   "confidence": 0.65,
+   "why": "time-war ideas"
+  },
+  {
+   "ref": "parasite-grant",
+   "title": "Parasite",
+   "author": "Mira Grant",
+   "gene": "vibe_eerie",
+   "confidence": 0.75,
+   "why": "sleepwalkers"
+  },
+  {
+   "ref": "parasite-grant",
+   "title": "Parasite",
+   "author": "Mira Grant",
+   "gene": "vibe_paranoid",
+   "confidence": 0.7,
+   "why": "corporate cover-up"
+  },
+  {
+   "ref": "salvation",
+   "title": "Salvation",
+   "author": "Peter F. Hamilton",
+   "gene": "vibe_mysterious",
+   "confidence": 0.7,
+   "why": "alien deception"
+  },
+  {
+   "ref": "salvation",
+   "title": "Salvation",
+   "author": "Peter F. Hamilton",
+   "gene": "vibe_epic",
+   "confidence": 0.7,
+   "why": "multi-timeline"
+  },
+  {
+   "ref": "salvation",
+   "title": "Salvation",
+   "author": "Peter F. Hamilton",
+   "gene": "vibe_paranoid",
+   "confidence": 0.6,
+   "why": "hidden threats"
+  },
+  {
+   "ref": "the-mountain-in-the-sea",
+   "title": "The Mountain in the Sea",
+   "author": "Ray Nayler",
+   "gene": "vibe_cerebral",
+   "confidence": 0.85,
+   "why": "octopus cognition"
+  },
+  {
+   "ref": "the-mountain-in-the-sea",
+   "title": "The Mountain in the Sea",
+   "author": "Ray Nayler",
+   "gene": "vibe_mysterious",
+   "confidence": 0.75,
+   "why": "alien minds"
+  },
+  {
+   "ref": "the-mountain-in-the-sea",
+   "title": "The Mountain in the Sea",
+   "author": "Ray Nayler",
+   "gene": "vibe_eerie",
+   "confidence": 0.6,
+   "why": "isolated island"
+  },
+  {
+   "ref": "expeditionary-force-columbus-day",
+   "title": "Expeditionary Force: Columbus Day",
+   "author": "Craig Alanson",
+   "gene": "vibe_whimsical",
+   "confidence": 0.8,
+   "why": "snarky AI"
+  },
+  {
+   "ref": "expeditionary-force-columbus-day",
+   "title": "Expeditionary Force: Columbus Day",
+   "author": "Craig Alanson",
+   "gene": "vibe_adrenaline",
+   "confidence": 0.75,
+   "why": "military action"
+  },
+  {
+   "ref": "revenger",
+   "title": "Revenger",
+   "author": "Alastair Reynolds",
+   "gene": "vibe_swashbuckling",
+   "confidence": 0.85,
+   "why": "space pirates"
+  },
+  {
+   "ref": "revenger",
+   "title": "Revenger",
+   "author": "Alastair Reynolds",
+   "gene": "vibe_gritty",
+   "confidence": 0.7,
+   "why": "revenge violence"
+  },
+  {
+   "ref": "revenger",
+   "title": "Revenger",
+   "author": "Alastair Reynolds",
+   "gene": "vibe_eerie",
+   "confidence": 0.6,
+   "why": "treasure baubles"
+  },
+  {
+   "ref": "trouble-and-her-friends",
+   "title": "Trouble and Her Friends",
+   "author": "Melissa Scott",
+   "gene": "vibe_neon_noir",
+   "confidence": 0.75,
+   "why": "cyberpunk netrunning"
+  },
+  {
+   "ref": "trouble-and-her-friends",
+   "title": "Trouble and Her Friends",
+   "author": "Melissa Scott",
+   "gene": "vibe_cerebral",
+   "confidence": 0.6,
+   "why": "net politics"
+  },
+  {
+   "ref": "the-iron-duke",
+   "title": "The Iron Duke",
+   "author": "Meljean Brook",
+   "gene": "vibe_sultry",
+   "confidence": 0.85,
+   "why": "steamy romance"
+  },
+  {
+   "ref": "the-iron-duke",
+   "title": "The Iron Duke",
+   "author": "Meljean Brook",
+   "gene": "vibe_swashbuckling",
+   "confidence": 0.7,
+   "why": "adventure"
+  },
+  {
+   "ref": "the-iron-duke",
+   "title": "The Iron Duke",
+   "author": "Meljean Brook",
+   "gene": "vibe_retro_pulp",
+   "confidence": 0.6,
+   "why": "steampunk"
+  },
+  {
+   "ref": "beggars-in-spain",
+   "title": "Beggars in Spain",
+   "author": "Nancy Kress",
+   "gene": "vibe_cerebral",
+   "confidence": 0.85,
+   "why": "ethics debates"
+  },
+  {
+   "ref": "beggars-in-spain",
+   "title": "Beggars in Spain",
+   "author": "Nancy Kress",
+   "gene": "vibe_paranoid",
+   "confidence": 0.6,
+   "why": "social backlash"
+  },
+  {
+   "ref": "across-the-universe",
+   "title": "Across the Universe",
+   "author": "Beth Revis",
+   "gene": "vibe_claustrophobic",
+   "confidence": 0.8,
+   "why": "generation ship"
+  },
+  {
+   "ref": "across-the-universe",
+   "title": "Across the Universe",
+   "author": "Beth Revis",
+   "gene": "vibe_mysterious",
+   "confidence": 0.75,
+   "why": "murders and secrets"
+  },
+  {
+   "ref": "across-the-universe",
+   "title": "Across the Universe",
+   "author": "Beth Revis",
+   "gene": "vibe_paranoid",
+   "confidence": 0.65,
+   "why": "ship leader lies"
+  },
+  {
+   "ref": "the-light-brigade",
+   "title": "The Light Brigade",
+   "author": "Kameron Hurley",
+   "gene": "vibe_bleak",
+   "confidence": 0.8,
+   "why": "corporate war"
+  },
+  {
+   "ref": "the-light-brigade",
+   "title": "The Light Brigade",
+   "author": "Kameron Hurley",
+   "gene": "vibe_gritty",
+   "confidence": 0.8,
+   "why": "brutal combat"
+  },
+  {
+   "ref": "the-light-brigade",
+   "title": "The Light Brigade",
+   "author": "Kameron Hurley",
+   "gene": "vibe_paranoid",
+   "confidence": 0.7,
+   "why": "propaganda and time slips"
+  },
+  {
+   "ref": "some-desperate-glory",
+   "title": "Some Desperate Glory",
+   "author": "Emily Tesh",
+   "gene": "vibe_bleak",
+   "confidence": 0.75,
+   "why": "militarized remnant"
+  },
+  {
+   "ref": "some-desperate-glory",
+   "title": "Some Desperate Glory",
+   "author": "Emily Tesh",
+   "gene": "vibe_claustrophobic",
+   "confidence": 0.7,
+   "why": "Gaea Station"
+  },
+  {
+   "ref": "some-desperate-glory",
+   "title": "Some Desperate Glory",
+   "author": "Emily Tesh",
+   "gene": "vibe_paranoid",
+   "confidence": 0.65,
+   "why": "indoctrination"
+  },
+  {
+   "ref": "judas-unchained",
+   "title": "Judas Unchained",
+   "author": "Peter F. Hamilton",
+   "gene": "vibe_epic",
+   "confidence": 0.85,
+   "why": "finale"
+  },
+  {
+   "ref": "judas-unchained",
+   "title": "Judas Unchained",
+   "author": "Peter F. Hamilton",
+   "gene": "vibe_adrenaline",
+   "confidence": 0.75,
+   "why": "chase"
+  },
+  {
+   "ref": "judas-unchained",
+   "title": "Judas Unchained",
+   "author": "Peter F. Hamilton",
+   "gene": "vibe_paranoid",
+   "confidence": 0.6,
+   "why": "Starflyer agents"
+  },
+  {
+   "ref": "the-echo-wife",
+   "title": "The Echo Wife",
+   "author": "Sarah Gailey",
+   "gene": "vibe_cold_clinical",
+   "confidence": 0.8,
+   "why": "cloning lab"
+  },
+  {
+   "ref": "the-echo-wife",
+   "title": "The Echo Wife",
+   "author": "Sarah Gailey",
+   "gene": "vibe_eerie",
+   "confidence": 0.7,
+   "why": "doubles"
+  },
+  {
+   "ref": "the-echo-wife",
+   "title": "The Echo Wife",
+   "author": "Sarah Gailey",
+   "gene": "vibe_paranoid",
+   "confidence": 0.6,
+   "why": "secrets"
+  },
+  {
+   "ref": "synners",
+   "title": "Synners",
+   "author": "Pat Cadigan",
+   "gene": "vibe_neon_noir",
+   "confidence": 0.8,
+   "why": "cyberpunk"
+  },
+  {
+   "ref": "synners",
+   "title": "Synners",
+   "author": "Pat Cadigan",
+   "gene": "vibe_gritty",
+   "confidence": 0.6,
+   "why": "sprawl"
+  },
+  {
+   "ref": "mission-of-gravity",
+   "title": "Mission of Gravity",
+   "author": "Hal Clement",
+   "gene": "vibe_cerebral",
+   "confidence": 0.8,
+   "why": "physics puzzles"
+  },
+  {
+   "ref": "mission-of-gravity",
+   "title": "Mission of Gravity",
+   "author": "Hal Clement",
+   "gene": "vibe_retro_pulp",
+   "confidence": 0.6,
+   "why": "classic adventure"
+  },
+  {
+   "ref": "sea-of-rust",
+   "title": "Sea of Rust",
+   "author": "C. Robert Cargill",
+   "gene": "vibe_desolate",
+   "confidence": 0.85,
+   "why": "robot wasteland"
+  },
+  {
+   "ref": "sea-of-rust",
+   "title": "Sea of Rust",
+   "author": "C. Robert Cargill",
+   "gene": "vibe_gritty",
+   "confidence": 0.75,
+   "why": "machine combat"
+  },
+  {
+   "ref": "sea-of-rust",
+   "title": "Sea of Rust",
+   "author": "C. Robert Cargill",
+   "gene": "vibe_melancholy",
+   "confidence": 0.6,
+   "why": "empty world"
+  },
+  {
+   "ref": "marooned-in-realtime",
+   "title": "Marooned in Realtime",
+   "author": "Vernor Vinge",
+   "gene": "vibe_mysterious",
+   "confidence": 0.8,
+   "why": "murder after singularity"
+  },
+  {
+   "ref": "marooned-in-realtime",
+   "title": "Marooned in Realtime",
+   "author": "Vernor Vinge",
+   "gene": "vibe_desolate",
+   "confidence": 0.75,
+   "why": "empty Earth"
+  },
+  {
+   "ref": "marooned-in-realtime",
+   "title": "Marooned in Realtime",
+   "author": "Vernor Vinge",
+   "gene": "vibe_melancholy",
+   "confidence": 0.6,
+   "why": "lost humanity"
+  },
+  {
+   "ref": "kill-decision",
+   "title": "Kill Decision",
+   "author": "Daniel Suarez",
+   "gene": "vibe_adrenaline",
+   "confidence": 0.85,
+   "why": "drone thriller"
+  },
+  {
+   "ref": "kill-decision",
+   "title": "Kill Decision",
+   "author": "Daniel Suarez",
+   "gene": "vibe_paranoid",
+   "confidence": 0.7,
+   "why": "hidden enemy"
+  },
+  {
+   "ref": "when-gravity-fails",
+   "title": "When Gravity Fails",
+   "author": "George Alec Effinger",
+   "gene": "vibe_neon_noir",
+   "confidence": 0.9,
+   "why": "Budayeen noir"
+  },
+  {
+   "ref": "when-gravity-fails",
+   "title": "When Gravity Fails",
+   "author": "George Alec Effinger",
+   "gene": "vibe_gritty",
+   "confidence": 0.8,
+   "why": "violent quarter"
+  },
+  {
+   "ref": "the-luminous-dead",
+   "title": "The Luminous Dead",
+   "author": "Caitlin Starling",
+   "gene": "vibe_claustrophobic",
+   "confidence": 0.9,
+   "why": "cave dive"
+  },
+  {
+   "ref": "the-luminous-dead",
+   "title": "The Luminous Dead",
+   "author": "Caitlin Starling",
+   "gene": "vibe_eerie",
+   "confidence": 0.8,
+   "why": "dark"
+  },
+  {
+   "ref": "the-luminous-dead",
+   "title": "The Luminous Dead",
+   "author": "Caitlin Starling",
+   "gene": "vibe_paranoid",
+   "confidence": 0.75,
+   "why": "handler distrust"
+  },
+  {
+   "ref": "barbarian-lover",
+   "title": "Barbarian Lover",
+   "author": "Ruby Dixon",
+   "gene": "vibe_sultry",
+   "confidence": 0.9,
+   "why": "steamy alien romance"
+  },
+  {
+   "ref": "barbarian-lover",
+   "title": "Barbarian Lover",
+   "author": "Ruby Dixon",
+   "gene": "vibe_cozy",
+   "confidence": 0.65,
+   "why": "warm tribe"
+  },
+  {
+   "ref": "seeker",
+   "title": "Seeker",
+   "author": "Jack McDevitt",
+   "gene": "vibe_mysterious",
+   "confidence": 0.8,
+   "why": "lost colony"
+  },
+  {
+   "ref": "seeker",
+   "title": "Seeker",
+   "author": "Jack McDevitt",
+   "gene": "vibe_cozy",
+   "confidence": 0.6,
+   "why": "Alex and Chase"
+  },
+  {
+   "ref": "infinite-detail",
+   "title": "Infinite Detail",
+   "author": "Tim Maughan",
+   "gene": "vibe_bleak",
+   "confidence": 0.75,
+   "why": "post-net collapse"
+  },
+  {
+   "ref": "infinite-detail",
+   "title": "Infinite Detail",
+   "author": "Tim Maughan",
+   "gene": "vibe_gritty",
+   "confidence": 0.65,
+   "why": "Bristol"
+  },
+  {
+   "ref": "infinite-detail",
+   "title": "Infinite Detail",
+   "author": "Tim Maughan",
+   "gene": "vibe_melancholy",
+   "confidence": 0.65,
+   "why": "loss"
+  },
+  {
+   "ref": "american-elsewhere",
+   "title": "American Elsewhere",
+   "author": "Robert Jackson Bennett",
+   "gene": "vibe_eerie",
+   "confidence": 0.9,
+   "why": "strange town"
+  },
+  {
+   "ref": "american-elsewhere",
+   "title": "American Elsewhere",
+   "author": "Robert Jackson Bennett",
+   "gene": "vibe_mysterious",
+   "confidence": 0.8,
+   "why": "Wink secrets"
+  },
+  {
+   "ref": "american-elsewhere",
+   "title": "American Elsewhere",
+   "author": "Robert Jackson Bennett",
+   "gene": "vibe_neon_noir",
+   "confidence": 0.6,
+   "why": "noir"
+  },
+  {
+   "ref": "translation-state",
+   "title": "Translation State",
+   "author": "Ann Leckie",
+   "gene": "vibe_whimsical",
+   "confidence": 0.65,
+   "why": "odd aliens"
+  },
+  {
+   "ref": "translation-state",
+   "title": "Translation State",
+   "author": "Ann Leckie",
+   "gene": "vibe_tender",
+   "confidence": 0.7,
+   "why": "found family"
+  },
+  {
+   "ref": "translation-state",
+   "title": "Translation State",
+   "author": "Ann Leckie",
+   "gene": "vibe_cerebral",
+   "confidence": 0.6,
+   "why": "diplomacy"
+  },
+  {
+   "ref": "ghost-fleet",
+   "title": "Ghost Fleet",
+   "author": "P. W. Singer and August Cole",
+   "gene": "vibe_adrenaline",
+   "confidence": 0.8,
+   "why": "war thriller"
+  },
+  {
+   "ref": "ghost-fleet",
+   "title": "Ghost Fleet",
+   "author": "P. W. Singer and August Cole",
+   "gene": "vibe_cerebral",
+   "confidence": 0.6,
+   "why": "tech detail"
+  },
+  {
+   "ref": "saturn-run-sandford",
+   "title": "Saturn Run",
+   "author": "John Sandford and Ctein",
+   "gene": "vibe_adrenaline",
+   "confidence": 0.7,
+   "why": "race"
+  },
+  {
+   "ref": "saturn-run-sandford",
+   "title": "Saturn Run",
+   "author": "John Sandford and Ctein",
+   "gene": "vibe_cerebral",
+   "confidence": 0.7,
+   "why": "hard SF"
+  },
+  {
+   "ref": "hull-zero-three",
+   "title": "Hull Zero Three",
+   "author": "Greg Bear",
+   "gene": "vibe_claustrophobic",
+   "confidence": 0.85,
+   "why": "ship corridors"
+  },
+  {
+   "ref": "hull-zero-three",
+   "title": "Hull Zero Three",
+   "author": "Greg Bear",
+   "gene": "vibe_mysterious",
+   "confidence": 0.85,
+   "why": "waking with no memory"
+  },
+  {
+   "ref": "hull-zero-three",
+   "title": "Hull Zero Three",
+   "author": "Greg Bear",
+   "gene": "vibe_eerie",
+   "confidence": 0.75,
+   "why": "hostile ship"
+  },
+  {
+   "ref": "version-control",
+   "title": "Version Control",
+   "author": "Dexter Palmer",
+   "gene": "vibe_melancholy",
+   "confidence": 0.8,
+   "why": "grief"
+  },
+  {
+   "ref": "version-control",
+   "title": "Version Control",
+   "author": "Dexter Palmer",
+   "gene": "vibe_cerebral",
+   "confidence": 0.75,
+   "why": "causality"
+  },
+  {
+   "ref": "version-control",
+   "title": "Version Control",
+   "author": "Dexter Palmer",
+   "gene": "vibe_tender",
+   "confidence": 0.6,
+   "why": "marriage"
+  },
+  {
+   "ref": "engine-summer",
+   "title": "Engine Summer",
+   "author": "John Crowley",
+   "gene": "vibe_dreamlike",
+   "confidence": 0.85,
+   "why": "lyrical far future"
+  },
+  {
+   "ref": "engine-summer",
+   "title": "Engine Summer",
+   "author": "John Crowley",
+   "gene": "vibe_melancholy",
+   "confidence": 0.8,
+   "why": "elegiac"
+  },
+  {
+   "ref": "hardwired",
+   "title": "Hardwired",
+   "author": "Walter Jon Williams",
+   "gene": "vibe_neon_noir",
+   "confidence": 0.75,
+   "why": "cyberpunk smuggling"
+  },
+  {
+   "ref": "hardwired",
+   "title": "Hardwired",
+   "author": "Walter Jon Williams",
+   "gene": "vibe_gritty",
+   "confidence": 0.8,
+   "why": "violent"
+  },
+  {
+   "ref": "doors-of-eden",
+   "title": "Doors of Eden",
+   "author": "Adrian Tchaikovsky",
+   "gene": "vibe_mysterious",
+   "confidence": 0.75,
+   "why": "strange Earths"
+  },
+  {
+   "ref": "doors-of-eden",
+   "title": "Doors of Eden",
+   "author": "Adrian Tchaikovsky",
+   "gene": "vibe_whimsical",
+   "confidence": 0.6,
+   "why": "humor"
+  },
+  {
+   "ref": "doors-of-eden",
+   "title": "Doors of Eden",
+   "author": "Adrian Tchaikovsky",
+   "gene": "vibe_eerie",
+   "confidence": 0.6,
+   "why": "creatures"
+  },
+  {
+   "ref": "warprize",
+   "title": "Warprize",
+   "author": "Elizabeth Vaughan",
+   "gene": "vibe_sultry",
+   "confidence": 0.8,
+   "why": "captive romance"
+  },
+  {
+   "ref": "warprize",
+   "title": "Warprize",
+   "author": "Elizabeth Vaughan",
+   "gene": "vibe_tender",
+   "confidence": 0.6,
+   "why": "healer"
+  },
+  {
+   "ref": "sword-art-online-aincrad",
+   "title": "Sword Art Online: Aincrad",
+   "author": "Reki Kawahara",
+   "gene": "vibe_adrenaline",
+   "confidence": 0.75,
+   "why": "death game"
+  },
+  {
+   "ref": "sword-art-online-aincrad",
+   "title": "Sword Art Online: Aincrad",
+   "author": "Reki Kawahara",
+   "gene": "vibe_claustrophobic",
+   "confidence": 0.6,
+   "why": "trapped in game"
+  },
+  {
+   "ref": "sword-art-online-aincrad",
+   "title": "Sword Art Online: Aincrad",
+   "author": "Reki Kawahara",
+   "gene": "vibe_tender",
+   "confidence": 0.6,
+   "why": "romance"
+  },
+  {
+   "ref": "hammers-slammers",
+   "title": "Hammer's Slammers",
+   "author": "David Drake",
+   "gene": "vibe_gritty",
+   "confidence": 0.9,
+   "why": "mercenary combat"
+  },
+  {
+   "ref": "hammers-slammers",
+   "title": "Hammer's Slammers",
+   "author": "David Drake",
+   "gene": "vibe_bleak",
+   "confidence": 0.75,
+   "why": "war's cost"
+  },
+  {
+   "ref": "lagoon",
+   "title": "Lagoon",
+   "author": "Nnedi Okorafor",
+   "gene": "vibe_dreamlike",
+   "confidence": 0.7,
+   "why": "magical Lagos"
+  },
+  {
+   "ref": "lagoon",
+   "title": "Lagoon",
+   "author": "Nnedi Okorafor",
+   "gene": "vibe_whimsical",
+   "confidence": 0.6,
+   "why": "chaotic"
+  },
+  {
+   "ref": "lagoon",
+   "title": "Lagoon",
+   "author": "Nnedi Okorafor",
+   "gene": "vibe_mysterious",
+   "confidence": 0.65,
+   "why": "aliens' intent"
+  },
+  {
+   "ref": "the-pride-of-chanur",
+   "title": "The Pride of Chanur",
+   "author": "C. J. Cherryh",
+   "gene": "vibe_swashbuckling",
+   "confidence": 0.7,
+   "why": "trader crew adventure"
+  },
+  {
+   "ref": "the-pride-of-chanur",
+   "title": "The Pride of Chanur",
+   "author": "C. J. Cherryh",
+   "gene": "vibe_lived_in",
+   "confidence": 0.7,
+   "why": "freighter life"
+  },
+  {
+   "ref": "the-pride-of-chanur",
+   "title": "The Pride of Chanur",
+   "author": "C. J. Cherryh",
+   "gene": "vibe_paranoid",
+   "confidence": 0.6,
+   "why": "alien politics"
+  },
+  {
+   "ref": "grimspace",
+   "title": "Grimspace",
+   "author": "Ann Aguirre",
+   "gene": "vibe_swashbuckling",
+   "confidence": 0.75,
+   "why": "ragtag crew"
+  },
+  {
+   "ref": "grimspace",
+   "title": "Grimspace",
+   "author": "Ann Aguirre",
+   "gene": "vibe_sultry",
+   "confidence": 0.65,
+   "why": "romance"
+  },
+  {
+   "ref": "grimspace",
+   "title": "Grimspace",
+   "author": "Ann Aguirre",
+   "gene": "vibe_adrenaline",
+   "confidence": 0.7,
+   "why": "action"
+  },
+  {
+   "ref": "the-stars-are-legion",
+   "title": "The Stars Are Legion",
+   "author": "Kameron Hurley",
+   "gene": "vibe_gritty",
+   "confidence": 0.85,
+   "why": "visceral"
+  },
+  {
+   "ref": "the-stars-are-legion",
+   "title": "The Stars Are Legion",
+   "author": "Kameron Hurley",
+   "gene": "vibe_eerie",
+   "confidence": 0.75,
+   "why": "living ships"
+  },
+  {
+   "ref": "the-stars-are-legion",
+   "title": "The Stars Are Legion",
+   "author": "Kameron Hurley",
+   "gene": "vibe_mysterious",
+   "confidence": 0.7,
+   "why": "amnesia"
+  },
+  {
+   "ref": "the-book-of-strange-new-things",
+   "title": "The Book of Strange New Things",
+   "author": "Michel Faber",
+   "gene": "vibe_melancholy",
+   "confidence": 0.85,
+   "why": "loneliness and faith"
+  },
+  {
+   "ref": "the-book-of-strange-new-things",
+   "title": "The Book of Strange New Things",
+   "author": "Michel Faber",
+   "gene": "vibe_tender",
+   "confidence": 0.7,
+   "why": "letters"
+  },
+  {
+   "ref": "the-book-of-strange-new-things",
+   "title": "The Book of Strange New Things",
+   "author": "Michel Faber",
+   "gene": "vibe_desolate",
+   "confidence": 0.7,
+   "why": "alien planet"
+  },
+  {
+   "ref": "journey-to-the-center-of-the-earth",
+   "title": "Journey to the Center of the Earth",
+   "author": "Jules Verne",
+   "gene": "vibe_retro_pulp",
+   "confidence": 0.8,
+   "why": "classic adventure"
+  },
+  {
+   "ref": "journey-to-the-center-of-the-earth",
+   "title": "Journey to the Center of the Earth",
+   "author": "Jules Verne",
+   "gene": "vibe_claustrophobic",
+   "confidence": 0.65,
+   "why": "caverns"
+  },
+  {
+   "ref": "journey-to-the-center-of-the-earth",
+   "title": "Journey to the Center of the Earth",
+   "author": "Jules Verne",
+   "gene": "vibe_swashbuckling",
+   "confidence": 0.6,
+   "why": "expedition"
+  },
+  {
+   "ref": "eyes-of-the-void",
+   "title": "Eyes of the Void",
+   "author": "Adrian Tchaikovsky",
+   "gene": "vibe_epic",
+   "confidence": 0.8,
+   "why": "space opera"
+  },
+  {
+   "ref": "eyes-of-the-void",
+   "title": "Eyes of the Void",
+   "author": "Adrian Tchaikovsky",
+   "gene": "vibe_eerie",
+   "confidence": 0.75,
+   "why": "Architects"
+  },
+  {
+   "ref": "eyes-of-the-void",
+   "title": "Eyes of the Void",
+   "author": "Adrian Tchaikovsky",
+   "gene": "vibe_lived_in",
+   "confidence": 0.65,
+   "why": "crew"
+  },
+  {
+   "ref": "terms-of-enlistment",
+   "title": "Terms of Enlistment",
+   "author": "Marko Kloos",
+   "gene": "vibe_gritty",
+   "confidence": 0.75,
+   "why": "military"
+  },
+  {
+   "ref": "terms-of-enlistment",
+   "title": "Terms of Enlistment",
+   "author": "Marko Kloos",
+   "gene": "vibe_bleak",
+   "confidence": 0.65,
+   "why": "tenements"
+  },
+  {
+   "ref": "terms-of-enlistment",
+   "title": "Terms of Enlistment",
+   "author": "Marko Kloos",
+   "gene": "vibe_adrenaline",
+   "confidence": 0.7,
+   "why": "combat"
+  },
+  {
+   "ref": "ancestral-night",
+   "title": "Ancestral Night",
+   "author": "Elizabeth Bear",
+   "gene": "vibe_cerebral",
+   "confidence": 0.8,
+   "why": "philosophical narrator"
+  },
+  {
+   "ref": "ancestral-night",
+   "title": "Ancestral Night",
+   "author": "Elizabeth Bear",
+   "gene": "vibe_desolate",
+   "confidence": 0.65,
+   "why": "deep space"
+  },
+  {
+   "ref": "ancestral-night",
+   "title": "Ancestral Night",
+   "author": "Elizabeth Bear",
+   "gene": "vibe_mysterious",
+   "confidence": 0.65,
+   "why": "ancient tech"
+  },
+  {
+   "ref": "the-reality-dysfunction",
+   "title": "The Reality Dysfunction",
+   "author": "Peter F. Hamilton",
+   "gene": "vibe_epic",
+   "confidence": 0.9,
+   "why": "massive space opera"
+  },
+  {
+   "ref": "the-reality-dysfunction",
+   "title": "The Reality Dysfunction",
+   "author": "Peter F. Hamilton",
+   "gene": "vibe_eerie",
+   "confidence": 0.75,
+   "why": "possession horror"
+  },
+  {
+   "ref": "the-reality-dysfunction",
+   "title": "The Reality Dysfunction",
+   "author": "Peter F. Hamilton",
+   "gene": "vibe_sultry",
+   "confidence": 0.6,
+   "why": "sex scenes"
+  },
+  {
+   "ref": "a-talent-for-war",
+   "title": "A Talent for War",
+   "author": "Jack McDevitt",
+   "gene": "vibe_mysterious",
+   "confidence": 0.8,
+   "why": "historical investigation"
+  },
+  {
+   "ref": "a-talent-for-war",
+   "title": "A Talent for War",
+   "author": "Jack McDevitt",
+   "gene": "vibe_cerebral",
+   "confidence": 0.65,
+   "why": "detective"
+  },
+  {
+   "ref": "the-quantum-magician",
+   "title": "The Quantum Magician",
+   "author": "Derek Künsken",
+   "gene": "vibe_swashbuckling",
+   "confidence": 0.8,
+   "why": "con game"
+  },
+  {
+   "ref": "the-quantum-magician",
+   "title": "The Quantum Magician",
+   "author": "Derek Künsken",
+   "gene": "vibe_cerebral",
+   "confidence": 0.75,
+   "why": "quantum heist"
+  },
+  {
+   "ref": "service-model",
+   "title": "Service Model",
+   "author": "Adrian Tchaikovsky",
+   "gene": "vibe_whimsical",
+   "confidence": 0.85,
+   "why": "deadpan robot"
+  },
+  {
+   "ref": "service-model",
+   "title": "Service Model",
+   "author": "Adrian Tchaikovsky",
+   "gene": "vibe_desolate",
+   "confidence": 0.75,
+   "why": "collapsed world"
+  },
+  {
+   "ref": "service-model",
+   "title": "Service Model",
+   "author": "Adrian Tchaikovsky",
+   "gene": "vibe_melancholy",
+   "confidence": 0.6,
+   "why": "obsolete butler"
+  }
+ ],
+ "skipped": []
+}
