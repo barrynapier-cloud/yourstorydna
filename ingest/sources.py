@@ -77,7 +77,7 @@ CREATE TABLE IF NOT EXISTS book_ids(
   PRIMARY KEY(book_id, scheme, ext_id));
 CREATE OR REPLACE VIEW gene_blend AS
   SELECT e.book_id, e.target AS gene,
-         1 - exp(sum(ln(greatest(1e-6, 1 - least(0.999, e.strength))))) FILTER (WHERE e.polarity > 0) AS score,
+         1 - exp(coalesce(sum(ln(greatest(1e-6, 1 - least(0.999, e.strength)))) FILTER (WHERE e.polarity > 0), 0)) AS score,
          count(*) FILTER (WHERE e.polarity < 0) AS against,
          count(DISTINCT split_part(e.source, '-', 1)) FILTER (WHERE e.polarity > 0) AS proof_kinds,
          array_agg(DISTINCT e.source) AS sources
