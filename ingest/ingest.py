@@ -599,6 +599,20 @@ def step_dump(db):
         print("DUMP " + json.dumps(r, ensure_ascii=True, separators=(",", ":")), flush=True)
     log(f"dump: rows {a}..{min(a + n, len(EXPORTED))} of {len(EXPORTED)}")
 
+# ---------- growdump (new print books still without shown genes, for editorial tagging) ----------
+def step_growdump(db):
+    a = int(os.environ.get("DUMP_FROM", "0")); n = int(os.environ.get("DUMP_N", "150"))
+    with db.cursor() as c:
+        c.execute("""SELECT b.slug, b.title, b.author, b.year, b.readers, b.description, b.subjects FROM books b
+                     WHERE b.source='openlibrary-print' AND b.excluded_reason IS NULL AND b.genre='sf'
+                       AND NOT EXISTS (SELECT 1 FROM book_genes bg WHERE bg.book_id=b.id AND bg.state='shown')
+                     ORDER BY b.readers DESC NULLS LAST, b.id OFFSET %s LIMIT %s""", (a, n))
+        rows = c.fetchall()
+        for slug, title, author, year, readers, desc, subj in rows:
+            print("GROW " + json.dumps({"ref": slug, "t": title, "a": author, "y": year, "r": readers,
+                  "d": (desc or "")[:280], "s": (subj or [])[:12]}, ensure_ascii=True, separators=(",", ":")), flush=True)
+        log(f"growdump: {len(rows)} rows from {a}")
+
 # ---------- rename (keep curated app ids stable) ----------
 # RENAME="new-slug:wanted-slug,..." moves a stale row off wanted-slug, then gives it to new-slug.
 def step_rename(db):
