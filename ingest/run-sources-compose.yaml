@@ -1,0 +1,23 @@
+# One-shot legal-sources job (Hostinger Docker project "library-sources").
+# Reads the DB password from the library-db project's env file, so no secret lives here.
+services:
+  sources:
+    image: python:3.12-slim
+    restart: "no"
+    env_file: /docker/library-db/.env
+    environment:
+      BRANCH: claude/project-thread-soo72o
+      STEPS: schema,backfill,wikidata,gutenberg,promote,report
+      EXPORT: "1"
+    networks: [db]
+    volumes:
+      - site:/out
+    command: ["sh","-c","pip install -q 'psycopg[binary]' && mkdir -p /app && cd /app && for f in sources.py ingest.py proto_map.json axis_map.json genes_sf.json; do python -c \"import urllib.request,sys;urllib.request.urlretrieve('https://raw.githubusercontent.com/barrynapier-cloud/yourstorydna/'+sys.argv[1]+'/ingest/'+sys.argv[2],sys.argv[2])\" \"$$BRANCH\" $$f || exit 1; done && python -u sources.py && if [ \"$$EXPORT\" = 1 ]; then STEPS=export python -u ingest.py; fi"]
+networks:
+  db:
+    name: library-db_default
+    external: true
+volumes:
+  site:
+    name: library_site
+    external: true
